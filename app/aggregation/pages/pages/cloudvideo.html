@@ -1,0 +1,151 @@
+<!-- 配置信息页面 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>联网配置</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <style>
+        .card-panel {
+            padding: 0.6rem !important;
+        }
+    </style>
+</head>
+
+<body class="container row">
+    <header class="header">
+    </header>
+    <nav class="transparent z-depth-0">
+        <div class="nav-wrapper" style="display: flex;">
+            <div style="display: inline-block;width: 15rem;">
+                <img class="toc" src="../pic/toc.png">
+            </div>
+            <div style="display: inline-block;margin: auto;">
+                <!-- <img class="logo-img" src="../pic/logo.png"> -->
+                <img class="logo-img" src="../pic/1.png">
+            </div>
+            <ul id="nav-mobile" class="right">
+                <!-- <li>
+                    <a class="nav-in" href="video1.html" style="width: 9rem;">
+                        <object style="width: 1.8rem;vertical-align: middle;" data="../pic/save.svg"></object>&nbsp;容量设置</a>
+                </li> -->
+                <li id="occupation1" style="display: none;">
+                    <a class="nav-in" id="video1" style="width: 9rem;">
+                        <object style="width: 1.8rem;vertical-align: middle;" data="../pic/camera.svg"></object><span class="hide-on-med-and-down">&nbsp;录像设置</span></a>
+                </li>
+                <div id="occupation2" style="width: 9rem;display: inline-block;">1</div>
+                <li>
+                    <a class="nav-in" href="1networking.html">
+                        <object style="width: 1.8rem;vertical-align: middle;" data="../pic/hmu.svg"></object><span class="hide-on-med-and-down">&nbsp;HMU</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="col l10 offset-l1 m12 s12" style="margin-top: 6rem;">
+        <div id="test1" class="col s12 m12 l12">
+            <h4 id="pageTitle" class="center" style="margin-bottom: 3rem;">请选择摄像机查看详细信息</h4>
+            <div id="camList" class="col l3 m4 s12 card-panel z-depth-0 cam-left">
+                <ul id="menu" class="cam-menu">
+                    <li class="cam-list">
+                        <img class="mobile-back" src="../pic/back.png">
+                        <span class="mobile-back-text">摄像机列表</span>
+                    </li>
+                    <li class="cam-info" style="display: none;">
+                        <!-- <a class="waves-effect selected" onclick="cameraSetting(this)" data-type="new">摄像机 1</a> -->
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="cam-right-default">请选择您要查看的摄像机，无摄像机请添加</div> -->
+
+            <div class="cam-right col l6 m8 s12" style="display: none;">
+                <form action="" id="camera1" data-type="new">
+                    <div class="input-field" style="display: none;">
+                        <input type="text" name="cameraId" readonly id="cameraId" value="">
+                        <label for="cameraId">摄像机ID</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="cameraName" id="cameraName">
+                        <label for="cameraName">摄像机名称
+                            <span style="color: red;">&nbsp;*</span>
+                        </label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="rtspUrl" id="rtspUrl">
+                        <label for="rtspUrl">RTSP地址
+                            <span style="color: red;">&nbsp;*</span>
+                        </label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="serverUrl" id="serverUrl">
+                        <label for="serverUrl">服务地址
+                            <span style="color: red;">&nbsp;*</span>
+                        </label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="streamId" readonly id="streamId">
+                        <label for="streamId">码流ID</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="streamName" readonly id="streamName">
+                        <label for="streamName">通道名称</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="rtmpUrl" readonly id="rtmpUrl">
+                        <label for="rtmpUrl">RTMP播放地址</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="hlsUrl" readonly id="hlsUrl">
+                        <label for="hlsUrl">HLS播放地址</label>
+                    </div>
+                    <!-- <div class="input-field">
+                        <input type="text" name="userName" id="userName">
+                        <label for="userName">用户名</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="password" id="password">
+                        <label for="password">密码</label>
+                    </div> -->
+                    <!-- <div class="input-field">
+                        <input type="text" name="mqtt" id="mqtt">
+                        <label for="mqtt">MQTT地址</label>
+                    </div> -->
+                </form>
+                <div class="button-grop">
+                    <a id="submit1" class="waves-effect waves-light btn z-depth-1">保存</a>
+                    <!-- <a id="addCamera" class="waves-effect btn z-depth-1">新增</a> -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="modalAddCamera" class="modal">
+        <div class="modal-content">
+            <h4>详情</h4>
+            <p>保存成功！</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">确定</a>
+        </div>
+    </div>
+    <div id="modalDeleteCamera" class="modal">
+        <div class="modal-content">
+            <h4>详情</h4>
+            <p>删除成功！</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">确定</a>
+        </div>
+    </div>
+    <footer>
+        <!-- <span>Copyright © 2018 华远云联数据科技有限公司</span> -->
+    </footer>
+    <script src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/lib/materialize.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/cloudvideo.js"></script>
+</body>
+
+</html>

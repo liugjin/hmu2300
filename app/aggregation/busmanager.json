@@ -1,0 +1,83 @@
+{
+	"mqtt": {
+		"host": "lab.huayuan-iot.com",
+		"port": "1883",
+		"user": "",
+		"password": "",
+		"clientid": "0",
+		"cleansession": false,
+		"store": ".memory",
+		"qos": 0
+	},
+	"web": {
+		"username": "admin",
+		"password": "admin",
+		"port": "8090",
+		"monitoringunit": {
+			"path": ""
+		},
+		"elementlib": {
+			"server": "http://lab.huayuan-iot.com:6789/"
+		},
+		"pages": {
+			"path": "$PRJ_ROOT/app/aggregation/pages/"
+		},
+		"video": {
+			"path": "$PRJ_ROOT/app/aggregation/video.json",
+			"max": 2,
+			"Sync": {
+				"user": "",
+				"host": "",
+				"path": ""
+			}
+		},
+		"net_checking": {
+      "timeout":5,
+			"do_times": 1,
+			"hosts": [
+				"baidu.com:80"
+			]
+		},
+		"restart": {
+			"duration": 600,
+			"times": 0,
+			"max": 5
+		}
+	},
+	"systemserver": {
+		"uri": "127.0.0.1:9988",
+		"vals": "at_file=/dev/ttyUSB5\u0026at_timeout=60000"
+	},
+	"model": "pc",
+	"cache": {
+		"dir": "/mnt/sda1/cache/",
+		"maxFile": 100,
+		"maxMsg": 100
+	},
+	"startlogpath": "/mnt/sda1/restart.log",
+	"capture": [
+		{
+			"su": "lan1",
+			"signals": [
+				{
+					"topic": "di1/val",
+					"value": "1"
+				},
+				{
+					"topic": "di2/val",
+					"value": "1"
+				}
+			]
+		}
+	],
+	"autolock": [
+		{
+			"topic": "ioblock/set-do1",
+			"setvalue": 0
+		},
+		{
+			"topic": "do2/val",
+			"setvalue": 0
+		}
+	]
+}

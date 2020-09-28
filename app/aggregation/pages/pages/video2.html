@@ -1,0 +1,124 @@
+<!-- 配置信息页面 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>录像查看</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <link rel="stylesheet" href="../css/jquery.datetimepicker.css">
+    <style>
+        .xdsoft_datetimepicker .xdsoft_year {
+            white-space: nowrap;
+        }
+
+        .xdsoft_datetimepicker.xdsoft_inline {
+            border: 0;
+        }
+
+
+        .card {
+            height: auto;
+            margin: 0.5rem 0 -0.5rem 0;
+        }
+
+        #videoList {
+            padding: 0 0 0 6rem !important;
+            text-align: center;
+        }
+
+        .video-card {
+            height: auto;
+            padding: 0.5rem !important;
+        }
+
+        .video-card .card-image {
+            height: auto;
+            width: 100%;
+        }
+
+        .video-card .card-image img {
+            height: 100%;
+        }
+
+        .video-card .card-content {
+            padding: 0 1rem;
+            border-top: 1px solid #000000;
+        }
+
+        .xdsoft_datetimepicker .xdsoft_label {
+            z-index: 9 !important;
+        }
+        .modal .modal-content{
+            padding: 0 !important;
+        }
+    </style>
+
+</head>
+
+<body class="row">
+    <header class="header">
+    </header>
+    <nav class="transparent z-depth-0">
+        <div class="nav-wrapper" style="display: flex;">
+            <div style="display: inline-block;width: 14rem;">
+                <img class="toc" src="../pic/toc.png">
+            </div>
+            <div style="display: inline-block;margin: auto;">
+                <!-- <img class="logo-img" src="../pic/logo.png"> -->
+                <img class="logo-img" src="../pic/1.png">
+            </div>
+            <ul id="nav-mobile" class="right">
+                <li>
+                    <a class="nav-in" href="cloudvideo.html">
+                        <object style="width: 1.8rem;" data="../pic/cloud.svg"></object><span class="hide-on-med-and-down">&nbsp;云视频</span></a>
+                </li>
+                <li>
+                    <a class="nav-in" href="1networking.html">
+                        <object style="width: 1.8rem;" data="../pic/hmu.svg"></object>&nbsp;HMU</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main class="col l12 m12 s12" style="margin-top: 6rem;">
+        <div id="test1" class="col s12 m12 l12">
+
+            <h4 id="pageTitle" class="center" style="margin-bottom: 3rem;padding: 0 6rem;">
+                <a href="cloudvideo.html" class="btn left" style="margin-bottom: 3px;font-size: 1rem;padding: 0;width: 5rem;">返回 </a>
+                <span style="margin-left: -5rem;">录像查看</span>
+            </h4>
+
+            <div id="videoList" class="col l3 m4 s12 card-panel z-depth-0">
+                <div class="card-panel">
+                    <input type="text" id="datetimepicker3" />
+                </div>
+            </div>
+
+            <div class="cam-right col l8 m8 s12">
+            </div>
+
+        </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content" id="videoSrc">
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">关闭</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>Copyright © 2018 华远云联数据科技有限公司</span>
+    </footer>
+
+    <script src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/lib/materialize.min.js"></script>
+    <script src="../js/lib/jquery.datetimepicker.full.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/video2.js"></script>
+</body>
+
+</html>

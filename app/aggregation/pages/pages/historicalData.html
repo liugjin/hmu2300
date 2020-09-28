@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>历史数据</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/historicalData.css">
+</head>
+
+<body>
+    <div id="body-box">
+        <div class="page-title">
+            <div class="title-box">
+                <a href="homePage.html" class="button">
+                    <img src="../pic/collectionPage/1234.svg" width="32" height="32">
+                </a>
+                <span class="title">历史数据</span>
+            </div>
+            <ul class="deviceType-box">
+                <li class="list-content" v-for="(data, index) in typeData" v-if="data.devicelist.length>0"
+                    @click="getDeviceList(data,index)">
+                    <div class="type-icon-box">
+                        <div class="type-icon" :class="{'type-bakc':typeSubscript==index}">
+                            <img v-bind:src="data.typeIconUrl" width="60%" height="60%">
+                        </div>
+                    </div>
+                    <div class="type-name">{{data.name}}</div>
+                </li>
+            </ul>
+        </div>
+        <div class="page-content">
+            <div class="content">
+                <ul class="list-box">
+                    <li class="list-content" v-for="(data, index) in devicelist" @click="setDeviceBox(data,index)"
+                        :class="{'li-back':listSubscript==index}">
+                        <img v-bind:src="data.typeIconUrl" width="30px" height="30px">
+                        <span class="device-name">{{data.name}}</span>
+                    </li>
+                </ul>
+                <div class="details-content" v-show="devicelistData.typeid !='601'">
+                    <div class="query">
+                        <ul class="query-condition">
+                            <li class="query-li">
+                                <div class="query-box">
+                                    <span>开始时间</span>
+                                    <input type="date" value="" v-model="startDate" />
+                                </div>
+                            </li>
+                            <li class="query-li">
+                                <div class="query-box">
+                                    <span>结束时间</span>
+                                    <input type="date" value="" v-model="endDate" />
+                                </div>
+                            </li>
+                            <li class="query-li-btn">
+                                <div id="container">
+                                    <div class="search6 bar6">
+                                        <form>
+                                            <input type="text" placeholder="请输入设备ID" v-model="searchid" />
+                                            <a type="submit" @click="search()"></a>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="query-btn">
+                                    <a class="waves-effect waves-light btn" @click="getHistoricalData()">查询</a>
+                                </div>
+                                <div class="query-btn">
+                                    <a class="waves-effect waves-light btn" @click="tableToExcel()">导出</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="query-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <!-- <th>序号</th> -->
+                                    <th>设备ID</th>
+                                    <th>数据名称</th>
+                                    <th>数值</th>
+                                    <!-- <th>单位</th> -->
+                                    <th>采集时间</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(data, index) in historicalData">
+                                    <!-- <td>{{data.ID}}</td> -->
+                                    <td>{{data.DeviceID}}</td>
+                                    <td>{{data.ChannelName}}</td>
+                                    <td>{{data.DataValue}}</td>
+                                    <!-- <td>{{data.DataUnit}}</td> -->
+                                    <td>{{data.AcqTime}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="paging">
+                        <ul class="paging-box">
+                            <li>
+                                <span style="display: inline-block;width: 56px">总条数</span>
+                                <span>{{totalNumber}}</span>
+                            </li>
+                        </ul>
+                        <ul class="paging-box">
+                            <li>
+                                <span style="display: inline-block;width: 56px">条数</span>
+                                <input type="number" value="" v-model="queryNumber" />
+                            </li>
+                            <li @click="getHistoricalData()">确定</li>
+                        </ul>
+                        <ul class="paging-box">
+                            <li>
+                                <span style="display: inline-block;width: 40px">页数</span>
+                                <span>{{newPageIndex}}/{{pagesNumber}}</span>
+                            </li>
+                        </ul>
+                        <ul class="paging-box">
+                            <li @click="pageTurning('upper')">上一页</li>
+                            <li @click="pageTurning('lower')">下一页</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="details-content" v-show="devicelistData.typeid =='601'">
+                    <ul class="info-pic">
+                        <li class="pic-li" v-for="(data, index) in vedioList">
+                            <a v-bind:href="data.img" target="_blank">
+                                <img v-bind:src="data.img" width="100%" height="100%">
+                            </a>
+                            <p>{{data.time}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/lib/materialize.min.js"></script>
+    <script src="../js/lib/vue.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/historicalData.js"></script>
+</body>
+
+</html>

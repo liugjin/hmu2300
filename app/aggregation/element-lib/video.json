@@ -1,0 +1,60 @@
+{
+    "id": "video", 
+    "name": "Video", 
+    "type": "ModbusElement", 
+    "version": "1.0.0", 
+    "description": "test", 
+    "path": "$PRJ_ROOT/app/aggregation/element-lib/video.json", 
+    "channels": [
+        {
+            "id":"image",
+            "name":"图片",
+            "datatype":"string",
+            "value":null
+        },
+        {
+            "id":"video",
+            "name":"视频",
+            "datatype":"string",
+            "value":null
+        }
+    ], 
+    "mappings": [
+        {
+            "protocol": "protocol-camera", 
+            "type": "ModbusSerialProtocol", 
+            "setting": {
+                "throttle": 0, 
+                "optimized": false, 
+                "stepDiff": 0, 
+                "maxDiff": 0, 
+                "cov": 0
+            }, 
+            "mapping": null
+        },
+        {
+            "protocol": "protocol-camera-rstp", 
+            "type": "RstpProtocol", 
+            "setting": {
+            }, 
+            "mapping": [
+                {
+                    "channel":"image",
+                    "size":"640x480",
+                    "format":"mjpeg",
+                    "pos_time":"00:00:00",
+                    "vframes":1
+                },
+                {
+                    "channel":"video",
+                    "size":"640x480",
+                    "format":"mp4",
+                    "pos_time":"00:00:00",
+                    "duration":10,
+                    "fps":20
+                }
+            ]
+        }
+
+    ]
+}

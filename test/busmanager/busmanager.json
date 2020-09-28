@@ -1,0 +1,30 @@
+{
+	"mqtt": {
+		"host": "192.168.0.22",
+		"port": "1883",
+		"user": "",
+		"password": "",
+		"clientid": "hmu000001",
+		"cleansession": false,
+		"store": ":memory:",
+		"qos": 0
+	},
+	"appserver": {
+		"address": "127.0.0.1:50555"
+	},
+	"web": {
+		"username": "admin",
+		"password": "admin",
+		"port": "8090",
+		"monitoringunit": {
+			"path": "../../app/appmanager/src/monitoring-units.json"
+		},
+		"elementlib": {
+			"path": "../../app/appmanager/src/element-lib/"
+		}
+	},
+	"systemserver": {
+		"host": "192.168.0.22",
+		"port": "9988"
+	}
+}

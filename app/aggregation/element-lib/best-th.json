@@ -1,0 +1,136 @@
+{
+    "name": "best-th",
+    "type": "ModbusElement",
+    "channels": [
+      {
+        "id": "temperature",
+        "name": "温度",
+        "datatype": "int",
+        "value": null
+      },
+      {
+        "id": "humidity",
+        "name": "湿度",
+        "datatype": "int",
+        "value": null
+      }
+    ],
+    "version": "0.0.1",
+    "description": "best-th channels info",
+    "mappings": [
+      {
+        "protocol": "protocol-modbus-tcp",
+        "type": "ModbusTcpClientProtocol",
+        "setting": {
+          "throttle": 1000,
+          "optimized": true,
+          "stepDiff": 3,
+          "maxDiff": 122,
+          "cov": 0.01
+        },
+        "mapping": [
+          {
+            "code": 3,
+            "address": 0,
+            "quantity": 1,
+            "format": null,
+            "expression": "val/100",
+            "channel": "temperature"
+          },
+          {
+            "code": 3,
+            "address": 1,
+            "quantity": 1,
+            "expression": "val/100",
+            "channel": "humidity"
+          }
+        ]
+      },
+      {
+        "protocol": "protocol-modbus-serial",
+        "type": "ModbusSerialProtocol",
+        "setting": {
+          "throttle": 1000,
+          "optimized": true,
+          "stepDiff": 3,
+          "maxDiff": 122,
+          "cov": 0.01
+        },
+        "mapping": [
+          {
+            "code": 3,
+            "address": 0,
+            "quantity": 1,
+            "format": null,
+            "expression": "val/100",
+            "channel": "temperature"
+          },
+          {
+            "code": 3,
+            "address": 1,
+            "quantity": 1,
+            "expression": "val/100",
+            "channel": "humidity"
+          }
+        ]
+      },
+      {
+        "protocol": "protocol-modbus-rtu-tcp",
+        "type": "ModbusRtuTcpClientProtocol",
+        "setting": {
+          "throttle": 1000,
+          "optimized": true,
+          "stepDiff": 3,
+          "maxDiff": 122,
+          "cov": 0.01
+        },
+        "mapping": [
+          {
+            "code": 3,
+            "address": 0,
+            "quantity": 1,
+            "format": null,
+            "expression": "val/100",
+            "channel": "temperature"
+          },
+          {
+            "code": 3,
+            "address": 1,
+            "quantity": 1,
+            "expression": "val/100",
+            "channel": "humidity"
+          }
+        ]
+      },
+      {
+        "protocol": "protocol-modbus-dtu",
+        "type": "ModbusDtuProtocol",
+        "setting": {
+          "throttle": 1000,
+          "optimized": true,
+          "stepDiff": 3,
+          "maxDiff": 122,
+          "cov": 0.01
+        },
+        "mapping": [
+          {
+            "code": 3,
+            "address": 0,
+            "quantity": 1,
+            "format": null,
+            "expression": "val/100",
+            "channel": "temperature"
+          },
+          {
+            "code": 3,
+            "address": 1,
+            "quantity": 1,
+            "expression": "val/100",
+            "channel": "humidity"
+          }
+        ]
+      }
+    ],
+    "path": "../element-lib/element-sfere",
+    "id": "best-th"
+  }

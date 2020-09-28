@@ -1,0 +1,141 @@
+<!-- 配置信息页面 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>自定义设备库</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="row">
+    <header class="header">
+        <div style="display: inline-block;margin: auto;">
+            <!-- <img class="logo-img" src="../pic/logo.png"> -->
+            <img class="logo-img" src="../pic/1.png">
+        </div>
+    </header>
+
+    <main class="col l12">
+        <div class="col l4">
+            <ul class="collection" id="equipLibrary">
+                <li class="collection-item">自定义设备库
+                    <input type="file" id="upFile" style="display: none;width: 0;" accept="application/json" multiple="multiple">
+                </li>
+                <nav>
+                    <div class="nav-wrapper">
+                        <ul>
+                            <li> <a id="add-equip">
+                                    <i class="material-icons" style="vertical-align: middle;margin-bottom: 2px;display: inline-block;">add</i><span
+                                        class="hide-on-med-and-down">增加</span>
+                                </a>
+                            </li>
+                            <li> <a id="importJson">
+                                    <i class="material-icons" style="vertical-align: middle;margin-bottom: 2px;display: inline-block;">navigation</i><span
+                                        class="hide-on-med-and-down">导入</span>
+                                </a>
+                            </li>
+                            <li> <a id="exportJson">
+                                    <i class="material-icons" style="vertical-align: middle;margin-bottom: 2px;display: inline-block;">play_for_work</i><span
+                                        class="hide-on-med-and-down">导出</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </ul>
+        </div>
+
+
+        <div class="col l8">
+            <div class=" col l12 card-panel">
+                <div class="input-field col l3">
+                    <label for="muid">设备库ID</label>
+                    <input id="muid" type="text" name="muid" placeholder="设备库ID">
+                </div>
+                <div class="input-field col l3">
+                    <label for="muname">设备库名称</label>
+                    <input id="muname" type="text" name="muname" placeholder="设备库名称">
+                </div>
+                <div class="input-field col l3">
+                    <select name="mutype" id="mutype">
+                        <option value="ModbusElement">Modbus</option>
+                        <option value="PMBusElement">电总</option>
+                        <option value="OilMachineElement">油机</option>
+                        <option value="HMUElement">HMU</option>
+                        <option value="CameraUElement">摄像机</option>
+                        <option value="SnmpManagerElement">Snmp</option>
+                        <option value="opcElement">opc</option>
+                    </select>
+                    <label for="mutype">设备库类型</label>
+                </div>
+                <div class="input-field col l3">
+                    <label for="yz">变化量上送阈值</label>
+                    <input id="yz" type="text" name="yz" placeholder="变化量上送阈值">
+                </div>
+            </div>
+            <!-- 列表 -->
+            <div class="col l12 card-panel">
+                <div class="col l12">数据点信息</div>
+                <table class="table highlight striped" rules="none" id="suset">
+                    <tr id="equipTable" data-id="">
+                        <th class="num center">序号</th>
+
+                        <th class="data-id">数据点ID</th>
+                        <th class="data-name">数据点名称</th>
+                        <th class="data-type">数据类型</th>
+                        <th class="data-value">默认值</th>
+
+                        <th class="data-code">寄存器类型</th>
+                        <th class="data-address">起始地址</th>
+                        <th class="data-quantity">长度</th>
+                        <th class="data-format">数据格式</th>
+
+                        <th class="data-cid1">CID 1</th>
+                        <th class="data-cid2">CID 2</th>
+                        <th class="data-command">命令信息</th>
+                        <th class="data-offset">偏移量</th>
+                        <th class="data-length">长度</th>
+                        
+                        <th class="data-oid">oid</th>
+                        <th class="data-nodeId">nodeid</th>
+                        <th class="num-style">计算表达式</th>
+                        <th class="delete center">操作</th>
+                    </tr>
+                </table>
+                <a class="waves-effect waves-light btn" id="addata-point">增加数据点</a>
+                <a class="waves-effect waves-light btn" id="copylast-point">复制上一数据点</a>
+            </div>
+            <div class="col l12 card-panel">
+                <a class="waves-effect waves-light btn" id="save">保存</a>
+                <a class="waves-effect waves-light btn" id="delete">删除</a>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <!-- <span>Copyright © 2018 华远云联数据科技有限公司</span> -->
+    </footer>
+    <!-- Modal Structure -->
+    <div id="publicModal" class="modal">
+        <div class="modal-content">
+            <h4 id="pmTitle"></h4>
+        </div>
+        <div class="modal-footer" id="modalType" data-type="">
+            <a href="#!" id="pmCancel" class=" modal-action modal-close waves-effect waves-green btn-flat">取消</a>
+            <a href="#!" id="pmEnter" data-type="false" class=" modal-action modal-close waves-effect waves-green btn-flat">确认</a>
+        </div>
+    </div>
+
+    <script src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/lib/materialize.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/custom.js"></script>
+</body>
+
+</html>

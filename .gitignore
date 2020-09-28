@@ -1,0 +1,15 @@
+*.log
+var/*
+publish/*
+pages/.vscode
+app/appmanager/src/src
+app/busmanager/src/src
+app/portmanager/src/src
+app/appmanager/src/appserver
+app/busmanager/src/busserver
+app/portmanager/src/portserver
+app/appmanager/src/debug
+app/busmanager/src/debug
+app/portmanager/src/debug
+app/aggregation/debug
+app/aggregation/aggregation

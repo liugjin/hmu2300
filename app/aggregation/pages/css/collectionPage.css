@@ -1,0 +1,388 @@
+@font-face{
+    font-family: 'gbk';
+    src: url(../fonts/gbk.ttf);
+}
+a{
+    color: #10A957
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 968px;
+    min-height: 100vh;
+    margin-bottom: 0 !important;
+}
+#body-box{
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;
+}
+.type-list-box{
+    width: 100%;
+    height: 20%;
+    margin-bottom: 2%;
+    border-radius: 4px;
+}
+
+.type-list-box .title-box{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.type-list-box .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4%;
+    height: 100%;
+ }
+
+ .type-list-box .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    height: 100%;
+    font-size: 36px;
+    font-family: 'gbk';
+    margin-right: 4%;
+}
+
+.type-list-box .deviceType-box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    overflow-x: auto;
+}
+
+
+
+
+.type-list-box .list-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.type-list-box .type-icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+.type-list-box .type-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #DBDBDB;
+    background: #f4f4f4;
+    border-radius: 50%;
+}
+
+.type-list-box .type-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    font-size: 16px;
+    color: #9E9E9E;
+}
+
+
+
+.device-list-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    margin: 0 5%;
+    padding: 0 2%;
+    background: #FFFFFF
+}
+
+.device-list-content .list-box{
+    width: 20%;
+    height: 90%;
+    overflow-y: auto;
+    border: 1px solid #DBDBDB;
+    margin: 0;
+}
+
+
+
+.device-list-content .list-content{
+    display: flex;
+    width: 100%;
+    height: 8%;
+    padding-left: 6%;
+    border-bottom: 1px solid #DBDBDB;
+    cursor: pointer
+}
+
+.device-list-content .list-device-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+.device-list-content .list-device-state{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+.device-list-content .state-box{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: sandybrown;
+}
+
+.device-list-content .device-name{
+    font-size: 16px;
+    margin-left: 3%;
+}
+
+
+.device-list-content .details-content{
+    display: flex;
+    width: 80%;
+    height: 90%;
+}
+
+.device-list-content .devicePic-box{
+    width: 30%;
+    height: 100%;
+}
+
+.device-list-content .device-pic{
+    width: 100%;
+    height: 80%;
+    text-align: center
+}
+
+.device-list-content .device-id{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+
+.device-list-content .id-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    font-size: 26px;
+    font-family: 'gbk';
+}
+
+.device-list-content .control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    font-size: 16px;
+}
+.device-list-content .control-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background: #10A957;
+    cursor: pointer;
+}
+
+.device-list-content .info-details{
+    width: 70%;
+    height: 100%;
+}
+
+.device-list-content .info-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+    height: 20%;
+    font-size: 16px;
+    margin-left: 5%;
+}
+
+.device-list-content .info-title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 40%;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 16px;
+    background: #10A957;
+}
+
+.device-list-content .frequency{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 50%;
+    margin-right: 3%;
+}
+
+.device-list-content label,.device-list-content select {
+    width: 100%;
+    height: 50%;
+}
+
+.device-list-content label{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.device-list-content select{
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    padding: 0;
+}
+
+.device-list-content select:focus{
+    border: none;
+    outline: 1px solid #DBDBDB
+}
+
+
+.device-list-content .info-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 96%;
+    height: 80%;
+    overflow-y: auto;
+    margin: 0 auto;
+}
+
+.device-list-content .info-content li{
+    width: 30%;
+    height: 14%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+}
+.device-list-content .data-name,.device-list-content .data-value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.device-list-content .data-name{
+    font-size: 16px;
+    color: #9E9E9E;
+}
+.device-list-content .data-value{
+    font-size: 26px;
+}
+
+
+.device-list-content .info-pic{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 81%;
+    overflow-y: auto;
+}
+
+
+.device-list-content .pic-li{
+    width: 28%;
+    height: 24%;
+    margin: 2%;
+    border-radius: 4px;
+}
+.device-list-content .pic-li div{
+    width: 100%;
+    height: 80%;
+}
+.device-list-content .pic-li p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+}
+
+
+.li-back{
+    background: #FAFAFA;
+}
+
+.type-bakc{
+    background: #10A957 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

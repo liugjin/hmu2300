@@ -1,0 +1,33 @@
+// Copyright 2018 huayuan-iot
+//
+// Author: lynn
+// Date: 2018/05/17
+// Despcription: app manager pb go file generator
+//
+
+// protoc -I appmanager/ appmanager/appmanager.proto --go_out=plugins=grpc:appmanager
+
+syntax = "proto3";
+
+package apppb;
+
+// The App service definition.
+service App {
+  // Notify notify
+  rpc Notify (NotifyRequest) returns (NotifyReply) {}
+}
+
+// The request message containing publish info.
+message NotifyRequest {
+  string topic = 1;
+  string payload = 2;
+  string caller = 3;
+}
+
+// The response message containing publish response
+message NotifyReply {
+  int32 status = 1;
+  string message = 2;
+}
+
+

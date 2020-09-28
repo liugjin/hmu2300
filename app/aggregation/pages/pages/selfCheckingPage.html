@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>设备自检</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/selfCheckingPage.css">
+</head>
+
+<body class="body-box">
+    <div id="body-box">
+        <div class="page-title">
+            <div class="title-box">
+                <a href="homePage.html" class="button">
+                    <img src="../pic/collectionPage/1234.svg" width="32" height="32">
+                </a>
+                <span class="title">设备自检</span>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="operation-box">
+                <div class="operation">
+                    <div class="operation-pic">
+                        <img src="../pic/selfCheckingPage/checking.gif" width="60%" height="84%">
+                    </div>
+                    <div class="operation-btn">
+                        <div class="tips-title">
+                            <span v-show="!start">点击下方按钮开始设备自检</span>
+                            <div class="container" v-show="start">
+                                <div class="skills speed" v-bind:style="'width:'+ barLength +'%;'">{{barLength}}%</div>
+                            </div>
+                        </div>
+                        <div class="operation-button">
+                            <a class="waves-effect waves-light btn" @click="getDeviceList()">开始自检</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-box" v-show="start">
+                <div class="feedback-title">自检情况反馈</div>
+                <div class="feedback-content">
+                    <div class="feedback-content-box" v-for="(data, index) in selfscan">
+                        <img v-bind:src="data.icon" width="30px" height="30px">
+                        <span v-bind:style="{color:(data.state==1?'#10A957':'#FF5A58')}">{{data.name}}&nbsp;{{data.state==1?"正常":"异常"}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/lib/materialize.min.js"></script>
+    <script src="../js/lib/vue.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/selfCheckingPage.js"></script>
+</body>
+
+</html>

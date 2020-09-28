@@ -1,0 +1,61 @@
+{
+  "name": "PC台式机",
+  "type": "SnmpManagerElement",
+  "channels": [
+    {
+      "id": "sysdesc",
+      "name": "系统描述",
+      "datatype": "string",
+      "value": null,
+      "oid": ".1.3.6.1.2.1.1.1.0",
+      "channel": "sysdesc",
+      "$$hashKey": "object:3035"
+    },
+    {
+      "id": "sysname",
+      "name": "系统名称",
+      "datatype": "string",
+      "value": null,
+      "oid": ".1.3.6.1.2.1.1.5.0",
+      "channel": "sysname",
+      "$$hashKey": "object:3036"
+    },
+    {
+      "id": "sysServices",
+      "name": "系统服务数",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.2.1.1.7.0",
+      "channel": "sysServices",
+      "$$hashKey": "object:3037"
+    }
+  ],
+  "id": "server",
+  "version": "0.0.1",
+  "description": "server channels info",
+  "mappings": [
+    {
+      "protocol": "protocol-snmp-manager",
+      "type": "SnmpManagerProtocol",
+      "setting": {
+        "throttle": 1000
+      },
+      "mapping": [
+        {
+          "oid": ".1.3.6.1.2.1.1.1.0",
+          "channel": "sysdesc"
+        },
+        {
+          "oid": ".1.3.6.1.2.1.1.5.0",
+          "channel": "sysname"
+        },
+        {
+          "oid": ".1.3.6.1.2.1.1.7.0",
+          "channel": "sysServices"
+        }
+      ]
+    }
+  ],
+  "path": "../element-lib/element-snmp-manager",
+  "$$hashKey": "object:20"
+}

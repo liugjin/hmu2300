@@ -1,0 +1,864 @@
+{
+  "type": "PMBusElement",
+  "name": "DME-AIR",
+  "channels": [
+    {
+      "id": "indoor-temperature",
+      "name": "室内温度",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 66,
+      "offset": 0,
+      "length": 2,
+      "expression": "val/10",
+      "channel": "indoor-temperature",
+      "$$hashKey": "object:736"
+    },
+    {
+      "id": "indoor-humidity",
+      "name": "室内湿度",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 66,
+      "offset": 2,
+      "length": 2,
+      "expression": "val/10",
+      "channel": "indoor-humidity",
+      "$$hashKey": "object:737"
+    },
+    {
+      "id": "outdoor-temperature",
+      "name": "室外温度",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 66,
+      "offset": 4,
+      "length": 2,
+      "expression": "val/10",
+      "channel": "outdoor-temperature",
+      "$$hashKey": "object:738"
+    },
+    {
+      "id": "run-status-10",
+      "name": "开关机状态",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 1,
+      "length": 1,
+      "expression": "val&1",
+      "channel": "run-status-10",
+      "$$hashKey": "object:739"
+    },
+    {
+      "id": "run-status-11",
+      "name": "风机状态",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 1,
+      "length": 1,
+      "expression": "val>>1&1",
+      "channel": "run-status-11",
+      "$$hashKey": "object:740"
+    },
+    {
+      "id": "run-status-12",
+      "name": "制冷状态",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 1,
+      "length": 1,
+      "expression": "val>>2&1",
+      "channel": "run-status-12",
+      "$$hashKey": "object:741"
+    },
+    {
+      "id": "run-status-13",
+      "name": "加热状态",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 1,
+      "length": 1,
+      "expression": "val>>3&1",
+      "channel": "run-status-13",
+      "$$hashKey": "object:742"
+    },
+    {
+      "id": "run-status-14",
+      "name": "加湿状态",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 1,
+      "length": 1,
+      "expression": "val>>4&1",
+      "channel": "run-status-14",
+      "$$hashKey": "object:743"
+    },
+    {
+      "id": "run-status-15",
+      "name": "除湿状态",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 1,
+      "length": 1,
+      "expression": "val>>5&1",
+      "channel": "run-status-15",
+      "$$hashKey": "object:744"
+    },
+    {
+      "id": "alarm-status-10",
+      "name": "高压报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 1,
+      "length": 1,
+      "expression": "val&1",
+      "channel": "alarm-status-10",
+      "$$hashKey": "object:745"
+    },
+    {
+      "id": "alarm-status-11",
+      "name": "低压报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 1,
+      "length": 1,
+      "expression": "val>>1&1",
+      "channel": "alarm-status-11",
+      "$$hashKey": "object:746"
+    },
+    {
+      "id": "alarm-status-12",
+      "name": "高温报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 1,
+      "length": 1,
+      "expression": "val>>2&1",
+      "channel": "alarm-status-12",
+      "$$hashKey": "object:747"
+    },
+    {
+      "id": "alarm-status-13",
+      "name": "低温报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 1,
+      "length": 1,
+      "expression": "val>>3&1",
+      "channel": "alarm-status-13",
+      "$$hashKey": "object:748"
+    },
+    {
+      "id": "alarm-status-14",
+      "name": "高湿报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 1,
+      "length": 1,
+      "expression": "val>>4&1",
+      "channel": "alarm-status-14",
+      "$$hashKey": "object:749"
+    },
+    {
+      "id": "alarm-status-15",
+      "name": "低湿报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 1,
+      "length": 1,
+      "expression": "val>>5&1",
+      "channel": "alarm-status-15",
+      "$$hashKey": "object:750"
+    },
+    {
+      "id": "alarm-status-16",
+      "name": "电源故障报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 3,
+      "length": 1,
+      "expression": "val>>6&1",
+      "channel": "alarm-status-16",
+      "$$hashKey": "object:751"
+    },
+    {
+      "id": "alarm-status-17",
+      "name": "短周期报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 3,
+      "length": 1,
+      "expression": "val>>7&1",
+      "channel": "alarm-status-17",
+      "$$hashKey": "object:752"
+    },
+    {
+      "id": "alarm-status-20",
+      "name": "用户自定义1报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 4,
+      "length": 1,
+      "expression": "val&1",
+      "channel": "alarm-status-20",
+      "$$hashKey": "object:753"
+    },
+    {
+      "id": "alarm-status-21",
+      "name": "用户自定义2报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 4,
+      "length": 1,
+      "expression": "val>>1&1",
+      "channel": "alarm-status-21",
+      "$$hashKey": "object:754"
+    },
+    {
+      "id": "alarm-status-22",
+      "name": "主风机维护报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 4,
+      "length": 1,
+      "expression": "val>>2&1",
+      "channel": "alarm-status-22",
+      "$$hashKey": "object:755"
+    },
+    {
+      "id": "alarm-status-23",
+      "name": "加湿器维护报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 4,
+      "length": 1,
+      "expression": "val>>3&1",
+      "channel": "alarm-status-23",
+      "$$hashKey": "object:756"
+    },
+    {
+      "id": "alarm-status-24",
+      "name": "过滤网维护报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 4,
+      "length": 1,
+      "expression": "val>>4&1",
+      "channel": "alarm-status-24",
+      "$$hashKey": "object:757"
+    },
+    {
+      "id": "alarm-status-25",
+      "name": "通讯故障报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 4,
+      "length": 1,
+      "expression": "val>>5&1",
+      "channel": "alarm-status-25",
+      "$$hashKey": "object:758"
+    },
+    {
+      "id": "alarm-status-26",
+      "name": "盘管冻结报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 4,
+      "length": 1,
+      "expression": "val>>6&1",
+      "channel": "alarm-status-26",
+      "$$hashKey": "object:759"
+    },
+    {
+      "id": "alarm-status-27",
+      "name": "加湿器故障报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 4,
+      "length": 1,
+      "expression": "val>>7&1",
+      "channel": "alarm-status-27",
+      "$$hashKey": "object:760"
+    },
+    {
+      "id": "alarm-status-30",
+      "name": "传感器板丢失报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 5,
+      "length": 1,
+      "expression": "val&1",
+      "channel": "alarm-status-30",
+      "$$hashKey": "object:761"
+    },
+    {
+      "id": "alarm-status-31",
+      "name": "排气温度故障报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 5,
+      "length": 1,
+      "expression": "val>>1&1",
+      "channel": "alarm-status-31",
+      "$$hashKey": "object:762"
+    },
+    {
+      "id": "alarm-status-32",
+      "name": "电源丢失故障报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 5,
+      "length": 1,
+      "expression": "val>>2&1",
+      "channel": "alarm-status-32",
+      "$$hashKey": "object:763"
+    },
+    {
+      "id": "alarm-status-33",
+      "name": "电源过欠压报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 5,
+      "length": 1,
+      "expression": "val>>3&1",
+      "channel": "alarm-status-33",
+      "$$hashKey": "object:764"
+    },
+    {
+      "id": "alarm-status-34",
+      "name": "电源缺相报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 5,
+      "length": 1,
+      "expression": "val>>4&1",
+      "channel": "alarm-status-34",
+      "$$hashKey": "object:765"
+    },
+    {
+      "id": "alarm-status-35",
+      "name": "电源频率偏移报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 5,
+      "length": 1,
+      "expression": "val>>5&1",
+      "channel": "alarm-status-35",
+      "$$hashKey": "object:766"
+    },
+    {
+      "id": "alarm-status-36",
+      "name": "地板溢水报警",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 5,
+      "length": 1,
+      "expression": "val>>6&1",
+      "channel": "alarm-status-36",
+      "$$hashKey": "object:767"
+    },
+    {
+      "id": "alarm-status-37",
+      "name": "节能卡故障",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 5,
+      "length": 1,
+      "expression": "val>>7&1",
+      "channel": "alarm-status-37",
+      "$$hashKey": "object:768"
+    },
+    {
+      "id": "alarm-status-40",
+      "name": "红外加湿高水位",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 130,
+      "offset": 6,
+      "length": 1,
+      "expression": "val&1",
+      "channel": "alarm-status-40",
+      "$$hashKey": "object:769"
+    },
+    {
+      "id": "unit-status-1",
+      "name": "机组状态1",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 131,
+      "offset": 0,
+      "length": 1,
+      "expression": "val&7",
+      "channel": "unit-status-1",
+      "$$hashKey": "object:770"
+    },
+    {
+      "id": "unit-status-2",
+      "name": "机组状态2",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 131,
+      "offset": 0,
+      "length": 1,
+      "expression": "val>>3&3",
+      "channel": "unit-status-2",
+      "$$hashKey": "object:771"
+    },
+    {
+      "id": "locked-status-1",
+      "name": "高压锁定",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 131,
+      "offset": 1,
+      "length": 1,
+      "expression": "val&1",
+      "channel": "locked-status-1",
+      "$$hashKey": "object:772"
+    },
+    {
+      "id": "locked-status-2",
+      "name": "低压锁定",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 131,
+      "offset": 1,
+      "length": 1,
+      "expression": "val>>1&1",
+      "channel": "locked-status-2",
+      "$$hashKey": "object:773"
+    },
+    {
+      "id": "locked-status-3",
+      "name": "排气锁定",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 131,
+      "offset": 1,
+      "length": 1,
+      "expression": "val>>2&1",
+      "channel": "locked-status-3",
+      "$$hashKey": "object:774"
+    },
+    {
+      "id": "air-status",
+      "name": "空调状态",
+      "datatype": "int",
+      "value": null,
+      "cid1": 96,
+      "cid2": 67,
+      "offset": 0,
+      "length": 1,
+      "expression": null,
+      "channel": "air-status",
+      "$$hashKey": "object:775"
+    }
+  ],
+  "version": "0.0.1",
+  "description": "DME-AIR channels info",
+  "mappings": [
+    {
+      "protocol": "protocol-pmbus",
+      "type": "PMBusProtocol",
+      "setting": {
+        "throttle": 1000,
+        "cov": 0.1
+      },
+      "mapping": [
+        {
+          "cid1": 96,
+          "cid2": 66,
+          "offset": 0,
+          "length": 2,
+          "expression": "val/10",
+          "channel": "indoor-temperature"
+        },
+        {
+          "cid1": 96,
+          "cid2": 66,
+          "offset": 2,
+          "length": 2,
+          "expression": "val/10",
+          "channel": "indoor-humidity"
+        },
+        {
+          "cid1": 96,
+          "cid2": 66,
+          "offset": 4,
+          "length": 2,
+          "expression": "val/10",
+          "channel": "outdoor-temperature"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 1,
+          "length": 1,
+          "expression": "val&1",
+          "channel": "run-status-10"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 1,
+          "length": 1,
+          "expression": "val>>1&1",
+          "channel": "run-status-11"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 1,
+          "length": 1,
+          "expression": "val>>2&1",
+          "channel": "run-status-12"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 1,
+          "length": 1,
+          "expression": "val>>3&1",
+          "channel": "run-status-13"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 1,
+          "length": 1,
+          "expression": "val>>4&1",
+          "channel": "run-status-14"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 1,
+          "length": 1,
+          "expression": "val>>5&1",
+          "channel": "run-status-15"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 1,
+          "length": 1,
+          "expression": "val&1",
+          "channel": "alarm-status-10"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 1,
+          "length": 1,
+          "expression": "val>>1&1",
+          "channel": "alarm-status-11"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 1,
+          "length": 1,
+          "expression": "val>>2&1",
+          "channel": "alarm-status-12"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 1,
+          "length": 1,
+          "expression": "val>>3&1",
+          "channel": "alarm-status-13"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 1,
+          "length": 1,
+          "expression": "val>>4&1",
+          "channel": "alarm-status-14"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 1,
+          "length": 1,
+          "expression": "val>>5&1",
+          "channel": "alarm-status-15"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 3,
+          "length": 1,
+          "expression": "val>>6&1",
+          "channel": "alarm-status-16"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 3,
+          "length": 1,
+          "expression": "val>>7&1",
+          "channel": "alarm-status-17"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 4,
+          "length": 1,
+          "expression": "val&1",
+          "channel": "alarm-status-20"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 4,
+          "length": 1,
+          "expression": "val>>1&1",
+          "channel": "alarm-status-21"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 4,
+          "length": 1,
+          "expression": "val>>2&1",
+          "channel": "alarm-status-22"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 4,
+          "length": 1,
+          "expression": "val>>3&1",
+          "channel": "alarm-status-23"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 4,
+          "length": 1,
+          "expression": "val>>4&1",
+          "channel": "alarm-status-24"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 4,
+          "length": 1,
+          "expression": "val>>5&1",
+          "channel": "alarm-status-25"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 4,
+          "length": 1,
+          "expression": "val>>6&1",
+          "channel": "alarm-status-26"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 4,
+          "length": 1,
+          "expression": "val>>7&1",
+          "channel": "alarm-status-27"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 5,
+          "length": 1,
+          "expression": "val&1",
+          "channel": "alarm-status-30"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 5,
+          "length": 1,
+          "expression": "val>>1&1",
+          "channel": "alarm-status-31"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 5,
+          "length": 1,
+          "expression": "val>>2&1",
+          "channel": "alarm-status-32"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 5,
+          "length": 1,
+          "expression": "val>>3&1",
+          "channel": "alarm-status-33"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 5,
+          "length": 1,
+          "expression": "val>>4&1",
+          "channel": "alarm-status-34"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 5,
+          "length": 1,
+          "expression": "val>>5&1",
+          "channel": "alarm-status-35"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 5,
+          "length": 1,
+          "expression": "val>>6&1",
+          "channel": "alarm-status-36"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 5,
+          "length": 1,
+          "expression": "val>>7&1",
+          "channel": "alarm-status-37"
+        },
+        {
+          "cid1": 96,
+          "cid2": 130,
+          "offset": 6,
+          "length": 1,
+          "expression": "val&1",
+          "channel": "alarm-status-40"
+        },
+        {
+          "cid1": 96,
+          "cid2": 131,
+          "offset": 0,
+          "length": 1,
+          "expression": "val&7",
+          "channel": "unit-status-1"
+        },
+        {
+          "cid1": 96,
+          "cid2": 131,
+          "offset": 0,
+          "length": 1,
+          "expression": "val>>3&3",
+          "channel": "unit-status-2"
+        },
+        {
+          "cid1": 96,
+          "cid2": 131,
+          "offset": 1,
+          "length": 1,
+          "expression": "val&1",
+          "channel": "locked-status-1"
+        },
+        {
+          "cid1": 96,
+          "cid2": 131,
+          "offset": 1,
+          "length": 1,
+          "expression": "val>>1&1",
+          "channel": "locked-status-2"
+        },
+        {
+          "cid1": 96,
+          "cid2": 131,
+          "offset": 1,
+          "length": 1,
+          "expression": "val>>2&1",
+          "channel": "locked-status-3"
+        },
+        {
+          "cid1": 96,
+          "cid2": 67,
+          "offset": 0,
+          "length": 1,
+          "expression": null,
+          "channel": "air-status"
+        }
+      ]
+    }
+  ],
+  "path": "../element-lib/element-pmbus",
+  "id": "DME-AIR",
+  "cov": 0.1,
+  "$$hashKey": "object:721"
+}

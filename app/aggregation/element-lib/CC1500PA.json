@@ -1,0 +1,1546 @@
+{
+  "channels": [
+    {
+      "id": "temperature-failure-in-cabinet",
+      "name": "柜内温度故障",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 0,
+      "quantity": 1,
+      "expression": null,
+      "channel": "temperature-failure-in-cabinet",
+      "$$hashKey": "object:7902"
+    },
+    {
+      "id": "evaporation-temperature-fault",
+      "name": "蒸发温度故障",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 1,
+      "quantity": 1,
+      "expression": null,
+      "channel": "evaporation-temperature-fault",
+      "$$hashKey": "object:7903"
+    },
+    {
+      "id": "exhaust-temperature-failure",
+      "name": "排气温度故障",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 2,
+      "quantity": 1,
+      "expression": null,
+      "channel": "exhaust-temperature-failure",
+      "$$hashKey": "object:7904"
+    },
+    {
+      "id": "ac-overvoltage",
+      "name": "交流过压",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 3,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ac-overvoltage",
+      "$$hashKey": "object:7905"
+    },
+    {
+      "id": "ac-undervoltage",
+      "name": "交流欠压",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 4,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ac-undervoltage",
+      "$$hashKey": "object:7906"
+    },
+    {
+      "id": "exhaust-heat",
+      "name": "排气高温",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 5,
+      "quantity": 1,
+      "expression": null,
+      "channel": "exhaust-heat",
+      "$$hashKey": "object:7907"
+    },
+    {
+      "id": "remote-shutdown",
+      "name": "远程关机",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 6,
+      "quantity": 1,
+      "expression": null,
+      "channel": "remote-shutdown",
+      "$$hashKey": "object:7908"
+    },
+    {
+      "id": "high-temperature-alarm",
+      "name": "高温报警",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 7,
+      "quantity": 1,
+      "expression": null,
+      "channel": "high-temperature-alarm",
+      "$$hashKey": "object:7909"
+    },
+    {
+      "id": "low-temperature-alarm",
+      "name": "低温报警",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 8,
+      "quantity": 1,
+      "expression": null,
+      "channel": "low-temperature-alarm",
+      "$$hashKey": "object:7910"
+    },
+    {
+      "id": "anti-freezing",
+      "name": "防冻保护",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 9,
+      "quantity": 1,
+      "expression": null,
+      "channel": "anti-freezing",
+      "$$hashKey": "object:7911"
+    },
+    {
+      "id": "internal-fan-state",
+      "name": "内风机状态",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 13,
+      "quantity": 1,
+      "expression": null,
+      "channel": "internal-fan-state",
+      "$$hashKey": "object:7912"
+    },
+    {
+      "id": "compressor-state",
+      "name": "压缩机状态",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 14,
+      "quantity": 1,
+      "expression": null,
+      "channel": "compressor-state",
+      "$$hashKey": "object:7913"
+    },
+    {
+      "id": "emergency-fan-state",
+      "name": "应急风机状态",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 15,
+      "quantity": 1,
+      "expression": null,
+      "channel": "emergency-fan-state",
+      "$$hashKey": "object:7914"
+    },
+    {
+      "id": "external-fan-state",
+      "name": "外风机状态",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 16,
+      "quantity": 1,
+      "expression": null,
+      "channel": "external-fan-state",
+      "$$hashKey": "object:7915"
+    },
+    {
+      "id": "public-alert-state",
+      "name": "公共告警状态",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 17,
+      "quantity": 1,
+      "expression": null,
+      "channel": "public-alert-state",
+      "$$hashKey": "object:7916"
+    },
+    {
+      "id": "manual-mode",
+      "name": "手动模式",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 18,
+      "quantity": 1,
+      "expression": null,
+      "channel": "manual-mode",
+      "$$hashKey": "object:7917"
+    },
+    {
+      "id": "monitoring-shutdown",
+      "name": "监控关机",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 41,
+      "quantity": 1,
+      "expression": null,
+      "channel": "monitoring-shutdown",
+      "$$hashKey": "object:7918"
+    },
+    {
+      "id": "refrigeration-setting",
+      "name": "制冷设定",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 0,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "refrigeration-setting",
+      "$$hashKey": "object:7919"
+    },
+    {
+      "id": "refrigeration-backlash-setting",
+      "name": "制冷回差设定",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "refrigeration-backlash-setting",
+      "$$hashKey": "object:7920"
+    },
+    {
+      "id": "heating-setting",
+      "name": "加热设定",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 2,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "heating-setting",
+      "$$hashKey": "object:7921"
+    },
+    {
+      "id": "heating-backlash-setting",
+      "name": "加热回差设定",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 3,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "heating-backlash-setting",
+      "$$hashKey": "object:7922"
+    },
+    {
+      "id": "high-temperature-setting",
+      "name": "高温设定",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "high-temperature-setting",
+      "$$hashKey": "object:7923"
+    },
+    {
+      "id": "low-temperature-setting",
+      "name": "低温设定",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 5,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "low-temperature-setting",
+      "$$hashKey": "object:7924"
+    },
+    {
+      "id": "freeze-setting",
+      "name": "防冻设定",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 6,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "freeze-setting",
+      "$$hashKey": "object:7925"
+    },
+    {
+      "id": "exhaust-heat-setting",
+      "name": "排气高温设定",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 7,
+      "quantity": 1,
+      "expression": null,
+      "channel": "exhaust-heat-setting",
+      "$$hashKey": "object:7926"
+    },
+    {
+      "id": "overvoltage-setting",
+      "name": "过压设定",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 8,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "overvoltage-setting",
+      "$$hashKey": "object:7927"
+    },
+    {
+      "id": "undervoltage-setting",
+      "name": "欠压设定",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 9,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "undervoltage-setting",
+      "$$hashKey": "object:7928"
+    },
+    {
+      "id": "temperature-correction-in-cabinet",
+      "name": "柜内温度校正",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 10,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "temperature-correction-in-cabinet",
+      "$$hashKey": "object:7929"
+    },
+    {
+      "id": "evaporation-temperature-correction",
+      "name": "蒸发温度校正",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "evaporation-temperature-correction",
+      "$$hashKey": "object:7930"
+    },
+    {
+      "id": "exhaust-temperature-correction",
+      "name": "排气温度校正",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 12,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "exhaust-temperature-correction",
+      "$$hashKey": "object:7931"
+    },
+    {
+      "id": "ac-current-correction",
+      "name": "交流电流校正",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 13,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ac-current-correction",
+      "$$hashKey": "object:7932"
+    },
+    {
+      "id": "ac-voltage-correction",
+      "name": "交流电压校正",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 14,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ac-voltage-correction",
+      "$$hashKey": "object:7933"
+    },
+    {
+      "id": "temperature-in-cabinet",
+      "name": "柜内温度检测值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 29,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "temperature-in-cabinet",
+      "$$hashKey": "object:7934"
+    },
+    {
+      "id": "evaporation-temperature",
+      "name": "蒸发温度检测值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 30,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "evaporation-temperature",
+      "$$hashKey": "object:7935"
+    },
+    {
+      "id": "exhaust-temperature",
+      "name": "排气温度检测值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 31,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "exhaust-temperature",
+      "$$hashKey": "object:7936"
+    },
+    {
+      "id": "current",
+      "name": "电流检测值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 32,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "current",
+      "$$hashKey": "object:7937"
+    },
+    {
+      "id": "voltage",
+      "name": "电压检测值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 33,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "voltage",
+      "$$hashKey": "object:7938"
+    }
+  ],
+  "type": "ModbusElement",
+  "name": "CC1500PA空调",
+  "version": "0.0.1",
+  "description": "CC1500PA channels info",
+  "mappings": [
+    {
+      "protocol": "protocol-modbus-tcp",
+      "type": "ModbusTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 1,
+          "address": 0,
+          "quantity": 1,
+          "expression": null,
+          "channel": "temperature-failure-in-cabinet"
+        },
+        {
+          "code": 1,
+          "address": 1,
+          "quantity": 1,
+          "expression": null,
+          "channel": "evaporation-temperature-fault"
+        },
+        {
+          "code": 1,
+          "address": 2,
+          "quantity": 1,
+          "expression": null,
+          "channel": "exhaust-temperature-failure"
+        },
+        {
+          "code": 1,
+          "address": 3,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ac-overvoltage"
+        },
+        {
+          "code": 1,
+          "address": 4,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ac-undervoltage"
+        },
+        {
+          "code": 1,
+          "address": 5,
+          "quantity": 1,
+          "expression": null,
+          "channel": "exhaust-heat"
+        },
+        {
+          "code": 1,
+          "address": 6,
+          "quantity": 1,
+          "expression": null,
+          "channel": "remote-shutdown"
+        },
+        {
+          "code": 1,
+          "address": 7,
+          "quantity": 1,
+          "expression": null,
+          "channel": "high-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 8,
+          "quantity": 1,
+          "expression": null,
+          "channel": "low-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 9,
+          "quantity": 1,
+          "expression": null,
+          "channel": "anti-freezing"
+        },
+        {
+          "code": 1,
+          "address": 13,
+          "quantity": 1,
+          "expression": null,
+          "channel": "internal-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 14,
+          "quantity": 1,
+          "expression": null,
+          "channel": "compressor-state"
+        },
+        {
+          "code": 1,
+          "address": 15,
+          "quantity": 1,
+          "expression": null,
+          "channel": "emergency-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 16,
+          "quantity": 1,
+          "expression": null,
+          "channel": "external-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 17,
+          "quantity": 1,
+          "expression": null,
+          "channel": "public-alert-state"
+        },
+        {
+          "code": 1,
+          "address": 18,
+          "quantity": 1,
+          "expression": null,
+          "channel": "manual-mode"
+        },
+        {
+          "code": 1,
+          "address": 41,
+          "quantity": 1,
+          "expression": null,
+          "channel": "monitoring-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 0,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-setting"
+        },
+        {
+          "code": 3,
+          "address": 1,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-backlash-setting"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-setting"
+        },
+        {
+          "code": 3,
+          "address": 3,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-backlash-setting"
+        },
+        {
+          "code": 3,
+          "address": 4,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "high-temperature-setting"
+        },
+        {
+          "code": 3,
+          "address": 5,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "low-temperature-setting"
+        },
+        {
+          "code": 3,
+          "address": 6,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "freeze-setting"
+        },
+        {
+          "code": 3,
+          "address": 7,
+          "quantity": 1,
+          "expression": null,
+          "channel": "exhaust-heat-setting"
+        },
+        {
+          "code": 3,
+          "address": 8,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "overvoltage-setting"
+        },
+        {
+          "code": 3,
+          "address": 9,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "undervoltage-setting"
+        },
+        {
+          "code": 3,
+          "address": 10,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature-correction-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 11,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "evaporation-temperature-correction"
+        },
+        {
+          "code": 3,
+          "address": 12,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "exhaust-temperature-correction"
+        },
+        {
+          "code": 3,
+          "address": 13,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-current-correction"
+        },
+        {
+          "code": 3,
+          "address": 14,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-voltage-correction"
+        },
+        {
+          "code": 3,
+          "address": 29,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 30,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "evaporation-temperature"
+        },
+        {
+          "code": 3,
+          "address": 31,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "exhaust-temperature"
+        },
+        {
+          "code": 3,
+          "address": 32,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "current"
+        },
+        {
+          "code": 3,
+          "address": 33,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "voltage"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-serial",
+      "type": "ModbusSerialProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 1,
+          "address": 0,
+          "quantity": 1,
+          "expression": null,
+          "channel": "temperature-failure-in-cabinet"
+        },
+        {
+          "code": 1,
+          "address": 1,
+          "quantity": 1,
+          "expression": null,
+          "channel": "evaporation-temperature-fault"
+        },
+        {
+          "code": 1,
+          "address": 2,
+          "quantity": 1,
+          "expression": null,
+          "channel": "exhaust-temperature-failure"
+        },
+        {
+          "code": 1,
+          "address": 3,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ac-overvoltage"
+        },
+        {
+          "code": 1,
+          "address": 4,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ac-undervoltage"
+        },
+        {
+          "code": 1,
+          "address": 5,
+          "quantity": 1,
+          "expression": null,
+          "channel": "exhaust-heat"
+        },
+        {
+          "code": 1,
+          "address": 6,
+          "quantity": 1,
+          "expression": null,
+          "channel": "remote-shutdown"
+        },
+        {
+          "code": 1,
+          "address": 7,
+          "quantity": 1,
+          "expression": null,
+          "channel": "high-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 8,
+          "quantity": 1,
+          "expression": null,
+          "channel": "low-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 9,
+          "quantity": 1,
+          "expression": null,
+          "channel": "anti-freezing"
+        },
+        {
+          "code": 1,
+          "address": 13,
+          "quantity": 1,
+          "expression": null,
+          "channel": "internal-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 14,
+          "quantity": 1,
+          "expression": null,
+          "channel": "compressor-state"
+        },
+        {
+          "code": 1,
+          "address": 15,
+          "quantity": 1,
+          "expression": null,
+          "channel": "emergency-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 16,
+          "quantity": 1,
+          "expression": null,
+          "channel": "external-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 17,
+          "quantity": 1,
+          "expression": null,
+          "channel": "public-alert-state"
+        },
+        {
+          "code": 1,
+          "address": 18,
+          "quantity": 1,
+          "expression": null,
+          "channel": "manual-mode"
+        },
+        {
+          "code": 1,
+          "address": 41,
+          "quantity": 1,
+          "expression": null,
+          "channel": "monitoring-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 0,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-setting"
+        },
+        {
+          "code": 3,
+          "address": 1,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-backlash-setting"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-setting"
+        },
+        {
+          "code": 3,
+          "address": 3,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-backlash-setting"
+        },
+        {
+          "code": 3,
+          "address": 4,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "high-temperature-setting"
+        },
+        {
+          "code": 3,
+          "address": 5,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "low-temperature-setting"
+        },
+        {
+          "code": 3,
+          "address": 6,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "freeze-setting"
+        },
+        {
+          "code": 3,
+          "address": 7,
+          "quantity": 1,
+          "expression": null,
+          "channel": "exhaust-heat-setting"
+        },
+        {
+          "code": 3,
+          "address": 8,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "overvoltage-setting"
+        },
+        {
+          "code": 3,
+          "address": 9,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "undervoltage-setting"
+        },
+        {
+          "code": 3,
+          "address": 10,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature-correction-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 11,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "evaporation-temperature-correction"
+        },
+        {
+          "code": 3,
+          "address": 12,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "exhaust-temperature-correction"
+        },
+        {
+          "code": 3,
+          "address": 13,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-current-correction"
+        },
+        {
+          "code": 3,
+          "address": 14,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-voltage-correction"
+        },
+        {
+          "code": 3,
+          "address": 29,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 30,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "evaporation-temperature"
+        },
+        {
+          "code": 3,
+          "address": 31,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "exhaust-temperature"
+        },
+        {
+          "code": 3,
+          "address": 32,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "current"
+        },
+        {
+          "code": 3,
+          "address": 33,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "voltage"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-rtu-tcp",
+      "type": "ModbusRtuTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 1,
+          "address": 0,
+          "quantity": 1,
+          "expression": null,
+          "channel": "temperature-failure-in-cabinet"
+        },
+        {
+          "code": 1,
+          "address": 1,
+          "quantity": 1,
+          "expression": null,
+          "channel": "evaporation-temperature-fault"
+        },
+        {
+          "code": 1,
+          "address": 2,
+          "quantity": 1,
+          "expression": null,
+          "channel": "exhaust-temperature-failure"
+        },
+        {
+          "code": 1,
+          "address": 3,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ac-overvoltage"
+        },
+        {
+          "code": 1,
+          "address": 4,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ac-undervoltage"
+        },
+        {
+          "code": 1,
+          "address": 5,
+          "quantity": 1,
+          "expression": null,
+          "channel": "exhaust-heat"
+        },
+        {
+          "code": 1,
+          "address": 6,
+          "quantity": 1,
+          "expression": null,
+          "channel": "remote-shutdown"
+        },
+        {
+          "code": 1,
+          "address": 7,
+          "quantity": 1,
+          "expression": null,
+          "channel": "high-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 8,
+          "quantity": 1,
+          "expression": null,
+          "channel": "low-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 9,
+          "quantity": 1,
+          "expression": null,
+          "channel": "anti-freezing"
+        },
+        {
+          "code": 1,
+          "address": 13,
+          "quantity": 1,
+          "expression": null,
+          "channel": "internal-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 14,
+          "quantity": 1,
+          "expression": null,
+          "channel": "compressor-state"
+        },
+        {
+          "code": 1,
+          "address": 15,
+          "quantity": 1,
+          "expression": null,
+          "channel": "emergency-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 16,
+          "quantity": 1,
+          "expression": null,
+          "channel": "external-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 17,
+          "quantity": 1,
+          "expression": null,
+          "channel": "public-alert-state"
+        },
+        {
+          "code": 1,
+          "address": 18,
+          "quantity": 1,
+          "expression": null,
+          "channel": "manual-mode"
+        },
+        {
+          "code": 1,
+          "address": 41,
+          "quantity": 1,
+          "expression": null,
+          "channel": "monitoring-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 0,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-setting"
+        },
+        {
+          "code": 3,
+          "address": 1,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-backlash-setting"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-setting"
+        },
+        {
+          "code": 3,
+          "address": 3,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-backlash-setting"
+        },
+        {
+          "code": 3,
+          "address": 4,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "high-temperature-setting"
+        },
+        {
+          "code": 3,
+          "address": 5,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "low-temperature-setting"
+        },
+        {
+          "code": 3,
+          "address": 6,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "freeze-setting"
+        },
+        {
+          "code": 3,
+          "address": 7,
+          "quantity": 1,
+          "expression": null,
+          "channel": "exhaust-heat-setting"
+        },
+        {
+          "code": 3,
+          "address": 8,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "overvoltage-setting"
+        },
+        {
+          "code": 3,
+          "address": 9,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "undervoltage-setting"
+        },
+        {
+          "code": 3,
+          "address": 10,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature-correction-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 11,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "evaporation-temperature-correction"
+        },
+        {
+          "code": 3,
+          "address": 12,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "exhaust-temperature-correction"
+        },
+        {
+          "code": 3,
+          "address": 13,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-current-correction"
+        },
+        {
+          "code": 3,
+          "address": 14,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-voltage-correction"
+        },
+        {
+          "code": 3,
+          "address": 29,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 30,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "evaporation-temperature"
+        },
+        {
+          "code": 3,
+          "address": 31,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "exhaust-temperature"
+        },
+        {
+          "code": 3,
+          "address": 32,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "current"
+        },
+        {
+          "code": 3,
+          "address": 33,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "voltage"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-dtu",
+      "type": "ModbusDtuProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 1,
+          "address": 0,
+          "quantity": 1,
+          "expression": null,
+          "channel": "temperature-failure-in-cabinet"
+        },
+        {
+          "code": 1,
+          "address": 1,
+          "quantity": 1,
+          "expression": null,
+          "channel": "evaporation-temperature-fault"
+        },
+        {
+          "code": 1,
+          "address": 2,
+          "quantity": 1,
+          "expression": null,
+          "channel": "exhaust-temperature-failure"
+        },
+        {
+          "code": 1,
+          "address": 3,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ac-overvoltage"
+        },
+        {
+          "code": 1,
+          "address": 4,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ac-undervoltage"
+        },
+        {
+          "code": 1,
+          "address": 5,
+          "quantity": 1,
+          "expression": null,
+          "channel": "exhaust-heat"
+        },
+        {
+          "code": 1,
+          "address": 6,
+          "quantity": 1,
+          "expression": null,
+          "channel": "remote-shutdown"
+        },
+        {
+          "code": 1,
+          "address": 7,
+          "quantity": 1,
+          "expression": null,
+          "channel": "high-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 8,
+          "quantity": 1,
+          "expression": null,
+          "channel": "low-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 9,
+          "quantity": 1,
+          "expression": null,
+          "channel": "anti-freezing"
+        },
+        {
+          "code": 1,
+          "address": 13,
+          "quantity": 1,
+          "expression": null,
+          "channel": "internal-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 14,
+          "quantity": 1,
+          "expression": null,
+          "channel": "compressor-state"
+        },
+        {
+          "code": 1,
+          "address": 15,
+          "quantity": 1,
+          "expression": null,
+          "channel": "emergency-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 16,
+          "quantity": 1,
+          "expression": null,
+          "channel": "external-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 17,
+          "quantity": 1,
+          "expression": null,
+          "channel": "public-alert-state"
+        },
+        {
+          "code": 1,
+          "address": 18,
+          "quantity": 1,
+          "expression": null,
+          "channel": "manual-mode"
+        },
+        {
+          "code": 1,
+          "address": 41,
+          "quantity": 1,
+          "expression": null,
+          "channel": "monitoring-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 0,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-setting"
+        },
+        {
+          "code": 3,
+          "address": 1,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-backlash-setting"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-setting"
+        },
+        {
+          "code": 3,
+          "address": 3,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-backlash-setting"
+        },
+        {
+          "code": 3,
+          "address": 4,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "high-temperature-setting"
+        },
+        {
+          "code": 3,
+          "address": 5,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "low-temperature-setting"
+        },
+        {
+          "code": 3,
+          "address": 6,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "freeze-setting"
+        },
+        {
+          "code": 3,
+          "address": 7,
+          "quantity": 1,
+          "expression": null,
+          "channel": "exhaust-heat-setting"
+        },
+        {
+          "code": 3,
+          "address": 8,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "overvoltage-setting"
+        },
+        {
+          "code": 3,
+          "address": 9,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "undervoltage-setting"
+        },
+        {
+          "code": 3,
+          "address": 10,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature-correction-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 11,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "evaporation-temperature-correction"
+        },
+        {
+          "code": 3,
+          "address": 12,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "exhaust-temperature-correction"
+        },
+        {
+          "code": 3,
+          "address": 13,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-current-correction"
+        },
+        {
+          "code": 3,
+          "address": 14,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-voltage-correction"
+        },
+        {
+          "code": 3,
+          "address": 29,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 30,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "evaporation-temperature"
+        },
+        {
+          "code": 3,
+          "address": 31,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "exhaust-temperature"
+        },
+        {
+          "code": 3,
+          "address": 32,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "current"
+        },
+        {
+          "code": 3,
+          "address": 33,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "voltage"
+        }
+      ]
+    }
+  ],
+  "path": "../element-lib/element-modbus",
+  "id": "CC1500PA",
+  "cov": 0.2,
+  "$$hashKey": "object:7883"
+}

@@ -1,0 +1,46 @@
+// Copyright 2018 huayuan-iot
+//
+// Author: lynn
+// Date: 2018/05/17
+// Despcription: bus manager pb go file generator
+//
+
+// protoc -I busmanager/ busmanager/busmanager.proto --go_out=plugins=grpc:busmanager
+
+syntax = "proto3";
+
+package buspb;
+
+// The Bus service definition.
+service Bus {
+  // Publish publish
+  rpc Publish (PublishRequest) returns (PublishReply) {}
+
+  // Subscribe subscribe
+  rpc Subscribe (SubscribeRequest) returns (SubscribeReply) {}
+}
+
+// The request message containing publish info.
+message PublishRequest {
+  string topic = 1;
+  string payload = 2;
+}
+
+// The response message containing publish response
+message PublishReply {
+  int32 status = 1;
+  string message = 2;
+}
+
+// The request message containing subscribe info.
+message SubscribeRequest {
+  string topic = 1;
+  string payload = 2;
+}
+
+// The response message containing subscribe response
+message SubscribeReply {
+  int32 status = 1;
+  string message = 2;
+}
+

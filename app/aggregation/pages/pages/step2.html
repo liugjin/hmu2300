@@ -1,0 +1,85 @@
+<!-- 配置信息页面 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>MQTT配置</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- <img src="../pic/logo.png"> -->
+        <img src="../pic/1.png">
+    </header>
+
+    <section class="container">
+        <ul class="tab-title" id="changeinit">
+            <li>
+                <a href="1networking.html">
+                    <span class="circle">1</span>
+                </a>
+                <div class="tabname">联网配置</div>
+            </li>
+
+            <li>
+                <a href="step2.html">
+                    <span class="circle">2</span>
+                </a>
+                <div class="tabname">MQTT配置</div>
+            </li>
+
+            <li>
+                <a href="3lan.html">
+                    <span class="circle">2</span>
+                </a>
+                <div class="tabname">AP配置</div>
+            </li>
+
+            <li>
+                <a href="4basic.html">
+                    <span class="circle green1">3</span>
+                </a>
+                <div class="tabname">LAN配置</div>
+            </li>
+
+            <li>
+                <a href="4basic.html">
+                    <span class="circle">4</span>
+                </a>
+                <div class="tabname">基础配置</div>
+            </li>
+
+            <li>
+                <a href="visualization.html">
+                    <span class="circle">5</span>
+                </a>
+                <div class="tabname">采集配置</div>
+            </li>
+        </ul>
+        <div class="section-title">MQTT配置</div>
+        <div class="TabCon">
+            
+            <form id="mqttset">
+                <label for="server">服务器地址</label>
+                <input id="server" type="text"  name="server" placeholder="请填写服务器地址">
+                <label for="port">端口</label>
+                <input id="port" type="text"  name="port" placeholder="请填写端口号">
+            </form>
+            <div style="display: flex;justify-content: space-between" class="spacing">
+                <button type="submit" class="form-control btn enter" id="step2">确认</button>
+                <button id="restart" class="form-control btn enter grey-blue">重启</button>
+            </div>
+        </div>
+    </section>
+    <!-- <footer> Copyright © 2018 华远云联数据科技有限公司</footer> -->
+
+    <script src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/step.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+{
+    "type": "ModbusElement", 
+    "name": "声光报警", 
+    "channels": [
+        {
+            "id": "val", 
+            "name": "打开", 
+            "datatype": "int", 
+            "value": null
+        }
+    ], 
+    "id": "dido", 
+    "version": "0.0.1", 
+    "description": "alarm channels info", 
+    "mappings": [
+        {
+            "protocol": "protocol-dido", 
+            "type": "DIDOProtocol", 
+            "setting": {
+                "throttle": 1000, 
+                "optimized": true, 
+                "stepDiff": 3, 
+                "maxDiff": 122, 
+                "cov": 0.01
+            }, 
+            "mapping": [
+                {
+                    "code": 6, 
+                    "address": 4, 
+                    "quantity": 2, 
+                    "expression": null, 
+                    "channel": "val"
+                }
+            ]
+        }
+    ], 
+    "path": "../element-lib/element-sfere"
+}

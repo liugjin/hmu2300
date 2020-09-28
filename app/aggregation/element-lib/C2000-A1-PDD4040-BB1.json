@@ -1,0 +1,566 @@
+{
+  "name": "C2000-A1-PDD4040-BB1",
+  "type": "ModbusElement",
+  "version": "0.0.1",
+  "description": "C2000-A1-PDD4040-BB1 channels info",
+  "path": "../element-lib/element-modbus",
+  "channels": [
+    {
+      "id": "di1",
+      "name": "DI1",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 200,
+      "quantity": 4,
+      "format": null,
+      "expression": "val&1",
+      "channel": "di1",
+      "$$hashKey": "object:595"
+    },
+    {
+      "id": "di2",
+      "name": "DI2",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 200,
+      "quantity": 4,
+      "format": null,
+      "expression": "(val>>1)&1",
+      "channel": "di2",
+      "$$hashKey": "object:596"
+    },
+    {
+      "id": "di3",
+      "name": "DI3",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 200,
+      "quantity": 4,
+      "format": null,
+      "expression": "(val>>2)&1",
+      "channel": "di3",
+      "$$hashKey": "object:597"
+    },
+    {
+      "id": "di4",
+      "name": "DI4",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 200,
+      "quantity": 4,
+      "format": null,
+      "expression": "(val>>3)&1",
+      "channel": "di4",
+      "$$hashKey": "object:598"
+    },
+    {
+      "id": "do1",
+      "name": "DO1",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 100,
+      "quantity": 1,
+      "expression": "val&1",
+      "channel": "do1",
+      "$$hashKey": "object:599"
+    },
+    {
+      "id": "do2",
+      "name": "DO2",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 101,
+      "quantity": 1,
+      "expression": "val&1",
+      "channel": "do2",
+      "$$hashKey": "object:600"
+    },
+    {
+      "id": "do3",
+      "name": "DO3",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 102,
+      "quantity": 1,
+      "expression": "val&1",
+      "channel": "do3",
+      "$$hashKey": "object:601"
+    },
+    {
+      "id": "do4",
+      "name": "DO4",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 103,
+      "quantity": 1,
+      "expression": "val&1",
+      "channel": "do4",
+      "$$hashKey": "object:602"
+    },
+    {
+      "id": "set-do1",
+      "name": "SET-DO1",
+      "datatype": "int",
+      "value": null,
+      "code": 5,
+      "address": 100,
+      "quantity": 1,
+      "expression": null,
+      "channel": "set-do1",
+      "$$hashKey": "object:603"
+    },
+    {
+      "id": "set-do2",
+      "name": "SET-DO2",
+      "datatype": "int",
+      "value": null,
+      "code": 5,
+      "address": 101,
+      "quantity": 1,
+      "expression": null,
+      "channel": "set-do2",
+      "$$hashKey": "object:604"
+    },
+    {
+      "id": "set-do3",
+      "name": "SET-DO3",
+      "datatype": "int",
+      "value": null,
+      "code": 5,
+      "address": 102,
+      "quantity": 1,
+      "expression": null,
+      "channel": "set-do3",
+      "$$hashKey": "object:605"
+    },
+    {
+      "id": "set-do4",
+      "name": "SET-DO4",
+      "datatype": "int",
+      "value": null,
+      "code": 5,
+      "address": 103,
+      "quantity": 1,
+      "expression": null,
+      "channel": "set-do4",
+      "$$hashKey": "object:606"
+    }
+  ],
+  "mappings": [
+    {
+      "protocol": "protocol-modbus-tcp",
+      "type": "ModbusTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.5
+      },
+      "mapping": [
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "val&1",
+          "channel": "di1"
+        },
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "(val>>1)&1",
+          "channel": "di2"
+        },
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "(val>>2)&1",
+          "channel": "di3"
+        },
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "(val>>3)&1",
+          "channel": "di4"
+        },
+        {
+          "code": 1,
+          "address": 100,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do1"
+        },
+        {
+          "code": 1,
+          "address": 101,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do2"
+        },
+        {
+          "code": 1,
+          "address": 102,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do3"
+        },
+        {
+          "code": 1,
+          "address": 103,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do4"
+        },
+        {
+          "code": 5,
+          "address": 100,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do1"
+        },
+        {
+          "code": 5,
+          "address": 101,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do2"
+        },
+        {
+          "code": 5,
+          "address": 102,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do3"
+        },
+        {
+          "code": 5,
+          "address": 103,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do4"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-serial",
+      "type": "ModbusSerialProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.5
+      },
+      "mapping": [
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "val&1",
+          "channel": "di1"
+        },
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "(val>>1)&1",
+          "channel": "di2"
+        },
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "(val>>2)&1",
+          "channel": "di3"
+        },
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "(val>>3)&1",
+          "channel": "di4"
+        },
+        {
+          "code": 1,
+          "address": 100,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do1"
+        },
+        {
+          "code": 1,
+          "address": 101,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do2"
+        },
+        {
+          "code": 1,
+          "address": 102,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do3"
+        },
+        {
+          "code": 1,
+          "address": 103,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do4"
+        },
+        {
+          "code": 5,
+          "address": 100,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do1"
+        },
+        {
+          "code": 5,
+          "address": 101,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do2"
+        },
+        {
+          "code": 5,
+          "address": 102,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do3"
+        },
+        {
+          "code": 5,
+          "address": 103,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do4"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-rtu-tcp",
+      "type": "ModbusRtuTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.5
+      },
+      "mapping": [
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "val&1",
+          "channel": "di1"
+        },
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "(val>>1)&1",
+          "channel": "di2"
+        },
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "(val>>2)&1",
+          "channel": "di3"
+        },
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "(val>>3)&1",
+          "channel": "di4"
+        },
+        {
+          "code": 1,
+          "address": 100,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do1"
+        },
+        {
+          "code": 1,
+          "address": 101,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do2"
+        },
+        {
+          "code": 1,
+          "address": 102,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do3"
+        },
+        {
+          "code": 1,
+          "address": 103,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do4"
+        },
+        {
+          "code": 5,
+          "address": 100,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do1"
+        },
+        {
+          "code": 5,
+          "address": 101,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do2"
+        },
+        {
+          "code": 5,
+          "address": 102,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do3"
+        },
+        {
+          "code": 5,
+          "address": 103,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do4"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-dtu",
+      "type": "ModbusDtuProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.5
+      },
+      "mapping": [
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "val&1",
+          "channel": "di1"
+        },
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "(val>>1)&1",
+          "channel": "di2"
+        },
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "(val>>2)&1",
+          "channel": "di3"
+        },
+        {
+          "code": 2,
+          "address": 200,
+          "quantity": 4,
+          "format": null,
+          "expression": "(val>>3)&1",
+          "channel": "di4"
+        },
+        {
+          "code": 1,
+          "address": 100,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do1"
+        },
+        {
+          "code": 1,
+          "address": 101,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do2"
+        },
+        {
+          "code": 1,
+          "address": 102,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do3"
+        },
+        {
+          "code": 1,
+          "address": 103,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "do4"
+        },
+        {
+          "code": 5,
+          "address": 100,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do1"
+        },
+        {
+          "code": 5,
+          "address": 101,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do2"
+        },
+        {
+          "code": 5,
+          "address": 102,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do3"
+        },
+        {
+          "code": 5,
+          "address": 103,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-do4"
+        }
+      ]
+    }
+  ],
+  "id": "C2000-A1-PDD4040-BB1",
+  "cov": 0.5,
+  "$$hashKey": "object:560"
+}

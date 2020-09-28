@@ -1,0 +1,1826 @@
+{
+  "name": "艾特网能UR-UPS",
+  "type": "ModbusElement",
+  "version": "0.0.1",
+  "description": "UR-UPS channels info",
+  "mappings": [
+    {
+      "protocol": "protocol-modbus-tcp",
+      "type": "ModbusTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 11000,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-input-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-input-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11002,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-input-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11003,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-frequency"
+        },
+        {
+          "code": 3,
+          "address": 11004,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-bypass-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11005,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-bypass-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-bypass-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11007,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-frequency"
+        },
+        {
+          "code": 3,
+          "address": 11008,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11009,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11010,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11011,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-current"
+        },
+        {
+          "code": 3,
+          "address": 11012,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-current"
+        },
+        {
+          "code": 3,
+          "address": 11013,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-current"
+        },
+        {
+          "code": 3,
+          "address": 11014,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-frequency"
+        },
+        {
+          "code": 3,
+          "address": 11015,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 11016,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 11017,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 11018,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 11019,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 11020,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 11021,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 11022,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 11023,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 11024,
+          "quantity": 1,
+          "expression": null,
+          "channel": "power-supply-mode"
+        },
+        {
+          "code": 3,
+          "address": 11025,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-system"
+        },
+        {
+          "code": 3,
+          "address": 11026,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-system"
+        },
+        {
+          "code": 3,
+          "address": 11027,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "internal-temperature"
+        },
+        {
+          "code": 3,
+          "address": 11041,
+          "quantity": 1,
+          "expression": null,
+          "channel": "redundancy-number"
+        },
+        {
+          "code": 3,
+          "address": 12000,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-voltage"
+        },
+        {
+          "code": 3,
+          "address": 12001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-current"
+        },
+        {
+          "code": 3,
+          "address": 12002,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-state"
+        },
+        {
+          "code": 3,
+          "address": 12003,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-remaining-capacity"
+        },
+        {
+          "code": 3,
+          "address": 12004,
+          "quantity": 2,
+          "expression": null,
+          "channel": "battery-backup-time"
+        },
+        {
+          "code": 3,
+          "address": 12006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-temperature"
+        },
+        {
+          "code": 3,
+          "address": 14000,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-parallel-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 14001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-parallel-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 14002,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-parallel-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 14003,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-parallel-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 14004,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-parallel-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 14005,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-parallel-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 14006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-parallel-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 14007,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-parallel-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 14008,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-parallel-load-rate"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-serial",
+      "type": "ModbusSerialProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 11000,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-input-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-input-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11002,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-input-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11003,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-frequency"
+        },
+        {
+          "code": 3,
+          "address": 11004,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-bypass-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11005,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-bypass-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-bypass-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11007,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-frequency"
+        },
+        {
+          "code": 3,
+          "address": 11008,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11009,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11010,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11011,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-current"
+        },
+        {
+          "code": 3,
+          "address": 11012,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-current"
+        },
+        {
+          "code": 3,
+          "address": 11013,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-current"
+        },
+        {
+          "code": 3,
+          "address": 11014,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-frequency"
+        },
+        {
+          "code": 3,
+          "address": 11015,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 11016,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 11017,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 11018,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 11019,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 11020,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 11021,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 11022,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 11023,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 11024,
+          "quantity": 1,
+          "expression": null,
+          "channel": "power-supply-mode"
+        },
+        {
+          "code": 3,
+          "address": 11025,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-system"
+        },
+        {
+          "code": 3,
+          "address": 11026,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-system"
+        },
+        {
+          "code": 3,
+          "address": 11027,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "internal-temperature"
+        },
+        {
+          "code": 3,
+          "address": 11041,
+          "quantity": 1,
+          "expression": null,
+          "channel": "redundancy-number"
+        },
+        {
+          "code": 3,
+          "address": 12000,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-voltage"
+        },
+        {
+          "code": 3,
+          "address": 12001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-current"
+        },
+        {
+          "code": 3,
+          "address": 12002,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-state"
+        },
+        {
+          "code": 3,
+          "address": 12003,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-remaining-capacity"
+        },
+        {
+          "code": 3,
+          "address": 12004,
+          "quantity": 2,
+          "expression": null,
+          "channel": "battery-backup-time"
+        },
+        {
+          "code": 3,
+          "address": 12006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-temperature"
+        },
+        {
+          "code": 3,
+          "address": 14000,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-parallel-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 14001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-parallel-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 14002,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-parallel-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 14003,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-parallel-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 14004,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-parallel-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 14005,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-parallel-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 14006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-parallel-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 14007,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-parallel-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 14008,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-parallel-load-rate"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-rtu-tcp",
+      "type": "ModbusRtuTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 11000,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-input-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-input-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11002,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-input-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11003,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-frequency"
+        },
+        {
+          "code": 3,
+          "address": 11004,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-bypass-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11005,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-bypass-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-bypass-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11007,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-frequency"
+        },
+        {
+          "code": 3,
+          "address": 11008,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11009,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11010,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11011,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-current"
+        },
+        {
+          "code": 3,
+          "address": 11012,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-current"
+        },
+        {
+          "code": 3,
+          "address": 11013,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-current"
+        },
+        {
+          "code": 3,
+          "address": 11014,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-frequency"
+        },
+        {
+          "code": 3,
+          "address": 11015,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 11016,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 11017,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 11018,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 11019,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 11020,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 11021,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 11022,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 11023,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 11024,
+          "quantity": 1,
+          "expression": null,
+          "channel": "power-supply-mode"
+        },
+        {
+          "code": 3,
+          "address": 11025,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-system"
+        },
+        {
+          "code": 3,
+          "address": 11026,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-system"
+        },
+        {
+          "code": 3,
+          "address": 11027,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "internal-temperature"
+        },
+        {
+          "code": 3,
+          "address": 11041,
+          "quantity": 1,
+          "expression": null,
+          "channel": "redundancy-number"
+        },
+        {
+          "code": 3,
+          "address": 12000,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-voltage"
+        },
+        {
+          "code": 3,
+          "address": 12001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-current"
+        },
+        {
+          "code": 3,
+          "address": 12002,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-state"
+        },
+        {
+          "code": 3,
+          "address": 12003,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-remaining-capacity"
+        },
+        {
+          "code": 3,
+          "address": 12004,
+          "quantity": 2,
+          "expression": null,
+          "channel": "battery-backup-time"
+        },
+        {
+          "code": 3,
+          "address": 12006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-temperature"
+        },
+        {
+          "code": 3,
+          "address": 14000,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-parallel-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 14001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-parallel-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 14002,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-parallel-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 14003,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-parallel-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 14004,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-parallel-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 14005,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-parallel-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 14006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-parallel-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 14007,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-parallel-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 14008,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-parallel-load-rate"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-dtu",
+      "type": "ModbusDtuProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 11000,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-input-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-input-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11002,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-input-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11003,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-frequency"
+        },
+        {
+          "code": 3,
+          "address": 11004,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-bypass-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11005,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-bypass-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-bypass-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11007,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-frequency"
+        },
+        {
+          "code": 3,
+          "address": 11008,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11009,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11010,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-voltage"
+        },
+        {
+          "code": 3,
+          "address": 11011,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-current"
+        },
+        {
+          "code": 3,
+          "address": 11012,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-current"
+        },
+        {
+          "code": 3,
+          "address": 11013,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-current"
+        },
+        {
+          "code": 3,
+          "address": 11014,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-frequency"
+        },
+        {
+          "code": 3,
+          "address": 11015,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 11016,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 11017,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 11018,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 11019,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 11020,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 11021,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 11022,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 11023,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 11024,
+          "quantity": 1,
+          "expression": null,
+          "channel": "power-supply-mode"
+        },
+        {
+          "code": 3,
+          "address": 11025,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-system"
+        },
+        {
+          "code": 3,
+          "address": 11026,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-system"
+        },
+        {
+          "code": 3,
+          "address": 11027,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "internal-temperature"
+        },
+        {
+          "code": 3,
+          "address": 11041,
+          "quantity": 1,
+          "expression": null,
+          "channel": "redundancy-number"
+        },
+        {
+          "code": 3,
+          "address": 12000,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-voltage"
+        },
+        {
+          "code": 3,
+          "address": 12001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-current"
+        },
+        {
+          "code": 3,
+          "address": 12002,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-state"
+        },
+        {
+          "code": 3,
+          "address": 12003,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-remaining-capacity"
+        },
+        {
+          "code": 3,
+          "address": 12004,
+          "quantity": 2,
+          "expression": null,
+          "channel": "battery-backup-time"
+        },
+        {
+          "code": 3,
+          "address": 12006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-temperature"
+        },
+        {
+          "code": 3,
+          "address": 14000,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-parallel-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 14001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-parallel-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 14002,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-parallel-output-active-power"
+        },
+        {
+          "code": 3,
+          "address": 14003,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-parallel-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 14004,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-parallel-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 14005,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-parallel-output-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 14006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "a-phase-parallel-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 14007,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "b-phase-parallel-load-rate"
+        },
+        {
+          "code": 3,
+          "address": 14008,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "c-phase-parallel-load-rate"
+        }
+      ]
+    }
+  ],
+  "path": "../element-lib/element-modbus",
+  "channels": [
+    {
+      "id": "a-phase-input-voltage",
+      "name": "A相输入电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11000,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "a-phase-input-voltage",
+      "$$hashKey": "object:8684"
+    },
+    {
+      "id": "b-phase-input-voltage",
+      "name": "B相输入电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11001,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "b-phase-input-voltage",
+      "$$hashKey": "object:8685"
+    },
+    {
+      "id": "c-phase-input-voltage",
+      "name": "C相输入电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11002,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "c-phase-input-voltage",
+      "$$hashKey": "object:8686"
+    },
+    {
+      "id": "input-frequency",
+      "name": "输入频率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11003,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "input-frequency",
+      "$$hashKey": "object:8687"
+    },
+    {
+      "id": "a-phase-bypass-voltage",
+      "name": "A相旁路电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11004,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "a-phase-bypass-voltage",
+      "$$hashKey": "object:8688"
+    },
+    {
+      "id": "b-phase-bypass-voltage",
+      "name": "B相旁路电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11005,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "b-phase-bypass-voltage",
+      "$$hashKey": "object:8689"
+    },
+    {
+      "id": "c-phase-bypass-voltage",
+      "name": "C相旁路电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11006,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "c-phase-bypass-voltage",
+      "$$hashKey": "object:8690"
+    },
+    {
+      "id": "bypass-frequency",
+      "name": "旁路频率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11007,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "bypass-frequency",
+      "$$hashKey": "object:8691"
+    },
+    {
+      "id": "a-phase-output-voltage",
+      "name": "A相输出电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11008,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "a-phase-output-voltage",
+      "$$hashKey": "object:8692"
+    },
+    {
+      "id": "b-phase-output-voltage",
+      "name": "B相输出电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11009,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "b-phase-output-voltage",
+      "$$hashKey": "object:8693"
+    },
+    {
+      "id": "c-phase-output-voltage",
+      "name": "C相输出电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11010,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "c-phase-output-voltage",
+      "$$hashKey": "object:8694"
+    },
+    {
+      "id": "a-phase-output-current",
+      "name": "A相输出电流",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11011,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "a-phase-output-current",
+      "$$hashKey": "object:8695"
+    },
+    {
+      "id": "b-phase-output-current",
+      "name": "B相输出电流",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11012,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "b-phase-output-current",
+      "$$hashKey": "object:8696"
+    },
+    {
+      "id": "c-phase-output-current",
+      "name": "C相输出电流",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11013,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "c-phase-output-current",
+      "$$hashKey": "object:8697"
+    },
+    {
+      "id": "output-frequency",
+      "name": "输出频率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11014,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "output-frequency",
+      "$$hashKey": "object:8698"
+    },
+    {
+      "id": "a-phase-output-active-power",
+      "name": "A相输出有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11015,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "a-phase-output-active-power",
+      "$$hashKey": "object:8699"
+    },
+    {
+      "id": "b-phase-output-active-power",
+      "name": "B相输出有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11016,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "b-phase-output-active-power",
+      "$$hashKey": "object:8700"
+    },
+    {
+      "id": "c-phase-output-active-power",
+      "name": "C相输出有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11017,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "c-phase-output-active-power",
+      "$$hashKey": "object:8701"
+    },
+    {
+      "id": "a-phase-output-apparent-power",
+      "name": "A相输出视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11018,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "a-phase-output-apparent-power",
+      "$$hashKey": "object:8702"
+    },
+    {
+      "id": "b-phase-output-apparent-power",
+      "name": "B相输出视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11019,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "b-phase-output-apparent-power",
+      "$$hashKey": "object:8703"
+    },
+    {
+      "id": "c-phase-output-apparent-power",
+      "name": "C相输出视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11020,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "c-phase-output-apparent-power",
+      "$$hashKey": "object:8704"
+    },
+    {
+      "id": "a-phase-load-rate",
+      "name": "A相负载率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11021,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "a-phase-load-rate",
+      "$$hashKey": "object:8705"
+    },
+    {
+      "id": "b-phase-load-rate",
+      "name": "B相负载率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11022,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "b-phase-load-rate",
+      "$$hashKey": "object:8706"
+    },
+    {
+      "id": "c-phase-load-rate",
+      "name": "C相负载率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11023,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "c-phase-load-rate",
+      "$$hashKey": "object:8707"
+    },
+    {
+      "id": "power-supply-mode",
+      "name": "供电模式",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11024,
+      "quantity": 1,
+      "expression": null,
+      "channel": "power-supply-mode",
+      "$$hashKey": "object:8708"
+    },
+    {
+      "id": "input-system",
+      "name": "输入制式",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11025,
+      "quantity": 1,
+      "expression": null,
+      "channel": "input-system",
+      "$$hashKey": "object:8709"
+    },
+    {
+      "id": "output-system",
+      "name": "输出制式",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11026,
+      "quantity": 1,
+      "expression": null,
+      "channel": "output-system",
+      "$$hashKey": "object:8710"
+    },
+    {
+      "id": "internal-temperature",
+      "name": "机内温度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11027,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "internal-temperature",
+      "$$hashKey": "object:8711"
+    },
+    {
+      "id": "redundancy-number",
+      "name": "冗余台数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11041,
+      "quantity": 1,
+      "expression": null,
+      "channel": "redundancy-number",
+      "$$hashKey": "object:8712"
+    },
+    {
+      "id": "battery-voltage",
+      "name": "电池电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 12000,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "battery-voltage",
+      "$$hashKey": "object:8713"
+    },
+    {
+      "id": "battery-current",
+      "name": "电池电流",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 12001,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "battery-current",
+      "$$hashKey": "object:8714"
+    },
+    {
+      "id": "battery-state",
+      "name": "电池状态",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 12002,
+      "quantity": 1,
+      "expression": null,
+      "channel": "battery-state",
+      "$$hashKey": "object:8715"
+    },
+    {
+      "id": "battery-remaining-capacity",
+      "name": "电池剩余容量",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 12003,
+      "quantity": 1,
+      "expression": null,
+      "channel": "battery-remaining-capacity",
+      "$$hashKey": "object:8716"
+    },
+    {
+      "id": "battery-backup-time",
+      "name": "电池后备时间",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 12004,
+      "quantity": 2,
+      "expression": null,
+      "channel": "battery-backup-time",
+      "$$hashKey": "object:8717"
+    },
+    {
+      "id": "battery-temperature",
+      "name": "电池温度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 12006,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "battery-temperature",
+      "$$hashKey": "object:8718"
+    },
+    {
+      "id": "a-phase-parallel-output-active-power",
+      "name": "A相并机输出有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 14000,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "a-phase-parallel-output-active-power",
+      "$$hashKey": "object:8719"
+    },
+    {
+      "id": "b-phase-parallel-output-active-power",
+      "name": "B相并机输出有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 14001,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "b-phase-parallel-output-active-power",
+      "$$hashKey": "object:8720"
+    },
+    {
+      "id": "c-phase-parallel-output-active-power",
+      "name": "C相并机输出有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 14002,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "c-phase-parallel-output-active-power",
+      "$$hashKey": "object:8721"
+    },
+    {
+      "id": "a-phase-parallel-output-apparent-power",
+      "name": "A相并机输出视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 14003,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "a-phase-parallel-output-apparent-power",
+      "$$hashKey": "object:8722"
+    },
+    {
+      "id": "b-phase-parallel-output-apparent-power",
+      "name": "B相并机输出视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 14004,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "b-phase-parallel-output-apparent-power",
+      "$$hashKey": "object:8723"
+    },
+    {
+      "id": "c-phase-parallel-output-apparent-power",
+      "name": "C相并机输出视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 14005,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "c-phase-parallel-output-apparent-power",
+      "$$hashKey": "object:8724"
+    },
+    {
+      "id": "a-phase-parallel-load-rate",
+      "name": "A相并机负载率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 14006,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "a-phase-parallel-load-rate",
+      "$$hashKey": "object:8725"
+    },
+    {
+      "id": "b-phase-parallel-load-rate",
+      "name": "B相并机负载率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 14007,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "b-phase-parallel-load-rate",
+      "$$hashKey": "object:8726"
+    },
+    {
+      "id": "c-phase-parallel-load-rate",
+      "name": "C相并机负载率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 14008,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "c-phase-parallel-load-rate",
+      "$$hashKey": "object:8727"
+    }
+  ],
+  "id": "UR-UPS",
+  "cov": 0.2,
+  "$$hashKey": "object:7992"
+}

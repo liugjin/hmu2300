@@ -1,0 +1,106 @@
+{
+  "name": "EYK-JSK930水浸控制器",
+  "type": "ModbusElement",
+  "channels": [
+    {
+      "id": "alarm",
+      "name": "告警",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 0,
+      "quantity": 1,
+      "expression": null,
+      "channel": "alarm",
+      "$$hashKey": "object:228"
+    }
+  ],
+  "id": "EYK-JSK930",
+  "version": "0.0.1",
+  "description": "EYK-JSK930 channels info",
+  "mappings": [
+    {
+      "protocol": "protocol-modbus-tcp",
+      "type": "ModbusTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.5
+      },
+      "mapping": [
+        {
+          "code": 2,
+          "address": 0,
+          "quantity": 1,
+          "expression": null,
+          "channel": "alarm"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-serial",
+      "type": "ModbusSerialProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.5
+      },
+      "mapping": [
+        {
+          "code": 2,
+          "address": 0,
+          "quantity": 1,
+          "expression": null,
+          "channel": "alarm"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-rtu-tcp",
+      "type": "ModbusRtuTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.5
+      },
+      "mapping": [
+        {
+          "code": 2,
+          "address": 0,
+          "quantity": 1,
+          "expression": null,
+          "channel": "alarm"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-dtu",
+      "type": "ModbusDtuProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.5
+      },
+      "mapping": [
+        {
+          "code": 2,
+          "address": 0,
+          "quantity": 1,
+          "expression": null,
+          "channel": "alarm"
+        }
+      ]
+    }
+  ],
+  "path": "../element-lib/element-modbus",
+  "cov": 0.5,
+  "$$hashKey": "object:195"
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div id="object"></div>
+                <div style="text-align: center;color: #ffffff;margin-top: 30px;">重启中，请稍等.......</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/lib/jquery-2.2.1.min.js"></script>
+    <script>
+//         // 是否启动
+//         function request() {
+//             $.ajax({//先判断设备是否启动
+//                 url: 'http://192.168.0.7:8090/user/login',
+//                 type: 'POST',
+//                 data: {
+//                     "username":"admin",
+//                     "password":"admin"
+//                 },
+//                 dataType: 'json',
+//                 success: function (re) {
+//                     console.log(re)
+//                     if (rexxxx) {//如果设备启动，判断是否已经登陆
+//                         goSystem()
+//                     }
+//                 }
+//             })
+//         }
+// //是否登陆判断
+//         function goSystem() {
+//             $.ajax({
+//                 url: '/cgi-bin/login.cgi',
+//                 type: 'GET',
+//                 dataType: 'json',
+//                 success: function (res) {
+//                     console.log(res)
+//                     var token = sessionStorage.getItem("token");
+//                     //以下是判断是否登陆
+//                     if (res.token == token) {
+//                         location.href = "pages/1networking.html"; //验证token与后台是否相同，若相同则为登陆了否则返回首页重新登陆
+//                     } else {
+//                         location.href = "pages/login.html";
+//                     }
+//                 }
+//             });
+//         }
+
+        $(document).ready(function () {
+            //轮询，后面是毫秒,如果设备未启动则2秒进行一次查询
+            // setInterval("request()", 2000)
+            location.href = "./pages/login.html"
+        })
+    </script>
+</body>
+
+</html>

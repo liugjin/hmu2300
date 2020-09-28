@@ -1,0 +1,144 @@
+[
+	{
+		"id": "0",
+		"name": "网关",
+		"version": "",
+		"setting": {},
+		"ports": [
+			{
+				"id": "rs1",
+				"symbol": "",
+				"protocol": "protocol-modbus-serial",
+				"name": "RS1",
+				"enable": true,
+				"setting": {
+					"port": "/dev/COM1",
+					"baudRate": 9600
+				},
+				"sampleUnits": [
+					{
+						"id": "com1",
+						"name": "com1",
+						"period": 3000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "best-th.json",
+						"enable": true,
+						"setting": {
+							"address": 1
+						}
+					},
+					{
+						"id": "com2",
+						"name": "com2",
+						"period": 3000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "best-th.json",
+						"enable": true,
+						"setting": {
+							"address": 2
+						}
+					}
+				]
+			},
+			{
+				"id": "rs3",
+				"symbol": "",
+				"protocol": "protocol-modbus-serial",
+				"name": "RS3",
+				"enable": false,
+				"setting": {
+					"port": "COM1",
+					"baudRate": 9600
+				},
+				"sampleUnits": [
+					{
+						"id": "ioblock",
+						"name": "ioblock",
+						"period": 2000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "C2000-A1-PDD4040-BB1.json",
+						"enable": true,
+						"setting": {
+							"address": 2
+						}
+					}
+				]
+			},
+			{
+				"id": "sp-lan1",
+				"symbol": "",
+				"protocol": "protocol-camera",
+				"name": "网口1",
+				"enable": true,
+				"setting": {
+					"port": "/dev/camera1"
+				},
+				"sampleUnits": [
+					{
+						"id": "lan1",
+						"name": "lan1",
+						"period": 2000,
+						"timeout": 9000,
+						"maxCommunicationErrors": 3,
+						"element": "capture.json",
+						"enable": true,
+						"setting": {
+							"host": "192.168.1.64",
+							"username": "onvif",
+							"password": "hyiot123"
+						}
+					}
+				]
+			},
+			{
+				"id": "sp-lan2",
+				"symbol": "",
+				"protocol": "protocol-modbus-tcp",
+				"name": "网口2",
+				"enable": true,
+				"setting": {
+					"port": "192.168.20.220:502"
+				},
+				"sampleUnits": [
+					{
+						"id": "lan2",
+						"name": "lan2",
+						"period": 2000,
+						"timeout": 900,
+						"maxCommunicationErrors": 3,
+						"element": "iomodule.json",
+						"enable": true,
+						"setting": {
+							"address": 1
+						}
+					}
+				]
+			},
+			{
+				"id": "hyiot-mu-status",
+				"symbol": "",
+				"protocol": "protocol-hyiot-mu",
+				"name": "系统状态",
+				"enable": true,
+				"setting": {
+					"port": "hyiot-mu-status"
+				},
+				"sampleUnits": [
+					{
+						"id": "_",
+						"name": "系统信息",
+						"period": 600000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "hmu2000.json",
+						"enable": true,
+						"setting": {}
+					}
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,2251 @@
+{
+  "type": "ModbusElement",
+  "name": "CC0500PA空调",
+  "channels": [
+    {
+      "id": "cool-state",
+      "name": "制冷状态",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 34,
+      "quantity": 1,
+      "expression": null,
+      "channel": "cool-state",
+      "$$hashKey": "object:1572"
+    },
+    {
+      "id": "heater-state",
+      "name": "加热器状态",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 35,
+      "quantity": 1,
+      "expression": null,
+      "channel": "heater-state",
+      "$$hashKey": "object:1573"
+    },
+    {
+      "id": "internal-fan-state",
+      "name": "内风机状态",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 36,
+      "quantity": 1,
+      "channel": "internal-fan-state",
+      "$$hashKey": "object:1574"
+    },
+    {
+      "id": "external-fan-state",
+      "name": "外风机状态",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 37,
+      "quantity": 1,
+      "channel": "external-fan-state",
+      "$$hashKey": "object:1575"
+    },
+    {
+      "id": "emergency-fan-state",
+      "name": "应急风机状态",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 38,
+      "quantity": 1,
+      "channel": "emergency-fan-state",
+      "$$hashKey": "object:1576"
+    },
+    {
+      "id": "reserved-switch-volume-output1",
+      "name": "预留开关量1输出",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 39,
+      "quantity": 1,
+      "channel": "reserved-switch-volume-output1",
+      "$$hashKey": "object:1577"
+    },
+    {
+      "id": "reserved-switch-volume-output2",
+      "name": "预留开关量2输出",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 40,
+      "quantity": 1,
+      "channel": "reserved-switch-volume-output2",
+      "$$hashKey": "object:1578"
+    },
+    {
+      "id": "monitoring-shutdown",
+      "name": "监控关机",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 41,
+      "quantity": 1,
+      "channel": "monitoring-shutdown",
+      "$$hashKey": "object:1579"
+    },
+    {
+      "id": "set-monitoring-shutdown",
+      "name": "监控关机",
+      "datatype": "int",
+      "value": null,
+      "code": 5,
+      "address": 41,
+      "quantity": 1,
+      "channel": "set-monitoring-shutdown",
+      "$$hashKey": "object:1580"
+    },
+    {
+      "id": "sensor-failure-in-cabinet",
+      "name": "柜内传感器故障",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 42,
+      "quantity": 1,
+      "channel": "sensor-failure-in-cabinet",
+      "$$hashKey": "object:1581"
+    },
+    {
+      "id": "fault-of-evaporator-temperature-sensor",
+      "name": "蒸发器温度传感器故障",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 43,
+      "quantity": 1,
+      "channel": "fault-of-evaporator-temperature-sensor",
+      "$$hashKey": "object:1582"
+    },
+    {
+      "id": "fault-of-condenser-temperature-sensor",
+      "name": "冷凝器温度传感器故障",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 44,
+      "quantity": 1,
+      "channel": "fault-of-condenser-temperature-sensor",
+      "$$hashKey": "object:1583"
+    },
+    {
+      "id": "fault-of-temperature-sensor-outside-cabinet",
+      "name": "柜外温度传感器故障",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 45,
+      "quantity": 1,
+      "channel": "fault-of-temperature-sensor-outside-cabinet",
+      "$$hashKey": "object:1584"
+    },
+    {
+      "id": "fault-of-humidity-sensor",
+      "name": "湿度传感器故障",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 46,
+      "quantity": 1,
+      "channel": "fault-of-humidity-sensor",
+      "$$hashKey": "object:1585"
+    },
+    {
+      "id": "warning-of-excessive-humidity",
+      "name": "湿度过高告警",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 47,
+      "quantity": 1,
+      "channel": "warning-of-excessive-humidity",
+      "$$hashKey": "object:1586"
+    },
+    {
+      "id": "internal-fan-alarm",
+      "name": "内风机告警",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 48,
+      "quantity": 1,
+      "channel": "internal-fan-alarm",
+      "$$hashKey": "object:1587"
+    },
+    {
+      "id": "outer-fan-warning",
+      "name": "外风机告警",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 49,
+      "quantity": 1,
+      "channel": "outer-fan-warning",
+      "$$hashKey": "object:1588"
+    },
+    {
+      "id": "condenser-high-pressure-warning",
+      "name": "冷凝器高压告警",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 50,
+      "quantity": 1,
+      "channel": "condenser-high-pressure-warning",
+      "$$hashKey": "object:1589"
+    },
+    {
+      "id": "evaporator-freezing-alarm",
+      "name": "蒸发器冻结告警",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 51,
+      "quantity": 1,
+      "channel": "evaporator-freezing-alarm",
+      "$$hashKey": "object:1590"
+    },
+    {
+      "id": "refrigeration-alarm",
+      "name": "制冷告警",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 52,
+      "quantity": 1,
+      "channel": "refrigeration-alarm",
+      "$$hashKey": "object:1591"
+    },
+    {
+      "id": "high-temperature-alarm",
+      "name": "高温告警",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 53,
+      "quantity": 1,
+      "channel": "high-temperature-alarm",
+      "$$hashKey": "object:1592"
+    },
+    {
+      "id": "low-temperature-alarm",
+      "name": "低温告警",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 54,
+      "quantity": 1,
+      "channel": "low-temperature-alarm",
+      "$$hashKey": "object:1593"
+    },
+    {
+      "id": "heater-alarm",
+      "name": "加热器告警",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 55,
+      "quantity": 1,
+      "channel": "heater-alarm",
+      "$$hashKey": "object:1594"
+    },
+    {
+      "id": "overvoltage-warning",
+      "name": "过电压告警",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 56,
+      "quantity": 1,
+      "channel": "overvoltage-warning",
+      "$$hashKey": "object:1595"
+    },
+    {
+      "id": "undervoltage-alarm",
+      "name": "欠电压告警",
+      "datatype": "int",
+      "value": null,
+      "code": 1,
+      "address": 57,
+      "quantity": 1,
+      "channel": "undervoltage-alarm",
+      "$$hashKey": "object:1596"
+    },
+    {
+      "id": "cabinet-temperature",
+      "name": "柜内温度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 0,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "cabinet-temperature",
+      "$$hashKey": "object:1597"
+    },
+    {
+      "id": "evaporator-temperature",
+      "name": "蒸发器温度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "evaporator-temperature",
+      "$$hashKey": "object:1598"
+    },
+    {
+      "id": "condenser-temperature",
+      "name": "冷凝器温度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 2,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "condenser-temperature",
+      "$$hashKey": "object:1599"
+    },
+    {
+      "id": "outside-cabinet-temperature",
+      "name": "柜外温度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 3,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "outside-cabinet-temperature",
+      "$$hashKey": "object:1600"
+    },
+    {
+      "id": "ac-voltage",
+      "name": "交流电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4,
+      "quantity": 1,
+      "channel": "ac-voltage",
+      "$$hashKey": "object:1601"
+    },
+    {
+      "id": "dc-voltage",
+      "name": "直流电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 5,
+      "quantity": 1,
+      "channel": "dc-voltage",
+      "$$hashKey": "object:1602"
+    },
+    {
+      "id": "internal-fan-speed",
+      "name": "内风机转速",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 6,
+      "quantity": 1,
+      "channel": "internal-fan-speed",
+      "$$hashKey": "object:1603"
+    },
+    {
+      "id": "outer-fan-speed",
+      "name": "外风机转速",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 7,
+      "quantity": 1,
+      "channel": "outer-fan-speed",
+      "$$hashKey": "object:1604"
+    },
+    {
+      "id": "temperature",
+      "name": "湿度值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 8,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "temperature",
+      "$$hashKey": "object:1605"
+    },
+    {
+      "id": "refrigeration-opening-temperature",
+      "name": "制冷开启温度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 13,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "refrigeration-opening-temperature",
+      "$$hashKey": "object:1606"
+    },
+    {
+      "id": "refrigeration-stop-temperature",
+      "name": "制冷停止温度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 14,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "refrigeration-stop-temperature",
+      "$$hashKey": "object:1607"
+    },
+    {
+      "id": "heating-opening-temperature",
+      "name": "加热开启温度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 15,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "heating-opening-temperature",
+      "$$hashKey": "object:1608"
+    },
+    {
+      "id": "heating-closing-temperature",
+      "name": "加热停止温度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 16,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "heating-closing-temperature",
+      "$$hashKey": "object:1609"
+    },
+    {
+      "id": "warning-point-of-high-temperature-in-cabinet",
+      "name": "柜内温度高温告警点",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 17,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "warning-point-of-high-temperature-in-cabinet",
+      "$$hashKey": "object:1610"
+    },
+    {
+      "id": "warning-point-of-low-temperature-in-cabinet",
+      "name": "柜内温度低温告警点",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 18,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "warning-point-of-low-temperature-in-cabinet",
+      "$$hashKey": "object:1611"
+    },
+    {
+      "id": "high-temperature-protection-point-of-condenser",
+      "name": "冷凝器温度高温保护点",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 19,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "high-temperature-protection-point-of-condenser",
+      "$$hashKey": "object:1612"
+    },
+    {
+      "id": "temperature-freezing-protection-point-of-evaporator",
+      "name": "蒸发器温度冻结保护点",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 20,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "temperature-freezing-protection-point-of-evaporator",
+      "$$hashKey": "object:1613"
+    },
+    {
+      "id": "dehumidification-opening-humidity",
+      "name": "除湿开启湿度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 21,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "dehumidification-opening-humidity",
+      "$$hashKey": "object:1614"
+    },
+    {
+      "id": "dehumidification-stop-humidity",
+      "name": "除湿停止湿度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 22,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "dehumidification-stop-humidity",
+      "$$hashKey": "object:1615"
+    },
+    {
+      "id": "humidity-warning-limit",
+      "name": "湿度告警限值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 23,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "humidity-warning-limit",
+      "$$hashKey": "object:1616"
+    },
+    {
+      "id": "humidity-correction-value",
+      "name": "湿度校正值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 24,
+      "quantity": 1,
+      "expression": null,
+      "channel": "humidity-correction-value",
+      "$$hashKey": "object:1617"
+    },
+    {
+      "id": "set-refrigeration-opening-temperature",
+      "name": "制冷开启温度",
+      "datatype": "int",
+      "value": null,
+      "code": 6,
+      "address": 13,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "set-refrigeration-opening-temperature",
+      "$$hashKey": "object:1618"
+    },
+    {
+      "id": "set-refrigeration-stop-temperature",
+      "name": "制冷停止温度",
+      "datatype": "int",
+      "value": null,
+      "code": 6,
+      "address": 14,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "set-refrigeration-stop-temperature",
+      "$$hashKey": "object:1619"
+    },
+    {
+      "id": "set-heating-opening-temperature",
+      "name": "加热开启温度",
+      "datatype": "int",
+      "value": null,
+      "code": 6,
+      "address": 15,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "set-heating-opening-temperature",
+      "$$hashKey": "object:1620"
+    },
+    {
+      "id": "set-heating-stop-temperature",
+      "name": "加热停止温度",
+      "datatype": "int",
+      "value": null,
+      "code": 6,
+      "address": 16,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "set-heating-stop-temperature",
+      "$$hashKey": "object:1621"
+    },
+    {
+      "id": "set-warning-point-of-high-temperature-in-cabinet",
+      "name": "柜内温度高温告警点",
+      "datatype": "int",
+      "value": null,
+      "code": 6,
+      "address": 17,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "set-warning-point-of-high-temperature-in-cabinet",
+      "$$hashKey": "object:1622"
+    },
+    {
+      "id": "set-warning-point-of-low-temperature-in-cabinet",
+      "name": "柜内温度低温告警点",
+      "datatype": "int",
+      "value": null,
+      "code": 6,
+      "address": 18,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "set-warning-point-of-low-temperature-in-cabinet",
+      "$$hashKey": "object:1623"
+    },
+    {
+      "id": "set-high-temperature-protection-point-of-condenser",
+      "name": "冷凝器温度高温保护点",
+      "datatype": "int",
+      "value": null,
+      "code": 6,
+      "address": 19,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "set-high-temperature-protection-point-of-condenser",
+      "$$hashKey": "object:1624"
+    },
+    {
+      "id": "set-temperature-freezing-protection-point-of-evaporator",
+      "name": "蒸发器温度冻结保护点",
+      "datatype": "int",
+      "value": null,
+      "code": 6,
+      "address": 20,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "set-temperature-freezing-protection-point-of-evaporator",
+      "$$hashKey": "object:1625"
+    },
+    {
+      "id": "set-dehumidification-opening-humidity",
+      "name": "除湿开启湿度",
+      "datatype": "int",
+      "value": null,
+      "code": 6,
+      "address": 21,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "set-dehumidification-opening-humidity",
+      "$$hashKey": "object:1626"
+    },
+    {
+      "id": "set-dehumidification-stop-humidity",
+      "name": "除湿停止湿度",
+      "datatype": "int",
+      "value": null,
+      "code": 6,
+      "address": 22,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "set-dehumidification-stop-humidity",
+      "$$hashKey": "object:1627"
+    },
+    {
+      "id": "set-humidity-warning-limit",
+      "name": "湿度告警限值",
+      "datatype": "int",
+      "value": null,
+      "code": 6,
+      "address": 23,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "set-humidity-warning-limit",
+      "$$hashKey": "object:1628"
+    },
+    {
+      "id": "set-humidity-correction-value",
+      "name": "湿度校正值",
+      "datatype": "int",
+      "value": null,
+      "code": 6,
+      "address": 24,
+      "quantity": 1,
+      "expression": null,
+      "channel": "set-humidity-correction-value",
+      "$$hashKey": "object:1629"
+    }
+  ],
+  "version": "0.0.1",
+  "description": "CC0500PA channels info",
+  "mappings": [
+    {
+      "protocol": "protocol-modbus-tcp",
+      "type": "ModbusTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 1,
+          "address": 34,
+          "quantity": 1,
+          "expression": null,
+          "channel": "cool-state"
+        },
+        {
+          "code": 1,
+          "address": 35,
+          "quantity": 1,
+          "expression": null,
+          "channel": "heater-state"
+        },
+        {
+          "code": 1,
+          "address": 36,
+          "quantity": 1,
+          "channel": "internal-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 37,
+          "quantity": 1,
+          "channel": "external-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 38,
+          "quantity": 1,
+          "channel": "emergency-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 39,
+          "quantity": 1,
+          "channel": "reserved-switch-volume-output1"
+        },
+        {
+          "code": 1,
+          "address": 40,
+          "quantity": 1,
+          "channel": "reserved-switch-volume-output2"
+        },
+        {
+          "code": 1,
+          "address": 41,
+          "quantity": 1,
+          "channel": "monitoring-shutdown"
+        },
+        {
+          "code": 5,
+          "address": 41,
+          "quantity": 1,
+          "channel": "set-monitoring-shutdown"
+        },
+        {
+          "code": 1,
+          "address": 42,
+          "quantity": 1,
+          "channel": "sensor-failure-in-cabinet"
+        },
+        {
+          "code": 1,
+          "address": 43,
+          "quantity": 1,
+          "channel": "fault-of-evaporator-temperature-sensor"
+        },
+        {
+          "code": 1,
+          "address": 44,
+          "quantity": 1,
+          "channel": "fault-of-condenser-temperature-sensor"
+        },
+        {
+          "code": 1,
+          "address": 45,
+          "quantity": 1,
+          "channel": "fault-of-temperature-sensor-outside-cabinet"
+        },
+        {
+          "code": 1,
+          "address": 46,
+          "quantity": 1,
+          "channel": "fault-of-humidity-sensor"
+        },
+        {
+          "code": 1,
+          "address": 47,
+          "quantity": 1,
+          "channel": "warning-of-excessive-humidity"
+        },
+        {
+          "code": 1,
+          "address": 48,
+          "quantity": 1,
+          "channel": "internal-fan-alarm"
+        },
+        {
+          "code": 1,
+          "address": 49,
+          "quantity": 1,
+          "channel": "outer-fan-warning"
+        },
+        {
+          "code": 1,
+          "address": 50,
+          "quantity": 1,
+          "channel": "condenser-high-pressure-warning"
+        },
+        {
+          "code": 1,
+          "address": 51,
+          "quantity": 1,
+          "channel": "evaporator-freezing-alarm"
+        },
+        {
+          "code": 1,
+          "address": 52,
+          "quantity": 1,
+          "channel": "refrigeration-alarm"
+        },
+        {
+          "code": 1,
+          "address": 53,
+          "quantity": 1,
+          "channel": "high-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 54,
+          "quantity": 1,
+          "channel": "low-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 55,
+          "quantity": 1,
+          "channel": "heater-alarm"
+        },
+        {
+          "code": 1,
+          "address": 56,
+          "quantity": 1,
+          "channel": "overvoltage-warning"
+        },
+        {
+          "code": 1,
+          "address": 57,
+          "quantity": 1,
+          "channel": "undervoltage-alarm"
+        },
+        {
+          "code": 3,
+          "address": 0,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "cabinet-temperature"
+        },
+        {
+          "code": 3,
+          "address": 1,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "evaporator-temperature"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "condenser-temperature"
+        },
+        {
+          "code": 3,
+          "address": 3,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "outside-cabinet-temperature"
+        },
+        {
+          "code": 3,
+          "address": 4,
+          "quantity": 1,
+          "channel": "ac-voltage"
+        },
+        {
+          "code": 3,
+          "address": 5,
+          "quantity": 1,
+          "channel": "dc-voltage"
+        },
+        {
+          "code": 3,
+          "address": 6,
+          "quantity": 1,
+          "channel": "internal-fan-speed"
+        },
+        {
+          "code": 3,
+          "address": 7,
+          "quantity": 1,
+          "channel": "outer-fan-speed"
+        },
+        {
+          "code": 3,
+          "address": 8,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature"
+        },
+        {
+          "code": 3,
+          "address": 13,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-opening-temperature"
+        },
+        {
+          "code": 3,
+          "address": 14,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-stop-temperature"
+        },
+        {
+          "code": 3,
+          "address": 15,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-opening-temperature"
+        },
+        {
+          "code": 3,
+          "address": 16,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-closing-temperature"
+        },
+        {
+          "code": 3,
+          "address": 17,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "warning-point-of-high-temperature-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 18,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "warning-point-of-low-temperature-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 19,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "high-temperature-protection-point-of-condenser"
+        },
+        {
+          "code": 3,
+          "address": 20,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature-freezing-protection-point-of-evaporator"
+        },
+        {
+          "code": 3,
+          "address": 21,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "dehumidification-opening-humidity"
+        },
+        {
+          "code": 3,
+          "address": 22,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "dehumidification-stop-humidity"
+        },
+        {
+          "code": 3,
+          "address": 23,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "humidity-warning-limit"
+        },
+        {
+          "code": 3,
+          "address": 24,
+          "quantity": 1,
+          "expression": null,
+          "channel": "humidity-correction-value"
+        },
+        {
+          "code": 6,
+          "address": 13,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-refrigeration-opening-temperature"
+        },
+        {
+          "code": 6,
+          "address": 14,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-refrigeration-stop-temperature"
+        },
+        {
+          "code": 6,
+          "address": 15,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-heating-opening-temperature"
+        },
+        {
+          "code": 6,
+          "address": 16,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-heating-stop-temperature"
+        },
+        {
+          "code": 6,
+          "address": 17,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-warning-point-of-high-temperature-in-cabinet"
+        },
+        {
+          "code": 6,
+          "address": 18,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-warning-point-of-low-temperature-in-cabinet"
+        },
+        {
+          "code": 6,
+          "address": 19,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-high-temperature-protection-point-of-condenser"
+        },
+        {
+          "code": 6,
+          "address": 20,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-temperature-freezing-protection-point-of-evaporator"
+        },
+        {
+          "code": 6,
+          "address": 21,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-dehumidification-opening-humidity"
+        },
+        {
+          "code": 6,
+          "address": 22,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-dehumidification-stop-humidity"
+        },
+        {
+          "code": 6,
+          "address": 23,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-humidity-warning-limit"
+        },
+        {
+          "code": 6,
+          "address": 24,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-humidity-correction-value"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-serial",
+      "type": "ModbusSerialProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 1,
+          "address": 34,
+          "quantity": 1,
+          "expression": null,
+          "channel": "cool-state"
+        },
+        {
+          "code": 1,
+          "address": 35,
+          "quantity": 1,
+          "expression": null,
+          "channel": "heater-state"
+        },
+        {
+          "code": 1,
+          "address": 36,
+          "quantity": 1,
+          "channel": "internal-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 37,
+          "quantity": 1,
+          "channel": "external-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 38,
+          "quantity": 1,
+          "channel": "emergency-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 39,
+          "quantity": 1,
+          "channel": "reserved-switch-volume-output1"
+        },
+        {
+          "code": 1,
+          "address": 40,
+          "quantity": 1,
+          "channel": "reserved-switch-volume-output2"
+        },
+        {
+          "code": 1,
+          "address": 41,
+          "quantity": 1,
+          "channel": "monitoring-shutdown"
+        },
+        {
+          "code": 5,
+          "address": 41,
+          "quantity": 1,
+          "channel": "set-monitoring-shutdown"
+        },
+        {
+          "code": 1,
+          "address": 42,
+          "quantity": 1,
+          "channel": "sensor-failure-in-cabinet"
+        },
+        {
+          "code": 1,
+          "address": 43,
+          "quantity": 1,
+          "channel": "fault-of-evaporator-temperature-sensor"
+        },
+        {
+          "code": 1,
+          "address": 44,
+          "quantity": 1,
+          "channel": "fault-of-condenser-temperature-sensor"
+        },
+        {
+          "code": 1,
+          "address": 45,
+          "quantity": 1,
+          "channel": "fault-of-temperature-sensor-outside-cabinet"
+        },
+        {
+          "code": 1,
+          "address": 46,
+          "quantity": 1,
+          "channel": "fault-of-humidity-sensor"
+        },
+        {
+          "code": 1,
+          "address": 47,
+          "quantity": 1,
+          "channel": "warning-of-excessive-humidity"
+        },
+        {
+          "code": 1,
+          "address": 48,
+          "quantity": 1,
+          "channel": "internal-fan-alarm"
+        },
+        {
+          "code": 1,
+          "address": 49,
+          "quantity": 1,
+          "channel": "outer-fan-warning"
+        },
+        {
+          "code": 1,
+          "address": 50,
+          "quantity": 1,
+          "channel": "condenser-high-pressure-warning"
+        },
+        {
+          "code": 1,
+          "address": 51,
+          "quantity": 1,
+          "channel": "evaporator-freezing-alarm"
+        },
+        {
+          "code": 1,
+          "address": 52,
+          "quantity": 1,
+          "channel": "refrigeration-alarm"
+        },
+        {
+          "code": 1,
+          "address": 53,
+          "quantity": 1,
+          "channel": "high-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 54,
+          "quantity": 1,
+          "channel": "low-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 55,
+          "quantity": 1,
+          "channel": "heater-alarm"
+        },
+        {
+          "code": 1,
+          "address": 56,
+          "quantity": 1,
+          "channel": "overvoltage-warning"
+        },
+        {
+          "code": 1,
+          "address": 57,
+          "quantity": 1,
+          "channel": "undervoltage-alarm"
+        },
+        {
+          "code": 3,
+          "address": 0,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "cabinet-temperature"
+        },
+        {
+          "code": 3,
+          "address": 1,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "evaporator-temperature"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "condenser-temperature"
+        },
+        {
+          "code": 3,
+          "address": 3,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "outside-cabinet-temperature"
+        },
+        {
+          "code": 3,
+          "address": 4,
+          "quantity": 1,
+          "channel": "ac-voltage"
+        },
+        {
+          "code": 3,
+          "address": 5,
+          "quantity": 1,
+          "channel": "dc-voltage"
+        },
+        {
+          "code": 3,
+          "address": 6,
+          "quantity": 1,
+          "channel": "internal-fan-speed"
+        },
+        {
+          "code": 3,
+          "address": 7,
+          "quantity": 1,
+          "channel": "outer-fan-speed"
+        },
+        {
+          "code": 3,
+          "address": 8,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature"
+        },
+        {
+          "code": 3,
+          "address": 13,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-opening-temperature"
+        },
+        {
+          "code": 3,
+          "address": 14,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-stop-temperature"
+        },
+        {
+          "code": 3,
+          "address": 15,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-opening-temperature"
+        },
+        {
+          "code": 3,
+          "address": 16,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-closing-temperature"
+        },
+        {
+          "code": 3,
+          "address": 17,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "warning-point-of-high-temperature-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 18,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "warning-point-of-low-temperature-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 19,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "high-temperature-protection-point-of-condenser"
+        },
+        {
+          "code": 3,
+          "address": 20,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature-freezing-protection-point-of-evaporator"
+        },
+        {
+          "code": 3,
+          "address": 21,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "dehumidification-opening-humidity"
+        },
+        {
+          "code": 3,
+          "address": 22,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "dehumidification-stop-humidity"
+        },
+        {
+          "code": 3,
+          "address": 23,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "humidity-warning-limit"
+        },
+        {
+          "code": 3,
+          "address": 24,
+          "quantity": 1,
+          "expression": null,
+          "channel": "humidity-correction-value"
+        },
+        {
+          "code": 6,
+          "address": 13,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-refrigeration-opening-temperature"
+        },
+        {
+          "code": 6,
+          "address": 14,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-refrigeration-stop-temperature"
+        },
+        {
+          "code": 6,
+          "address": 15,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-heating-opening-temperature"
+        },
+        {
+          "code": 6,
+          "address": 16,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-heating-stop-temperature"
+        },
+        {
+          "code": 6,
+          "address": 17,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-warning-point-of-high-temperature-in-cabinet"
+        },
+        {
+          "code": 6,
+          "address": 18,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-warning-point-of-low-temperature-in-cabinet"
+        },
+        {
+          "code": 6,
+          "address": 19,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-high-temperature-protection-point-of-condenser"
+        },
+        {
+          "code": 6,
+          "address": 20,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-temperature-freezing-protection-point-of-evaporator"
+        },
+        {
+          "code": 6,
+          "address": 21,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-dehumidification-opening-humidity"
+        },
+        {
+          "code": 6,
+          "address": 22,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-dehumidification-stop-humidity"
+        },
+        {
+          "code": 6,
+          "address": 23,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-humidity-warning-limit"
+        },
+        {
+          "code": 6,
+          "address": 24,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-humidity-correction-value"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-rtu-tcp",
+      "type": "ModbusRtuTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 1,
+          "address": 34,
+          "quantity": 1,
+          "expression": null,
+          "channel": "cool-state"
+        },
+        {
+          "code": 1,
+          "address": 35,
+          "quantity": 1,
+          "expression": null,
+          "channel": "heater-state"
+        },
+        {
+          "code": 1,
+          "address": 36,
+          "quantity": 1,
+          "channel": "internal-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 37,
+          "quantity": 1,
+          "channel": "external-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 38,
+          "quantity": 1,
+          "channel": "emergency-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 39,
+          "quantity": 1,
+          "channel": "reserved-switch-volume-output1"
+        },
+        {
+          "code": 1,
+          "address": 40,
+          "quantity": 1,
+          "channel": "reserved-switch-volume-output2"
+        },
+        {
+          "code": 1,
+          "address": 41,
+          "quantity": 1,
+          "channel": "monitoring-shutdown"
+        },
+        {
+          "code": 5,
+          "address": 41,
+          "quantity": 1,
+          "channel": "set-monitoring-shutdown"
+        },
+        {
+          "code": 1,
+          "address": 42,
+          "quantity": 1,
+          "channel": "sensor-failure-in-cabinet"
+        },
+        {
+          "code": 1,
+          "address": 43,
+          "quantity": 1,
+          "channel": "fault-of-evaporator-temperature-sensor"
+        },
+        {
+          "code": 1,
+          "address": 44,
+          "quantity": 1,
+          "channel": "fault-of-condenser-temperature-sensor"
+        },
+        {
+          "code": 1,
+          "address": 45,
+          "quantity": 1,
+          "channel": "fault-of-temperature-sensor-outside-cabinet"
+        },
+        {
+          "code": 1,
+          "address": 46,
+          "quantity": 1,
+          "channel": "fault-of-humidity-sensor"
+        },
+        {
+          "code": 1,
+          "address": 47,
+          "quantity": 1,
+          "channel": "warning-of-excessive-humidity"
+        },
+        {
+          "code": 1,
+          "address": 48,
+          "quantity": 1,
+          "channel": "internal-fan-alarm"
+        },
+        {
+          "code": 1,
+          "address": 49,
+          "quantity": 1,
+          "channel": "outer-fan-warning"
+        },
+        {
+          "code": 1,
+          "address": 50,
+          "quantity": 1,
+          "channel": "condenser-high-pressure-warning"
+        },
+        {
+          "code": 1,
+          "address": 51,
+          "quantity": 1,
+          "channel": "evaporator-freezing-alarm"
+        },
+        {
+          "code": 1,
+          "address": 52,
+          "quantity": 1,
+          "channel": "refrigeration-alarm"
+        },
+        {
+          "code": 1,
+          "address": 53,
+          "quantity": 1,
+          "channel": "high-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 54,
+          "quantity": 1,
+          "channel": "low-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 55,
+          "quantity": 1,
+          "channel": "heater-alarm"
+        },
+        {
+          "code": 1,
+          "address": 56,
+          "quantity": 1,
+          "channel": "overvoltage-warning"
+        },
+        {
+          "code": 1,
+          "address": 57,
+          "quantity": 1,
+          "channel": "undervoltage-alarm"
+        },
+        {
+          "code": 3,
+          "address": 0,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "cabinet-temperature"
+        },
+        {
+          "code": 3,
+          "address": 1,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "evaporator-temperature"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "condenser-temperature"
+        },
+        {
+          "code": 3,
+          "address": 3,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "outside-cabinet-temperature"
+        },
+        {
+          "code": 3,
+          "address": 4,
+          "quantity": 1,
+          "channel": "ac-voltage"
+        },
+        {
+          "code": 3,
+          "address": 5,
+          "quantity": 1,
+          "channel": "dc-voltage"
+        },
+        {
+          "code": 3,
+          "address": 6,
+          "quantity": 1,
+          "channel": "internal-fan-speed"
+        },
+        {
+          "code": 3,
+          "address": 7,
+          "quantity": 1,
+          "channel": "outer-fan-speed"
+        },
+        {
+          "code": 3,
+          "address": 8,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature"
+        },
+        {
+          "code": 3,
+          "address": 13,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-opening-temperature"
+        },
+        {
+          "code": 3,
+          "address": 14,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-stop-temperature"
+        },
+        {
+          "code": 3,
+          "address": 15,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-opening-temperature"
+        },
+        {
+          "code": 3,
+          "address": 16,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-closing-temperature"
+        },
+        {
+          "code": 3,
+          "address": 17,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "warning-point-of-high-temperature-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 18,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "warning-point-of-low-temperature-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 19,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "high-temperature-protection-point-of-condenser"
+        },
+        {
+          "code": 3,
+          "address": 20,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature-freezing-protection-point-of-evaporator"
+        },
+        {
+          "code": 3,
+          "address": 21,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "dehumidification-opening-humidity"
+        },
+        {
+          "code": 3,
+          "address": 22,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "dehumidification-stop-humidity"
+        },
+        {
+          "code": 3,
+          "address": 23,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "humidity-warning-limit"
+        },
+        {
+          "code": 3,
+          "address": 24,
+          "quantity": 1,
+          "expression": null,
+          "channel": "humidity-correction-value"
+        },
+        {
+          "code": 6,
+          "address": 13,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-refrigeration-opening-temperature"
+        },
+        {
+          "code": 6,
+          "address": 14,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-refrigeration-stop-temperature"
+        },
+        {
+          "code": 6,
+          "address": 15,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-heating-opening-temperature"
+        },
+        {
+          "code": 6,
+          "address": 16,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-heating-stop-temperature"
+        },
+        {
+          "code": 6,
+          "address": 17,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-warning-point-of-high-temperature-in-cabinet"
+        },
+        {
+          "code": 6,
+          "address": 18,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-warning-point-of-low-temperature-in-cabinet"
+        },
+        {
+          "code": 6,
+          "address": 19,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-high-temperature-protection-point-of-condenser"
+        },
+        {
+          "code": 6,
+          "address": 20,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-temperature-freezing-protection-point-of-evaporator"
+        },
+        {
+          "code": 6,
+          "address": 21,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-dehumidification-opening-humidity"
+        },
+        {
+          "code": 6,
+          "address": 22,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-dehumidification-stop-humidity"
+        },
+        {
+          "code": 6,
+          "address": 23,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-humidity-warning-limit"
+        },
+        {
+          "code": 6,
+          "address": 24,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-humidity-correction-value"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-dtu",
+      "type": "ModbusDtuProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 1,
+          "address": 34,
+          "quantity": 1,
+          "expression": null,
+          "channel": "cool-state"
+        },
+        {
+          "code": 1,
+          "address": 35,
+          "quantity": 1,
+          "expression": null,
+          "channel": "heater-state"
+        },
+        {
+          "code": 1,
+          "address": 36,
+          "quantity": 1,
+          "channel": "internal-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 37,
+          "quantity": 1,
+          "channel": "external-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 38,
+          "quantity": 1,
+          "channel": "emergency-fan-state"
+        },
+        {
+          "code": 1,
+          "address": 39,
+          "quantity": 1,
+          "channel": "reserved-switch-volume-output1"
+        },
+        {
+          "code": 1,
+          "address": 40,
+          "quantity": 1,
+          "channel": "reserved-switch-volume-output2"
+        },
+        {
+          "code": 1,
+          "address": 41,
+          "quantity": 1,
+          "channel": "monitoring-shutdown"
+        },
+        {
+          "code": 5,
+          "address": 41,
+          "quantity": 1,
+          "channel": "set-monitoring-shutdown"
+        },
+        {
+          "code": 1,
+          "address": 42,
+          "quantity": 1,
+          "channel": "sensor-failure-in-cabinet"
+        },
+        {
+          "code": 1,
+          "address": 43,
+          "quantity": 1,
+          "channel": "fault-of-evaporator-temperature-sensor"
+        },
+        {
+          "code": 1,
+          "address": 44,
+          "quantity": 1,
+          "channel": "fault-of-condenser-temperature-sensor"
+        },
+        {
+          "code": 1,
+          "address": 45,
+          "quantity": 1,
+          "channel": "fault-of-temperature-sensor-outside-cabinet"
+        },
+        {
+          "code": 1,
+          "address": 46,
+          "quantity": 1,
+          "channel": "fault-of-humidity-sensor"
+        },
+        {
+          "code": 1,
+          "address": 47,
+          "quantity": 1,
+          "channel": "warning-of-excessive-humidity"
+        },
+        {
+          "code": 1,
+          "address": 48,
+          "quantity": 1,
+          "channel": "internal-fan-alarm"
+        },
+        {
+          "code": 1,
+          "address": 49,
+          "quantity": 1,
+          "channel": "outer-fan-warning"
+        },
+        {
+          "code": 1,
+          "address": 50,
+          "quantity": 1,
+          "channel": "condenser-high-pressure-warning"
+        },
+        {
+          "code": 1,
+          "address": 51,
+          "quantity": 1,
+          "channel": "evaporator-freezing-alarm"
+        },
+        {
+          "code": 1,
+          "address": 52,
+          "quantity": 1,
+          "channel": "refrigeration-alarm"
+        },
+        {
+          "code": 1,
+          "address": 53,
+          "quantity": 1,
+          "channel": "high-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 54,
+          "quantity": 1,
+          "channel": "low-temperature-alarm"
+        },
+        {
+          "code": 1,
+          "address": 55,
+          "quantity": 1,
+          "channel": "heater-alarm"
+        },
+        {
+          "code": 1,
+          "address": 56,
+          "quantity": 1,
+          "channel": "overvoltage-warning"
+        },
+        {
+          "code": 1,
+          "address": 57,
+          "quantity": 1,
+          "channel": "undervoltage-alarm"
+        },
+        {
+          "code": 3,
+          "address": 0,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "cabinet-temperature"
+        },
+        {
+          "code": 3,
+          "address": 1,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "evaporator-temperature"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "condenser-temperature"
+        },
+        {
+          "code": 3,
+          "address": 3,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "outside-cabinet-temperature"
+        },
+        {
+          "code": 3,
+          "address": 4,
+          "quantity": 1,
+          "channel": "ac-voltage"
+        },
+        {
+          "code": 3,
+          "address": 5,
+          "quantity": 1,
+          "channel": "dc-voltage"
+        },
+        {
+          "code": 3,
+          "address": 6,
+          "quantity": 1,
+          "channel": "internal-fan-speed"
+        },
+        {
+          "code": 3,
+          "address": 7,
+          "quantity": 1,
+          "channel": "outer-fan-speed"
+        },
+        {
+          "code": 3,
+          "address": 8,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature"
+        },
+        {
+          "code": 3,
+          "address": 13,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-opening-temperature"
+        },
+        {
+          "code": 3,
+          "address": 14,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "refrigeration-stop-temperature"
+        },
+        {
+          "code": 3,
+          "address": 15,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-opening-temperature"
+        },
+        {
+          "code": 3,
+          "address": 16,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "heating-closing-temperature"
+        },
+        {
+          "code": 3,
+          "address": 17,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "warning-point-of-high-temperature-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 18,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "warning-point-of-low-temperature-in-cabinet"
+        },
+        {
+          "code": 3,
+          "address": 19,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "high-temperature-protection-point-of-condenser"
+        },
+        {
+          "code": 3,
+          "address": 20,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "temperature-freezing-protection-point-of-evaporator"
+        },
+        {
+          "code": 3,
+          "address": 21,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "dehumidification-opening-humidity"
+        },
+        {
+          "code": 3,
+          "address": 22,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "dehumidification-stop-humidity"
+        },
+        {
+          "code": 3,
+          "address": 23,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "humidity-warning-limit"
+        },
+        {
+          "code": 3,
+          "address": 24,
+          "quantity": 1,
+          "expression": null,
+          "channel": "humidity-correction-value"
+        },
+        {
+          "code": 6,
+          "address": 13,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-refrigeration-opening-temperature"
+        },
+        {
+          "code": 6,
+          "address": 14,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-refrigeration-stop-temperature"
+        },
+        {
+          "code": 6,
+          "address": 15,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-heating-opening-temperature"
+        },
+        {
+          "code": 6,
+          "address": 16,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-heating-stop-temperature"
+        },
+        {
+          "code": 6,
+          "address": 17,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-warning-point-of-high-temperature-in-cabinet"
+        },
+        {
+          "code": 6,
+          "address": 18,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-warning-point-of-low-temperature-in-cabinet"
+        },
+        {
+          "code": 6,
+          "address": 19,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-high-temperature-protection-point-of-condenser"
+        },
+        {
+          "code": 6,
+          "address": 20,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-temperature-freezing-protection-point-of-evaporator"
+        },
+        {
+          "code": 6,
+          "address": 21,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-dehumidification-opening-humidity"
+        },
+        {
+          "code": 6,
+          "address": 22,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-dehumidification-stop-humidity"
+        },
+        {
+          "code": 6,
+          "address": 23,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "set-humidity-warning-limit"
+        },
+        {
+          "code": 6,
+          "address": 24,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-humidity-correction-value"
+        }
+      ]
+    }
+  ],
+  "path": "../element-lib/element-modbus",
+  "id": "CC0500PA",
+  "cov": 0.2,
+  "$$hashKey": "object:1530"
+}

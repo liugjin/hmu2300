@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实时监控</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/collectionPage.css">
+</head>
+
+<body class="body-box">
+    <div id="body-box">
+        <div class="type-list-box">
+            <div class="title-box">
+                <a href="homePage.html" class="button">
+                    <img src="../pic/collectionPage/1234.svg" width="32" height="32">
+                </a>
+                <span class="title">实时监控</span>
+            </div>
+            <ul class="deviceType-box">
+                <li class="list-content" v-for="(data, index) in typeData" v-if="data.devicelist.length>0"
+                    @click="getDeviceList(data,index)">
+                    <div class="type-icon-box">
+                        <div class="type-icon" :class="{'type-bakc':typeSubscript==index}">
+                            <img v-bind:src="data.typeIconUrl" width="60%" height="60%">
+                        </div>
+                    </div>
+                    <div class="type-name">{{data.name}}</div>
+                </li>
+            </ul>
+        </div>
+        <div class="device-list-content">
+            <ul class="list-box">
+                <li class="list-content" v-for="(data, index) in devicelist" @click="setDeviceBox(data,index)"
+                    :class="{'li-back':listSubscript==index}">
+                    <div class="list-device-box">
+                        <img v-bind:src="data.typeIconUrl" width="30px" height="30px">
+                        <span class="device-name">{{data.name}}</span>
+                    </div>
+                    <!-- v-show="data.state!=-1" -->
+                    <div class="list-device-state">
+                        <img v-if="data.state!=0" src="../pic/collectionPage/normal.svg">
+                        <img v-if="data.state ==0" src="../pic/collectionPage/abnormal.svg">
+                    </div>
+                </li>
+            </ul>
+            <div class="details-content">
+                <div class="devicePic-box">
+                    <div class="device-pic">
+                        <img v-bind:src="devicelistData.typeImg" width="100%" height="100%">
+                    </div>
+                    <div class="device-id">
+                        <div class="id-box">ID:{{devicelistData.id}}</div>
+                        <div class="control" v-show="devicelistData.typeid =='605'">
+                            <div class="control-box" @click='controlLock(devicelistData.id)'>
+                                控制
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-details">
+                    <div class="info-title">
+                        <div class="info-title-box" @click='clickinfo()'>
+                            显示所有信息
+                        </div>
+                    </div>
+                    <ul class="info-content" v-show="devicelistData.typeid !='601'">
+                        <li v-for="(data, index) in newchannels">
+                            <span class="data-name">{{data.name}}</span>
+                            <span
+                                class="data-value">{{data.value == 'null' || data.value == null ?'--' :data.value }}</span>
+                        </li>
+                    </ul>
+                    <ul class="info-pic" v-show="devicelistData.typeid ==='601'">
+                        <li class="pic-li" v-for="(data, index) in vedioList">
+                            <a v-bind:href="data.img" target="_blank">
+                                <img v-bind:src="data.img" width="100%" height="100%">
+                            </a>
+                            <p>{{data.time}}</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/lib/materialize.min.js"></script>
+    <script src="../js/lib/vue.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/collectionPage.js"></script>
+</body>
+
+</html>

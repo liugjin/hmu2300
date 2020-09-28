@@ -1,0 +1,188 @@
+[
+	{
+		"id": "9H200A1700004",
+		"name": "网关",
+		"setting": {},
+		"ports": [
+			{
+				"symbol": "",
+				"protocol": "protocol-modbus-serial",
+				"id": "rs1",
+				"name": "rs1",
+				"enable": true,
+				"setting": {
+					"port": "/dev/COM1",
+					"baudRate": 9600
+				},
+				"sampleUnits": [
+					{
+						"id": "4di",
+						"name": "4di",
+						"period": 3000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "IRM-S04DIF.json",
+						"enable": true,
+						"setting": {
+							"address": 1
+						}
+					},
+					{
+						"id": "th",
+						"name": "温湿度",
+						"period": 3000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "Emerson-TH.json",
+						"enable": true,
+						"setting": {
+							"address": 2
+						}
+					},
+					{
+						"id": "ci",
+						"name": "断路器",
+						"period": 3000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "Emerson-TH.json",
+						"enable": true,
+						"setting": {
+							"address": 3
+						}
+					},
+					{
+						"id": "ups1",
+						"name": "ups1",
+						"period": 3000,
+						"timeout": 100,
+						"maxCommunicationErrors": 5,
+						"element": "ita2-modbus.json",
+						"enable": true,
+						"setting": {
+							"address": 4
+						}
+					}
+				]
+			},
+			{
+				"symbol": "",
+				"protocol": "protocol-pmbus",
+				"id": "rs3",
+				"name": "rs3",
+				"enable": true,
+				"setting": {
+					"port": "/dev/COM2",
+					"baudRate": 19200
+				},
+				"sampleUnits": [
+					{
+						"id": "ups",
+						"name": "UPS",
+						"period": 3000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "DME-AIR.json",
+						"enable": true,
+						"setting": {
+							"address": 2
+						}
+					}
+				]
+			},
+			{
+				"symbol": "",
+				"protocol": "protocol-es5200",
+				"id": "rs2",
+				"name": "rs2",
+				"enable": false,
+				"setting": {
+					"port": "/dev/COM1",
+					"baudRate": 9600
+				},
+				"sampleUnits": [
+					{
+						"id": "es5200-1",
+						"name": "es5200-1",
+						"period": 3000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 10,
+						"element": "es5200.json",
+						"enable": true,
+						"setting": {
+							"address": 1
+						}
+					},
+					{
+						"id": "es5200-2",
+						"name": "es5200-2",
+						"period": 3000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 10,
+						"element": "es5200.json",
+						"enable": true,
+						"setting": {
+							"address": 2
+						}
+					}
+				]
+			},
+			{
+				"symbol": "",
+				"protocol": "protocol-snmp-manager",
+				"id": "lan1",
+				"name": "lan1",
+				"enable": false,
+				"setting": {
+					"port": "/dev/snmp"
+				},
+				"sampleUnits": [
+					{
+						"id": "pdu",
+						"name": "PDU",
+						"period": 3000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "clever-pdu.json",
+						"enable": true,
+						"setting": {
+							"port": "161",
+							"version": "v1",
+							"target": "192.168.1.163",
+							"readCommunity": "public",
+							"writeCommunity": "private"
+						}
+					}
+				]
+			},
+			{
+				"symbol": "",
+				"protocol": "protocol-snmp-manager",
+				"id": "lan2",
+				"name": "lan2",
+				"enable": false,
+				"setting": {
+					"port": "/dev/snmp2"
+				},
+				"sampleUnits": [
+					{
+						"id": "sic",
+						"name": "rdu-sic",
+						"period": 1000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "rdua-sic.json",
+						"enable": true,
+						"setting": {
+							"port": "161",
+							"version": "v2c",
+							"target": "192.168.1.254",
+							"readCommunity": "public",
+							"writeCommunity": "private"
+						}
+					}
+				]
+			}
+		]
+	}
+]

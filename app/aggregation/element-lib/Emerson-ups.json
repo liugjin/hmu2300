@@ -1,0 +1,249 @@
+{
+  "name": "艾默生UPS",
+  "type": "SnmpManagerElement",
+  "channels": [
+    {
+      "id": "upsRatinVoltage",
+      "name": "额定输入电压",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.2.1.0",
+      "expression": null,
+      "channel": "upsRatinVoltage",
+      "$$hashKey": "object:1714"
+    },
+    {
+      "id": "upsRatoutVoltage",
+      "name": "额定输出电压",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.2.2.0",
+      "expression": null,
+      "channel": "upsRatoutVoltage",
+      "$$hashKey": "object:1715"
+    },
+    {
+      "id": "upsRatoutFrequency",
+      "name": "额定输出频率",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.2.3.0",
+      "expression": null,
+      "channel": "upsRatoutFrequency",
+      "$$hashKey": "object:1716"
+    },
+    {
+      "id": "upsRatoutCurrent",
+      "name": "额定输出电流",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.2.4.0",
+      "expression": null,
+      "channel": "upsRatoutCurrent",
+      "$$hashKey": "object:1717"
+    },
+    {
+      "id": "upsRatoutApparentPower",
+      "name": "额定输出视在功率",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.2.5.0",
+      "expression": null,
+      "channel": "upsRatoutApparentPower",
+      "$$hashKey": "object:1718"
+    },
+    {
+      "id": "upsRatoutTruePower",
+      "name": "额定输出有功功率",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.2.6.0",
+      "expression": null,
+      "channel": "upsRatoutTruePower",
+      "$$hashKey": "object:1719"
+    },
+    {
+      "id": "upsBatStatus",
+      "name": "电池状态",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.3.1.0",
+      "expression": null,
+      "channel": "upsBatStatus",
+      "$$hashKey": "object:1720"
+    },
+    {
+      "id": "upsInTtlVoltage",
+      "name": "输入电压",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.4.6.0",
+      "expression": null,
+      "channel": "upsInTtlVoltage",
+      "$$hashKey": "object:1721"
+    },
+    {
+      "id": "upsOutTtlVoltage",
+      "name": "输出电压",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.5.8.0",
+      "expression": null,
+      "channel": "upsOutTtlVoltage",
+      "$$hashKey": "object:1722"
+    },
+    {
+      "id": "upsOutTtlCurrent",
+      "name": "输出电流",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.5.9.0",
+      "expression": null,
+      "channel": "upsOutTtlCurrent",
+      "$$hashKey": "object:1723"
+    },
+    {
+      "id": "upsOutStatus",
+      "name": "输出状态",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.5.10.0",
+      "expression": null,
+      "channel": "upsOutStatus",
+      "$$hashKey": "object:1724"
+    },
+    {
+      "id": "upsByFrequency",
+      "name": "旁路频率",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.6.1.0",
+      "expression": null,
+      "channel": "upsByFrequency",
+      "$$hashKey": "object:1725"
+    },
+    {
+      "id": "upsBatTemperature",
+      "name": "电池温度",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.3.13.0",
+      "expression": null,
+      "channel": "upsBatTemperature",
+      "$$hashKey": "object:1726"
+    },
+    {
+      "id": "upsInTtlCurrent",
+      "name": "输入电流",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.4.7.0",
+      "expression": null,
+      "channel": "upsInTtlCurrent",
+      "$$hashKey": "object:1727"
+    },
+    {
+      "id": "upsOutFrequency",
+      "name": "输出频率",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.21111.1.1.5.2.0",
+      "expression": null,
+      "channel": "upsOutFrequency",
+      "$$hashKey": "object:1728"
+    }
+  ],
+  "version": "0.0.1",
+  "description": "Emerson-ups channels info",
+  "mappings": [
+    {
+      "protocol": "protocol-snmp-manager",
+      "type": "SnmpManagerProtocol",
+      "setting": {
+        "throttle": 1000,
+        "cov": 0.01
+      },
+      "mapping": [
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.2.1.0",
+          "expression": null,
+          "channel": "upsRatinVoltage"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.2.2.0",
+          "expression": null,
+          "channel": "upsRatoutVoltage"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.2.3.0",
+          "expression": null,
+          "channel": "upsRatoutFrequency"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.2.4.0",
+          "expression": null,
+          "channel": "upsRatoutCurrent"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.2.5.0",
+          "expression": null,
+          "channel": "upsRatoutApparentPower"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.2.6.0",
+          "expression": null,
+          "channel": "upsRatoutTruePower"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.3.1.0",
+          "expression": null,
+          "channel": "upsBatStatus"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.4.6.0",
+          "expression": null,
+          "channel": "upsInTtlVoltage"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.5.8.0",
+          "expression": null,
+          "channel": "upsOutTtlVoltage"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.5.9.0",
+          "expression": null,
+          "channel": "upsOutTtlCurrent"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.5.10.0",
+          "expression": null,
+          "channel": "upsOutStatus"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.6.1.0",
+          "expression": null,
+          "channel": "upsByFrequency"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.3.13.0",
+          "expression": null,
+          "channel": "upsBatTemperature"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.4.7.0",
+          "expression": null,
+          "channel": "upsInTtlCurrent"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.21111.1.1.5.2.0",
+          "expression": null,
+          "channel": "upsOutFrequency"
+        }
+      ]
+    }
+  ],
+  "path": "../element-lib/element-snmp-manager",
+  "id": "Emerson-ups",
+  "cov": 0.01,
+  "$$hashKey": "object:1698"
+}

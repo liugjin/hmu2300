@@ -1,0 +1,37 @@
+[
+	{
+		"id": "9H200A1702001",
+		"name": "网关",
+		"setting": {},
+		"ports": [
+			{
+				"symbol": "",
+				"protocol": "protocol-weigeng-entry",
+				"id": "sp-serial-1",
+				"name": "串口1",
+				"enable": true,
+				"setting": {
+					"port": "/dev/weigeng",
+					"localhostAddress": "192.168.20.199",
+					"localhostPort": "20020"
+				},
+				"sampleUnits": [
+					{
+						"id": "com1",
+						"name": "com1",
+						"period": 2000,
+						"timeout": 900,
+						"maxCommunicationErrors": 5,
+						"element": "weigeng-door.json",
+						"enable": true,
+						"setting": {
+							"doorAddress": "192.168.1.19",
+							"doorPort": "2345",
+							"serialNo": "123456789"
+						}
+					}
+				]
+			}		
+		]
+	}
+]

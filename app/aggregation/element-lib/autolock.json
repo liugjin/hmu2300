@@ -1,0 +1,121 @@
+{
+    "type": "AutoLockElement", 
+    "name": "自动电子锁", 
+    "channels": [
+        {
+            "id": "val", 
+            "name": "dido"
+        },
+        {
+            "id": "di1", 
+            "name": "modbus"
+        },
+        {
+            "id": "di2", 
+            "name": "modbus"
+        },
+        {
+            "id": "di3", 
+            "name": "modbus"
+        },
+        {
+            "id": "di4", 
+            "name": "modbus"
+        },
+        {
+            "id": "do1", 
+            "name": "modbus"
+        },
+        {
+            "id": "do2", 
+            "name": "modbus"
+        },
+        {
+            "id": "do3", 
+            "name": "modbus"
+        },
+        {
+            "id": "do4", 
+            "name": "modbus"
+        },
+        {
+            "id": "set-do1", 
+            "name": "modbus"
+        },
+        {
+            "id": "set-do2", 
+            "name": "modbus"
+        },
+        {
+            "id": "set-do3", 
+            "name": "modbus"
+        },
+        {
+            "id": "set-do4", 
+            "name": "modbus"
+        }
+    ], 
+    "id": "autolock", 
+    "version": "0.0.1", 
+    "description": "autolock channels info", 
+    "mappings": [
+        {
+            "protocol": "protocol-autolock-dido", 
+            "type": "DIDOProtocol", 
+            "setting": {
+            }, 
+            "mapping": [
+                {
+                    "channel": "val"
+                }
+            ]
+        },
+        {
+            "protocol": "protocol-autolock-ioblock", 
+            "type": "DIDOProtocol", 
+            "setting": {
+            }, 
+            "mapping": [
+                {
+                    "channel": "di1"
+                },
+                {
+                    "channel": "di2"
+                },
+                {
+                    "channel": "di3"
+                },
+                {
+                    "channel": "di4"
+                },
+                {
+                    "channel": "do1"
+                },
+                {
+                    "channel": "do2"
+                },
+                {
+                    "channel": "do3"
+                },
+                {
+                    "channel": "do4"
+                },
+                {
+                    "channel": "set-do1"
+                },
+                {
+                    "channel": "set-do2"
+                },
+                {
+                    "channel": "set-do3"
+                },
+                {
+                    "channel": "set-do4"
+                }
+            ]
+        }
+
+
+    ], 
+    "path": "../element-lib/element-sfere"
+}

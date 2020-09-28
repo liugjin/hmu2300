@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>升级与重启</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/success-c.css">
+</head>
+
+<body>
+    <div id="body-box">
+        <div class="page-title">
+            <div class="title-box">
+                <a href="homePage.html" class="button">
+                    <img src="../pic/collectionPage/1234.svg" width="32" height="32">
+                </a>
+                <span class="title">升级与重启</span>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="upgrade">
+                <ul class="upgrade-box">
+                    <li class="upgrade-icon">
+                        <img src="../pic/success/upgrade.gif" height="80%">
+                    </li>
+                    <li class="upgrade-tips" v-show="!upgrade">
+                        <span>为了高效升级体验,请选择开发指定的升级包</span>
+                        <form id="uploadFileForm" enctype="multipart/form-data" style="margin-top:10px;">
+                            <input type="file" name="file" id="file">
+                        </form>
+                    </li>
+                    <li class="upgrade-tips" v-show="upgrade">
+                        <span>设备升级中，请勿刷新页面......</span>
+                    </li>
+                    <li class="upgrade-btn">
+                        <a class="waves-effect waves-light btn" @click="upgradeClick()">本地升级</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="upgrade">
+                <ul class="upgrade-box">
+                    <li class="upgrade-icon">
+                        <img src="../pic/success/upgrade.gif" height="80%">
+                    </li>
+                    <li class="upgrade-tips" v-show="!upgrade">
+                        <span>请在联网环境下,选择云升级包</span>
+                        <form class="cloud" id="cloudupdateUrlForm" method="post">
+                            <div class="input-field col s2">
+                                <input id="updateUrl" type="text" class="validate" name="updateUrl">
+                                <label for="updateUrl">云升级url地址</label>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="upgrade-tips" v-show="cloudupgrade">
+                        <span>设备升级中，请勿刷新页面......</span>
+                    </li>
+                    <li class="upgrade-btn">
+                        <a class="waves-effect waves-light btn" @click="urlSend()">云升级</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="restart">
+                <ul class="upgrade-box">
+                    <li class="upgrade-icon">
+                        <img src="../pic/success/restart.gif" height="80%">
+                    </li>
+                    <li class="upgrade-tips">
+                        <span v-show="!restart">配置完成！点击下面重启按钮设备将重启并配置生效！</span>
+                        <span v-show="restart">设备重启中，请勿刷新页面......</span>
+                    </li>
+                    <li class="upgrade-btn">
+                        <a class="waves-effect waves-light btn" @click="restartClick()">重启</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/lib/vue.min.js"></script>
+    <!-- <script src="../js/logtype.js"></script> -->
+    <!-- <script src="../js/step.js"></script> -->
+    <script src="../js/common.js"></script>
+    <script src="../js/success-c.js"></script>
+</body>
+
+</html>

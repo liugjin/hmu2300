@@ -1,0 +1,148 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 968px;
+    min-height: 100vh;
+    margin-bottom: 0 !important;
+}
+
+.login-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url('../pic/login/background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+    
+.login-content .logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+    
+.login-content .logo-box-min{
+    width: 30%;
+    height: 10%;
+}
+     
+.login-content .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+    
+.login-content .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    font-size: 18px;
+    color: #F5F5F5;
+}
+    
+.login-content .login-box{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+
+.loginBox-content{
+    width: 54%;
+    height: 54%;
+    border-radius: 4px;
+    padding: 0 2.2rem;
+    background: #FFF;
+}
+   
+.login-title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 16%;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.login-number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 20%;
+}
+  
+.login-number span,.login-password span{
+    margin-bottom: 0.4rem;
+    color: #101010;
+}
+
+.login-password{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 24%;
+}
+
+.login-password div{
+    margin-top: 1rem;
+}
+        
+.login-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+     
+.reset-password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    border-top: 1px solid #DBDBDB;
+    cursor: pointer;
+}
+
+
+
+.btn, .btn-large,.btn-flat{
+    height: 46px;
+    line-height: 46px;
+    padding: 0 10rem;
+    background-color: #10A957;
+    box-shadow: none
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: #10A957;
+    box-shadow: none;
+}
+
+input[type=text]:focus:not([readonly]),input[type=password]:focus:not([readonly]){
+    border-bottom: 1px solid #DBDBDB;
+    box-shadow: none;
+}
+
+input[type=text],input[type=password]{
+    border-bottom: 1px solid #DBDBDB;
+}
+ 
+a{
+    color: #10A957;
+}     
+    

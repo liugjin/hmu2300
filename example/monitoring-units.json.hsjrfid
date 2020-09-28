@@ -1,0 +1,34 @@
+[
+	{
+		"id": "9H200A1702001",
+		"name": "网关",
+		"setting": {},
+		"ports": [
+			{
+				"symbol": "",
+				"protocol": "protocol-hsj-rfid",
+				"id": "sp-serial-1",
+				"name": "串口1",
+				"enable": true,
+				"setting": {
+					"port": "COM13",
+					"baudRate": 115200
+				},
+				"sampleUnits": [
+					{
+						"id": "com1",
+						"name": "com1",
+						"period": 2000,
+						"timeout": 900,
+						"maxCommunicationErrors": 5,
+						"element": "HSJRFID.json",
+						"enable": true,
+						"setting": {
+							
+						}
+					}
+				]
+			}		
+		]
+	}
+]

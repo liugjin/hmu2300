@@ -1,0 +1,138 @@
+<!-- 配置信息页面 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>联网配置</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <link rel="stylesheet" href="../css/11SNMP.css">
+</head>
+
+<body>
+    <div id="body-box">
+        <div class="page-title">
+            <div class="title-box">
+                <a href="homePage.html" class="button">
+                    <img src="../pic/collectionPage/1234.svg" width="32" height="32">
+                </a>
+                <span class="title">采集配置</span>
+            </div>
+            <div class="tab-box">
+                <ul class="tab-title" id="changeinit">
+                    <li>
+                        <a href="1networking.html">
+                            <span class="circle grey lighten-3">1</span>
+                            <div class="tabname">联网配置</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="2ap.html">
+                            <span class="circle grey lighten-3">2</span>
+                            <div class="tabname">AP配置</div>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="3lan.html">
+                            <span class="circle grey lighten-3">3</span>
+                            <div class="tabname">LAN配置</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="6ntp.html">
+                            <span class="circle grey lighten-3 ">4</span>
+                            <div class="tabname">NTP配置</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="4basic.html">
+                            <span class="circle grey lighten-3">5</span>
+                            <div class="tabname">基础配置</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="5collect.html">
+                            <span class="circle grey lighten-3">6</span>
+                            <div class="tabname">采集配置</div>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="7frcp.html">
+                            <span class="circle grey lighten-3">7</span>
+                            <div class="tabname">映射配置</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="8realtimedata.html">
+                            <span class="circle grey lighten-3">8</span>
+                            <div class="tabname">实时数据</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="10moiveCapture.html">
+                            <span class="circle grey lighten-3">9</span>
+                            <div class="tabname">视频抓图</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="11SNMP.html">
+                            <span class="circle green1">10</span>
+                            <div class="tabname">SNMP配置</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="form-box">
+                <h5 class="form-title">SNMP配置</h5>
+                <div class="form-content">
+                    <div>
+                        <div class="mibList">
+                            <label for="linktype">Mib下载</label>
+                            <select id="linktype" name="linktype" class="browser-default">
+                                <option value="" disabled selected>请选择mib列表</option>
+                            </select>
+                        </div>
+                        <div class="download" onclick="download()">
+                            下载
+                        </div>
+                    </div>
+                    <label class="label-title">
+                        <span style="color: red;">*</span>
+                        <span>Community</span>
+                    </label>
+                    <div>
+                        <label>read</label>
+                        <input id="read" type="text" name="read" placeholder="单行输入">
+                    </div>
+                    <div>
+                        <label>write</label>
+                        <input id="write" type="text" name="write" placeholder="单行输入">
+                    </div>
+                    <div>
+                        <label>trapd地址</label>
+                        <input id="trapd" type="text" name="write" placeholder="单行输入">
+                    </div>
+                    <div style="display: flex;justify-content: space-between;margin-top: 1.6rem" class="spacing">
+                        <button type="submit" class="form-control btn-large" id="" onclick="setCommunity()">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/lib/materialize.min.js"></script>
+    <script src="../js/lib/FileSaver.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/11SNMP.js"></script>
+</body>
+
+</html>

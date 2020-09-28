@@ -1,0 +1,21 @@
+{
+	"mqtt": {
+		"host": "lab.huayuan-iot.com",
+		"port": "1883"
+	},
+	"muid": "9H200A1701001",
+	"cameras": [
+		{
+			"cameraId": "ert",
+			"cameraName": "camera1",
+			"rtspUrl": "rtsp://admin:admin123@192.168.1.251:554/Streaming/Channels/101/",
+			"streamId": "192.168.1.251",
+			"serverUrl": "rtmp://lab.huayuan-iot.com:1935/live/123",
+			"streamName": "ert",
+			"rtmpUrl": "rtmp://lab.huayuan-iot.com:1935/live/9H200A1710001_camera1",
+			"hlsUrl": "http://lab.huayuan-iot.com:8081/hls/9H200A1710001_camera1/index.m3u8",
+			"userName": "admin",
+			"password": "admin"
+		}
+	]
+}

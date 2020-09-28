@@ -1,0 +1,257 @@
+<!-- 配置信息页面 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>联网配置</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <link rel="stylesheet" href="../css/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="../css/nouislider.min.css">
+    <!-- <link rel="stylesheet" href="../css/DateTimePicker.min.css"> -->
+    <style>
+        .ui-timepicker-wrapper {
+            width: 13.5em;
+            text-align: center;
+        }
+
+        .progress-mean {
+            height: 1rem;
+            width: 1rem;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+        .progress-bar {
+            line-height: 1rem;
+            height: 1rem;
+            width: 100%;
+            font-size: 0;
+            vertical-align: top;
+            white-space: nowrap;
+        }
+
+        .bar-info {
+            height: 100%;
+        }
+
+        .noUi-handle {
+            height: 1.3rem !important;
+            width: 0.5rem !important;
+            right: -0.2rem !important;
+            top: -2px !important;
+        }
+
+        .noUi-handle::before {
+            content: none;
+        }
+
+        .noUi-handle::after {
+            content: none;
+        }
+
+        .noUi-tooltip {
+            font-size: 1rem;
+        }
+
+        .noUi-connect {
+            background-color: #10a957;
+        }
+
+        .noUi-connects {
+            border-radius: 0 !important;
+        }
+
+        .noUi-target {
+            border: none;
+            border-radius: 0 !important;
+        }
+
+        #videotape>li {
+            word-break: break-all;
+            border-bottom: 1px solid #ededed;
+            margin-bottom: 4px;
+            cursor: pointer;
+        }
+
+        .videotape {
+            font-size: 10px;
+            margin-bottom: 4px;
+            padding-bottom: 4px;
+            white-space: nowrap;
+        }
+
+        .responsive-video {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="container row">
+    <header class="header">
+    </header>
+    <nav class="transparent z-depth-0">
+        <div class="nav-wrapper" style="display: flex;">
+            <div style="display: inline-block;width: 14rem;">
+                <img class="toc" src="../pic/toc.png">
+            </div>
+            <div style="display: inline-block;margin: auto;">
+                <!-- <img class="logo-img" src="../pic/logo.png"> -->
+                <img class="logo-img" src="../pic/1.png">
+            </div>
+            <ul id="nav-mobile" class="right">
+                <li>
+                    <a class="nav-in" href="cloudvideo.html">
+                        <object style="width: 1.8rem;" data="../pic/cloud.svg"></object><span class="hide-on-med-and-down">&nbsp;云视频</span></a>
+                </li>
+                <li>
+                    <a class="nav-in" href="1networking.html">
+                        <object style="width: 1.8rem;vertical-align: middle;" data="../pic/hmu.svg"></object>&nbsp;HMU</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="col l10 offset-l1 m12 s12" style="margin-top: 6rem;">
+        <div id="test1" class="col s12 m12 l12">
+            <h4 id="pageTitle" class="center" style="margin-bottom: 3rem;">
+                <a href="cloudvideo.html" class="btn left" style="margin-bottom: 3px;font-size: 1rem;padding: 0;width: 5rem;">返回</a>
+                <a id="lookVideo" class="btn left" style="margin-bottom: 3px;margin-left: 1rem;font-size: 1rem;padding: 0;width: 5rem;">查看录像</a>
+                <span style="margin-left: -11rem;">录像设置</span>
+            </h4>
+
+            <div style="display: none;" id="camList" class="col l3 m4 s12 card-panel z-depth-0 cam-left">
+                <div>
+                    通过时间段查询
+                    <a class="waves-effect waves-light btn" id="searchVideo">查询</a>
+                </div>
+
+                <input type="text" data-field="datetime" readonly id="datepickS" data-format="yyyy-MM-dd hh:mm" placeholder="请选择开始时间" style="margin-bottom: 0 !important;height: 2.4rem;">
+                <div id="dtBox1"></div>
+
+                <input type="text" data-field="datetime" readonly id="datepickE" data-format="yyyy-MM-dd hh:mm" placeholder="请选择结束时间" style="margin-bottom: 0 !important;height: 2.4rem;">
+                <div id="dtBox2"></div>
+
+                <ul id="videotape">
+                </ul>
+
+            </div>
+
+            <div class="cam-right col offset-l2 l18 m8 s12">
+                <form action="" id="camera1" data-type="new">
+                    <div class="col l12" style="height: 5rem;">
+                        <div style="height: 1rem;line-height: 1rem;margin-bottom: 0.5rem;">
+                            <div class="progress-mean" style="background-color: #ededed;"></div> 总容量
+                            <div class="progress-mean" style="background-color: #10a957;"></div>设置容量
+                            <div class="progress-mean" style="background-color: #bdbdbd ;"></div>其他文件
+                            <div class="progress-mean" style="background-color: #ff9800;"></div>已录像
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="total-disc bar-info" style="background-color: #ededed;" title="总容量"></div>
+                        </div>
+
+                        <div class="progress-bar" id="slideShow">
+                            <div class="other-disc bar-info" style="background-color: #bdbdbd ;display: inline-block;" title="其他文件"></div>
+                            <div class="limit-disc bar-info" style="background-color: #10a957;display: inline-block;" title="设置容量"></div>
+                            <div id="slider" class="slide-bar" style="height: 1rem;"></div>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="other-disc bar-info" style="background-color: #bdbdbd ;display: inline-block;" title="其他文件"></div>
+                            <div class="used-disc bar-info" style="background-color: #ff9800;display: inline-block;" title="已录像"></div>
+                        </div>
+                    </div>
+
+                    <div class="input-field col l6">
+                        <input type="text" id="limit" name="limit">
+                        <label for="limit">设置录像存储容量(M)</label>
+                    </div>
+                    <div class="input-field col l6">
+                        <input type="text" id="nowUsed" name="nowUsed" disabled>
+                        <label for="nowUsed">当前录像已用容量(M)</label>
+                    </div>
+
+                    <div class="switch">
+                        <label>
+                            录像
+                            <input type="checkbox" id="videoSwitch">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                    <div class="input-field col l6">
+                        <input type="text" id="videoStart" name="videoStart" disabled>
+                        <label for="startTime">开始时间</label>
+                    </div>
+                    <div class="input-field col l6">
+                        <input type="text" id="videoEnd" name="videoEnd" disabled>
+                        <label for="endTime">结束时间</label>
+                    </div>
+
+                    <div class="switch">
+                        <label>
+                            云同步
+                            <input type="checkbox" id="cloudSwitch">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                    <div class="input-field col l6">
+                        <input type="text" id="cloudStart" name="cloudStart" disabled>
+                        <label for="cloudStart">开始时间</label>
+                    </div>
+                    <div class="input-field col l6">
+                        <input type="text" id="cloudEnd" name="cloudEnd" disabled>
+                        <label for="cloudEnd">结束时间</label>
+                    </div>
+                </form>
+                <div class="button-grop  col l12">
+                    <a id="submit1" class="waves-effect waves-light btn z-depth-1">保存</a>
+                    <!-- <a id="addCamera" class="waves-effect btn z-depth-1">新增</a> -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="modalAddCamera" class="modal">
+        <div class="modal-content">
+            <h4>详情</h4>
+            <p>保存成功！</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">确定</a>
+        </div>
+    </div>
+    <div id="modalDeleteCamera" class="modal">
+        <div class="modal-content">
+            <h4>详情</h4>
+            <p>删除成功！</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">确定</a>
+        </div>
+    </div>
+
+    <div id="modalVideo" class="modal modal-fixed-footer">
+        <div class="modal-content" id="videoAddress" style="overflow: hidden;">
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">关闭</a>
+        </div>
+    </div>
+    <footer>
+        <span>Copyright © 2018 华远云联数据科技有限公司</span>
+    </footer>
+
+    <script src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/lib/materialize.min.js"></script>
+    <script src="../js/lib/jquery.timepicker.min.js"></script>
+    <script src="../js/lib/nouislider.min.js"></script>
+    <script src="../js/lib/wNumb.js"></script>
+    <!-- <script src="../js/lib/DateTimePicker.js"></script> -->
+    <!-- <script src="../js/lib/DatetimePicker-i18n-zh-CN.js"></script> -->
+    <script src="../js/common.js"></script>
+    <script src="../js/video1.js"></script>
+</body>
+
+</html>

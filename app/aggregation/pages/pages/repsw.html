@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>修改密码</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/repsw.css">
+</head>
+
+<body>
+    <div class="login-content" id="body-box">
+        <div class="logo-box">
+            <div class="logo-box-min">
+                <span class="logo">
+                    <img src="../pic/login/logo.svg" width="74%" height="80%">
+                </span>
+                <span class="title">重置密码维护数据安全</span>
+            </div>
+        </div>
+        <div class="login-box">
+            <div class="loginBox-content">
+                <div class="login-title">
+                    <span>重置密码</span>
+                </div>
+                <div class="login-number">
+                    <span>输入账号</span>
+                    <input type="text" placeholder="请输入账号" v-model="account" @keyup.enter="keyLogin()" />
+                </div>
+                <div class="login-password">
+                    <span>输入旧密码</span>
+                    <input type="password" placeholder="请输入旧密码" v-model="oldpwd" @keyup.enter="keyLogin()" />
+                </div>
+                <div class="login-password">
+                    <span>输入新密码</span>
+                    <input type="password" placeholder="请输入新密码" v-model="newpwd" @keyup.enter="keyLogin()" />
+                </div>
+                <div class="login-button">
+                    <a class="waves-effect waves-light btn" @click="submit()">确认</a>
+                </div>
+                <div class="reset-password">
+                    <a href="login.html">返回登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/lib/materialize.min.js"></script>
+    <script src="../js/lib/vue.min.js"></script>
+    <script src="../js/common.js"></script>
+    <!-- <script src="../js/logtype.js"></script> -->
+    <script src="../js/repsw.js"></script>
+</body>
+
+</html>

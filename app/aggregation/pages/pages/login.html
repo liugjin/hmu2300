@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>登陆界面</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="login-content" id="body-box">
+        <div class="logo-box">
+            <div class="logo-box-min">
+                <span class="logo">
+                    <img src="../pic/login/logo.svg" width="74%" height="80%">
+                </span>
+                <span class="title">登录查看实时数据</span>
+            </div>
+        </div>
+        <div class="login-box">
+            <div class="loginBox-content">
+                <div class="login-title">
+                    <span>登录</span>
+                </div>
+                <div class="login-number">
+                    <span>输入账号</span>
+                    <input type="text" placeholder="请输入账号" v-model="account" @keyup.enter="keyLogin()" />
+                </div>
+                <div class="login-password">
+                    <span>输入密码</span>
+                    <input type="password" placeholder="请输入密码" v-model="password" @keyup.enter="keyLogin()" />
+                </div>
+                <div class="login-button">
+                    <a class="waves-effect waves-light btn" @click="login()">登录</a>
+                </div>
+                <div class="reset-password">
+                    <img src="../pic/login/repsw.svg" width="10%" height="16%">
+                    <a href="repsw.html">重置你的密码</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/lib/materialize.min.js"></script>
+    <script src="../js/lib/vue.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>

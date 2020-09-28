@@ -1,0 +1,158 @@
+{
+    "type": "CameraElement", 
+    "name": "face-ipc", 
+    "channels": [
+        {
+            "id": "register", 
+            "name": "注册白名单", 
+            "datatype": "command", 
+            "value": null
+        },
+        {
+            "id": "unregister", 
+            "name": "注销白名单", 
+            "datatype": "command", 
+            "value": null
+        },
+        {
+            "id": "reboot", 
+            "name": "重启", 
+            "datatype": "command", 
+            "value": null
+        },
+        {
+            "id": "getconfig", 
+            "name": "获取配置", 
+            "datatype": "command", 
+            "value": null
+        },
+        {
+            "id": "setconfig", 
+            "name": "配置", 
+            "datatype": "command", 
+            "value": null
+        },
+        {
+            "id": "upgrade", 
+            "name": "升级", 
+            "datatype": "command", 
+            "value": null
+        },
+        {
+            "id": "transmission", 
+            "name": "透传数据", 
+            "datatype": "command", 
+            "value": null
+        }
+    ], 
+    "id": "face-ipc", 
+    "version": "0.0.1", 
+    "description": "face-ipc channels info", 
+    "mappings": [
+        {
+            "protocol": "protocol-face-ipc", 
+            "type": "FaceIPCProtocol", 
+            "setting": {
+                "throttle": 1000, 
+                "optimized": true, 
+                "stepDiff": 3, 
+                "maxDiff": 122, 
+                "cov": 0.01
+            }, 
+            "mapping": [
+                {
+                    "code": 0, 
+                    "address": 0, 
+                    "quantity": 0, 
+                    "format": "", 
+                    "cid1": 0, 
+                    "cid2": 0, 
+                    "command": 0, 
+                    "offset": 0, 
+                    "length": 0, 
+                    "expression": "", 
+                    "channel": "register"
+                },
+                {
+                    "code": 0, 
+                    "address": 0, 
+                    "quantity": 0, 
+                    "format": "", 
+                    "cid1": 0, 
+                    "cid2": 0, 
+                    "command": 0, 
+                    "offset": 0, 
+                    "length": 0, 
+                    "expression": "", 
+                    "channel": "unregister"
+                },
+                {
+                    "code": 0, 
+                    "address": 0, 
+                    "quantity": 0, 
+                    "format": "", 
+                    "cid1": 0, 
+                    "cid2": 0, 
+                    "command": 0, 
+                    "offset": 0, 
+                    "length": 0, 
+                    "expression": "", 
+                    "channel": "reboot"
+                },
+                {
+                    "code": 0, 
+                    "address": 0, 
+                    "quantity": 0, 
+                    "format": "", 
+                    "cid1": 0, 
+                    "cid2": 0, 
+                    "command": 0, 
+                    "offset": 0, 
+                    "length": 0, 
+                    "expression": "", 
+                    "channel": "getconfig"
+                },
+                {
+                    "code": 0, 
+                    "address": 0, 
+                    "quantity": 0, 
+                    "format": "", 
+                    "cid1": 0, 
+                    "cid2": 0, 
+                    "command": 0, 
+                    "offset": 0, 
+                    "length": 0, 
+                    "expression": "", 
+                    "channel": "setconfig"
+                },
+                {
+                    "code": 0, 
+                    "address": 0, 
+                    "quantity": 0, 
+                    "format": "", 
+                    "cid1": 0, 
+                    "cid2": 0, 
+                    "command": 0, 
+                    "offset": 0, 
+                    "length": 0, 
+                    "expression": "", 
+                    "channel": "upgrade"
+                },
+                {
+                    "code": 0, 
+                    "address": 0, 
+                    "quantity": 0, 
+                    "format": "", 
+                    "cid1": 0, 
+                    "cid2": 0, 
+                    "command": 0, 
+                    "offset": 0, 
+                    "length": 0, 
+                    "expression": "", 
+                    "channel": "transmission"
+                }
+            ]
+        }
+    ], 
+    "path": "../element-lib/element-sfere"
+}

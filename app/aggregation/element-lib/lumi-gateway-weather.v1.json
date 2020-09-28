@@ -1,0 +1,101 @@
+{
+	"id": "lumi-gateway-weather.v1",
+	"name": "lumi-gateway-weather.v1",
+	"type": "LuMiGatewayElement",
+	"version": "1.0.0",
+	"description": "test",
+	"path": "element-lib/lumi-gateway-weather.v1.json",
+	"channels": [
+		{
+			"id": "temperature",
+			"name": "温度",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "humidity",
+			"name": "湿度",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "pressure",
+			"name": "大气压",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "voltage",
+			"name": "电压",
+			"datatype": "int",
+			"value": null
+		}
+	],
+	"mappings": [
+		{
+			"protocol": "protocol-lumi-gateway",
+			"type": "LuMiGatewayProtocol",
+			"setting": {
+				"throttle": 0,
+				"optimized": false,
+				"stepDiff": 0,
+				"maxDiff": 0,
+				"cov": 0
+			},
+			"mapping": [
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "val/100",
+					"channel": "temperature"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "val/100",
+					"channel": "humidity"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "val/1000",
+					"channel": "pressure"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "voltage"
+				}
+			]
+		}
+	]
+}

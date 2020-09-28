@@ -1,0 +1,98 @@
+{
+	"id": "iomodule",
+	"name": "io模块",
+	"type": "",
+	"version": "1.0.0",
+	"description": "test",
+	"path": "/usr/bin/aggregation/element-lib/iomodule.json",
+	"channels": [
+		{
+			"id": "DI1",
+			"name": "DI1",
+			"datatype": "int",
+			"value": 0
+		},
+		{
+			"id": "DI2",
+			"name": "DI2",
+			"datatype": "int",
+			"value": 0
+		}
+	],
+	"mappings": [
+		{
+			"protocol": "protocol-modbus-serial",
+			"type": "ModbusSerialProtocol",
+			"setting": {
+				"throttle": 0,
+				"optimized": false,
+				"stepDiff": 0,
+				"maxDiff": 0,
+				"cov": 0
+			},
+			"mapping": [
+				{
+					"code": 1,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "",
+					"channel": "DI1"
+				},
+				{
+					"code": 1,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "",
+					"channel": "DI2"
+				}
+			]
+		},
+		{
+			"protocol": "protocol-modbus-tcp",
+			"type": "ModbusTcpClientProtocol",
+			"setting": {
+				"throttle": 0,
+				"optimized": false,
+				"stepDiff": 0,
+				"maxDiff": 0,
+				"cov": 0
+			},
+			"mapping": [
+				{
+					"code": 1,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "",
+					"channel": "DI1"
+				},
+				{
+					"code": 1,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "",
+					"channel": "DI2"
+				},
+				{
+					"code": 1,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "",
+					"channel": "DI1"
+				},
+				{
+					"code": 1,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "",
+					"channel": "DI2"
+				}
+			]
+		}
+	]
+}

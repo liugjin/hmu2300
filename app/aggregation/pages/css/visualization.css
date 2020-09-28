@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    -webkit-font-smoothing: antialiased;
+}
+html {
+    font-family: '微软雅黑';
+}
+.green11 {
+    background: #10a957 !important;
+}
+
+/* 默认样式修改 */
+
+.card.small .card-image {
+    height: 60%;
+}
+
+.card .card-image img {
+    margin: 0 auto;
+    height: 50%;
+    margin-top: 10%;
+    width: auto;
+}
+
+.card .card-image .card-title {
+    color: #000000;
+    padding-bottom: 0;
+}
+
+.modal.bottom-sheet {
+    max-height: 100% !important;
+}
+[type="checkbox"]+label {
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.close-modal-customize {
+    width: 4rem;
+    padding: 0;
+    margin: -0.6rem -0.6rem 0 0;
+    text-align: center;
+}
+.equip-logo {
+    /* formatting model */
+   
+    /* box model */
+    padding: 0.4rem;
+    width: 6vw;
+    height: 5rem;
+    line-height: 2.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #b1b1b1;
+    border-radius: 3px;
+    color: #b1b1b1;
+    /* typographic */
+    text-align: center;
+}
+.equip-logo:hover{
+    border: 1px solid #10a957;
+    color: #10a957;
+}
+.equip-logo:hover .equip-img{
+    filter: grayscale(0);
+}
+.equip-logo:hover .equip-delete{
+    display: block;
+}
+.equip-logo > .equip-type {
+    position: relative;
+    top: 0.2rem;
+    left: 0.2rem;
+
+    width: .6rem;
+    height: .6rem;
+    border-radius: 50%;
+    background: #b1b1b1;
+}
+.equip-logo > .equip-img {
+    filter: grayscale(100%);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 auto;
+}
+.equip-line {
+    position: relative;
+    top: -0.2rem;
+    left: calc(50% - 2px);
+
+    width: 2px;
+    height: 1rem;
+
+    background: #dbdbdb;
+}
+.equip-delete {
+    display: none;
+    position: relative;
+    /* background-color: #000000; */
+    top: -0.5rem;
+    width: 1rem;
+    left: 4.2vw;
+    margin-bottom: -1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+.equip-delete img {
+    vertical-align: top;
+}
+/* 最后一个不要line */
+.equip-logo:last-child > .equip-line {
+    display: none;
+}
+
+@media only screen and (max-width: 601px){
+    .equip-logo {
+        width: auto;
+        line-height: 0.65rem;
+    }
+    .equip-name {
+        margin-top: 1rem;
+    }
+    .equip-line {
+        top: 0.8rem;
+    }
+    .tabs .indicator {
+        background-color: transparent !important;
+    }
+    .card.small {
+        height: auto;
+    }
+    .card.small .card-image{
+        height: 8rem;
+        text-align: center;
+    }
+    .card .card-image .card-title {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+    .card .card-content {
+        padding: 5% 0 0 10%;
+        font-size: 0;
+    }
+    .modal.bottom-sheet {
+        height: 60% !important;
+    }
+    .modal h4 {
+        font-size: 1.4rem;
+    }
+    .modal .modal-content {
+        padding: 1rem;
+    }
+    .cloudvideo-in {
+        width: auto;
+        padding: 0;
+    }
+}
+.phone-page {
+    padding: 0 30%;
+    text-align: center;
+}
+.phone-ne-page {
+    margin-top: 25%;
+    text-align: center;
+}
+.phoneActive {
+    fill: #FAFAFA;
+}
+.port-none {
+    cursor: pointer;
+    fill: #101010;
+}
+
+.port-had {
+    cursor: pointer;
+    fill: #10a957;
+}
+.lan-port {
+    display: flex;
+    justify-content: center;
+}
+.port-2 {
+    width: 6vw;
+    margin-left: 2.5rem !important;
+}
+
+.port-2:first-child{
+    margin-left: 1.6rem !important;
+}
+
+.view-box {
+    margin-top: 0;
+}
+
+.green11 {
+    background: #10a957 !important;
+}
+
+.phone-click {
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.8rem;
+    margin: 0.6rem 0;
+    background-color: #F0F3F4;
+}
+
+.tabs .tab a {
+    padding: 0 8px !important;
+}
+
+.tooltipLeft {
+    text-align: left;
+}

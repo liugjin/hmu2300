@@ -1,0 +1,198 @@
+{
+	"id": "sensorflow-tag-rfid",
+	"name": "sensorflow-tag-rfid",
+	"type": "ModbusElement",
+	"version": "1.0.0",
+	"description": "test",
+	"path": "/usr/bin/aggregation/element-lib/sensorflow-tag-rfid.json",
+	"channels": [
+		{
+			"id": "asset",
+			"name": "ID",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "button",
+			"name": "按钮状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "vibration",
+			"name": "振动状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "led",
+			"name": "指示灯状态",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "temperature",
+			"name": "热敏电阻温度",
+			"datatype": "int",
+			"value": null
+		}
+	],
+	"mappings": [
+		{
+			"protocol": "protocol-modbus-serial",
+			"type": "ModbusSerialProtocol",
+			"setting": {
+				"throttle": 0,
+				"optimized": false,
+				"stepDiff": 0,
+				"maxDiff": 0,
+				"cov": 0.1
+			},
+			"mapping": [
+				{
+					"code": 3,
+					"address": 10,
+					"quantity": 7,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "13",
+					"channel": "asset"
+				},
+				{
+					"code": 3,
+					"address": 17,
+					"quantity": 1,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "button"
+				},
+				{
+					"code": 3,
+					"address": 18,
+					"quantity": 1,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "vibration"
+				},
+				{
+					"code": 3,
+					"address": 19,
+					"quantity": 3,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "-",
+					"channel": "led"
+				},
+				{
+					"code": 3,
+					"address": 22,
+					"quantity": 1,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "val/10",
+					"channel": "temperature"
+				}
+			]
+		},
+		{
+			"protocol": "protocol-modbus-tcp",
+			"type": "ModbusTcpClientProtocol",
+			"setting": {
+				"throttle": 0,
+				"optimized": false,
+				"stepDiff": 0,
+				"maxDiff": 0,
+				"cov": 0.1
+			},
+			"mapping": [
+				{
+					"code": 3,
+					"address": 10,
+					"quantity": 7,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "13",
+					"channel": "asset"
+				},
+				{
+					"code": 3,
+					"address": 17,
+					"quantity": 1,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "button"
+				},
+				{
+					"code": 3,
+					"address": 18,
+					"quantity": 1,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "vibration"
+				},
+				{
+					"code": 3,
+					"address": 19,
+					"quantity": 3,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "-",
+					"channel": "led"
+				},
+				{
+					"code": 3,
+					"address": 22,
+					"quantity": 1,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "val/10",
+					"channel": "temperature"
+				}
+			]
+		}
+	]
+}

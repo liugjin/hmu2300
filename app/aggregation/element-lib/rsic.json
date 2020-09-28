@@ -1,0 +1,553 @@
+{
+	"id": "rsic",
+	"name": "RDU-SIC",
+	"type": "SnmpManagerElement",
+	"version": "1.0.0",
+	"description": "test",
+	"path": "/usr/bin/aggregation/element-lib/rdu-sic.json",
+	"channels": [
+		{
+			"id": "temprature",
+			"name": "温度",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "humidity",
+			"name": "湿度",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "status1",
+			"name": "状态1",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "status2",
+			"name": "状态2",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "status3",
+			"name": "状态3",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "status4",
+			"name": "状态4",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "input-voltage-a",
+			"name": "输入电压A",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "input-voltage-b",
+			"name": "输入电压B",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "input-voltage-c",
+			"name": "输入电压C",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "output-voltage",
+			"name": "输出电压",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "output-current",
+			"name": "输出电流",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "battery-voltage",
+			"name": "电池电压",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "output-frequency",
+			"name": "输出频率",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "input-frequency",
+			"name": "输入频率",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "bypass-voltage",
+			"name": "旁路电压",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "bypass-current",
+			"name": "旁路电流",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "output-active-power",
+			"name": "输出有功功率",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "output-app-power",
+			"name": "输出视在功率",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "output-load-status",
+			"name": "负载率",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "ups-operating-mode",
+			"name": "UPS工作模式",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "rectifier-power-status",
+			"name": "整流器功率状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "battery-charge-mode",
+			"name": "电池充电模式",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "battery-selftest-status",
+			"name": "电池自检状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "battery-selftest",
+			"name": "电池自检",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "battery-voltage-low-alarm",
+			"name": "电池电压低告警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "inverter-onoff",
+			"name": "逆变器开关状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "inverter-sync-status",
+			"name": "逆变器同步状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "utility-status",
+			"name": "效用状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "rectifier-status",
+			"name": "整流器状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "inverter-status",
+			"name": "逆变器状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "bypass-status",
+			"name": "旁路状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "power-module-temperature",
+			"name": "电源模块温度",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "fan-status",
+			"name": "风扇状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "zero-phase-loss",
+			"name": "零相位损耗",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "turn-off-for-bus-voltage-status",
+			"name": "母线电压关断状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "charger-status",
+			"name": "充电器状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "battery-eod-status",
+			"name": "电池EOD状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "assit-power-status",
+			"name": "辅助电源状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "output-short-circuit-status",
+			"name": "输出短路状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "overloadtime-status",
+			"name": "过载时间状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "parallel-share-status",
+			"name": "并行共享状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "parallel-line-status",
+			"name": "并行线路状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "battery-backup-time",
+			"name": "电池备份时间",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "battery-reverse",
+			"name": "电池反向状态",
+			"datatype": "int",
+			"value": null
+		}
+	],
+	"mappings": [
+		{
+			"protocol": "protocol-snmp-manager",
+			"type": "SnmpManagerProtocol",
+			"setting": {
+				"throttle": 0,
+				"optimized": false,
+				"stepDiff": 0,
+				"maxDiff": 0,
+				"cov": 0.1
+			},
+			"mapping": [
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.62.2.1.2.0",
+					"expression": "val/100",
+					"channel": "temprature"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.62.2.1.3.0",
+					"expression": "val/100",
+					"channel": "humidity"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.64.2.1.2.0",
+					"expression": "",
+					"channel": "status1"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.64.2.1.3.0",
+					"expression": "",
+					"channel": "status2"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.64.2.1.4.0",
+					"expression": "",
+					"channel": "status3"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.64.2.1.5.0",
+					"expression": "",
+					"channel": "status4"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.1.0",
+					"expression": "val/10",
+					"channel": "input-voltage-a"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.2.0",
+					"expression": "val/10",
+					"channel": "input-voltage-b"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.3.0",
+					"expression": "val/10",
+					"channel": "input-voltage-c"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.4.0",
+					"expression": "val/10",
+					"channel": "output-voltage"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.5.0",
+					"expression": "val/10",
+					"channel": "output-current"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.6.0",
+					"expression": "val/10",
+					"channel": "battery-voltage"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.7.0",
+					"expression": "val/10",
+					"channel": "output-frequency"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.8.0",
+					"expression": "val/10",
+					"channel": "input-frequency"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.9.0",
+					"expression": "val/10",
+					"channel": "bypass-voltage"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.10.0",
+					"expression": "val/10",
+					"channel": "bypass-current"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.11.0",
+					"expression": "val/10",
+					"channel": "output-active-power"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.12.0",
+					"expression": "val/10",
+					"channel": "output-app-power"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.13.0",
+					"expression": "",
+					"channel": "output-load-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.14.0",
+					"expression": "",
+					"channel": "ups-operating-mode"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.15.0",
+					"expression": "",
+					"channel": "rectifier-power-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.16.0",
+					"expression": "",
+					"channel": "battery-charge-mode"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.17.0",
+					"expression": "",
+					"channel": "battery-selftest-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.18.0",
+					"expression": "",
+					"channel": "battery-selftest"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.19.0",
+					"expression": "",
+					"channel": "battery-voltage-low-alarm"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.20.0",
+					"expression": "",
+					"channel": "inverter-onoff"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.21.0",
+					"expression": "",
+					"channel": "inverter-sync-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.22.0",
+					"expression": "",
+					"channel": "utility-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.23.0",
+					"expression": "",
+					"channel": "rectifier-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.24.0",
+					"expression": "",
+					"channel": "inverter-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.25.0",
+					"expression": "",
+					"channel": "bypass-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.27.0",
+					"expression": "",
+					"channel": "power-module-temperature"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.28.0",
+					"expression": "",
+					"channel": "fan-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.29.0",
+					"expression": "",
+					"channel": "zero-phase-loss"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.30.0",
+					"expression": "",
+					"channel": "turn-off-for-bus-voltage-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.31.0",
+					"expression": "",
+					"channel": "charger-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.32.0",
+					"expression": "",
+					"channel": "battery-eod-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.33.0",
+					"expression": "",
+					"channel": "assit-power-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.35.0",
+					"expression": "",
+					"channel": "output-short-circuit-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.36.0",
+					"expression": "",
+					"channel": "overloadtime-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.37.0",
+					"expression": "",
+					"channel": "parallel-share-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.38.0",
+					"expression": "",
+					"channel": "parallel-line-status"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.44.0",
+					"expression": "",
+					"channel": "battery-backup-time"
+				},
+				{
+					"address": 0,
+					"oid": ".1.3.6.1.4.1.13400.2.463.2.2.45.0",
+					"expression": "",
+					"channel": "battery-reverse"
+				}
+			]
+		}
+	]
+}

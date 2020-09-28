@@ -1,0 +1,134 @@
+{
+	"id": "sensorflow-u-tracker",
+	"name": "sensorflow-u-tracker",
+	"type": "ModbusElement",
+	"version": "1.0.0",
+	"description": "test",
+	"path": "element-lib/sensorflow-u-tracker.json",
+	"channels": [
+		{
+			"id": "button",
+			"name": "按钮状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "led",
+			"name": "指示灯状态",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "tag",
+			"name": "标签状态",
+			"datatype": "int",
+			"value": null
+		}
+	],
+	"mappings": [
+		{
+			"protocol": "protocol-modbus-serial",
+			"type": "ModbusSerialProtocol",
+			"setting": {
+				"throttle": 0,
+				"optimized": false,
+				"stepDiff": 0,
+				"maxDiff": 0,
+				"cov": 0.1
+			},
+			"mapping": [
+				{
+					"code": 3,
+					"address": 0,
+					"quantity": 1,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "button"
+				},
+				{
+					"code": 3,
+					"address": 1,
+					"quantity": 3,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "-",
+					"channel": "led"
+				},
+				{
+					"code": 3,
+					"address": 4,
+					"quantity": 1,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "tag"
+				}
+			]
+		},
+		{
+			"protocol": "protocol-modbus-tcp",
+			"type": "ModbusTcpClientProtocol",
+			"setting": {
+				"throttle": 0,
+				"optimized": false,
+				"stepDiff": 0,
+				"maxDiff": 0,
+				"cov": 0.1
+			},
+			"mapping": [
+				{
+					"code": 3,
+					"address": 0,
+					"quantity": 1,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "button"
+				},
+				{
+					"code": 3,
+					"address": 1,
+					"quantity": 3,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "-",
+					"channel": "led"
+				},
+				{
+					"code": 3,
+					"address": 4,
+					"quantity": 1,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "tag"
+				}
+			]
+		}
+	]
+}

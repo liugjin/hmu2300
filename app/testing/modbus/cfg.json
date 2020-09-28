@@ -1,0 +1,10 @@
+{
+    "dev_port":"/ual/com1",
+    "baud_rate":9600,
+    "parity":"N",
+    "data_bit":8,
+    "stop_bit":1,
+    "slave_id":1,
+    "fn_code": 3,
+    "timeout":5000
+}

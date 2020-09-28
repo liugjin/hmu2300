@@ -1,0 +1,37 @@
+[
+	{
+		"id": "9H200A1701001",
+		"name": "网关",
+		"setting": {},
+		"ports": [
+			{
+				"symbol": "",
+				"protocol": "protocol-snmp-manager",
+				"id": "sp-serial-1",
+				"name": "串口",
+				"enable": true,
+				"setting": {
+					"port": "/dev/snmp"
+				},
+				"sampleUnits": [
+					{
+						"id": "snmp",
+						"name": "声光",
+						"period": 5000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "element-clever-pdu.json",
+						"enable": true,
+						"setting": {
+							"target": "192.168.1.163", 
+							"port": "161",
+							"version": "v2c",
+							"readCommunity": "public",
+							"writeCommunity": "private"
+						}
+					}
+				]
+			}
+		]
+	}
+]

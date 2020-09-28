@@ -1,0 +1,18 @@
+.label-title{
+    line-height: 50px;
+    color:rgba(0,0,0,0.87);
+}
+
+.mibList{
+    display: inline-block;
+    width:84%;
+    height: 3rem;
+}
+.download{
+    display: inline-block;
+    width: 9%;
+    height: 3rem;
+    margin-left: 4%;
+    cursor: pointer;
+    color: #10A957;
+}

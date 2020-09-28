@@ -1,0 +1,29 @@
+{
+    "type": "TCPElement", 
+    "name": "LET状态", 
+    "channels": [
+        {
+            "id": "val", 
+            "name": "打开", 
+            "datatype": "int", 
+            "value": null
+        }
+    ], 
+    "id": "lte", 
+    "version": "0.0.1", 
+    "description": "status for lte", 
+    "mappings": [
+        {
+            "protocol": "protocol-lte", 
+            "type": "FileProtocol", 
+            "setting": {
+            }, 
+            "mapping": [
+                {
+                    "channel": "val"
+                }
+            ]
+        }
+
+    ]
+}

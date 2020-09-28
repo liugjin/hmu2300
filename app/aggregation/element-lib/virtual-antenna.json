@@ -1,0 +1,70 @@
+{
+    "id": "etcAntenna",
+    "name": "etc虚拟天线",
+    "type": "TCPElement",
+    "version": "1.0.0",
+    "description": "test",
+    "path": "/usr/bin/aggregation/element-lib/etcAntenna.json",
+    "channels": [{
+        "id": "status",
+        "name": "p30状态",
+        "datatype": "int",
+        "value": null
+    }, {
+        "id": "changeP30Status",
+        "name": "控制p30状态",
+        "datatype": "int",
+        "value": null
+    }],
+    "mappings": [{
+        "protocol": "protocol-virtual-antenna",
+        "type": "virtualAntennaProtocol",
+        "setting": {
+            "throttle": 0,
+            "optimized": false,
+            "stepDiff": 0,
+            "maxDiff": 0,
+            "cov": 0.01
+        },
+        "mapping": [{
+            "code": 3,
+            "address": 0,
+            "quantity": 1,
+            "format": "null",
+            "expression": "",
+            "channel": "status"
+        }, {
+            "code": 6,
+            "address": 0,
+            "quantity": 1,
+            "format": "null",
+            "expression": "",
+            "channel": "changeP30Status"
+        }]
+    }, {
+        "protocol": "protocol-virtual-antenna",
+        "type": "virtualAntennaProtocol",
+        "setting": {
+            "throttle": 0,
+            "optimized": false,
+            "stepDiff": 0,
+            "maxDiff": 0,
+            "cov": 0.01
+        },
+        "mapping": [{
+            "code": 3,
+            "address": 0,
+            "quantity": 1,
+            "format": "null",
+            "expression": "",
+            "channel": "status"
+        }, {
+            "code": 6,
+            "address": 0,
+            "quantity": 1,
+            "format": "null",
+            "expression": "",
+            "channel": "changeP30Status"
+        }]
+    }]
+}

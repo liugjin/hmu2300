@@ -1,0 +1,2941 @@
+{
+  "name": "科士达ups-modbus",
+  "type": "ModbusElement",
+  "version": "0.0.1",
+  "description": "kstar-ups channels info",
+  "mappings": [
+    {
+      "protocol": "protocol-modbus-tcp",
+      "type": "ModbusTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122
+      },
+      "mapping": [
+        {
+          "code": 2,
+          "address": 10001,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10002,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10003,
+          "quantity": 1,
+          "expression": null,
+          "channel": "maintenance-bypass-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10004,
+          "quantity": 1,
+          "expression": null,
+          "channel": "bypass-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10005,
+          "quantity": 1,
+          "expression": null,
+          "channel": "bypass-cabinet-bypass-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10006,
+          "quantity": 1,
+          "expression": null,
+          "channel": "outer-output-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10007,
+          "quantity": 1,
+          "expression": null,
+          "channel": "Inverter-host"
+        },
+        {
+          "code": 2,
+          "address": 10008,
+          "quantity": 1,
+          "expression": null,
+          "channel": "Inverter-host-eco"
+        },
+        {
+          "code": 2,
+          "address": 10009,
+          "quantity": 1,
+          "expression": null,
+          "channel": "lbs-system-running"
+        },
+        {
+          "code": 2,
+          "address": 10010,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-self-test"
+        },
+        {
+          "code": 2,
+          "address": 10011,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-charging"
+        },
+        {
+          "code": 2,
+          "address": 10012,
+          "quantity": 1,
+          "expression": null,
+          "channel": "rechargeable-positive-battery"
+        },
+        {
+          "code": 2,
+          "address": 10013,
+          "quantity": 1,
+          "expression": null,
+          "channel": "negative-battery-charging"
+        },
+        {
+          "code": 2,
+          "address": 10014,
+          "quantity": 1,
+          "expression": null,
+          "channel": "rectifier-status"
+        },
+        {
+          "code": 2,
+          "address": 10015,
+          "quantity": 1,
+          "expression": null,
+          "channel": "rectifier-current-limitation"
+        },
+        {
+          "code": 2,
+          "address": 10016,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-power-supply-status"
+        },
+        {
+          "code": 2,
+          "address": 10017,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-power-supply-mode"
+        },
+        {
+          "code": 2,
+          "address": 10018,
+          "quantity": 1,
+          "expression": null,
+          "channel": "inverter-switch-state-1"
+        },
+        {
+          "code": 2,
+          "address": 10019,
+          "quantity": 1,
+          "expression": null,
+          "channel": "inverter-switch-state-2"
+        },
+        {
+          "code": 2,
+          "address": 10020,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ups-power-1"
+        },
+        {
+          "code": 2,
+          "address": 10021,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ups-power-2"
+        },
+        {
+          "code": 2,
+          "address": 10022,
+          "quantity": 1,
+          "expression": null,
+          "channel": "discontinuous-switch-prompt"
+        },
+        {
+          "code": 2,
+          "address": 10023,
+          "quantity": 1,
+          "expression": null,
+          "channel": "shutdown-power-down-alarm"
+        },
+        {
+          "code": 2,
+          "address": 10024,
+          "quantity": 1,
+          "expression": null,
+          "channel": "shutdown-power-overload-alarm"
+        },
+        {
+          "code": 2,
+          "address": 10025,
+          "quantity": 1,
+          "expression": null,
+          "channel": "generatorp-access"
+        },
+        {
+          "code": 2,
+          "address": 10026,
+          "quantity": 1,
+          "expression": null,
+          "channel": "inadequate-startup-capacity"
+        },
+        {
+          "code": 2,
+          "address": 10027,
+          "quantity": 1,
+          "expression": null,
+          "channel": "overload-delay-shutdown"
+        },
+        {
+          "code": 2,
+          "address": 10028,
+          "quantity": 1,
+          "expression": null,
+          "channel": "load-impact-bypass"
+        },
+        {
+          "code": 2,
+          "address": 10029,
+          "quantity": 1,
+          "expression": null,
+          "channel": "parallel-system-bypass"
+        },
+        {
+          "code": 2,
+          "address": 10030,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-voltage-low-shutdown"
+        },
+        {
+          "code": 2,
+          "address": 10031,
+          "quantity": 1,
+          "expression": null,
+          "channel": "switch-times-to"
+        },
+        {
+          "code": 4,
+          "address": 30001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-a-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30002,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-b-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30003,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-c-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30004,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-frequency"
+        },
+        {
+          "code": 4,
+          "address": 30005,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-a-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-b-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30007,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-c-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30008,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-a-phase-power-factor"
+        },
+        {
+          "code": 4,
+          "address": 30009,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-b-phase-power-factor"
+        },
+        {
+          "code": 4,
+          "address": 30010,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-c-phase-power-factor"
+        },
+        {
+          "code": 4,
+          "address": 30011,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-a-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30012,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-b-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30013,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-c-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30014,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-frequency"
+        },
+        {
+          "code": 4,
+          "address": 30015,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-a-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30016,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-b-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30017,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-c-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30018,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-a-phase-active-power"
+        },
+        {
+          "code": 4,
+          "address": 30019,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-b-phase-active-power"
+        },
+        {
+          "code": 4,
+          "address": 30020,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-c-phase-active-power"
+        },
+        {
+          "code": 4,
+          "address": 30021,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-phase-a-load-rate"
+        },
+        {
+          "code": 4,
+          "address": 30022,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-phase-b-load-rate"
+        },
+        {
+          "code": 4,
+          "address": 30023,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-phase-c-load-rate"
+        },
+        {
+          "code": 4,
+          "address": 30024,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-phase-a-peak-load-ratio"
+        },
+        {
+          "code": 4,
+          "address": 30025,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-phase-b-peak-load-ratio"
+        },
+        {
+          "code": 4,
+          "address": 30026,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-phase-c-peak-load-ratio"
+        },
+        {
+          "code": 4,
+          "address": 30027,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-a-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30028,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-b-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30029,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-c-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30030,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-frequency"
+        },
+        {
+          "code": 4,
+          "address": 30031,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "positive-battery-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30032,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "negative-battery-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30033,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "discharge-current-positive-battery"
+        },
+        {
+          "code": 4,
+          "address": 30034,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "discharge-current-negative-battery"
+        },
+        {
+          "code": 4,
+          "address": 30035,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "charge-current-positive-battery"
+        },
+        {
+          "code": 4,
+          "address": 30036,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "charge-current-negative-battery"
+        },
+        {
+          "code": 4,
+          "address": 30037,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-capacity-rate"
+        },
+        {
+          "code": 4,
+          "address": 30038,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-backup-time"
+        },
+        {
+          "code": 4,
+          "address": 30039,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-temperture"
+        },
+        {
+          "code": 4,
+          "address": 30040,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ambient-temperture"
+        },
+        {
+          "code": 4,
+          "address": 30041,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-discharge-time"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-serial",
+      "type": "ModbusSerialProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122
+      },
+      "mapping": [
+        {
+          "code": 2,
+          "address": 10001,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10002,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10003,
+          "quantity": 1,
+          "expression": null,
+          "channel": "maintenance-bypass-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10004,
+          "quantity": 1,
+          "expression": null,
+          "channel": "bypass-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10005,
+          "quantity": 1,
+          "expression": null,
+          "channel": "bypass-cabinet-bypass-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10006,
+          "quantity": 1,
+          "expression": null,
+          "channel": "outer-output-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10007,
+          "quantity": 1,
+          "expression": null,
+          "channel": "Inverter-host"
+        },
+        {
+          "code": 2,
+          "address": 10008,
+          "quantity": 1,
+          "expression": null,
+          "channel": "Inverter-host-eco"
+        },
+        {
+          "code": 2,
+          "address": 10009,
+          "quantity": 1,
+          "expression": null,
+          "channel": "lbs-system-running"
+        },
+        {
+          "code": 2,
+          "address": 10010,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-self-test"
+        },
+        {
+          "code": 2,
+          "address": 10011,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-charging"
+        },
+        {
+          "code": 2,
+          "address": 10012,
+          "quantity": 1,
+          "expression": null,
+          "channel": "rechargeable-positive-battery"
+        },
+        {
+          "code": 2,
+          "address": 10013,
+          "quantity": 1,
+          "expression": null,
+          "channel": "negative-battery-charging"
+        },
+        {
+          "code": 2,
+          "address": 10014,
+          "quantity": 1,
+          "expression": null,
+          "channel": "rectifier-status"
+        },
+        {
+          "code": 2,
+          "address": 10015,
+          "quantity": 1,
+          "expression": null,
+          "channel": "rectifier-current-limitation"
+        },
+        {
+          "code": 2,
+          "address": 10016,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-power-supply-status"
+        },
+        {
+          "code": 2,
+          "address": 10017,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-power-supply-mode"
+        },
+        {
+          "code": 2,
+          "address": 10018,
+          "quantity": 1,
+          "expression": null,
+          "channel": "inverter-switch-state-1"
+        },
+        {
+          "code": 2,
+          "address": 10019,
+          "quantity": 1,
+          "expression": null,
+          "channel": "inverter-switch-state-2"
+        },
+        {
+          "code": 2,
+          "address": 10020,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ups-power-1"
+        },
+        {
+          "code": 2,
+          "address": 10021,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ups-power-2"
+        },
+        {
+          "code": 2,
+          "address": 10022,
+          "quantity": 1,
+          "expression": null,
+          "channel": "discontinuous-switch-prompt"
+        },
+        {
+          "code": 2,
+          "address": 10023,
+          "quantity": 1,
+          "expression": null,
+          "channel": "shutdown-power-down-alarm"
+        },
+        {
+          "code": 2,
+          "address": 10024,
+          "quantity": 1,
+          "expression": null,
+          "channel": "shutdown-power-overload-alarm"
+        },
+        {
+          "code": 2,
+          "address": 10025,
+          "quantity": 1,
+          "expression": null,
+          "channel": "generatorp-access"
+        },
+        {
+          "code": 2,
+          "address": 10026,
+          "quantity": 1,
+          "expression": null,
+          "channel": "inadequate-startup-capacity"
+        },
+        {
+          "code": 2,
+          "address": 10027,
+          "quantity": 1,
+          "expression": null,
+          "channel": "overload-delay-shutdown"
+        },
+        {
+          "code": 2,
+          "address": 10028,
+          "quantity": 1,
+          "expression": null,
+          "channel": "load-impact-bypass"
+        },
+        {
+          "code": 2,
+          "address": 10029,
+          "quantity": 1,
+          "expression": null,
+          "channel": "parallel-system-bypass"
+        },
+        {
+          "code": 2,
+          "address": 10030,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-voltage-low-shutdown"
+        },
+        {
+          "code": 2,
+          "address": 10031,
+          "quantity": 1,
+          "expression": null,
+          "channel": "switch-times-to"
+        },
+        {
+          "code": 4,
+          "address": 30001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-a-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30002,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-b-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30003,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-c-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30004,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-frequency"
+        },
+        {
+          "code": 4,
+          "address": 30005,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-a-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-b-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30007,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-c-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30008,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-a-phase-power-factor"
+        },
+        {
+          "code": 4,
+          "address": 30009,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-b-phase-power-factor"
+        },
+        {
+          "code": 4,
+          "address": 30010,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-c-phase-power-factor"
+        },
+        {
+          "code": 4,
+          "address": 30011,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-a-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30012,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-b-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30013,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-c-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30014,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-frequency"
+        },
+        {
+          "code": 4,
+          "address": 30015,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-a-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30016,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-b-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30017,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-c-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30018,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-a-phase-active-power"
+        },
+        {
+          "code": 4,
+          "address": 30019,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-b-phase-active-power"
+        },
+        {
+          "code": 4,
+          "address": 30020,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-c-phase-active-power"
+        },
+        {
+          "code": 4,
+          "address": 30021,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-phase-a-load-rate"
+        },
+        {
+          "code": 4,
+          "address": 30022,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-phase-b-load-rate"
+        },
+        {
+          "code": 4,
+          "address": 30023,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-phase-c-load-rate"
+        },
+        {
+          "code": 4,
+          "address": 30024,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-phase-a-peak-load-ratio"
+        },
+        {
+          "code": 4,
+          "address": 30025,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-phase-b-peak-load-ratio"
+        },
+        {
+          "code": 4,
+          "address": 30026,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-phase-c-peak-load-ratio"
+        },
+        {
+          "code": 4,
+          "address": 30027,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-a-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30028,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-b-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30029,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-c-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30030,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-frequency"
+        },
+        {
+          "code": 4,
+          "address": 30031,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "positive-battery-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30032,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "negative-battery-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30033,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "discharge-current-positive-battery"
+        },
+        {
+          "code": 4,
+          "address": 30034,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "discharge-current-negative-battery"
+        },
+        {
+          "code": 4,
+          "address": 30035,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "charge-current-positive-battery"
+        },
+        {
+          "code": 4,
+          "address": 30036,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "charge-current-negative-battery"
+        },
+        {
+          "code": 4,
+          "address": 30037,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-capacity-rate"
+        },
+        {
+          "code": 4,
+          "address": 30038,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-backup-time"
+        },
+        {
+          "code": 4,
+          "address": 30039,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-temperture"
+        },
+        {
+          "code": 4,
+          "address": 30040,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ambient-temperture"
+        },
+        {
+          "code": 4,
+          "address": 30041,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-discharge-time"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-rtu-tcp",
+      "type": "ModbusRtuTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122
+      },
+      "mapping": [
+        {
+          "code": 2,
+          "address": 10001,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10002,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10003,
+          "quantity": 1,
+          "expression": null,
+          "channel": "maintenance-bypass-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10004,
+          "quantity": 1,
+          "expression": null,
+          "channel": "bypass-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10005,
+          "quantity": 1,
+          "expression": null,
+          "channel": "bypass-cabinet-bypass-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10006,
+          "quantity": 1,
+          "expression": null,
+          "channel": "outer-output-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10007,
+          "quantity": 1,
+          "expression": null,
+          "channel": "Inverter-host"
+        },
+        {
+          "code": 2,
+          "address": 10008,
+          "quantity": 1,
+          "expression": null,
+          "channel": "Inverter-host-eco"
+        },
+        {
+          "code": 2,
+          "address": 10009,
+          "quantity": 1,
+          "expression": null,
+          "channel": "lbs-system-running"
+        },
+        {
+          "code": 2,
+          "address": 10010,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-self-test"
+        },
+        {
+          "code": 2,
+          "address": 10011,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-charging"
+        },
+        {
+          "code": 2,
+          "address": 10012,
+          "quantity": 1,
+          "expression": null,
+          "channel": "rechargeable-positive-battery"
+        },
+        {
+          "code": 2,
+          "address": 10013,
+          "quantity": 1,
+          "expression": null,
+          "channel": "negative-battery-charging"
+        },
+        {
+          "code": 2,
+          "address": 10014,
+          "quantity": 1,
+          "expression": null,
+          "channel": "rectifier-status"
+        },
+        {
+          "code": 2,
+          "address": 10015,
+          "quantity": 1,
+          "expression": null,
+          "channel": "rectifier-current-limitation"
+        },
+        {
+          "code": 2,
+          "address": 10016,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-power-supply-status"
+        },
+        {
+          "code": 2,
+          "address": 10017,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-power-supply-mode"
+        },
+        {
+          "code": 2,
+          "address": 10018,
+          "quantity": 1,
+          "expression": null,
+          "channel": "inverter-switch-state-1"
+        },
+        {
+          "code": 2,
+          "address": 10019,
+          "quantity": 1,
+          "expression": null,
+          "channel": "inverter-switch-state-2"
+        },
+        {
+          "code": 2,
+          "address": 10020,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ups-power-1"
+        },
+        {
+          "code": 2,
+          "address": 10021,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ups-power-2"
+        },
+        {
+          "code": 2,
+          "address": 10022,
+          "quantity": 1,
+          "expression": null,
+          "channel": "discontinuous-switch-prompt"
+        },
+        {
+          "code": 2,
+          "address": 10023,
+          "quantity": 1,
+          "expression": null,
+          "channel": "shutdown-power-down-alarm"
+        },
+        {
+          "code": 2,
+          "address": 10024,
+          "quantity": 1,
+          "expression": null,
+          "channel": "shutdown-power-overload-alarm"
+        },
+        {
+          "code": 2,
+          "address": 10025,
+          "quantity": 1,
+          "expression": null,
+          "channel": "generatorp-access"
+        },
+        {
+          "code": 2,
+          "address": 10026,
+          "quantity": 1,
+          "expression": null,
+          "channel": "inadequate-startup-capacity"
+        },
+        {
+          "code": 2,
+          "address": 10027,
+          "quantity": 1,
+          "expression": null,
+          "channel": "overload-delay-shutdown"
+        },
+        {
+          "code": 2,
+          "address": 10028,
+          "quantity": 1,
+          "expression": null,
+          "channel": "load-impact-bypass"
+        },
+        {
+          "code": 2,
+          "address": 10029,
+          "quantity": 1,
+          "expression": null,
+          "channel": "parallel-system-bypass"
+        },
+        {
+          "code": 2,
+          "address": 10030,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-voltage-low-shutdown"
+        },
+        {
+          "code": 2,
+          "address": 10031,
+          "quantity": 1,
+          "expression": null,
+          "channel": "switch-times-to"
+        },
+        {
+          "code": 4,
+          "address": 30001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-a-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30002,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-b-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30003,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-c-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30004,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-frequency"
+        },
+        {
+          "code": 4,
+          "address": 30005,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-a-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-b-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30007,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-c-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30008,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-a-phase-power-factor"
+        },
+        {
+          "code": 4,
+          "address": 30009,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-b-phase-power-factor"
+        },
+        {
+          "code": 4,
+          "address": 30010,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-c-phase-power-factor"
+        },
+        {
+          "code": 4,
+          "address": 30011,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-a-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30012,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-b-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30013,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-c-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30014,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-frequency"
+        },
+        {
+          "code": 4,
+          "address": 30015,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-a-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30016,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-b-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30017,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-c-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30018,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-a-phase-active-power"
+        },
+        {
+          "code": 4,
+          "address": 30019,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-b-phase-active-power"
+        },
+        {
+          "code": 4,
+          "address": 30020,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-c-phase-active-power"
+        },
+        {
+          "code": 4,
+          "address": 30021,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-phase-a-load-rate"
+        },
+        {
+          "code": 4,
+          "address": 30022,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-phase-b-load-rate"
+        },
+        {
+          "code": 4,
+          "address": 30023,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-phase-c-load-rate"
+        },
+        {
+          "code": 4,
+          "address": 30024,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-phase-a-peak-load-ratio"
+        },
+        {
+          "code": 4,
+          "address": 30025,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-phase-b-peak-load-ratio"
+        },
+        {
+          "code": 4,
+          "address": 30026,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-phase-c-peak-load-ratio"
+        },
+        {
+          "code": 4,
+          "address": 30027,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-a-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30028,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-b-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30029,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-c-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30030,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-frequency"
+        },
+        {
+          "code": 4,
+          "address": 30031,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "positive-battery-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30032,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "negative-battery-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30033,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "discharge-current-positive-battery"
+        },
+        {
+          "code": 4,
+          "address": 30034,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "discharge-current-negative-battery"
+        },
+        {
+          "code": 4,
+          "address": 30035,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "charge-current-positive-battery"
+        },
+        {
+          "code": 4,
+          "address": 30036,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "charge-current-negative-battery"
+        },
+        {
+          "code": 4,
+          "address": 30037,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-capacity-rate"
+        },
+        {
+          "code": 4,
+          "address": 30038,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-backup-time"
+        },
+        {
+          "code": 4,
+          "address": 30039,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-temperture"
+        },
+        {
+          "code": 4,
+          "address": 30040,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ambient-temperture"
+        },
+        {
+          "code": 4,
+          "address": 30041,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-discharge-time"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-dtu",
+      "type": "ModbusDtuProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122
+      },
+      "mapping": [
+        {
+          "code": 2,
+          "address": 10001,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10002,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10003,
+          "quantity": 1,
+          "expression": null,
+          "channel": "maintenance-bypass-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10004,
+          "quantity": 1,
+          "expression": null,
+          "channel": "bypass-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10005,
+          "quantity": 1,
+          "expression": null,
+          "channel": "bypass-cabinet-bypass-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10006,
+          "quantity": 1,
+          "expression": null,
+          "channel": "outer-output-open-state"
+        },
+        {
+          "code": 2,
+          "address": 10007,
+          "quantity": 1,
+          "expression": null,
+          "channel": "Inverter-host"
+        },
+        {
+          "code": 2,
+          "address": 10008,
+          "quantity": 1,
+          "expression": null,
+          "channel": "Inverter-host-eco"
+        },
+        {
+          "code": 2,
+          "address": 10009,
+          "quantity": 1,
+          "expression": null,
+          "channel": "lbs-system-running"
+        },
+        {
+          "code": 2,
+          "address": 10010,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-self-test"
+        },
+        {
+          "code": 2,
+          "address": 10011,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-charging"
+        },
+        {
+          "code": 2,
+          "address": 10012,
+          "quantity": 1,
+          "expression": null,
+          "channel": "rechargeable-positive-battery"
+        },
+        {
+          "code": 2,
+          "address": 10013,
+          "quantity": 1,
+          "expression": null,
+          "channel": "negative-battery-charging"
+        },
+        {
+          "code": 2,
+          "address": 10014,
+          "quantity": 1,
+          "expression": null,
+          "channel": "rectifier-status"
+        },
+        {
+          "code": 2,
+          "address": 10015,
+          "quantity": 1,
+          "expression": null,
+          "channel": "rectifier-current-limitation"
+        },
+        {
+          "code": 2,
+          "address": 10016,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-power-supply-status"
+        },
+        {
+          "code": 2,
+          "address": 10017,
+          "quantity": 1,
+          "expression": null,
+          "channel": "input-power-supply-mode"
+        },
+        {
+          "code": 2,
+          "address": 10018,
+          "quantity": 1,
+          "expression": null,
+          "channel": "inverter-switch-state-1"
+        },
+        {
+          "code": 2,
+          "address": 10019,
+          "quantity": 1,
+          "expression": null,
+          "channel": "inverter-switch-state-2"
+        },
+        {
+          "code": 2,
+          "address": 10020,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ups-power-1"
+        },
+        {
+          "code": 2,
+          "address": 10021,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ups-power-2"
+        },
+        {
+          "code": 2,
+          "address": 10022,
+          "quantity": 1,
+          "expression": null,
+          "channel": "discontinuous-switch-prompt"
+        },
+        {
+          "code": 2,
+          "address": 10023,
+          "quantity": 1,
+          "expression": null,
+          "channel": "shutdown-power-down-alarm"
+        },
+        {
+          "code": 2,
+          "address": 10024,
+          "quantity": 1,
+          "expression": null,
+          "channel": "shutdown-power-overload-alarm"
+        },
+        {
+          "code": 2,
+          "address": 10025,
+          "quantity": 1,
+          "expression": null,
+          "channel": "generatorp-access"
+        },
+        {
+          "code": 2,
+          "address": 10026,
+          "quantity": 1,
+          "expression": null,
+          "channel": "inadequate-startup-capacity"
+        },
+        {
+          "code": 2,
+          "address": 10027,
+          "quantity": 1,
+          "expression": null,
+          "channel": "overload-delay-shutdown"
+        },
+        {
+          "code": 2,
+          "address": 10028,
+          "quantity": 1,
+          "expression": null,
+          "channel": "load-impact-bypass"
+        },
+        {
+          "code": 2,
+          "address": 10029,
+          "quantity": 1,
+          "expression": null,
+          "channel": "parallel-system-bypass"
+        },
+        {
+          "code": 2,
+          "address": 10030,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-voltage-low-shutdown"
+        },
+        {
+          "code": 2,
+          "address": 10031,
+          "quantity": 1,
+          "expression": null,
+          "channel": "switch-times-to"
+        },
+        {
+          "code": 4,
+          "address": 30001,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-a-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30002,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-b-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30003,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-c-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30004,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-frequency"
+        },
+        {
+          "code": 4,
+          "address": 30005,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-a-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30006,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-b-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30007,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "input-c-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30008,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-a-phase-power-factor"
+        },
+        {
+          "code": 4,
+          "address": 30009,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-b-phase-power-factor"
+        },
+        {
+          "code": 4,
+          "address": 30010,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-c-phase-power-factor"
+        },
+        {
+          "code": 4,
+          "address": 30011,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-a-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30012,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-b-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30013,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-c-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30014,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-frequency"
+        },
+        {
+          "code": 4,
+          "address": 30015,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-a-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30016,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-b-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30017,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-c-phase-current"
+        },
+        {
+          "code": 4,
+          "address": 30018,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-a-phase-active-power"
+        },
+        {
+          "code": 4,
+          "address": 30019,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-b-phase-active-power"
+        },
+        {
+          "code": 4,
+          "address": 30020,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "output-c-phase-active-power"
+        },
+        {
+          "code": 4,
+          "address": 30021,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-phase-a-load-rate"
+        },
+        {
+          "code": 4,
+          "address": 30022,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-phase-b-load-rate"
+        },
+        {
+          "code": 4,
+          "address": 30023,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output-phase-c-load-rate"
+        },
+        {
+          "code": 4,
+          "address": 30024,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-phase-a-peak-load-ratio"
+        },
+        {
+          "code": 4,
+          "address": 30025,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-phase-b-peak-load-ratio"
+        },
+        {
+          "code": 4,
+          "address": 30026,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-phase-c-peak-load-ratio"
+        },
+        {
+          "code": 4,
+          "address": 30027,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-a-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30028,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-b-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30029,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-c-phase-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30030,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-frequency"
+        },
+        {
+          "code": 4,
+          "address": 30031,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "positive-battery-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30032,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "negative-battery-voltage"
+        },
+        {
+          "code": 4,
+          "address": 30033,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "discharge-current-positive-battery"
+        },
+        {
+          "code": 4,
+          "address": 30034,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "discharge-current-negative-battery"
+        },
+        {
+          "code": 4,
+          "address": 30035,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "charge-current-positive-battery"
+        },
+        {
+          "code": 4,
+          "address": 30036,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "charge-current-negative-battery"
+        },
+        {
+          "code": 4,
+          "address": 30037,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-capacity-rate"
+        },
+        {
+          "code": 4,
+          "address": 30038,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-backup-time"
+        },
+        {
+          "code": 4,
+          "address": 30039,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-temperture"
+        },
+        {
+          "code": 4,
+          "address": 30040,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ambient-temperture"
+        },
+        {
+          "code": 4,
+          "address": 30041,
+          "quantity": 1,
+          "expression": null,
+          "channel": "battery-discharge-time"
+        }
+      ]
+    }
+  ],
+  "path": "../element-lib/element-modbus",
+  "channels": [
+    {
+      "id": "input-open-state",
+      "name": "输入空开状态",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10001,
+      "quantity": 1,
+      "expression": null,
+      "channel": "input-open-state",
+      "$$hashKey": "object:9832"
+    },
+    {
+      "id": "output-open-state",
+      "name": "输出空开状态",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10002,
+      "quantity": 1,
+      "expression": null,
+      "channel": "output-open-state",
+      "$$hashKey": "object:9833"
+    },
+    {
+      "id": "maintenance-bypass-open-state",
+      "name": "维修旁路空开状态",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10003,
+      "quantity": 1,
+      "expression": null,
+      "channel": "maintenance-bypass-open-state",
+      "$$hashKey": "object:9834"
+    },
+    {
+      "id": "bypass-open-state",
+      "name": "旁路空开状态",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10004,
+      "quantity": 1,
+      "expression": null,
+      "channel": "bypass-open-state",
+      "$$hashKey": "object:9835"
+    },
+    {
+      "id": "bypass-cabinet-bypass-open-state",
+      "name": "旁路柜旁路空开状态",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10005,
+      "quantity": 1,
+      "expression": null,
+      "channel": "bypass-cabinet-bypass-open-state",
+      "$$hashKey": "object:9836"
+    },
+    {
+      "id": "outer-output-open-state",
+      "name": "外部输出空开状态",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10006,
+      "quantity": 1,
+      "expression": null,
+      "channel": "outer-output-open-state",
+      "$$hashKey": "object:9837"
+    },
+    {
+      "id": "Inverter-host",
+      "name": "逆变主机",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10007,
+      "quantity": 1,
+      "expression": null,
+      "channel": "Inverter-host",
+      "$$hashKey": "object:9838"
+    },
+    {
+      "id": "Inverter-host-eco",
+      "name": "逆变待机-ECO状态",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10008,
+      "quantity": 1,
+      "expression": null,
+      "channel": "Inverter-host-eco",
+      "$$hashKey": "object:9839"
+    },
+    {
+      "id": "lbs-system-running",
+      "name": "LBS系统激活",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10009,
+      "quantity": 1,
+      "expression": null,
+      "channel": "lbs-system-running",
+      "$$hashKey": "object:9840"
+    },
+    {
+      "id": "battery-self-test",
+      "name": "电池自检",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10010,
+      "quantity": 1,
+      "expression": null,
+      "channel": "battery-self-test",
+      "$$hashKey": "object:9841"
+    },
+    {
+      "id": "battery-charging",
+      "name": "电池充电",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10011,
+      "quantity": 1,
+      "expression": null,
+      "channel": "battery-charging",
+      "$$hashKey": "object:9842"
+    },
+    {
+      "id": "rechargeable-positive-battery",
+      "name": "正组电池均充",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10012,
+      "quantity": 1,
+      "expression": null,
+      "channel": "rechargeable-positive-battery",
+      "$$hashKey": "object:9843"
+    },
+    {
+      "id": "negative-battery-charging",
+      "name": "负组电池均充",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10013,
+      "quantity": 1,
+      "expression": null,
+      "channel": "negative-battery-charging",
+      "$$hashKey": "object:9844"
+    },
+    {
+      "id": "rectifier-status",
+      "name": "整流器状态",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10014,
+      "quantity": 1,
+      "expression": null,
+      "channel": "rectifier-status",
+      "$$hashKey": "object:9845"
+    },
+    {
+      "id": "rectifier-current-limitation",
+      "name": "整流器限流",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10015,
+      "quantity": 1,
+      "expression": null,
+      "channel": "rectifier-current-limitation",
+      "$$hashKey": "object:9846"
+    },
+    {
+      "id": "input-power-supply-status",
+      "name": "输入供电状态",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10016,
+      "quantity": 1,
+      "expression": null,
+      "channel": "input-power-supply-status",
+      "$$hashKey": "object:9847"
+    },
+    {
+      "id": "input-power-supply-mode",
+      "name": "输入供电模式",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10017,
+      "quantity": 1,
+      "expression": null,
+      "channel": "input-power-supply-mode",
+      "$$hashKey": "object:9848"
+    },
+    {
+      "id": "inverter-switch-state-1",
+      "name": "逆变开关机状态1",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10018,
+      "quantity": 1,
+      "expression": null,
+      "channel": "inverter-switch-state-1",
+      "$$hashKey": "object:9849"
+    },
+    {
+      "id": "inverter-switch-state-2",
+      "name": "逆变开关机状态2",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10019,
+      "quantity": 1,
+      "expression": null,
+      "channel": "inverter-switch-state-2",
+      "$$hashKey": "object:9850"
+    },
+    {
+      "id": "ups-power-1",
+      "name": "UPS供电状态1",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10020,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ups-power-1",
+      "$$hashKey": "object:9851"
+    },
+    {
+      "id": "ups-power-2",
+      "name": "UPS供电状态2",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10021,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ups-power-2",
+      "$$hashKey": "object:9852"
+    },
+    {
+      "id": "discontinuous-switch-prompt",
+      "name": "间断切换提示",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10022,
+      "quantity": 1,
+      "expression": null,
+      "channel": "discontinuous-switch-prompt",
+      "$$hashKey": "object:9853"
+    },
+    {
+      "id": "shutdown-power-down-alarm",
+      "name": "关机将导致断电告警",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10023,
+      "quantity": 1,
+      "expression": null,
+      "channel": "shutdown-power-down-alarm",
+      "$$hashKey": "object:9854"
+    },
+    {
+      "id": "shutdown-power-overload-alarm",
+      "name": "关机将导致过载告警",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10024,
+      "quantity": 1,
+      "expression": null,
+      "channel": "shutdown-power-overload-alarm",
+      "$$hashKey": "object:9855"
+    },
+    {
+      "id": "generatorp-access",
+      "name": "发电机接入",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10025,
+      "quantity": 1,
+      "expression": null,
+      "channel": "generatorp-access",
+      "$$hashKey": "object:9856"
+    },
+    {
+      "id": "inadequate-startup-capacity",
+      "name": "启动容量不足",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10026,
+      "quantity": 1,
+      "expression": null,
+      "channel": "inadequate-startup-capacity",
+      "$$hashKey": "object:9857"
+    },
+    {
+      "id": "overload-delay-shutdown",
+      "name": "过载延时到关机",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10027,
+      "quantity": 1,
+      "expression": null,
+      "channel": "overload-delay-shutdown",
+      "$$hashKey": "object:9858"
+    },
+    {
+      "id": "load-impact-bypass",
+      "name": "负载冲击切旁路",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10028,
+      "quantity": 1,
+      "expression": null,
+      "channel": "load-impact-bypass",
+      "$$hashKey": "object:9859"
+    },
+    {
+      "id": "parallel-system-bypass",
+      "name": "并机系统转旁路",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10029,
+      "quantity": 1,
+      "expression": null,
+      "channel": "parallel-system-bypass",
+      "$$hashKey": "object:9860"
+    },
+    {
+      "id": "battery-voltage-low-shutdown",
+      "name": "电池电压低关机",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10030,
+      "quantity": 1,
+      "expression": null,
+      "channel": "battery-voltage-low-shutdown",
+      "$$hashKey": "object:9861"
+    },
+    {
+      "id": "switch-times-to",
+      "name": "切换次数到",
+      "datatype": "int",
+      "value": null,
+      "code": 2,
+      "address": 10031,
+      "quantity": 1,
+      "expression": null,
+      "channel": "switch-times-to",
+      "$$hashKey": "object:9862"
+    },
+    {
+      "id": "input-a-phase-voltage",
+      "name": "输入A相电压",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30001,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "input-a-phase-voltage",
+      "$$hashKey": "object:9863"
+    },
+    {
+      "id": "input-b-phase-voltage",
+      "name": "输入B相电压",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30002,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "input-b-phase-voltage",
+      "$$hashKey": "object:9864"
+    },
+    {
+      "id": "input-c-phase-voltage",
+      "name": "输入C相电压",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30003,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "input-c-phase-voltage",
+      "$$hashKey": "object:9865"
+    },
+    {
+      "id": "input-frequency",
+      "name": "输入频率",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30004,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "input-frequency",
+      "$$hashKey": "object:9866"
+    },
+    {
+      "id": "input-a-phase-current",
+      "name": "输入A相电流",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30005,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "input-a-phase-current",
+      "$$hashKey": "object:9867"
+    },
+    {
+      "id": "input-b-phase-current",
+      "name": "输入B相电流",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30006,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "input-b-phase-current",
+      "$$hashKey": "object:9868"
+    },
+    {
+      "id": "input-c-phase-current",
+      "name": "输入C相电流",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30007,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "input-c-phase-current",
+      "$$hashKey": "object:9869"
+    },
+    {
+      "id": "input-a-phase-power-factor",
+      "name": "输入A相功因",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30008,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "input-a-phase-power-factor",
+      "$$hashKey": "object:9870"
+    },
+    {
+      "id": "input-b-phase-power-factor",
+      "name": "输入B相功因",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30009,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "input-b-phase-power-factor",
+      "$$hashKey": "object:9871"
+    },
+    {
+      "id": "input-c-phase-power-factor",
+      "name": "输入C相功因",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30010,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "input-c-phase-power-factor",
+      "$$hashKey": "object:9872"
+    },
+    {
+      "id": "output-a-phase-voltage",
+      "name": "输出A相电压",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30011,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "output-a-phase-voltage",
+      "$$hashKey": "object:9873"
+    },
+    {
+      "id": "output-b-phase-voltage",
+      "name": "输出B相电压",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30012,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "output-b-phase-voltage",
+      "$$hashKey": "object:9874"
+    },
+    {
+      "id": "output-c-phase-voltage",
+      "name": "输出C相电压",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30013,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "output-c-phase-voltage",
+      "$$hashKey": "object:9875"
+    },
+    {
+      "id": "output-frequency",
+      "name": "输出频率",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30014,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "output-frequency",
+      "$$hashKey": "object:9876"
+    },
+    {
+      "id": "output-a-phase-current",
+      "name": "输出A相电流",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30015,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "output-a-phase-current",
+      "$$hashKey": "object:9877"
+    },
+    {
+      "id": "output-b-phase-current",
+      "name": "输出B相电流",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30016,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "output-b-phase-current",
+      "$$hashKey": "object:9878"
+    },
+    {
+      "id": "output-c-phase-current",
+      "name": "输出C相电流",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30017,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "output-c-phase-current",
+      "$$hashKey": "object:9879"
+    },
+    {
+      "id": "output-a-phase-active-power",
+      "name": "输出A相有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30018,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "output-a-phase-active-power",
+      "$$hashKey": "object:9880"
+    },
+    {
+      "id": "output-b-phase-active-power",
+      "name": "输出B相有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30019,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "output-b-phase-active-power",
+      "$$hashKey": "object:9881"
+    },
+    {
+      "id": "output-c-phase-active-power",
+      "name": "输出C相有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30020,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "output-c-phase-active-power",
+      "$$hashKey": "object:9882"
+    },
+    {
+      "id": "output-phase-a-load-rate",
+      "name": "输出A相负载率",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30021,
+      "quantity": 1,
+      "expression": null,
+      "channel": "output-phase-a-load-rate",
+      "$$hashKey": "object:9883"
+    },
+    {
+      "id": "output-phase-b-load-rate",
+      "name": "输出B相负载率",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30022,
+      "quantity": 1,
+      "expression": null,
+      "channel": "output-phase-b-load-rate",
+      "$$hashKey": "object:9884"
+    },
+    {
+      "id": "output-phase-c-load-rate",
+      "name": "输出C相负载率",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30023,
+      "quantity": 1,
+      "expression": null,
+      "channel": "output-phase-c-load-rate",
+      "$$hashKey": "object:9885"
+    },
+    {
+      "id": "output-phase-a-peak-load-ratio",
+      "name": "输出A相负载峰值比",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30024,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "output-phase-a-peak-load-ratio",
+      "$$hashKey": "object:9886"
+    },
+    {
+      "id": "output-phase-b-peak-load-ratio",
+      "name": "输出B相负载峰值比",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30025,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "output-phase-b-peak-load-ratio",
+      "$$hashKey": "object:9887"
+    },
+    {
+      "id": "output-phase-c-peak-load-ratio",
+      "name": "输出C相负载峰值比",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30026,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "output-phase-c-peak-load-ratio",
+      "$$hashKey": "object:9888"
+    },
+    {
+      "id": "bypass-a-phase-voltage",
+      "name": "旁路A相电压",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30027,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "bypass-a-phase-voltage",
+      "$$hashKey": "object:9889"
+    },
+    {
+      "id": "bypass-b-phase-voltage",
+      "name": "旁路B相电压",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30028,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "bypass-b-phase-voltage",
+      "$$hashKey": "object:9890"
+    },
+    {
+      "id": "bypass-c-phase-voltage",
+      "name": "旁路C相电压",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30029,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "bypass-c-phase-voltage",
+      "$$hashKey": "object:9891"
+    },
+    {
+      "id": "bypass-frequency",
+      "name": "旁路频率",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30030,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "bypass-frequency",
+      "$$hashKey": "object:9892"
+    },
+    {
+      "id": "positive-battery-voltage",
+      "name": "正组电池电压",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30031,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "positive-battery-voltage",
+      "$$hashKey": "object:9893"
+    },
+    {
+      "id": "negative-battery-voltage",
+      "name": "负组电池电压",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30032,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "negative-battery-voltage",
+      "$$hashKey": "object:9894"
+    },
+    {
+      "id": "discharge-current-positive-battery",
+      "name": "正组电池放电电流",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30033,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "discharge-current-positive-battery",
+      "$$hashKey": "object:9895"
+    },
+    {
+      "id": "discharge-current-negative-battery",
+      "name": "负组电池放电电流",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30034,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "discharge-current-negative-battery",
+      "$$hashKey": "object:9896"
+    },
+    {
+      "id": "charge-current-positive-battery",
+      "name": "正组电池充电电流",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30035,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "charge-current-positive-battery",
+      "$$hashKey": "object:9897"
+    },
+    {
+      "id": "charge-current-negative-battery",
+      "name": "负组电池充电电流",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30036,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "charge-current-negative-battery",
+      "$$hashKey": "object:9898"
+    },
+    {
+      "id": "battery-capacity-rate",
+      "name": "电池容量率",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30037,
+      "quantity": 1,
+      "expression": null,
+      "channel": "battery-capacity-rate",
+      "$$hashKey": "object:9899"
+    },
+    {
+      "id": "battery-backup-time",
+      "name": "电池后备时间",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30038,
+      "quantity": 1,
+      "expression": null,
+      "channel": "battery-backup-time",
+      "$$hashKey": "object:9900"
+    },
+    {
+      "id": "battery-temperture",
+      "name": "电池温度",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30039,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "battery-temperture",
+      "$$hashKey": "object:9901"
+    },
+    {
+      "id": "ambient-temperture",
+      "name": "环境温度",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30040,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ambient-temperture",
+      "$$hashKey": "object:9902"
+    },
+    {
+      "id": "battery-discharge-time",
+      "name": "电池放电时间",
+      "datatype": "int",
+      "value": null,
+      "code": 4,
+      "address": 30041,
+      "quantity": 1,
+      "expression": null,
+      "channel": "battery-discharge-time",
+      "$$hashKey": "object:9903"
+    }
+  ],
+  "id": "kstar-ups",
+  "$$hashKey": "object:9818"
+}

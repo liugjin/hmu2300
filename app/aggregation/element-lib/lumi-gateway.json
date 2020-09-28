@@ -1,0 +1,462 @@
+{
+	"id": "lumi-gateway",
+	"name": "lumi-gateway",
+	"type": "ModbusElement",
+	"version": "1.0.0",
+	"description": "test",
+	"path": "element-lib/lumi-gateway.json",
+	"channels": [
+		{
+			"id": "gateway",
+			"name": "绿米网关",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "magnet",
+			"name": "窗磁",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "motion",
+			"name": "人体传感器",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "switch",
+			"name": "无线开关传感器",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "plug",
+			"name": "智能插座",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "ctrl_neutral1",
+			"name": "Aqara 86单火开关单键",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "ctrl_neutral2",
+			"name": "Aqara 86单火开关双键",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "86sw1",
+			"name": "Aqara 86无线开关单键",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "86sw2",
+			"name": "Aqara 86无线开关双键",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "sensor_ht",
+			"name": "温湿度传感器",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "cube",
+			"name": "魔方传感器",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "curtain",
+			"name": "Aqara窗帘",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "ctrl_ln1",
+			"name": "Aqara 86零火墙壁开关单键",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "ctrl_ln2",
+			"name": "Aqara 86零火墙壁开关双键",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "86plug",
+			"name": "Aqara 墙壁插座",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "natgas",
+			"name": "天然气报警器",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "smoke",
+			"name": "烟雾报警器",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "sensor_magnet.aq2",
+			"name": "Aqara门磁传感器",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "sensor_motion.aq2",
+			"name": "Aqara人体照度传感器",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "sensor_switch.aq2",
+			"name": "Aqara无线开关传感器",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "weather.v1",
+			"name": "Aqara温湿度气压传感器",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "sensor_wleak.aq1",
+			"name": "Aqara水浸传感器",
+			"datatype": "string",
+			"value": null
+		},
+		{
+			"id": "lock.aq1",
+			"name": "Aqara门锁",
+			"datatype": "string",
+			"value": null
+		}
+	],
+	"mappings": [
+		{
+			"protocol": "protocol-lumi-gateway",
+			"type": "LuMiGatewayProtocol",
+			"setting": {
+				"throttle": 0,
+				"optimized": false,
+				"stepDiff": 0,
+				"maxDiff": 0,
+				"cov": 0
+			},
+			"mapping": [
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "gateway"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "magnet"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "motion"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "switch"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "plug"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "ctrl_neutral1"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "ctrl_neutral2"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "86sw1"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "86sw2"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "sensor_ht"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "cube"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "curtain"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "ctrl_ln1"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "ctrl_ln2"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "86plug"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "natgas"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "smoke"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "sensor_magnet.aq2"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "sensor_motion.aq2"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "sensor_switch.aq2"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "weather.v1"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "sensor_wleak.aq1"
+				},
+				{
+					"code": 0,
+					"address": 0,
+					"quantity": 0,
+					"format": "",
+					"cid1": 0,
+					"cid2": 0,
+					"command": 0,
+					"offset": 0,
+					"length": 0,
+					"expression": "",
+					"channel": "lock.aq1"
+				}
+			]
+		}
+	]
+}

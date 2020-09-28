@@ -1,0 +1,67 @@
+// Copyright 2018 huayuan-iot
+//
+// Author: lynn
+// Date: 2018/05/17
+// Despcription: port manager pb go file generator
+//
+
+// protoc -I portmanager/ portmanager/portmanager.proto --go_out=plugins=grpc:portmanager
+
+syntax = "proto3";
+
+package portpb;
+
+// The port service definition.
+service Port {
+  // Operate operate devices, including sample, command
+  rpc Operate (OperateRequest) returns (OperateReply) {}
+
+  // Binding binding port
+  rpc Binding (BindingRequest) returns (BindingReply) {}
+
+  // Release release port
+  rpc Release (ReleaseRequest) returns (ReleaseReply) {}
+}
+
+// The request message containing operate info.
+message OperateRequest {
+  string port = 1; 
+  string type = 2; // command or sample
+  string payload = 3; // extra info, because of mutiple protocol, can not unify fields, use payload encode in json format for parsing
+  string suid = 4; // ID of sample uint
+}
+
+// The response message containing sample response
+message OperateReply {
+  int32 status = 1;
+  string message = 2;
+  string data = 3;
+}
+
+// The request message containing binding port info.
+message BindingRequest {
+  string protocol = 1;
+  string port = 2;
+  string payload = 3;
+  string suid = 4;
+}
+
+// The response message containing binding port response
+message BindingReply {
+  int32 status = 1;
+  string message = 2;
+}
+
+// The request message containing release port info.
+message ReleaseRequest {
+  string protocol = 1;
+  string port = 2;
+  string payload = 3;
+  string suid = 4;
+}
+
+// The response message containing release port response
+message ReleaseReply {
+  int32 status = 1;
+  string message = 2;
+}

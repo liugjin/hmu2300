@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+@font-face{
+    font-family: 'gbk';
+    src: url(../fonts/gbk.ttf);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 968px;
+    min-height: 100vh;
+    margin-bottom: 0 !important;
+}
+#body-box{
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;
+}
+.page-title{
+    width: 100%;
+    height: 10%;
+}
+
+.page-title .title-box{
+    display: flex;
+    width: 100%;
+    height:100%;
+}
+
+.page-title .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4%;
+    height: 100%;
+ }
+
+ .page-title .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    height: 100%;
+    font-size: 36px;
+    font-family: 'gbk';
+    margin-right: 4%;
+}
+
+.page-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88%;
+    height: 84%;
+    margin: 0 6% 3% 6%;
+    background: #FFFFFF;
+}
+
+.page-content .upgrade,.page-content .restart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.page-content .upgrade-box{
+    width: 60%;
+    height: 100%;
+}
+.page-content .upgrade-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
+.page-content .upgrade-tips{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+}
+
+.page-content .upgrade-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+
+}
+
+
+.btn, .btn-large,.btn-flat{
+    height: 46px;
+    line-height: 46px;
+    width: 100%;
+    background-color: #10A957;
+    box-shadow: none
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: #10A957;
+    box-shadow: none;
+}
+
+.cloud{
+    width: 100%;
+}
+
+input[type=text]:focus:not([readonly]){
+    border-bottom: 1px solid #10A957;
+    box-shadow: none
+}
+input[type=text]:focus:not([readonly])+label{
+    color: rgba(0,0,0,0.87)
+}
+.input-field label{
+    color: rgba(0,0,0,0.87)
+}
+
+
+
+
+

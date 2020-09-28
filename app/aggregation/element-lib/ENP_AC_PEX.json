@@ -1,0 +1,189 @@
+{
+  "name": "ENP_AC_PEX",
+  "type": "SnmpManagerElement",
+  "channels": [
+    {
+      "id": "ReturnTemperature",
+      "name": "回风温度",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.2",
+      "expression": "val/10",
+      "channel": "ReturnTemperature",
+      "$$hashKey": "object:2384"
+    },
+    {
+      "id": "ReturnHumidity",
+      "name": "回风湿度",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.3",
+      "expression": "val/10",
+      "channel": "ReturnHumidity",
+      "$$hashKey": "object:2385"
+    },
+    {
+      "id": "OperatingState",
+      "name": "空调状态",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.4",
+      "expression": null,
+      "channel": "OperatingState",
+      "$$hashKey": "object:2386"
+    },
+    {
+      "id": "MainFan",
+      "name": "风机状态",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.5",
+      "expression": null,
+      "channel": "MainFan",
+      "$$hashKey": "object:2387"
+    },
+    {
+      "id": "CoolMode",
+      "name": "制冷状态",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.6",
+      "expression": null,
+      "channel": "CoolMode",
+      "$$hashKey": "object:2388"
+    },
+    {
+      "id": "FreeCoolOn",
+      "name": "自然冷源开",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.7",
+      "expression": null,
+      "channel": "FreeCoolOn",
+      "$$hashKey": "object:2389"
+    },
+    {
+      "id": "HotWaterOn",
+      "name": "热水开",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.8",
+      "expression": null,
+      "channel": "HotWaterOn",
+      "$$hashKey": "object:2390"
+    },
+    {
+      "id": "HeaterMode",
+      "name": "加热状态",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.9",
+      "expression": null,
+      "channel": "HeaterMode",
+      "$$hashKey": "object:2391"
+    },
+    {
+      "id": "HumidifyMode",
+      "name": "加湿状态",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.10",
+      "expression": null,
+      "channel": "HumidifyMode",
+      "$$hashKey": "object:2392"
+    },
+    {
+      "id": "DehumidifyMode",
+      "name": "除湿状态",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.11",
+      "expression": null,
+      "channel": "DehumidifyMode",
+      "$$hashKey": "object:2393"
+    },
+    {
+      "id": "AudibleAlarmOn",
+      "name": "告警蜂鸣器开",
+      "datatype": "int",
+      "value": null,
+      "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.12",
+      "expression": null,
+      "channel": "AudibleAlarmOn",
+      "$$hashKey": "object:2394"
+    }
+  ],
+  "id": "ENP_AC_PEX",
+  "version": "0.0.1",
+  "description": "ENP_AC_PEX channels info",
+  "mappings": [
+    {
+      "protocol": "protocol-snmp-manager",
+      "type": "SnmpManagerProtocol",
+      "setting": {
+        "throttle": 1000,
+        "cov": 0.1
+      },
+      "mapping": [
+        {
+          "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.2",
+          "expression": "val/10",
+          "channel": "ReturnTemperature"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.3",
+          "expression": "val/10",
+          "channel": "ReturnHumidity"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.4",
+          "expression": null,
+          "channel": "OperatingState"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.5",
+          "expression": null,
+          "channel": "MainFan"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.6",
+          "expression": null,
+          "channel": "CoolMode"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.7",
+          "expression": null,
+          "channel": "FreeCoolOn"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.8",
+          "expression": null,
+          "channel": "HotWaterOn"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.9",
+          "expression": null,
+          "channel": "HeaterMode"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.10",
+          "expression": null,
+          "channel": "HumidifyMode"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.11",
+          "expression": null,
+          "channel": "DehumidifyMode"
+        },
+        {
+          "oid": ".1.3.6.1.4.1.13400.3.3.302.1.1.12",
+          "expression": null,
+          "channel": "AudibleAlarmOn"
+        }
+      ]
+    }
+  ],
+  "path": "../element-lib/element-snmp-manager",
+  "cov": 0.1,
+  "$$hashKey": "object:2369"
+}

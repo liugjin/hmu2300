@@ -1,0 +1,6501 @@
+{
+  "name": "ITA2_MODBUS",
+  "type": "ModbusElement",
+  "version": "0.0.1",
+  "description": "ITA2_MODBUS channels info",
+  "mappings": [
+    {
+      "protocol": "protocol-modbus-tcp",
+      "type": "ModbusTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 1100,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-a"
+        },
+        {
+          "code": 3,
+          "address": 1101,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-b"
+        },
+        {
+          "code": 3,
+          "address": 1102,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-c"
+        },
+        {
+          "code": 3,
+          "address": 1103,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-voltage-a"
+        },
+        {
+          "code": 3,
+          "address": 1104,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-voltage-b"
+        },
+        {
+          "code": 3,
+          "address": 1105,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-voltage-c"
+        },
+        {
+          "code": 3,
+          "address": 1106,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-current-a"
+        },
+        {
+          "code": 3,
+          "address": 1107,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-current-b"
+        },
+        {
+          "code": 3,
+          "address": 1108,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-current-c"
+        },
+        {
+          "code": 3,
+          "address": 1110,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-frequency"
+        },
+        {
+          "code": 3,
+          "address": 1114,
+          "quantity": 1,
+          "channel": "input-phase-number"
+        },
+        {
+          "code": 3,
+          "address": 1115,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-ab"
+        },
+        {
+          "code": 3,
+          "address": 1116,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-bc"
+        },
+        {
+          "code": 3,
+          "address": 1117,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-ca"
+        },
+        {
+          "code": 3,
+          "address": 1118,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-input-phase-current-a"
+        },
+        {
+          "code": 3,
+          "address": 1119,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-input-phase-current-b"
+        },
+        {
+          "code": 3,
+          "address": 1120,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-input-phase-current-c"
+        },
+        {
+          "code": 3,
+          "address": 1121,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-input-frequency"
+        },
+        {
+          "code": 3,
+          "address": 1122,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-power-factor-phase-a"
+        },
+        {
+          "code": 3,
+          "address": 1123,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-power-factor-phase-b"
+        },
+        {
+          "code": 3,
+          "address": 1124,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-power-factor-phase-c"
+        },
+        {
+          "code": 3,
+          "address": 1125,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-voltage-a"
+        },
+        {
+          "code": 3,
+          "address": 1126,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-voltage-b"
+        },
+        {
+          "code": 3,
+          "address": 1127,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-voltage-c"
+        },
+        {
+          "code": 3,
+          "address": 1128,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "side-line-voltage-ab"
+        },
+        {
+          "code": 3,
+          "address": 1129,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "side-line-voltage-bc"
+        },
+        {
+          "code": 3,
+          "address": 1130,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "side-line-voltage-ca"
+        },
+        {
+          "code": 3,
+          "address": 1131,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "bypass-frequency"
+        },
+        {
+          "code": 3,
+          "address": 1140,
+          "quantity": 1,
+          "channel": "output-phase-number"
+        },
+        {
+          "code": 3,
+          "address": 1141,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "a-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1142,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "b-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1143,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "c-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1144,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "peak-ratio-of-a-phase-output-in-this-machine"
+        },
+        {
+          "code": 3,
+          "address": 1145,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "peak-ratio-of-b-phase-output-in-this-machine"
+        },
+        {
+          "code": 3,
+          "address": 1146,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "peak-ratio-of-c-phase-output-in-this-machine"
+        },
+        {
+          "code": 3,
+          "address": 1147,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "a-phase-output-active-power-of-the-machine"
+        },
+        {
+          "code": 3,
+          "address": 1148,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "b-phase-output-active-power-of-the-machine-0"
+        },
+        {
+          "code": 3,
+          "address": 1149,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "c-phase-output-active-power-of-the-machine"
+        },
+        {
+          "code": 3,
+          "address": 1150,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "a-phase-output-machine-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 1151,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "b-phase-output-machine-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 1152,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "c-phase-output-machine-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 1153,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "native-a-phase-output-load-percentage"
+        },
+        {
+          "code": 3,
+          "address": 1154,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "native-b-phase-output-load-percentage"
+        },
+        {
+          "code": 3,
+          "address": 1155,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "native-c-phase-output-load-percentage"
+        },
+        {
+          "code": 3,
+          "address": 1160,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-a-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1161,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-b-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1162,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-c-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1163,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-a-phase-output-active power"
+        },
+        {
+          "code": 3,
+          "address": 1164,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-b-phase-output-active power"
+        },
+        {
+          "code": 3,
+          "address": 1165,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-c-phase-output-active power"
+        },
+        {
+          "code": 3,
+          "address": 1166,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-a-phase-output-view-in-power"
+        },
+        {
+          "code": 3,
+          "address": 1167,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-b-phase-output-view-in-power"
+        },
+        {
+          "code": 3,
+          "address": 1168,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-c-phase-output-view-in-power"
+        },
+        {
+          "code": 3,
+          "address": 1169,
+          "quantity": 1,
+          "channel": "number-of-parallel-machines"
+        },
+        {
+          "code": 3,
+          "address": 1176,
+          "quantity": 1,
+          "channel": "ups-running-time"
+        },
+        {
+          "code": 3,
+          "address": 1177,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-voltage"
+        },
+        {
+          "code": 3,
+          "address": 1178,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "battery-charging-current"
+        },
+        {
+          "code": 3,
+          "address": 1179,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "battery-discharge-current"
+        },
+        {
+          "code": 3,
+          "address": 1180,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "negative-battery-voltage"
+        },
+        {
+          "code": 3,
+          "address": 1181,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "negative-battery-charging-current"
+        },
+        {
+          "code": 3,
+          "address": 1182,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "negative-battery-discharge-current"
+        },
+        {
+          "code": 3,
+          "address": 1183,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-reserve-time"
+        },
+        {
+          "code": 3,
+          "address": 1184,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-temperature"
+        },
+        {
+          "code": 3,
+          "address": 1185,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ambient-temperature"
+        },
+        {
+          "code": 3,
+          "address": 1186,
+          "quantity": 1,
+          "channel": "current-capacity-of-battery"
+        },
+        {
+          "code": 3,
+          "address": 1187,
+          "quantity": 1,
+          "channel": "battery-discharge-number"
+        },
+        {
+          "code": 3,
+          "address": 1196,
+          "quantity": 2,
+          "channel": "input-power"
+        },
+        {
+          "code": 3,
+          "address": 1198,
+          "quantity": 2,
+          "channel": "output-power"
+        },
+        {
+          "code": 3,
+          "address": 1200,
+          "quantity": 2,
+          "channel": "battery-running-time"
+        },
+        {
+          "code": 3,
+          "address": 1202,
+          "quantity": 2,
+          "channel": "battery-discharge-time"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val&3",
+          "channel": "power-supply-mode"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>2&3",
+          "channel": "input-power-supply-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>4&7",
+          "channel": "battery-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>7&7",
+          "channel": "negative-battery-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "format": null,
+          "expression": "val>>10&1",
+          "channel": "charger-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>11&3",
+          "channel": "power-supply-state-parallel-machine-system"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "ethernet-connetion-status"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "outlist1"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "outlist2"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "synchronous-asynchrony-state"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "city-electricity-anomaly"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "rectifier"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "inverter"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "bypass-state"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "battery-voltage-anomaly"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "input-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "system-overtemp"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "system-battery-low-pre-warning"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "input-phase-reversed"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "input-neutral-lost"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "input-ground-lost"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "rectifier-overload"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "battery-cabinet-not-connected"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "inverter-overload"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "lbs-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "output-pending"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "output-disabled"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "bypass-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "bypass-abnormal-in-eco-mode"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "bypass-phase-reversed"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "bypass-overcurrent"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "bypass-cable-connection-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "battery-reversed"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "battery-low-pre-warning"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "battery-volt-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "no-battery"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "battery-overtemp"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "battery-aging"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "battery-test-failure"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "battery-series-not-qualified"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "fan-fault"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "repo"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "electric-leak-alarm"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "version-incompatible"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "output-lpe-short"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "loss-of-redundancy"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "system-overload"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "load-sharing-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "system-parallel-settings-async"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "local-parallel-settings-async"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "on-maintenance-bypass"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "battery-mode"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "bypass-mode"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "parallel-no-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "parallel-bypass-cable-connection-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "on-intelligent-sleep-mode"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "battery-cabinet-connect-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "system-warning"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "battery-eod"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "dc-bus-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "rectifier-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "dc-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "charger-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "input-backfeed"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "inverter-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "inverter-relay-welded"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "bypass-backfeed"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "aux-power-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "communication-failure"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "output-short"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "output-off-voltage-not-zero"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "parallel-comm-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "parallel-cable-connection-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "system-fault"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "shut-off-due-to-overtemp"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "output-off-overload-bypass-unavailable"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "load-off-due-to-output-short"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "eod-turn-off"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "remote-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "guaranteed-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "load-off-due-to-shutdown-on-battery"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "output-off-bypass-unavailable"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "remote-power-on"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "remote-shut-off"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "battery-test-started"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "battery-test-stopped"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "local-settings-sync-ok"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "system-settings-sync-ok"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "battery-to-utility-transition"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "manual-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 1041,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "operating-on-inverter"
+        },
+        {
+          "code": 3,
+          "address": 1041,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "manual-power-on"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-serial",
+      "type": "ModbusSerialProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 1100,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-a"
+        },
+        {
+          "code": 3,
+          "address": 1101,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-b"
+        },
+        {
+          "code": 3,
+          "address": 1102,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-c"
+        },
+        {
+          "code": 3,
+          "address": 1103,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-voltage-a"
+        },
+        {
+          "code": 3,
+          "address": 1104,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-voltage-b"
+        },
+        {
+          "code": 3,
+          "address": 1105,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-voltage-c"
+        },
+        {
+          "code": 3,
+          "address": 1106,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-current-a"
+        },
+        {
+          "code": 3,
+          "address": 1107,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-current-b"
+        },
+        {
+          "code": 3,
+          "address": 1108,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-current-c"
+        },
+        {
+          "code": 3,
+          "address": 1110,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-frequency"
+        },
+        {
+          "code": 3,
+          "address": 1114,
+          "quantity": 1,
+          "channel": "input-phase-number"
+        },
+        {
+          "code": 3,
+          "address": 1115,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-ab"
+        },
+        {
+          "code": 3,
+          "address": 1116,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-bc"
+        },
+        {
+          "code": 3,
+          "address": 1117,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-ca"
+        },
+        {
+          "code": 3,
+          "address": 1118,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-input-phase-current-a"
+        },
+        {
+          "code": 3,
+          "address": 1119,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-input-phase-current-b"
+        },
+        {
+          "code": 3,
+          "address": 1120,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-input-phase-current-c"
+        },
+        {
+          "code": 3,
+          "address": 1121,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-input-frequency"
+        },
+        {
+          "code": 3,
+          "address": 1122,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-power-factor-phase-a"
+        },
+        {
+          "code": 3,
+          "address": 1123,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-power-factor-phase-b"
+        },
+        {
+          "code": 3,
+          "address": 1124,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-power-factor-phase-c"
+        },
+        {
+          "code": 3,
+          "address": 1125,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-voltage-a"
+        },
+        {
+          "code": 3,
+          "address": 1126,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-voltage-b"
+        },
+        {
+          "code": 3,
+          "address": 1127,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-voltage-c"
+        },
+        {
+          "code": 3,
+          "address": 1128,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "side-line-voltage-ab"
+        },
+        {
+          "code": 3,
+          "address": 1129,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "side-line-voltage-bc"
+        },
+        {
+          "code": 3,
+          "address": 1130,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "side-line-voltage-ca"
+        },
+        {
+          "code": 3,
+          "address": 1131,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "bypass-frequency"
+        },
+        {
+          "code": 3,
+          "address": 1140,
+          "quantity": 1,
+          "channel": "output-phase-number"
+        },
+        {
+          "code": 3,
+          "address": 1141,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "a-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1142,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "b-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1143,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "c-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1144,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "peak-ratio-of-a-phase-output-in-this-machine"
+        },
+        {
+          "code": 3,
+          "address": 1145,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "peak-ratio-of-b-phase-output-in-this-machine"
+        },
+        {
+          "code": 3,
+          "address": 1146,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "peak-ratio-of-c-phase-output-in-this-machine"
+        },
+        {
+          "code": 3,
+          "address": 1147,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "a-phase-output-active-power-of-the-machine"
+        },
+        {
+          "code": 3,
+          "address": 1148,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "b-phase-output-active-power-of-the-machine-0"
+        },
+        {
+          "code": 3,
+          "address": 1149,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "c-phase-output-active-power-of-the-machine"
+        },
+        {
+          "code": 3,
+          "address": 1150,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "a-phase-output-machine-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 1151,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "b-phase-output-machine-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 1152,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "c-phase-output-machine-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 1153,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "native-a-phase-output-load-percentage"
+        },
+        {
+          "code": 3,
+          "address": 1154,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "native-b-phase-output-load-percentage"
+        },
+        {
+          "code": 3,
+          "address": 1155,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "native-c-phase-output-load-percentage"
+        },
+        {
+          "code": 3,
+          "address": 1160,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-a-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1161,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-b-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1162,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-c-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1163,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-a-phase-output-active power"
+        },
+        {
+          "code": 3,
+          "address": 1164,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-b-phase-output-active power"
+        },
+        {
+          "code": 3,
+          "address": 1165,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-c-phase-output-active power"
+        },
+        {
+          "code": 3,
+          "address": 1166,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-a-phase-output-view-in-power"
+        },
+        {
+          "code": 3,
+          "address": 1167,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-b-phase-output-view-in-power"
+        },
+        {
+          "code": 3,
+          "address": 1168,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-c-phase-output-view-in-power"
+        },
+        {
+          "code": 3,
+          "address": 1169,
+          "quantity": 1,
+          "channel": "number-of-parallel-machines"
+        },
+        {
+          "code": 3,
+          "address": 1176,
+          "quantity": 1,
+          "channel": "ups-running-time"
+        },
+        {
+          "code": 3,
+          "address": 1177,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-voltage"
+        },
+        {
+          "code": 3,
+          "address": 1178,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "battery-charging-current"
+        },
+        {
+          "code": 3,
+          "address": 1179,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "battery-discharge-current"
+        },
+        {
+          "code": 3,
+          "address": 1180,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "negative-battery-voltage"
+        },
+        {
+          "code": 3,
+          "address": 1181,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "negative-battery-charging-current"
+        },
+        {
+          "code": 3,
+          "address": 1182,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "negative-battery-discharge-current"
+        },
+        {
+          "code": 3,
+          "address": 1183,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-reserve-time"
+        },
+        {
+          "code": 3,
+          "address": 1184,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-temperature"
+        },
+        {
+          "code": 3,
+          "address": 1185,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ambient-temperature"
+        },
+        {
+          "code": 3,
+          "address": 1186,
+          "quantity": 1,
+          "channel": "current-capacity-of-battery"
+        },
+        {
+          "code": 3,
+          "address": 1187,
+          "quantity": 1,
+          "channel": "battery-discharge-number"
+        },
+        {
+          "code": 3,
+          "address": 1196,
+          "quantity": 2,
+          "channel": "input-power"
+        },
+        {
+          "code": 3,
+          "address": 1198,
+          "quantity": 2,
+          "channel": "output-power"
+        },
+        {
+          "code": 3,
+          "address": 1200,
+          "quantity": 2,
+          "channel": "battery-running-time"
+        },
+        {
+          "code": 3,
+          "address": 1202,
+          "quantity": 2,
+          "channel": "battery-discharge-time"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val&3",
+          "channel": "power-supply-mode"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>2&3",
+          "channel": "input-power-supply-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>4&7",
+          "channel": "battery-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>7&7",
+          "channel": "negative-battery-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "format": null,
+          "expression": "val>>10&1",
+          "channel": "charger-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>11&3",
+          "channel": "power-supply-state-parallel-machine-system"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "ethernet-connetion-status"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "outlist1"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "outlist2"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "synchronous-asynchrony-state"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "city-electricity-anomaly"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "rectifier"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "inverter"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "bypass-state"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "battery-voltage-anomaly"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "input-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "system-overtemp"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "system-battery-low-pre-warning"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "input-phase-reversed"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "input-neutral-lost"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "input-ground-lost"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "rectifier-overload"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "battery-cabinet-not-connected"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "inverter-overload"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "lbs-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "output-pending"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "output-disabled"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "bypass-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "bypass-abnormal-in-eco-mode"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "bypass-phase-reversed"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "bypass-overcurrent"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "bypass-cable-connection-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "battery-reversed"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "battery-low-pre-warning"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "battery-volt-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "no-battery"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "battery-overtemp"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "battery-aging"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "battery-test-failure"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "battery-series-not-qualified"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "fan-fault"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "repo"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "electric-leak-alarm"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "version-incompatible"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "output-lpe-short"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "loss-of-redundancy"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "system-overload"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "load-sharing-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "system-parallel-settings-async"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "local-parallel-settings-async"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "on-maintenance-bypass"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "battery-mode"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "bypass-mode"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "parallel-no-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "parallel-bypass-cable-connection-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "on-intelligent-sleep-mode"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "battery-cabinet-connect-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "system-warning"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "battery-eod"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "dc-bus-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "rectifier-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "dc-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "charger-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "input-backfeed"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "inverter-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "inverter-relay-welded"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "bypass-backfeed"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "aux-power-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "communication-failure"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "output-short"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "output-off-voltage-not-zero"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "parallel-comm-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "parallel-cable-connection-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "system-fault"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "shut-off-due-to-overtemp"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "output-off-overload-bypass-unavailable"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "load-off-due-to-output-short"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "eod-turn-off"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "remote-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "guaranteed-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "load-off-due-to-shutdown-on-battery"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "output-off-bypass-unavailable"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "remote-power-on"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "remote-shut-off"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "battery-test-started"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "battery-test-stopped"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "local-settings-sync-ok"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "system-settings-sync-ok"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "battery-to-utility-transition"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "manual-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 1041,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "operating-on-inverter"
+        },
+        {
+          "code": 3,
+          "address": 1041,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "manual-power-on"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-rtu-tcp",
+      "type": "ModbusRtuTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 1100,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-a"
+        },
+        {
+          "code": 3,
+          "address": 1101,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-b"
+        },
+        {
+          "code": 3,
+          "address": 1102,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-c"
+        },
+        {
+          "code": 3,
+          "address": 1103,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-voltage-a"
+        },
+        {
+          "code": 3,
+          "address": 1104,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-voltage-b"
+        },
+        {
+          "code": 3,
+          "address": 1105,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-voltage-c"
+        },
+        {
+          "code": 3,
+          "address": 1106,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-current-a"
+        },
+        {
+          "code": 3,
+          "address": 1107,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-current-b"
+        },
+        {
+          "code": 3,
+          "address": 1108,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-current-c"
+        },
+        {
+          "code": 3,
+          "address": 1110,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-frequency"
+        },
+        {
+          "code": 3,
+          "address": 1114,
+          "quantity": 1,
+          "channel": "input-phase-number"
+        },
+        {
+          "code": 3,
+          "address": 1115,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-ab"
+        },
+        {
+          "code": 3,
+          "address": 1116,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-bc"
+        },
+        {
+          "code": 3,
+          "address": 1117,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-ca"
+        },
+        {
+          "code": 3,
+          "address": 1118,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-input-phase-current-a"
+        },
+        {
+          "code": 3,
+          "address": 1119,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-input-phase-current-b"
+        },
+        {
+          "code": 3,
+          "address": 1120,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-input-phase-current-c"
+        },
+        {
+          "code": 3,
+          "address": 1121,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-input-frequency"
+        },
+        {
+          "code": 3,
+          "address": 1122,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-power-factor-phase-a"
+        },
+        {
+          "code": 3,
+          "address": 1123,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-power-factor-phase-b"
+        },
+        {
+          "code": 3,
+          "address": 1124,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-power-factor-phase-c"
+        },
+        {
+          "code": 3,
+          "address": 1125,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-voltage-a"
+        },
+        {
+          "code": 3,
+          "address": 1126,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-voltage-b"
+        },
+        {
+          "code": 3,
+          "address": 1127,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-voltage-c"
+        },
+        {
+          "code": 3,
+          "address": 1128,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "side-line-voltage-ab"
+        },
+        {
+          "code": 3,
+          "address": 1129,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "side-line-voltage-bc"
+        },
+        {
+          "code": 3,
+          "address": 1130,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "side-line-voltage-ca"
+        },
+        {
+          "code": 3,
+          "address": 1131,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "bypass-frequency"
+        },
+        {
+          "code": 3,
+          "address": 1140,
+          "quantity": 1,
+          "channel": "output-phase-number"
+        },
+        {
+          "code": 3,
+          "address": 1141,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "a-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1142,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "b-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1143,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "c-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1144,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "peak-ratio-of-a-phase-output-in-this-machine"
+        },
+        {
+          "code": 3,
+          "address": 1145,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "peak-ratio-of-b-phase-output-in-this-machine"
+        },
+        {
+          "code": 3,
+          "address": 1146,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "peak-ratio-of-c-phase-output-in-this-machine"
+        },
+        {
+          "code": 3,
+          "address": 1147,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "a-phase-output-active-power-of-the-machine"
+        },
+        {
+          "code": 3,
+          "address": 1148,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "b-phase-output-active-power-of-the-machine-0"
+        },
+        {
+          "code": 3,
+          "address": 1149,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "c-phase-output-active-power-of-the-machine"
+        },
+        {
+          "code": 3,
+          "address": 1150,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "a-phase-output-machine-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 1151,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "b-phase-output-machine-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 1152,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "c-phase-output-machine-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 1153,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "native-a-phase-output-load-percentage"
+        },
+        {
+          "code": 3,
+          "address": 1154,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "native-b-phase-output-load-percentage"
+        },
+        {
+          "code": 3,
+          "address": 1155,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "native-c-phase-output-load-percentage"
+        },
+        {
+          "code": 3,
+          "address": 1160,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-a-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1161,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-b-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1162,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-c-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1163,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-a-phase-output-active power"
+        },
+        {
+          "code": 3,
+          "address": 1164,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-b-phase-output-active power"
+        },
+        {
+          "code": 3,
+          "address": 1165,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-c-phase-output-active power"
+        },
+        {
+          "code": 3,
+          "address": 1166,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-a-phase-output-view-in-power"
+        },
+        {
+          "code": 3,
+          "address": 1167,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-b-phase-output-view-in-power"
+        },
+        {
+          "code": 3,
+          "address": 1168,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-c-phase-output-view-in-power"
+        },
+        {
+          "code": 3,
+          "address": 1169,
+          "quantity": 1,
+          "channel": "number-of-parallel-machines"
+        },
+        {
+          "code": 3,
+          "address": 1176,
+          "quantity": 1,
+          "channel": "ups-running-time"
+        },
+        {
+          "code": 3,
+          "address": 1177,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-voltage"
+        },
+        {
+          "code": 3,
+          "address": 1178,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "battery-charging-current"
+        },
+        {
+          "code": 3,
+          "address": 1179,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "battery-discharge-current"
+        },
+        {
+          "code": 3,
+          "address": 1180,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "negative-battery-voltage"
+        },
+        {
+          "code": 3,
+          "address": 1181,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "negative-battery-charging-current"
+        },
+        {
+          "code": 3,
+          "address": 1182,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "negative-battery-discharge-current"
+        },
+        {
+          "code": 3,
+          "address": 1183,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-reserve-time"
+        },
+        {
+          "code": 3,
+          "address": 1184,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-temperature"
+        },
+        {
+          "code": 3,
+          "address": 1185,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ambient-temperature"
+        },
+        {
+          "code": 3,
+          "address": 1186,
+          "quantity": 1,
+          "channel": "current-capacity-of-battery"
+        },
+        {
+          "code": 3,
+          "address": 1187,
+          "quantity": 1,
+          "channel": "battery-discharge-number"
+        },
+        {
+          "code": 3,
+          "address": 1196,
+          "quantity": 2,
+          "channel": "input-power"
+        },
+        {
+          "code": 3,
+          "address": 1198,
+          "quantity": 2,
+          "channel": "output-power"
+        },
+        {
+          "code": 3,
+          "address": 1200,
+          "quantity": 2,
+          "channel": "battery-running-time"
+        },
+        {
+          "code": 3,
+          "address": 1202,
+          "quantity": 2,
+          "channel": "battery-discharge-time"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val&3",
+          "channel": "power-supply-mode"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>2&3",
+          "channel": "input-power-supply-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>4&7",
+          "channel": "battery-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>7&7",
+          "channel": "negative-battery-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "format": null,
+          "expression": "val>>10&1",
+          "channel": "charger-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>11&3",
+          "channel": "power-supply-state-parallel-machine-system"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "ethernet-connetion-status"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "outlist1"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "outlist2"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "synchronous-asynchrony-state"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "city-electricity-anomaly"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "rectifier"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "inverter"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "bypass-state"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "battery-voltage-anomaly"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "input-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "system-overtemp"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "system-battery-low-pre-warning"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "input-phase-reversed"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "input-neutral-lost"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "input-ground-lost"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "rectifier-overload"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "battery-cabinet-not-connected"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "inverter-overload"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "lbs-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "output-pending"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "output-disabled"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "bypass-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "bypass-abnormal-in-eco-mode"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "bypass-phase-reversed"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "bypass-overcurrent"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "bypass-cable-connection-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "battery-reversed"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "battery-low-pre-warning"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "battery-volt-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "no-battery"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "battery-overtemp"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "battery-aging"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "battery-test-failure"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "battery-series-not-qualified"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "fan-fault"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "repo"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "electric-leak-alarm"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "version-incompatible"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "output-lpe-short"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "loss-of-redundancy"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "system-overload"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "load-sharing-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "system-parallel-settings-async"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "local-parallel-settings-async"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "on-maintenance-bypass"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "battery-mode"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "bypass-mode"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "parallel-no-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "parallel-bypass-cable-connection-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "on-intelligent-sleep-mode"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "battery-cabinet-connect-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "system-warning"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "battery-eod"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "dc-bus-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "rectifier-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "dc-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "charger-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "input-backfeed"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "inverter-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "inverter-relay-welded"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "bypass-backfeed"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "aux-power-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "communication-failure"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "output-short"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "output-off-voltage-not-zero"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "parallel-comm-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "parallel-cable-connection-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "system-fault"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "shut-off-due-to-overtemp"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "output-off-overload-bypass-unavailable"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "load-off-due-to-output-short"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "eod-turn-off"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "remote-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "guaranteed-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "load-off-due-to-shutdown-on-battery"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "output-off-bypass-unavailable"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "remote-power-on"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "remote-shut-off"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "battery-test-started"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "battery-test-stopped"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "local-settings-sync-ok"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "system-settings-sync-ok"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "battery-to-utility-transition"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "manual-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 1041,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "operating-on-inverter"
+        },
+        {
+          "code": 3,
+          "address": 1041,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "manual-power-on"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-dtu",
+      "type": "ModbusDtuProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 1100,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-a"
+        },
+        {
+          "code": 3,
+          "address": 1101,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-b"
+        },
+        {
+          "code": 3,
+          "address": 1102,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-c"
+        },
+        {
+          "code": 3,
+          "address": 1103,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-voltage-a"
+        },
+        {
+          "code": 3,
+          "address": 1104,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-voltage-b"
+        },
+        {
+          "code": 3,
+          "address": 1105,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-voltage-c"
+        },
+        {
+          "code": 3,
+          "address": 1106,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-current-a"
+        },
+        {
+          "code": 3,
+          "address": 1107,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-current-b"
+        },
+        {
+          "code": 3,
+          "address": 1108,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-output-phase-current-c"
+        },
+        {
+          "code": 3,
+          "address": 1110,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "output-frequency"
+        },
+        {
+          "code": 3,
+          "address": 1114,
+          "quantity": 1,
+          "channel": "input-phase-number"
+        },
+        {
+          "code": 3,
+          "address": 1115,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-ab"
+        },
+        {
+          "code": 3,
+          "address": 1116,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-bc"
+        },
+        {
+          "code": 3,
+          "address": 1117,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "l-n-voltage-ca"
+        },
+        {
+          "code": 3,
+          "address": 1118,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-input-phase-current-a"
+        },
+        {
+          "code": 3,
+          "address": 1119,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-input-phase-current-b"
+        },
+        {
+          "code": 3,
+          "address": 1120,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ac-input-phase-current-c"
+        },
+        {
+          "code": 3,
+          "address": 1121,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-input-frequency"
+        },
+        {
+          "code": 3,
+          "address": 1122,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-power-factor-phase-a"
+        },
+        {
+          "code": 3,
+          "address": 1123,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-power-factor-phase-b"
+        },
+        {
+          "code": 3,
+          "address": 1124,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "input-power-factor-phase-c"
+        },
+        {
+          "code": 3,
+          "address": 1125,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-voltage-a"
+        },
+        {
+          "code": 3,
+          "address": 1126,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-voltage-b"
+        },
+        {
+          "code": 3,
+          "address": 1127,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "bypass-voltage-c"
+        },
+        {
+          "code": 3,
+          "address": 1128,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "side-line-voltage-ab"
+        },
+        {
+          "code": 3,
+          "address": 1129,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "side-line-voltage-bc"
+        },
+        {
+          "code": 3,
+          "address": 1130,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "side-line-voltage-ca"
+        },
+        {
+          "code": 3,
+          "address": 1131,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "bypass-frequency"
+        },
+        {
+          "code": 3,
+          "address": 1140,
+          "quantity": 1,
+          "channel": "output-phase-number"
+        },
+        {
+          "code": 3,
+          "address": 1141,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "a-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1142,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "b-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1143,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "c-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1144,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "peak-ratio-of-a-phase-output-in-this-machine"
+        },
+        {
+          "code": 3,
+          "address": 1145,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "peak-ratio-of-b-phase-output-in-this-machine"
+        },
+        {
+          "code": 3,
+          "address": 1146,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "peak-ratio-of-c-phase-output-in-this-machine"
+        },
+        {
+          "code": 3,
+          "address": 1147,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "a-phase-output-active-power-of-the-machine"
+        },
+        {
+          "code": 3,
+          "address": 1148,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "b-phase-output-active-power-of-the-machine-0"
+        },
+        {
+          "code": 3,
+          "address": 1149,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "c-phase-output-active-power-of-the-machine"
+        },
+        {
+          "code": 3,
+          "address": 1150,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "a-phase-output-machine-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 1151,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "b-phase-output-machine-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 1152,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "c-phase-output-machine-apparent-power"
+        },
+        {
+          "code": 3,
+          "address": 1153,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "native-a-phase-output-load-percentage"
+        },
+        {
+          "code": 3,
+          "address": 1154,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "native-b-phase-output-load-percentage"
+        },
+        {
+          "code": 3,
+          "address": 1155,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "native-c-phase-output-load-percentage"
+        },
+        {
+          "code": 3,
+          "address": 1160,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-a-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1161,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-b-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1162,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-c-phase-output-power-factor"
+        },
+        {
+          "code": 3,
+          "address": 1163,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-a-phase-output-active power"
+        },
+        {
+          "code": 3,
+          "address": 1164,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-b-phase-output-active power"
+        },
+        {
+          "code": 3,
+          "address": 1165,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-c-phase-output-active power"
+        },
+        {
+          "code": 3,
+          "address": 1166,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-a-phase-output-view-in-power"
+        },
+        {
+          "code": 3,
+          "address": 1167,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-b-phase-output-view-in-power"
+        },
+        {
+          "code": 3,
+          "address": 1168,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "system-c-phase-output-view-in-power"
+        },
+        {
+          "code": 3,
+          "address": 1169,
+          "quantity": 1,
+          "channel": "number-of-parallel-machines"
+        },
+        {
+          "code": 3,
+          "address": 1176,
+          "quantity": 1,
+          "channel": "ups-running-time"
+        },
+        {
+          "code": 3,
+          "address": 1177,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-voltage"
+        },
+        {
+          "code": 3,
+          "address": 1178,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "battery-charging-current"
+        },
+        {
+          "code": 3,
+          "address": 1179,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "battery-discharge-current"
+        },
+        {
+          "code": 3,
+          "address": 1180,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "negative-battery-voltage"
+        },
+        {
+          "code": 3,
+          "address": 1181,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "negative-battery-charging-current"
+        },
+        {
+          "code": 3,
+          "address": 1182,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "negative-battery-discharge-current"
+        },
+        {
+          "code": 3,
+          "address": 1183,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-reserve-time"
+        },
+        {
+          "code": 3,
+          "address": 1184,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "battery-temperature"
+        },
+        {
+          "code": 3,
+          "address": 1185,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ambient-temperature"
+        },
+        {
+          "code": 3,
+          "address": 1186,
+          "quantity": 1,
+          "channel": "current-capacity-of-battery"
+        },
+        {
+          "code": 3,
+          "address": 1187,
+          "quantity": 1,
+          "channel": "battery-discharge-number"
+        },
+        {
+          "code": 3,
+          "address": 1196,
+          "quantity": 2,
+          "channel": "input-power"
+        },
+        {
+          "code": 3,
+          "address": 1198,
+          "quantity": 2,
+          "channel": "output-power"
+        },
+        {
+          "code": 3,
+          "address": 1200,
+          "quantity": 2,
+          "channel": "battery-running-time"
+        },
+        {
+          "code": 3,
+          "address": 1202,
+          "quantity": 2,
+          "channel": "battery-discharge-time"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val&3",
+          "channel": "power-supply-mode"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>2&3",
+          "channel": "input-power-supply-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>4&7",
+          "channel": "battery-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>7&7",
+          "channel": "negative-battery-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "format": null,
+          "expression": "val>>10&1",
+          "channel": "charger-state"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>11&3",
+          "channel": "power-supply-state-parallel-machine-system"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "ethernet-connetion-status"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "outlist1"
+        },
+        {
+          "code": 3,
+          "address": 1080,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "outlist2"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "synchronous-asynchrony-state"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "city-electricity-anomaly"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "rectifier"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "inverter"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "bypass-state"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "battery-voltage-anomaly"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "input-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "system-overtemp"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "system-battery-low-pre-warning"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "input-phase-reversed"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "input-neutral-lost"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "input-ground-lost"
+        },
+        {
+          "code": 3,
+          "address": 1030,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "rectifier-overload"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "battery-cabinet-not-connected"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "inverter-overload"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "lbs-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "output-pending"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "output-disabled"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "bypass-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "bypass-abnormal-in-eco-mode"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "bypass-phase-reversed"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "bypass-overcurrent"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "bypass-cable-connection-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "battery-reversed"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "battery-low-pre-warning"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "battery-volt-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "no-battery"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "battery-overtemp"
+        },
+        {
+          "code": 3,
+          "address": 1031,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "battery-aging"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "battery-test-failure"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "battery-series-not-qualified"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "fan-fault"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "repo"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "electric-leak-alarm"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "version-incompatible"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "output-lpe-short"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "loss-of-redundancy"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "system-overload"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "load-sharing-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "system-parallel-settings-async"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "local-parallel-settings-async"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "on-maintenance-bypass"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "battery-mode"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "bypass-mode"
+        },
+        {
+          "code": 3,
+          "address": 1032,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "parallel-no-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "parallel-bypass-cable-connection-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "on-intelligent-sleep-mode"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "battery-cabinet-connect-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "system-warning"
+        },
+        {
+          "code": 3,
+          "address": 1033,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "battery-eod"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "dc-bus-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "rectifier-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "dc-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "charger-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "input-backfeed"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "inverter-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "inverter-relay-welded"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "bypass-backfeed"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "aux-power-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "communication-failure"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "output-short"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "output-off-voltage-not-zero"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "parallel-comm-fault"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "parallel-cable-connection-abnormal"
+        },
+        {
+          "code": 3,
+          "address": 1035,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "system-fault"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "shut-off-due-to-overtemp"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "output-off-overload-bypass-unavailable"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "load-off-due-to-output-short"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "eod-turn-off"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "remote-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "guaranteed-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "load-off-due-to-shutdown-on-battery"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "output-off-bypass-unavailable"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "remote-power-on"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "remote-shut-off"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "battery-test-started"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "battery-test-stopped"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "local-settings-sync-ok"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "system-settings-sync-ok"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "battery-to-utility-transition"
+        },
+        {
+          "code": 3,
+          "address": 1040,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "manual-shutdown"
+        },
+        {
+          "code": 3,
+          "address": 1041,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "operating-on-inverter"
+        },
+        {
+          "code": 3,
+          "address": 1041,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "manual-power-on"
+        }
+      ]
+    }
+  ],
+  "path": "../element-lib/element-modbus",
+  "channels": [
+    {
+      "id": "l-n-voltage-a",
+      "name": "交流输入相电压A",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1100,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "l-n-voltage-a",
+      "$$hashKey": "object:16630"
+    },
+    {
+      "id": "l-n-voltage-b",
+      "name": "交流输入相电压B",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1101,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "l-n-voltage-b",
+      "$$hashKey": "object:16631"
+    },
+    {
+      "id": "l-n-voltage-c",
+      "name": "交流输入相电压C",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1102,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "l-n-voltage-c",
+      "$$hashKey": "object:16632"
+    },
+    {
+      "id": "ac-output-phase-voltage-a",
+      "name": "交流输出相电压A",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1103,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ac-output-phase-voltage-a",
+      "$$hashKey": "object:16633"
+    },
+    {
+      "id": "ac-output-phase-voltage-b",
+      "name": "交流输出相电压B",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1104,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ac-output-phase-voltage-b",
+      "$$hashKey": "object:16634"
+    },
+    {
+      "id": "ac-output-phase-voltage-c",
+      "name": "交流输出相电压C",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1105,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ac-output-phase-voltage-c",
+      "$$hashKey": "object:16635"
+    },
+    {
+      "id": "ac-output-phase-current-a",
+      "name": "交流输出相电流A",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1106,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ac-output-phase-current-a",
+      "$$hashKey": "object:16636"
+    },
+    {
+      "id": "ac-output-phase-current-b",
+      "name": "交流输出相电流B",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1107,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ac-output-phase-current-b",
+      "$$hashKey": "object:16637"
+    },
+    {
+      "id": "ac-output-phase-current-c",
+      "name": "交流输出相电流C",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1108,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ac-output-phase-current-c",
+      "$$hashKey": "object:16638"
+    },
+    {
+      "id": "output-frequency",
+      "name": "输出频率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1110,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "output-frequency",
+      "$$hashKey": "object:16639"
+    },
+    {
+      "id": "input-phase-number",
+      "name": "输入相数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1114,
+      "quantity": 1,
+      "channel": "input-phase-number",
+      "$$hashKey": "object:16640"
+    },
+    {
+      "id": "l-n-voltage-ab",
+      "name": "交流输入线电压AB",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1115,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "l-n-voltage-ab",
+      "$$hashKey": "object:16641"
+    },
+    {
+      "id": "l-n-voltage-bc",
+      "name": "交流输入线电压BC",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1116,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "l-n-voltage-bc",
+      "$$hashKey": "object:16642"
+    },
+    {
+      "id": "l-n-voltage-ca",
+      "name": "交流输入线电压CA",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1117,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "l-n-voltage-ca",
+      "$$hashKey": "object:16643"
+    },
+    {
+      "id": "ac-input-phase-current-a",
+      "name": "交流输入相电流A",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1118,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ac-input-phase-current-a",
+      "$$hashKey": "object:16644"
+    },
+    {
+      "id": "ac-input-phase-current-b",
+      "name": "交流输入相电流B",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1119,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ac-input-phase-current-b",
+      "$$hashKey": "object:16645"
+    },
+    {
+      "id": "ac-input-phase-current-c",
+      "name": "交流输入相电流C",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1120,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ac-input-phase-current-c",
+      "$$hashKey": "object:16646"
+    },
+    {
+      "id": "system-input-frequency",
+      "name": "系统输入频率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1121,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "system-input-frequency",
+      "$$hashKey": "object:16647"
+    },
+    {
+      "id": "input-power-factor-phase-a",
+      "name": "输入功率因数A相",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1122,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "input-power-factor-phase-a",
+      "$$hashKey": "object:16648"
+    },
+    {
+      "id": "input-power-factor-phase-b",
+      "name": "输入功率因数B相",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1123,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "input-power-factor-phase-b",
+      "$$hashKey": "object:16649"
+    },
+    {
+      "id": "input-power-factor-phase-c",
+      "name": "输入功率因数C相",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1124,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "input-power-factor-phase-c",
+      "$$hashKey": "object:16650"
+    },
+    {
+      "id": "bypass-voltage-a",
+      "name": "旁路电压A",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1125,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "bypass-voltage-a",
+      "$$hashKey": "object:16651"
+    },
+    {
+      "id": "bypass-voltage-b",
+      "name": "旁路电压B",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1126,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "bypass-voltage-b",
+      "$$hashKey": "object:16652"
+    },
+    {
+      "id": "bypass-voltage-c",
+      "name": "旁路电压C",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1127,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "bypass-voltage-c",
+      "$$hashKey": "object:16653"
+    },
+    {
+      "id": "side-line-voltage-ab",
+      "name": "旁路线电压AB",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1128,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "side-line-voltage-ab",
+      "$$hashKey": "object:16654"
+    },
+    {
+      "id": "side-line-voltage-bc",
+      "name": "旁路线电压BC",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1129,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "side-line-voltage-bc",
+      "$$hashKey": "object:16655"
+    },
+    {
+      "id": "side-line-voltage-ca",
+      "name": "旁路线电压CA",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1130,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "side-line-voltage-ca",
+      "$$hashKey": "object:16656"
+    },
+    {
+      "id": "bypass-frequency",
+      "name": "旁路频率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1131,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "bypass-frequency",
+      "$$hashKey": "object:16657"
+    },
+    {
+      "id": "output-phase-number",
+      "name": "输出相数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1140,
+      "quantity": 1,
+      "channel": "output-phase-number",
+      "$$hashKey": "object:16658"
+    },
+    {
+      "id": "a-phase-output-power-factor",
+      "name": "A相输出功率因数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1141,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "a-phase-output-power-factor",
+      "$$hashKey": "object:16659"
+    },
+    {
+      "id": "b-phase-output-power-factor",
+      "name": "B相输出功率因数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1142,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "b-phase-output-power-factor",
+      "$$hashKey": "object:16660"
+    },
+    {
+      "id": "c-phase-output-power-factor",
+      "name": "C相输出功率因数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1143,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "c-phase-output-power-factor",
+      "$$hashKey": "object:16661"
+    },
+    {
+      "id": "peak-ratio-of-a-phase-output-in-this-machine",
+      "name": "本机A相输出峰值比",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1144,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "peak-ratio-of-a-phase-output-in-this-machine",
+      "$$hashKey": "object:16662"
+    },
+    {
+      "id": "peak-ratio-of-b-phase-output-in-this-machine",
+      "name": "本机B相输出峰值比",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1145,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "peak-ratio-of-b-phase-output-in-this-machine",
+      "$$hashKey": "object:16663"
+    },
+    {
+      "id": "peak-ratio-of-c-phase-output-in-this-machine",
+      "name": "本机C相输出峰值比",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1146,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "peak-ratio-of-c-phase-output-in-this-machine",
+      "$$hashKey": "object:16664"
+    },
+    {
+      "id": "a-phase-output-active-power-of-the-machine",
+      "name": "本机A相输出有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1147,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "a-phase-output-active-power-of-the-machine",
+      "$$hashKey": "object:16665"
+    },
+    {
+      "id": "b-phase-output-active-power-of-the-machine-0",
+      "name": "本机B相输出有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1148,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "b-phase-output-active-power-of-the-machine-0",
+      "$$hashKey": "object:16666"
+    },
+    {
+      "id": "c-phase-output-active-power-of-the-machine",
+      "name": "本机C相输出有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1149,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "c-phase-output-active-power-of-the-machine",
+      "$$hashKey": "object:16667"
+    },
+    {
+      "id": "a-phase-output-machine-apparent-power",
+      "name": "本机A相输出视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1150,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "a-phase-output-machine-apparent-power",
+      "$$hashKey": "object:16668"
+    },
+    {
+      "id": "b-phase-output-machine-apparent-power",
+      "name": "本机B相输出视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1151,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "b-phase-output-machine-apparent-power",
+      "$$hashKey": "object:16669"
+    },
+    {
+      "id": "c-phase-output-machine-apparent-power",
+      "name": "本机C相输出视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1152,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "c-phase-output-machine-apparent-power",
+      "$$hashKey": "object:16670"
+    },
+    {
+      "id": "native-a-phase-output-load-percentage",
+      "name": "本机A相输出负载百分比",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1153,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "native-a-phase-output-load-percentage",
+      "$$hashKey": "object:16671"
+    },
+    {
+      "id": "native-b-phase-output-load-percentage",
+      "name": "本机B相输出负载百分比",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1154,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "native-b-phase-output-load-percentage",
+      "$$hashKey": "object:16672"
+    },
+    {
+      "id": "native-c-phase-output-load-percentage",
+      "name": "本机C相输出负载百分比",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1155,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "native-c-phase-output-load-percentage",
+      "$$hashKey": "object:16673"
+    },
+    {
+      "id": "system-a-phase-output-power-factor",
+      "name": "系统A相输出功率因数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1160,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "system-a-phase-output-power-factor",
+      "$$hashKey": "object:16674"
+    },
+    {
+      "id": "system-b-phase-output-power-factor",
+      "name": "系统B相输出功率因数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1161,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "system-b-phase-output-power-factor",
+      "$$hashKey": "object:16675"
+    },
+    {
+      "id": "system-c-phase-output-power-factor",
+      "name": "系统C相输出功率因数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1162,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "system-c-phase-output-power-factor",
+      "$$hashKey": "object:16676"
+    },
+    {
+      "id": "system-a-phase-output-active power",
+      "name": "系统A相输出有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1163,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "system-a-phase-output-active power",
+      "$$hashKey": "object:16677"
+    },
+    {
+      "id": "system-b-phase-output-active power",
+      "name": "系统B相输出有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1164,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "system-b-phase-output-active power",
+      "$$hashKey": "object:16678"
+    },
+    {
+      "id": "system-c-phase-output-active power",
+      "name": "系统C相输出有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1165,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "system-c-phase-output-active power",
+      "$$hashKey": "object:16679"
+    },
+    {
+      "id": "system-a-phase-output-view-in-power",
+      "name": "系统A相输出视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1166,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "system-a-phase-output-view-in-power",
+      "$$hashKey": "object:16680"
+    },
+    {
+      "id": "system-b-phase-output-view-in-power",
+      "name": "系统B相输出视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1167,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "system-b-phase-output-view-in-power",
+      "$$hashKey": "object:16681"
+    },
+    {
+      "id": "system-c-phase-output-view-in-power",
+      "name": "系统C相输出视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1168,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "system-c-phase-output-view-in-power",
+      "$$hashKey": "object:16682"
+    },
+    {
+      "id": "number-of-parallel-machines",
+      "name": "并机台数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1169,
+      "quantity": 1,
+      "channel": "number-of-parallel-machines",
+      "$$hashKey": "object:16683"
+    },
+    {
+      "id": "ups-running-time",
+      "name": "UPS 运行时间",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1176,
+      "quantity": 1,
+      "channel": "ups-running-time",
+      "$$hashKey": "object:16684"
+    },
+    {
+      "id": "battery-voltage",
+      "name": "电池电压（5~10K 机型） 正电池电压（16~20K 机型）",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1177,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "battery-voltage",
+      "$$hashKey": "object:16685"
+    },
+    {
+      "id": "battery-charging-current",
+      "name": "电池充电电流（5~10K 机型） 正电池充电电流（16~20K 机型）",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1178,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "battery-charging-current",
+      "$$hashKey": "object:16686"
+    },
+    {
+      "id": "battery-discharge-current",
+      "name": "电池放电电流（5~10K 机型） 正电池放电电流（16~20K 机型）",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1179,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "battery-discharge-current",
+      "$$hashKey": "object:16687"
+    },
+    {
+      "id": "negative-battery-voltage",
+      "name": "负电池电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1180,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "negative-battery-voltage",
+      "$$hashKey": "object:16688"
+    },
+    {
+      "id": "negative-battery-charging-current",
+      "name": "负电池充电电流",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1181,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "negative-battery-charging-current",
+      "$$hashKey": "object:16689"
+    },
+    {
+      "id": "negative-battery-discharge-current",
+      "name": "负电池放电电流",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1182,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "negative-battery-discharge-current",
+      "$$hashKey": "object:16690"
+    },
+    {
+      "id": "battery-reserve-time",
+      "name": "电池后备时间",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1183,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "battery-reserve-time",
+      "$$hashKey": "object:16691"
+    },
+    {
+      "id": "battery-temperature",
+      "name": "电池温度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1184,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "battery-temperature",
+      "$$hashKey": "object:16692"
+    },
+    {
+      "id": "ambient-temperature",
+      "name": "环境温度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1185,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ambient-temperature",
+      "$$hashKey": "object:16693"
+    },
+    {
+      "id": "current-capacity-of-battery",
+      "name": "电池当前容量",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1186,
+      "quantity": 1,
+      "channel": "current-capacity-of-battery",
+      "$$hashKey": "object:16694"
+    },
+    {
+      "id": "battery-discharge-number",
+      "name": "电池放电次数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1187,
+      "quantity": 1,
+      "channel": "battery-discharge-number",
+      "$$hashKey": "object:16695"
+    },
+    {
+      "id": "input-power",
+      "name": "输入电能",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 1196,
+      "quantity": 2,
+      "channel": "input-power",
+      "$$hashKey": "object:16696"
+    },
+    {
+      "id": "output-power",
+      "name": "输出电能",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 1198,
+      "quantity": 2,
+      "channel": "output-power",
+      "$$hashKey": "object:16697"
+    },
+    {
+      "id": "battery-running-time",
+      "name": "电池运行时间",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 1200,
+      "quantity": 2,
+      "channel": "battery-running-time",
+      "$$hashKey": "object:16698"
+    },
+    {
+      "id": "battery-discharge-time",
+      "name": "电池放电时间",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 1202,
+      "quantity": 2,
+      "channel": "battery-discharge-time",
+      "$$hashKey": "object:16699"
+    },
+    {
+      "id": "power-supply-mode",
+      "name": "供电方式",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1080,
+      "quantity": 1,
+      "expression": "val&3",
+      "channel": "power-supply-mode",
+      "$$hashKey": "object:16700"
+    },
+    {
+      "id": "input-power-supply-state",
+      "name": "输入供电状态",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1080,
+      "quantity": 1,
+      "expression": "val>>2&3",
+      "channel": "input-power-supply-state",
+      "$$hashKey": "object:16701"
+    },
+    {
+      "id": "battery-state",
+      "name": "电池状态（5~10K机型）  电池正组状态（6~20K机 型)",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1080,
+      "quantity": 1,
+      "expression": "val>>4&7",
+      "channel": "battery-state",
+      "$$hashKey": "object:16702"
+    },
+    {
+      "id": "negative-battery-state",
+      "name": "电池负组状态",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1080,
+      "quantity": 1,
+      "expression": "val>>7&7",
+      "channel": "negative-battery-state",
+      "$$hashKey": "object:16703"
+    },
+    {
+      "id": "charger-state",
+      "name": "充电器状态",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1080,
+      "quantity": 1,
+      "format": null,
+      "expression": "val>>10&1",
+      "channel": "charger-state",
+      "$$hashKey": "object:16704"
+    },
+    {
+      "id": "power-supply-state-parallel-machine-system",
+      "name": "并机系统供电状态",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1080,
+      "quantity": 1,
+      "expression": "val>>11&3",
+      "channel": "power-supply-state-parallel-machine-system",
+      "$$hashKey": "object:16705"
+    },
+    {
+      "id": "ethernet-connetion-status",
+      "name": "内置网口连接状态",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1080,
+      "quantity": 1,
+      "expression": "val>>13&1",
+      "channel": "ethernet-connetion-status",
+      "$$hashKey": "object:16706"
+    },
+    {
+      "id": "outlist1",
+      "name": "Outlet1开关状态",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1080,
+      "quantity": 1,
+      "expression": "val>>14&1",
+      "channel": "outlist1",
+      "$$hashKey": "object:16707"
+    },
+    {
+      "id": "outlist2",
+      "name": "Outlet2开关状态",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1080,
+      "quantity": 1,
+      "expression": "val>>15&1",
+      "channel": "outlist2",
+      "$$hashKey": "object:16708"
+    },
+    {
+      "id": "synchronous-asynchrony-state",
+      "name": "同步/不同步状态",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1030,
+      "quantity": 1,
+      "expression": "val>>3&1",
+      "channel": "synchronous-asynchrony-state",
+      "$$hashKey": "object:16709"
+    },
+    {
+      "id": "city-electricity-anomaly",
+      "name": "市电异常",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1030,
+      "quantity": 1,
+      "expression": "val>>4&1",
+      "channel": "city-electricity-anomaly",
+      "$$hashKey": "object:16710"
+    },
+    {
+      "id": "rectifier",
+      "name": "整流器（故障）",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1030,
+      "quantity": 1,
+      "expression": "val>>5&1",
+      "channel": "rectifier",
+      "$$hashKey": "object:16711"
+    },
+    {
+      "id": "inverter",
+      "name": "逆变器（故障）",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1030,
+      "quantity": 1,
+      "expression": "val>>6&1",
+      "channel": "inverter",
+      "$$hashKey": "object:16712"
+    },
+    {
+      "id": "bypass-state",
+      "name": "旁路状态（电压或频率）",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1030,
+      "quantity": 1,
+      "expression": "val>>7&1",
+      "channel": "bypass-state",
+      "$$hashKey": "object:16713"
+    },
+    {
+      "id": "battery-voltage-anomaly",
+      "name": "蓄电池电压异常",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1030,
+      "quantity": 1,
+      "expression": "val>>8&1",
+      "channel": "battery-voltage-anomaly",
+      "$$hashKey": "object:16714"
+    },
+    {
+      "id": "input-abnormal",
+      "name": "主路异常",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1030,
+      "quantity": 1,
+      "expression": "val>>9&1",
+      "channel": "input-abnormal",
+      "$$hashKey": "object:16715"
+    },
+    {
+      "id": "system-overtemp",
+      "name": "系统过温",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1030,
+      "quantity": 1,
+      "expression": "val>>10&1",
+      "channel": "system-overtemp",
+      "$$hashKey": "object:16716"
+    },
+    {
+      "id": "system-battery-low-pre-warning",
+      "name": "系统电池电压低预告警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1030,
+      "quantity": 1,
+      "expression": "val>>11&1",
+      "channel": "system-battery-low-pre-warning",
+      "$$hashKey": "object:16717"
+    },
+    {
+      "id": "input-phase-reversed",
+      "name": "主路相序反",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1030,
+      "quantity": 1,
+      "expression": "val>>12&1",
+      "channel": "input-phase-reversed",
+      "$$hashKey": "object:16718"
+    },
+    {
+      "id": "input-neutral-lost",
+      "name": "输入缺零",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1030,
+      "quantity": 1,
+      "expression": "val>>13&1",
+      "channel": "input-neutral-lost",
+      "$$hashKey": "object:16719"
+    },
+    {
+      "id": "input-ground-lost",
+      "name": "输入缺地",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1030,
+      "quantity": 1,
+      "expression": "val>>14&1",
+      "channel": "input-ground-lost",
+      "$$hashKey": "object:16720"
+    },
+    {
+      "id": "rectifier-overload",
+      "name": "整流器过载",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1030,
+      "quantity": 1,
+      "expression": "val>>15&1",
+      "channel": "rectifier-overload",
+      "$$hashKey": "object:16721"
+    },
+    {
+      "id": "battery-cabinet-not-connected",
+      "name": "电池箱未连接",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val&1",
+      "channel": "battery-cabinet-not-connected",
+      "$$hashKey": "object:16722"
+    },
+    {
+      "id": "inverter-overload",
+      "name": "逆变器过载",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>1&1",
+      "channel": "inverter-overload",
+      "$$hashKey": "object:16723"
+    },
+    {
+      "id": "lbs-abnormal",
+      "name": "LBS 异常",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>2&1",
+      "channel": "lbs-abnormal",
+      "$$hashKey": "object:16724"
+    },
+    {
+      "id": "output-pending",
+      "name": "输出即将关闭",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>3&1",
+      "channel": "output-pending",
+      "$$hashKey": "object:16725"
+    },
+    {
+      "id": "output-disabled",
+      "name": "输出禁止",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>4&1",
+      "channel": "output-disabled",
+      "$$hashKey": "object:16726"
+    },
+    {
+      "id": "bypass-abnormal",
+      "name": "旁路异常",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>5&1",
+      "channel": "bypass-abnormal",
+      "$$hashKey": "object:16727"
+    },
+    {
+      "id": "bypass-abnormal-in-eco-mode",
+      "name": "ECO 旁路异常",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>6&1",
+      "channel": "bypass-abnormal-in-eco-mode",
+      "$$hashKey": "object:16728"
+    },
+    {
+      "id": "bypass-phase-reversed",
+      "name": "旁路相序反",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>7&1",
+      "channel": "bypass-phase-reversed",
+      "$$hashKey": "object:16729"
+    },
+    {
+      "id": "bypass-overcurrent",
+      "name": "旁路过流",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>8&1",
+      "channel": "bypass-overcurrent",
+      "$$hashKey": "object:16730"
+    },
+    {
+      "id": "bypass-cable-connection-abnormal",
+      "name": "旁路接线错误",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>9&1",
+      "channel": "bypass-cable-connection-abnormal",
+      "$$hashKey": "object:16731"
+    },
+    {
+      "id": "battery-reversed",
+      "name": "电池接反",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>10&1",
+      "channel": "battery-reversed",
+      "$$hashKey": "object:16732"
+    },
+    {
+      "id": "battery-low-pre-warning",
+      "name": "电池电压低预告警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>11&1",
+      "channel": "battery-low-pre-warning",
+      "$$hashKey": "object:16733"
+    },
+    {
+      "id": "battery-volt-abnormal",
+      "name": "电池电压异常",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>12&1",
+      "channel": "battery-volt-abnormal",
+      "$$hashKey": "object:16734"
+    },
+    {
+      "id": "no-battery",
+      "name": "电池无",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>13&1",
+      "channel": "no-battery",
+      "$$hashKey": "object:16735"
+    },
+    {
+      "id": "battery-overtemp",
+      "name": "电池温度过温",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>14&1",
+      "channel": "battery-overtemp",
+      "$$hashKey": "object:16736"
+    },
+    {
+      "id": "battery-aging",
+      "name": "电池老化告警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1031,
+      "quantity": 1,
+      "expression": "val>>15&1",
+      "channel": "battery-aging",
+      "$$hashKey": "object:16737"
+    },
+    {
+      "id": "battery-test-failure",
+      "name": "电池自检失败",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val&1",
+      "channel": "battery-test-failure",
+      "$$hashKey": "object:16738"
+    },
+    {
+      "id": "battery-series-not-qualified",
+      "name": "电池节数设置错误",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>1&1",
+      "channel": "battery-series-not-qualified",
+      "$$hashKey": "object:16739"
+    },
+    {
+      "id": "fan-fault",
+      "name": "风扇故障",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>2&1",
+      "channel": "fan-fault",
+      "$$hashKey": "object:16740"
+    },
+    {
+      "id": "repo",
+      "name": "紧急关机告警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>3&1",
+      "channel": "repo",
+      "$$hashKey": "object:16741"
+    },
+    {
+      "id": "electric-leak-alarm",
+      "name": "机壳带电",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>4&1",
+      "channel": "electric-leak-alarm",
+      "$$hashKey": "object:16742"
+    },
+    {
+      "id": "version-incompatible",
+      "name": "版本不兼容",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>5&1",
+      "channel": "version-incompatible",
+      "$$hashKey": "object:16743"
+    },
+    {
+      "id": "output-lpe-short",
+      "name": "输出火线搭机壳",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>6&1",
+      "channel": "output-lpe-short",
+      "$$hashKey": "object:16744"
+    },
+    {
+      "id": "loss-of-redundancy",
+      "name": "并机无冗余",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>7&1",
+      "channel": "loss-of-redundancy",
+      "$$hashKey": "object:16745"
+    },
+    {
+      "id": "system-overload",
+      "name": "并机输出过载",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>8&1",
+      "channel": "system-overload",
+      "$$hashKey": "object:16746"
+    },
+    {
+      "id": "load-sharing-abnormal",
+      "name": "并机均流异常",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>9&1",
+      "channel": "load-sharing-abnormal",
+      "$$hashKey": "object:16747"
+    },
+    {
+      "id": "system-parallel-settings-async",
+      "name": "系统并机参数不同步",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>10&1",
+      "channel": "system-parallel-settings-async",
+      "$$hashKey": "object:16748"
+    },
+    {
+      "id": "local-parallel-settings-async",
+      "name": "本地并机参数不同步",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>11&1",
+      "channel": "local-parallel-settings-async",
+      "$$hashKey": "object:16749"
+    },
+    {
+      "id": "on-maintenance-bypass",
+      "name": "维修模式",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>12&1",
+      "channel": "on-maintenance-bypass",
+      "$$hashKey": "object:16750"
+    },
+    {
+      "id": "battery-mode",
+      "name": "电池逆变供电",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>13&1",
+      "channel": "battery-mode",
+      "$$hashKey": "object:16751"
+    },
+    {
+      "id": "bypass-mode",
+      "name": "旁路供电",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>14&1",
+      "channel": "bypass-mode",
+      "$$hashKey": "object:16752"
+    },
+    {
+      "id": "parallel-no-abnormal",
+      "name": "并机台数与设定不一致",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1032,
+      "quantity": 1,
+      "expression": "val>>15&1",
+      "channel": "parallel-no-abnormal",
+      "$$hashKey": "object:16753"
+    },
+    {
+      "id": "parallel-bypass-cable-connection-abnormal",
+      "name": "并机旁路接线错误",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1033,
+      "quantity": 1,
+      "expression": "val&1",
+      "channel": "parallel-bypass-cable-connection-abnormal",
+      "$$hashKey": "object:16754"
+    },
+    {
+      "id": "on-intelligent-sleep-mode",
+      "name": "智能休眠模式",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1033,
+      "quantity": 1,
+      "expression": "val>>1&1",
+      "channel": "on-intelligent-sleep-mode",
+      "$$hashKey": "object:16755"
+    },
+    {
+      "id": "battery-cabinet-connect-abnormal",
+      "name": "外置电池柜连接异常",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1033,
+      "quantity": 1,
+      "expression": "val>>2&1",
+      "channel": "battery-cabinet-connect-abnormal",
+      "$$hashKey": "object:16756"
+    },
+    {
+      "id": "system-warning",
+      "name": "系统告警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1033,
+      "quantity": 1,
+      "expression": "val>>3&1",
+      "channel": "system-warning",
+      "$$hashKey": "object:16757"
+    },
+    {
+      "id": "battery-eod",
+      "name": "电池放电结束",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1033,
+      "quantity": 1,
+      "expression": "val>>4&1",
+      "channel": "battery-eod",
+      "$$hashKey": "object:16758"
+    },
+    {
+      "id": "dc-bus-abnormal",
+      "name": "母线异常",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>1&1",
+      "channel": "dc-bus-abnormal",
+      "$$hashKey": "object:16759"
+    },
+    {
+      "id": "rectifier-fault",
+      "name": "整流器故障",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>2&1",
+      "channel": "rectifier-fault",
+      "$$hashKey": "object:16760"
+    },
+    {
+      "id": "dc-fault",
+      "name": "放电器故障",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>3&1",
+      "channel": "dc-fault",
+      "$$hashKey": "object:16761"
+    },
+    {
+      "id": "charger-fault",
+      "name": "充电器故障",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>4&1",
+      "channel": "charger-fault",
+      "$$hashKey": "object:16762"
+    },
+    {
+      "id": "input-backfeed",
+      "name": "主路反灌",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>5&1",
+      "channel": "input-backfeed",
+      "$$hashKey": "object:16763"
+    },
+    {
+      "id": "inverter-fault",
+      "name": "逆变器故障",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>6&1",
+      "channel": "inverter-fault",
+      "$$hashKey": "object:16764"
+    },
+    {
+      "id": "inverter-relay-welded",
+      "name": "逆变继电器粘连",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>7&1",
+      "channel": "inverter-relay-welded",
+      "$$hashKey": "object:16765"
+    },
+    {
+      "id": "bypass-backfeed",
+      "name": "旁路反灌",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>8&1",
+      "channel": "bypass-backfeed",
+      "$$hashKey": "object:16766"
+    },
+    {
+      "id": "aux-power-fault",
+      "name": "辅源故障",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>9&1",
+      "channel": "aux-power-fault",
+      "$$hashKey": "object:16767"
+    },
+    {
+      "id": "communication-failure",
+      "name": "内部通信故障",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>10&1",
+      "channel": "communication-failure",
+      "$$hashKey": "object:16768"
+    },
+    {
+      "id": "output-short",
+      "name": "输出短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>11&1",
+      "channel": "output-short",
+      "$$hashKey": "object:16769"
+    },
+    {
+      "id": "output-off-voltage-not-zero",
+      "name": "输出关闭输出电压不为零",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>12&1",
+      "channel": "output-off-voltage-not-zero",
+      "$$hashKey": "object:16770"
+    },
+    {
+      "id": "parallel-comm-fault",
+      "name": "并机通信故障",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>13&1",
+      "channel": "parallel-comm-fault",
+      "$$hashKey": "object:16771"
+    },
+    {
+      "id": "parallel-cable-connection-abnormal",
+      "name": "并机线缆故障",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>14&1",
+      "channel": "parallel-cable-connection-abnormal",
+      "$$hashKey": "object:16772"
+    },
+    {
+      "id": "system-fault",
+      "name": "系统故障",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1035,
+      "quantity": 1,
+      "expression": "val>>15&1",
+      "channel": "system-fault",
+      "$$hashKey": "object:16773"
+    },
+    {
+      "id": "shut-off-due-to-overtemp",
+      "name": "过温关机",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val&1",
+      "channel": "shut-off-due-to-overtemp",
+      "$$hashKey": "object:16774"
+    },
+    {
+      "id": "output-off-overload-bypass-unavailable",
+      "name": "过载且旁路异常关输出",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>1&1",
+      "channel": "output-off-overload-bypass-unavailable",
+      "$$hashKey": "object:16775"
+    },
+    {
+      "id": "load-off-due-to-output-short",
+      "name": "短路关输出",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>2&1",
+      "channel": "load-off-due-to-output-short",
+      "$$hashKey": "object:16776"
+    },
+    {
+      "id": "eod-turn-off",
+      "name": "电池放电结束关机",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>3&1",
+      "channel": "eod-turn-off",
+      "$$hashKey": "object:16777"
+    },
+    {
+      "id": "remote-shutdown",
+      "name": "远程关输出",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>4&1",
+      "channel": "remote-shutdown",
+      "$$hashKey": "object:16778"
+    },
+    {
+      "id": "guaranteed-shutdown",
+      "name": "强制电池放电结束关机",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>5&1",
+      "channel": "guaranteed-shutdown",
+      "$$hashKey": "object:16779"
+    },
+    {
+      "id": "load-off-due-to-shutdown-on-battery",
+      "name": "电池模式通信关输出",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>6&1",
+      "channel": "load-off-due-to-shutdown-on-battery",
+      "$$hashKey": "object:16780"
+    },
+    {
+      "id": "output-off-bypass-unavailable",
+      "name": "旁路异常关输出",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>7&1",
+      "channel": "output-off-bypass-unavailable",
+      "$$hashKey": "object:16781"
+    },
+    {
+      "id": "remote-power-on",
+      "name": "远程开机",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>8&1",
+      "channel": "remote-power-on",
+      "$$hashKey": "object:16782"
+    },
+    {
+      "id": "remote-shut-off",
+      "name": "远程关机",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>9&1",
+      "channel": "remote-shut-off",
+      "$$hashKey": "object:16783"
+    },
+    {
+      "id": "battery-test-started",
+      "name": "电池自检开始",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>10&1",
+      "channel": "battery-test-started",
+      "$$hashKey": "object:16784"
+    },
+    {
+      "id": "battery-test-stopped",
+      "name": "电池自检结束",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>11&1",
+      "channel": "battery-test-stopped",
+      "$$hashKey": "object:16785"
+    },
+    {
+      "id": "local-settings-sync-ok",
+      "name": "本机设置同步完成",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>12&1",
+      "channel": "local-settings-sync-ok",
+      "$$hashKey": "object:16786"
+    },
+    {
+      "id": "system-settings-sync-ok",
+      "name": "系统设置同步完成",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>13&1",
+      "channel": "system-settings-sync-ok",
+      "$$hashKey": "object:16787"
+    },
+    {
+      "id": "battery-to-utility-transition",
+      "name": "电池供电转为市电供电",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>14&1",
+      "channel": "battery-to-utility-transition",
+      "$$hashKey": "object:16788"
+    },
+    {
+      "id": "manual-shutdown",
+      "name": "手动关机",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1040,
+      "quantity": 1,
+      "expression": "val>>15&1",
+      "channel": "manual-shutdown",
+      "$$hashKey": "object:16789"
+    },
+    {
+      "id": "operating-on-inverter",
+      "name": "逆变供电",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1041,
+      "quantity": 1,
+      "expression": "val&1",
+      "channel": "operating-on-inverter",
+      "$$hashKey": "object:16790"
+    },
+    {
+      "id": "manual-power-on",
+      "name": "手动开机",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 1041,
+      "quantity": 1,
+      "expression": "val>>1&1",
+      "channel": "manual-power-on",
+      "$$hashKey": "object:16791"
+    }
+  ],
+  "id": "ITA2_MODBUS",
+  "cov": 0.2,
+  "$$hashKey": "object:16605"
+}

@@ -1,0 +1,1066 @@
+{
+  "name": "g1变频器",
+  "type": "ModbusElement",
+  "version": "0.0.1",
+  "description": "g1 channels info",
+  "mappings": [
+    {
+      "protocol": "protocol-modbus-tcp",
+      "type": "ModbusTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.5
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 2076,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time"
+        },
+        {
+          "code": 3,
+          "address": 53506,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time1"
+        },
+        {
+          "code": 3,
+          "address": 7698,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time26"
+        },
+        {
+          "code": 3,
+          "address": 7746,
+          "quantity": 1,
+          "expression": null,
+          "channel": "current"
+        },
+        {
+          "code": 3,
+          "address": 7747,
+          "quantity": 1,
+          "expression": null,
+          "channel": "head"
+        },
+        {
+          "code": 3,
+          "address": 7704,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time13"
+        },
+        {
+          "code": 3,
+          "address": 275,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time15"
+        },
+        {
+          "code": 3,
+          "address": 53512,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time7"
+        },
+        {
+          "code": 3,
+          "address": 54272,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time29"
+        },
+        {
+          "code": 3,
+          "address": 7703,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time27"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time23"
+        },
+        {
+          "code": 3,
+          "address": 53508,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time3"
+        },
+        {
+          "code": 3,
+          "address": 53513,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time8"
+        },
+        {
+          "code": 3,
+          "address": 53505,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time0"
+        },
+        {
+          "code": 3,
+          "address": 53509,
+          "quantity": 1,
+          "expression": null,
+          "channel": "power"
+        },
+        {
+          "code": 3,
+          "address": 53510,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time5"
+        },
+        {
+          "code": 3,
+          "address": 53507,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output"
+        },
+        {
+          "code": 3,
+          "address": 53514,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time17"
+        },
+        {
+          "code": 3,
+          "address": 53515,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time18"
+        },
+        {
+          "code": 3,
+          "address": 53511,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time6"
+        },
+        {
+          "code": 3,
+          "address": 7706,
+          "quantity": 1,
+          "expression": null,
+          "channel": "timee1"
+        },
+        {
+          "code": 3,
+          "address": 7736,
+          "quantity": 1,
+          "expression": null,
+          "channel": "voltage"
+        },
+        {
+          "code": 3,
+          "address": 53760,
+          "quantity": 1,
+          "expression": null,
+          "channel": "command1"
+        },
+        {
+          "code": 6,
+          "address": 53760,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-command1"
+        },
+        {
+          "code": 3,
+          "address": 54016,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time28"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-serial",
+      "type": "ModbusSerialProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.5
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 2076,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time"
+        },
+        {
+          "code": 3,
+          "address": 53506,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time1"
+        },
+        {
+          "code": 3,
+          "address": 7698,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time26"
+        },
+        {
+          "code": 3,
+          "address": 7746,
+          "quantity": 1,
+          "expression": null,
+          "channel": "current"
+        },
+        {
+          "code": 3,
+          "address": 7747,
+          "quantity": 1,
+          "expression": null,
+          "channel": "head"
+        },
+        {
+          "code": 3,
+          "address": 7704,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time13"
+        },
+        {
+          "code": 3,
+          "address": 275,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time15"
+        },
+        {
+          "code": 3,
+          "address": 53512,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time7"
+        },
+        {
+          "code": 3,
+          "address": 54272,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time29"
+        },
+        {
+          "code": 3,
+          "address": 7703,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time27"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time23"
+        },
+        {
+          "code": 3,
+          "address": 53508,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time3"
+        },
+        {
+          "code": 3,
+          "address": 53513,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time8"
+        },
+        {
+          "code": 3,
+          "address": 53505,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time0"
+        },
+        {
+          "code": 3,
+          "address": 53509,
+          "quantity": 1,
+          "expression": null,
+          "channel": "power"
+        },
+        {
+          "code": 3,
+          "address": 53510,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time5"
+        },
+        {
+          "code": 3,
+          "address": 53507,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output"
+        },
+        {
+          "code": 3,
+          "address": 53514,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time17"
+        },
+        {
+          "code": 3,
+          "address": 53515,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time18"
+        },
+        {
+          "code": 3,
+          "address": 53511,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time6"
+        },
+        {
+          "code": 3,
+          "address": 7706,
+          "quantity": 1,
+          "expression": null,
+          "channel": "timee1"
+        },
+        {
+          "code": 3,
+          "address": 7736,
+          "quantity": 1,
+          "expression": null,
+          "channel": "voltage"
+        },
+        {
+          "code": 3,
+          "address": 53760,
+          "quantity": 1,
+          "expression": null,
+          "channel": "command1"
+        },
+        {
+          "code": 6,
+          "address": 53760,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-command1"
+        },
+        {
+          "code": 3,
+          "address": 54016,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time28"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-rtu-tcp",
+      "type": "ModbusRtuTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.5
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 2076,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time"
+        },
+        {
+          "code": 3,
+          "address": 53506,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time1"
+        },
+        {
+          "code": 3,
+          "address": 7698,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time26"
+        },
+        {
+          "code": 3,
+          "address": 7746,
+          "quantity": 1,
+          "expression": null,
+          "channel": "current"
+        },
+        {
+          "code": 3,
+          "address": 7747,
+          "quantity": 1,
+          "expression": null,
+          "channel": "head"
+        },
+        {
+          "code": 3,
+          "address": 7704,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time13"
+        },
+        {
+          "code": 3,
+          "address": 275,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time15"
+        },
+        {
+          "code": 3,
+          "address": 53512,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time7"
+        },
+        {
+          "code": 3,
+          "address": 54272,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time29"
+        },
+        {
+          "code": 3,
+          "address": 7703,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time27"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time23"
+        },
+        {
+          "code": 3,
+          "address": 53508,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time3"
+        },
+        {
+          "code": 3,
+          "address": 53513,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time8"
+        },
+        {
+          "code": 3,
+          "address": 53505,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time0"
+        },
+        {
+          "code": 3,
+          "address": 53509,
+          "quantity": 1,
+          "expression": null,
+          "channel": "power"
+        },
+        {
+          "code": 3,
+          "address": 53510,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time5"
+        },
+        {
+          "code": 3,
+          "address": 53507,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output"
+        },
+        {
+          "code": 3,
+          "address": 53514,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time17"
+        },
+        {
+          "code": 3,
+          "address": 53515,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time18"
+        },
+        {
+          "code": 3,
+          "address": 53511,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time6"
+        },
+        {
+          "code": 3,
+          "address": 7706,
+          "quantity": 1,
+          "expression": null,
+          "channel": "timee1"
+        },
+        {
+          "code": 3,
+          "address": 7736,
+          "quantity": 1,
+          "expression": null,
+          "channel": "voltage"
+        },
+        {
+          "code": 3,
+          "address": 53760,
+          "quantity": 1,
+          "expression": null,
+          "channel": "command1"
+        },
+        {
+          "code": 6,
+          "address": 53760,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-command1"
+        },
+        {
+          "code": 3,
+          "address": 54016,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time28"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-dtu",
+      "type": "ModbusDtuProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.5
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 2076,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time"
+        },
+        {
+          "code": 3,
+          "address": 53506,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time1"
+        },
+        {
+          "code": 3,
+          "address": 7698,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time26"
+        },
+        {
+          "code": 3,
+          "address": 7746,
+          "quantity": 1,
+          "expression": null,
+          "channel": "current"
+        },
+        {
+          "code": 3,
+          "address": 7747,
+          "quantity": 1,
+          "expression": null,
+          "channel": "head"
+        },
+        {
+          "code": 3,
+          "address": 7704,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time13"
+        },
+        {
+          "code": 3,
+          "address": 275,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time15"
+        },
+        {
+          "code": 3,
+          "address": 53512,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time7"
+        },
+        {
+          "code": 3,
+          "address": 54272,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time29"
+        },
+        {
+          "code": 3,
+          "address": 7703,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time27"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time23"
+        },
+        {
+          "code": 3,
+          "address": 53508,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time3"
+        },
+        {
+          "code": 3,
+          "address": 53513,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time8"
+        },
+        {
+          "code": 3,
+          "address": 53505,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time0"
+        },
+        {
+          "code": 3,
+          "address": 53509,
+          "quantity": 1,
+          "expression": null,
+          "channel": "power"
+        },
+        {
+          "code": 3,
+          "address": 53510,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time5"
+        },
+        {
+          "code": 3,
+          "address": 53507,
+          "quantity": 1,
+          "expression": null,
+          "channel": "output"
+        },
+        {
+          "code": 3,
+          "address": 53514,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time17"
+        },
+        {
+          "code": 3,
+          "address": 53515,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time18"
+        },
+        {
+          "code": 3,
+          "address": 53511,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time6"
+        },
+        {
+          "code": 3,
+          "address": 7706,
+          "quantity": 1,
+          "expression": null,
+          "channel": "timee1"
+        },
+        {
+          "code": 3,
+          "address": 7736,
+          "quantity": 1,
+          "expression": null,
+          "channel": "voltage"
+        },
+        {
+          "code": 3,
+          "address": 53760,
+          "quantity": 1,
+          "expression": null,
+          "channel": "command1"
+        },
+        {
+          "code": 6,
+          "address": 53760,
+          "quantity": 1,
+          "expression": null,
+          "channel": "set-command1"
+        },
+        {
+          "code": 3,
+          "address": 54016,
+          "quantity": 1,
+          "expression": null,
+          "channel": "time28"
+        }
+      ]
+    }
+  ],
+  "path": "../element-lib/element-modbus",
+  "channels": [
+    {
+      "id": "time",
+      "name": "本机累积运行时间",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 2076,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time",
+      "$$hashKey": "object:6299"
+    },
+    {
+      "id": "time1",
+      "name": "母线电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 53506,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time1",
+      "$$hashKey": "object:6300"
+    },
+    {
+      "id": "time26",
+      "name": "计数值",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 7698,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time26",
+      "$$hashKey": "object:6301"
+    },
+    {
+      "id": "current",
+      "name": "当前流量",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 7746,
+      "quantity": 1,
+      "expression": null,
+      "channel": "current",
+      "$$hashKey": "object:6302"
+    },
+    {
+      "id": "head",
+      "name": "水泵当前扬程",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 7747,
+      "quantity": 1,
+      "expression": null,
+      "channel": "head",
+      "$$hashKey": "object:6303"
+    },
+    {
+      "id": "time13",
+      "name": "PID 反馈",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 7704,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time13",
+      "$$hashKey": "object:6304"
+    },
+    {
+      "id": "time15",
+      "name": "反馈速度",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 275,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time15",
+      "$$hashKey": "object:6305"
+    },
+    {
+      "id": "time7",
+      "name": "DI输入标志",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 53512,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time7",
+      "$$hashKey": "object:6306"
+    },
+    {
+      "id": "time29",
+      "name": "变频器故障",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 54272,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time29",
+      "$$hashKey": "object:6307"
+    },
+    {
+      "id": "time27",
+      "name": "长度值",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 7703,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time27",
+      "$$hashKey": "object:6308"
+    },
+    {
+      "id": "time23",
+      "name": "主频率 X 显示",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 2,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time23",
+      "$$hashKey": "object:6309"
+    },
+    {
+      "id": "time3",
+      "name": "变频器输出电流",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 53508,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time3",
+      "$$hashKey": "object:6310"
+    },
+    {
+      "id": "time8",
+      "name": "DO输出标志",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 53513,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time8",
+      "$$hashKey": "object:6311"
+    },
+    {
+      "id": "time0",
+      "name": "变频器运行频率",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 53505,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time0",
+      "$$hashKey": "object:6312"
+    },
+    {
+      "id": "power",
+      "name": "输出功率",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 53509,
+      "quantity": 1,
+      "expression": null,
+      "channel": "power",
+      "$$hashKey": "object:6313"
+    },
+    {
+      "id": "time5",
+      "name": "输出转矩",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 53510,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time5",
+      "$$hashKey": "object:6314"
+    },
+    {
+      "id": "output",
+      "name": "变频器输出电压",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 53507,
+      "quantity": 1,
+      "expression": null,
+      "channel": "output",
+      "$$hashKey": "object:6315"
+    },
+    {
+      "id": "time17",
+      "name": "AI1电压",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 53514,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time17",
+      "$$hashKey": "object:6316"
+    },
+    {
+      "id": "time18",
+      "name": "AI2电压",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 53515,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time18",
+      "$$hashKey": "object:6317"
+    },
+    {
+      "id": "time6",
+      "name": "运行速度",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 53511,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time6",
+      "$$hashKey": "object:6318"
+    },
+    {
+      "id": "timee1",
+      "name": "本次运行时间",
+      "datatype": "float",
+      "value": null,
+      "code": 3,
+      "address": 7706,
+      "quantity": 1,
+      "expression": null,
+      "channel": "timee1",
+      "$$hashKey": "object:6319"
+    },
+    {
+      "id": "voltage",
+      "name": "PV电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 7736,
+      "quantity": 1,
+      "expression": null,
+      "channel": "voltage",
+      "$$hashKey": "object:6320"
+    },
+    {
+      "id": "command1",
+      "name": "开关机",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 53760,
+      "quantity": 1,
+      "expression": null,
+      "channel": "command1",
+      "$$hashKey": "object:6321"
+    },
+    {
+      "id": "set-command1",
+      "name": "开关机",
+      "datatype": "int",
+      "value": null,
+      "code": 6,
+      "address": 53760,
+      "quantity": 1,
+      "expression": null,
+      "channel": "set-command1",
+      "$$hashKey": "object:6322"
+    },
+    {
+      "id": "time28",
+      "name": "变频器状态字1",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 54016,
+      "quantity": 1,
+      "expression": null,
+      "channel": "time28",
+      "$$hashKey": "object:6323"
+    }
+  ],
+  "id": "g1",
+  "cov": 0.5,
+  "$$hashKey": "object:5901"
+}

@@ -1,0 +1,121 @@
+{
+    "id":"es5200",
+    "name":"ES5200",
+    "type":"PMBusElement",
+    "version":"1.0.0",
+    "description":"test",
+    "path":"/usr/bin/aggregation/element-lib/es5200.json",
+    "channels":[
+		{
+            "id":"realtime",
+            "name":"实时钟",
+            "datatype":"string",
+            "value":null
+        },
+        {
+            "id":"record",
+            "name":"记录",
+            "datatype":"string",
+            "value":null
+        },
+        {
+            "id":"opendoor",
+            "name":"远程开门",
+            "datatype":"command",
+            "value":null
+        },
+        {
+            "id":"set-time",
+            "name":"设置时间",
+            "datatype":"command",
+            "value":null
+        },
+        {
+            "id":"add-card",
+            "name":"添加用户",
+            "datatype":"command",
+            "value":null
+        },
+        {
+            "id":"remove-card",
+            "name":"删除用户",
+            "datatype":"command",
+            "value":null
+        }
+    ],
+    "mappings":[
+        {
+            "protocol":"protocol-es5200",
+            "type":"PMBusProtocol",
+            "setting":{
+                "throttle":0,
+                "optimized":false,
+                "stepDiff":0,
+                "maxDiff":0,
+                "cov":0.1
+            },
+            "mapping":[
+                {
+                    "address":0,
+                    "cid1":128,
+                    "cid2":74,
+                    "length":6,
+					"commandgroup": 242,
+					"commandtype": 224,
+                    "expression":"",
+                    "channel":"realtime"
+                },
+				{
+                    "address":0,
+                    "cid1":128,
+                    "cid2":74,
+                    "length":4,
+					"commandgroup": 242,
+					"commandtype": 226,
+                    "expression":"",
+                    "channel":"record"
+                },
+				{
+                    "address":0,
+                    "cid1":128,
+                    "cid2":73,
+                    "length":6,
+					"commandgroup": 241,
+					"commandtype": 237,
+                    "expression":"",
+                    "channel":"opendoor"
+                },
+				{
+                    "address":0,
+                    "cid1":128,
+                    "cid2":73,
+                    "length":20,
+					"commandgroup": 241,
+					"commandtype": 224,
+                    "expression":"",
+                    "channel":"set-time"
+                },
+				{
+                    "address":0,
+                    "cid1":128,
+                    "cid2":73,
+                    "length":36,
+					"commandgroup": 241,
+					"commandtype": 227,
+                    "expression":"",
+                    "channel":"add-card"
+                },
+				{
+                    "address":0,
+                    "cid1":128,
+                    "cid2":73,
+                    "length":16,
+					"commandgroup": 241,
+					"commandtype": 228,
+                    "expression":"",
+                    "channel":"remove-card"
+                }
+            ]
+        }
+    ]
+}

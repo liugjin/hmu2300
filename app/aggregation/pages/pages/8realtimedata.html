@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Max" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>实时数据</title>
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" />
+    <link rel="stylesheet" href="../css/main1.css">
+</head>
+
+<body>
+    <div id="body-box">
+        <div class="page-title">
+            <div class="title-box">
+                <a href="homePage.html" class="button">
+                    <img src="../pic/collectionPage/1234.svg" width="32" height="32">
+                </a>
+                <span class="title">采集配置</span>
+            </div>
+            <div class="tab-box">
+                <ul class="tab-title" id="changeinit">
+                    <li>
+                        <a href="1networking.html">
+                            <span class="circle grey lighten-3">1</span>
+                            <div class="tabname">联网配置</div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="2ap.html">
+                            <span class="circle grey lighten-3">2</span>
+                            <div class="tabname">AP配置</div>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="3lan.html">
+                            <span class="circle grey lighten-3">3</span>
+                            <div class="tabname">LAN配置</div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="6ntp.html">
+                            <span class="circle grey lighten-3">4</span>
+                            <div class="tabname">NTP配置</div>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="4basic.html">
+                            <span class="circle grey lighten-3">5</span>
+                            <div class="tabname">基础配置</div>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="5collect.html">
+                            <span class="circle grey lighten-3">6</span>
+                            <div class="tabname">采集配置</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="7frcp.html">
+                            <span class="circle grey lighten-3">7</span>
+                            <div class="tabname">映射配置</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="8realtimedata.html">
+                            <span class="circle green1">8</span>
+                            <div class="tabname">实时数据</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="10moiveCapture.html">
+                            <span class="circle grey lighten-3">9</span>
+                            <div class="tabname">视频抓图</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="11SNMP.html">
+                            <span class="circle grey lighten-3">10</span>
+                            <div class="tabname">SNMP配置</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="form-box ng-scope" id="content" ng-view="">
+                <div class="row ng-scope">
+                    <div class="col s12">
+                        <h5 class="grey-text text-lighten-1 navigation-bar"></h5>
+                    </div>
+                    <div class="col s4 m3 l3">
+                        <div class="collection with-header items-list">
+                            <div class="collection-header">
+                                <h5 class="header"><span>采集单元实时数据</span></h5>
+                            </div>
+
+                            <div class="collection-item ng-scope">
+                                <ul md-accordion="md-accordion" data-collapsible="expandable" class="collapsible">
+                                    <li class="active">
+                                        <div id="mu" class="collapsible-header active ng-binding"
+                                            style="background-color: white;">
+
+                                        </div>
+                                        <div class="collapsible-body" style="display: block;">
+                                            <div id="suli" class="collection items-list1">
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s8 m9 l9">
+                        <a class="btn" onclick="javascript:sampleZValue()">采集页面</a>
+                        <a class="btn" onclick="javascript:commandValue()">控制命令</a>
+                        <br>
+                        <br>
+                        <div id="sampleOrcommand">
+                            <div id="commandTable">
+                                <div class="row">
+                                    <form class="col s10" id="commandForm" method="post">
+                                        <input id="commandMuid" class="validate" name="commandMuid" type="hidden">
+                                        <br>
+                                        <br>
+                                        <div class="row">
+                                            <input id="commandUnitId" class="validate" name="commandUnitId"
+                                                type="hidden" value="">
+                                            <div class="input-field col s3">
+                                                <select id="commandChannelId" name="commandChannelId">
+                                                    <option>请选择</option>
+                                                </select>
+                                                <label for="commandChannelId">控制通道Id</label>
+                                            </div>
+
+                                            <div class="input-field col s3">
+                                                <input id="commandKey" type="text" class="validate" name="commandKey">
+                                                <label for="commandKey">参数名</label>
+                                            </div>
+
+                                            <div class="input-field col s2">
+                                                <input id="commandValue" type="text" class="validate"
+                                                    name="commandValue">
+                                                <label for="commandValue">参数值</label>
+                                            </div>
+
+                                            <div class="input-field col s2">
+                                                <select id="commandType" name="commandType">
+                                                    <option value="int">int</option>
+                                                    <option value="string">string</option>
+                                                    <option value="float">float</option>
+                                                </select>
+                                                <label for="commandType">参数类型</label>
+                                            </div>
+
+                                            <div class="input-field col s2">
+                                                <a onclick="javascript:send()" class="waves-effect waves-light btn"
+                                                    style="width: max-content;">控制按钮</a>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <table class="bordered striped responsive-table hoverable" id="sampleTable">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div ng-click="predicate='channelId';reverse=!reverse" class="col-header">
+                                                <span>通道</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div ng-click="predicate='name';reverse=!reverse" class="col-header">
+                                                <span>名称</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="col-header">
+                                                <span>实时值</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div ng-click="predicate='timestamp';reverse=!reverse" class="col-header">
+                                                <span>采集时间</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody">
+                                    <tr class="ng-scope">
+                                        <td class="ng-binding">_state</td>
+                                        <td class="ng-binding">网关状态</td>
+                                        <td class="ng-binding">-</td>
+                                        <td class="ng-binding"></td>
+                                    </tr>
+                                    <tr class="ng-scope">
+                                        <td class="ng-binding">mu-tag</td>
+                                        <td class="ng-binding">rdua</td>
+                                        <td class="ng-binding">alarms</td>
+                                        <td class="ng-binding">-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script type="text/javascript">
+        // function getSrvAddr() {
+        //     return "http://" + window.location.host.split(":")[0] + ":8090";
+        // }
+        // var host = getSrvAddr();
+        let alldata;
+        let allJsonObject = new Map();
+        let onClientUnit;
+        $(function () {
+            $("#commandTable").hide();
+            if (window["WebSocket"]) {
+                var wsHost = host.replace("http", "ws");
+                var conn = new WebSocket(wsHost + "/real");
+                conn.onclose = function (evt) {
+                    var item = document.createElement("div");
+                    item.innerHTML = "<b>Connection closed.</b>";
+                };
+                conn.onmessage = function (evt) {
+                    var messages = evt.data.split('\n');
+                    for (var i = 0; i < messages.length; i++) {
+                        if (messages[i] != "") {
+                            var item = document.createElement("div");
+                            item.innerText = $.parseJSON(messages[i]).timestamp;
+                            channelId = $.parseJSON(messages[i]).channelId;
+                            allJsonObject.set($.parseJSON(messages[i]).channelId, $.parseJSON(messages[i]));
+                            $("#tbody").find("tr").each(function () {
+                                var tdArr = $(this).children();
+                                var tdid = tdArr.eq(0).text();//收入类别
+                                if (tdid == channelId && onClientUnit == $.parseJSON(messages[i]).sampleUnitId) {
+                                    tdArr.eq(2).text($.parseJSON(messages[i]).value)
+                                    tdArr.eq(3).text($.parseJSON(messages[i]).timestamp)
+                                }
+                            });
+                        }
+                    }
+
+                };
+            } else {
+                var item = document.createElement("div");
+                item.innerHTML = "<b>Your browser does not support WebSockets.</b>";
+            }
+
+            $.ajax({
+                url: host + '/mu/',
+                type: "GET",
+                dataType: 'json',
+                success: function (data) {
+                    qrySuccessCallbank(data);
+                    alldata = data
+                },
+                error: function () {
+                    alert("异常");
+                }
+            })
+        });
+
+
+        function qrySuccessCallbank(data) {
+            $("#mu").html("监控单元（" + data.data[0].id + "）");
+            var html = "";
+            for (var i in data.data) {
+                for (var j in data.data[i].ports) {
+                    for (var z in data.data[i].ports[j].sampleUnits) {
+                        html += '<div style="padding-left: 50px; background-color: white;" class="collection-item collapsible-header ng-scope" onclick="javascript:changeStauts(this,' + i + ',' + j + ',' + z + ')">'
+                            + '<span style="color: black;">' + data.data[i].ports[j].sampleUnits[z].name + '（' + data.data[i].ports[j].sampleUnits[z].id + '）</span>'
+                            + '</div> ';
+                    }
+                }
+            }
+            $("#suli").html(html);
+        }
+
+        //表格处理
+        function changeStauts(a, i, j, z) {
+            $(a).attr("style", "padding-left: 50px; background-color: #26a69a;color:#fff")
+            $(a).siblings().attr("style", "padding-left: 50px; background-color: white");
+            onClientUnit = alldata.data[i].ports[j].sampleUnits[z].id;
+
+            $.ajax({
+                url: host + '/el/' + alldata.data[i].ports[j].sampleUnits[z].element,
+                type: "GET",
+                dataType: 'json',
+                success: function (data) {
+                    doelement(data, alldata.data[i].ports[j].sampleUnits[z].id)
+                },
+                error: function () {
+                    alert("异常");
+                }
+            })
+            $("#commandUnitId").val(alldata.data[i].ports[j].sampleUnits[z].id);
+            if ($("#commandTable").is(':visible')) {
+                changeChannelSelect($("#commandUnitId").val());
+            }
+        }
+
+        function doelement(data, unitId) {
+            var html = "";
+            var state_id = "_state"
+            var state_name = "状态"
+            if (allJsonObject.size>0 && allJsonObject.get(state_id).sampleUnitId == unitId) {
+                html += '<tr class="ng-scope">'
+                    + '<td class="ng-binding">' + state_id + '</td>'
+                    + '<td class="ng-binding">' + state_name + '</td>'
+                    + '<td class="ng-binding">' + allJsonObject.get(state_id).value + '</td>'
+                    + '<td class="ng-binding">' + allJsonObject.get(state_id).timestamp + '</td>'
+                    + '</tr>';
+            }
+            for (var i in data.data.channels) {
+                if (allJsonObject.get(data.data.channels[i].id) == null || allJsonObject.get(data.data.channels[i].id).sampleUnitId != unitId) {
+                    html += '<tr class="ng-scope">'
+                        + '<td class="ng-binding">' + data.data.channels[i].id + '</td>'
+                        + '<td class="ng-binding">' + data.data.channels[i].name + '</td>'
+                        + '<td class="ng-binding">-</td>'
+                        + '<td class="ng-binding">-</td>'
+                        + '</tr>';
+
+                } else {
+                    html += '<tr class="ng-scope">'
+                        + '<td class="ng-binding">' + data.data.channels[i].id + '</td>'
+                        + '<td class="ng-binding">' + data.data.channels[i].name + '</td>'
+                        + '<td class="ng-binding">' + allJsonObject.get(data.data.channels[i].id).value + '</td>'
+                        + '<td class="ng-binding">' + allJsonObject.get(data.data.channels[i].id).timestamp + '</td>'
+                        + '</tr>';
+                }
+            }
+            $("#tbody").html(html);
+        }
+
+        function sampleZValue() {
+            $("#commandTable").hide();
+            $("#sampleTable").show();
+        }
+
+        function commandValue() {
+            $("#commandTable").show();
+            $("#sampleTable").hide();
+            $("#commandMuid").val(alldata.data[0].id);
+            var html = "<option>请选择</option>";
+            for (var i in alldata.data) {
+                for (var j in alldata.data[i].ports) {
+                    for (var z in alldata.data[i].ports[j].sampleUnits) {
+                        html += '<option value=' + alldata.data[i].ports[j].sampleUnits[z].id + '>' + alldata.data[i].ports[j].sampleUnits[z].id + '</option>';
+                    }
+                }
+            }
+            $("#commandUnitId").html(html);
+            $('select').material_select();
+        }
+
+
+        $("#commandUnitId1").on("change", function () {
+            alert($("#commandUnitId").val)
+            for (var i in alldata.data) {
+                for (var j in alldata.data[i].ports) {
+                    for (var z in alldata.data[i].ports[j].sampleUnits) {
+                        if ($(this).children('option:selected').text() == alldata.data[i].ports[j].sampleUnits[z].id) {
+                            $.ajax({
+                                url: host + '/el/' + alldata.data[i].ports[j].sampleUnits[z].element,
+                                type: "GET",
+                                dataType: 'json',
+                                success: function (data) {
+                                    var html = "";
+                                    for (var i in data.data.channels) {
+                                        html += '<option value=' + data.data.channels[i].id + '>' + data.data.channels[i].id + '</option>';
+                                    }
+                                    $("#commandChannelId").html(html);
+                                    $('select').material_select();
+                                },
+                                error: function () {
+                                    alert("异常");
+                                }
+                            });
+                        } else {
+                            var html = "<option>请选择</option>";
+                            $("#commandChannelId").html(html);
+                            $('select').material_select();
+                        }
+                    }
+                }
+            }
+        });
+
+        function changeChannelSelect(commandUnitIdVal) {
+            for (var i in alldata.data) {
+                for (var j in alldata.data[i].ports) {
+                    for (var z in alldata.data[i].ports[j].sampleUnits) {
+                        if (commandUnitIdVal == alldata.data[i].ports[j].sampleUnits[z].id) {
+                            $.ajax({
+                                url: host + '/el/' + alldata.data[i].ports[j].sampleUnits[z].element,
+                                type: "GET",
+                                dataType: 'json',
+                                success: function (data) {
+                                    var html = "";
+                                    for (var i in data.data.channels) {
+                                        html += '<option value=' + data.data.channels[i].id + '>' + data.data.channels[i].id + '</option>';
+                                    }
+                                    $("#commandChannelId").html(html);
+                                    $('select').material_select();
+                                },
+                                error: function () {
+                                    alert("异常");
+                                }
+                            });
+                        } else {
+                            var html = "<option>请选择</option>";
+                            $("#commandChannelId").html(html);
+                            $('select').material_select();
+                        }
+                    }
+                }
+            }
+        }
+
+        function send() {
+            $.ajax({
+                url: host + '/commandForm',
+                type: "POST",
+                data: $("#commandForm").serialize(),
+                success: function (data) {
+                    // alert(data+"控制成功")
+                },
+                error: function () {
+                    alert("异常");
+                }
+            })
+        }
+
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+
+//获取
+//http://192.168.20.1:8090/el/best-th.json
+    </script>
+
+    <script type="text/javascript" src="../js/lib/materialize.min.js"></script>
+</body>
+
+</html>

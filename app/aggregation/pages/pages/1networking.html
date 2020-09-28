@@ -1,0 +1,177 @@
+<!-- 配置信息页面 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>联网配置</title>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/main1.css">
+</head>
+
+<body>
+    <div id="body-box">
+        <div class="page-title">
+            <div class="title-box">
+                <a href="homePage.html" class="button">
+                    <img src="../pic/collectionPage/1234.svg" width="32" height="32">
+                </a>
+                <span class="title">采集配置</span>
+            </div>
+            <div class="tab-box">
+                <ul class="tab-title" id="changeinit">
+                    <li>
+                        <a href="1networking.html">
+                            <span class="circle green1">1</span>
+                            <div class="tabname">联网配置</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="2ap.html">
+                            <span class="circle grey lighten-3">2</span>
+                            <div class="tabname">AP配置</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="3lan.html">
+                            <span class="circle grey lighten-3">3</span>
+                            <div class="tabname">LAN配置</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="6ntp.html">
+                            <span class="circle grey lighten-3 ">4</span>
+                            <div class="tabname">NTP配置</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="4basic.html">
+                            <span class="circle grey lighten-3">5</span>
+                            <div class="tabname">基础配置</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="5collect.html">
+                            <span class="circle grey lighten-3">6</span>
+                            <div class="tabname">采集配置</div>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="7frcp.html">
+                            <span class="circle grey lighten-3">7</span>
+                            <div class="tabname">映射配置</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="8realtimedata.html">
+                            <span class="circle grey lighten-3">8</span>
+                            <div class="tabname">实时数据</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="10moiveCapture.html">
+                            <span class="circle grey lighten-3">9</span>
+                            <div class="tabname">视频抓图</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="11SNMP.html">
+                            <span class="circle grey lighten-3">10</span>
+                            <div class="tabname">SNMP配置</div>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="coordinateCurve.html">
+                            <span class="circle grey lighten-3">11</span>
+                            <div class="tabname">坐标曲线</div>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="form-box">
+                <h5 class="form-title">联网配置</h5>
+                <div class="form-content">
+                    <div>
+                        <label for="linktype">接入方式</label>
+                        <select id="linktype" name="linktype" class="browser-default">
+                            <option value="" disabled selected>请选择接入方式</option>
+                            <option value="wifi" id="wifion">WIFI接入</option>
+                            <option value="eth" id="lineon">有线接入</option>
+                            <option value="lte" id="fourg">4g</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <form id="wificonnectset">
+                            <div class="wifioption" style="display: none;">
+                                <div id="addpswinfo">
+                                    <label for="ssid">SSID</label>
+                                    <input id="ssid" type="text" name="wifissid" placeholder="请填写SSID">
+                                    <label for="key">密码</label>
+                                    <input id="key" type="password" name="wifipsw" placeholder="请填写密码">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div>
+                        <form id="four" class="qwerty">
+                            <div class="fouroption" style="display: none;">
+                                <div class="">
+                                    <label for="ssid">请选择运营商</label>
+                                    <select class="browser-default" name="isp">
+                                        <option value="" disabled selected>运营商</option>
+                                        <option value="mobile">移动</option>
+                                        <option value="telecom">电信</option>
+                                        <option value="unicom">联通</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div>
+                        <form id="wired">
+                            <div class="wiredoption" style="display: none;">
+                                <label for="proto">地址获取方式</label>
+                                <select id="proto" name="proto" class="browser-default">
+                                    <option value="" disabled selected>请选择地址获取方式</option>
+                                    <option value="static" id="optionstatic">静态IP</option>
+                                    <option value="dhcp" id="optiondhcp">DHCP</option>
+                                </select>
+                                <div class="staticoption" style="display:none;">
+                                    <label class="active" for="ipaddr">IP地址</label>
+                                    <input id="ipaddr" type="text" name="wiredipadd" placeholder="请填写IP地址">
+                                    <label class="active" for="netmask">子网掩码</label>
+                                    <input id="netmask" type="text" name="subnetcode" placeholder="请填写子网掩码">
+                                    <label class="active" for="gateway">网关地址</label>
+                                    <input id="gateway" type="text" name="gatewayadd" placeholder="请填写网关地址">
+                                    <label class="active" for="pdns">首选DNS服务器</label>
+                                    <input id="pdns" type="text" name="pdns" placeholder="请填写首选DNS服务器">
+                                    <label class="active" for="sdns">备用DNS服务器</label>
+                                    <input id="sdns" type="text" name="sdns" placeholder="请填写备用DNS服务器">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div style="display: flex;justify-content: space-between;margin-top: 1.6rem" class="spacing">
+                        <button type="submit" class="form-control btn-large enter" id="1networking">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/lib/jquery-2.2.1.min.js"></script>
+    <script src="../js/lib/materialize.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/1networking.js"></script>
+</body>
+
+</html>

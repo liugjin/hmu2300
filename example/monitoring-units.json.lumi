@@ -1,0 +1,152 @@
+[
+	{
+		"id": "0",
+		"name": "网关",
+		"setting": {},
+		"ports": [
+			{
+				"symbol": "",
+				"protocol": "protocol-sensorflow",
+				"id": "rs3",
+				"name": "sensorflow",
+				"enable": false,
+				"setting": {
+					"port": "/dev/COM2",
+					"baudRate": 38400,
+					"keyNumber": 3
+				},
+				"sampleUnits": [
+					{
+						"id": "tag-1",
+						"name": "tag-1",
+						"period": 1000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "sensorflow-tag-voltage.json",
+						"enable": true,
+						"setting": {
+							"address": 1
+						}
+					}
+				]
+			},
+			{
+				"symbol": "",
+				"protocol": "protocol-modbus-serial",
+				"id": "rs1",
+				"name": "rs1",
+				"enable": false,
+				"setting": {
+					"port": "/dev/COM1",
+					"baudRate": 9600
+				},
+				"sampleUnits": [
+					{
+						"id": "th1",
+						"name": "th1",
+						"period": 5000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "best-th.json",
+						"enable": true,
+						"setting": {
+							"address": 1
+						}
+					}
+				]
+			},
+			{
+				"symbol": "",
+				"protocol": "protocol-modbus-serial",
+				"id": "rs2",
+				"name": "rs2",
+				"enable": true,
+				"setting": {},
+				"sampleUnits": []
+			},
+			{
+				"symbol": "",
+				"protocol": "protocol-modbus-tcp",
+				"id": "lan1",
+				"name": "lan1",
+				"enable": false,
+				"setting": {},
+				"sampleUnits": [
+					{
+						"id": "9H200A1710004_camera1",
+						"name": "hiki",
+						"period": 2000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 100,
+						"element": "hiki.json",
+						"enable": true,
+						"setting": {}
+					}
+				]
+			},
+			{
+				"symbol": "",
+				"protocol": "protocol-lumi-gateway",
+				"id": "lan2",
+				"name": "lan2",
+				"enable": true,
+				"setting": {
+					"port": "/dev/gateway",
+					"password": "3EA66EEB96434CBB",
+					"sid": "7811dcb78b2f",
+					"netinterface": "ens33"
+				},
+				"sampleUnits": [
+					{
+						"id": "lumigateway",
+						"name": "lumigateway",
+						"period": 3000,
+						"timeout": 1000,
+						"maxCommunicationErrors": 5,
+						"element": "lumi-gateway-weather.v1.json",
+						"enable": true,
+						"setting": {
+							"model": "weather.v1",
+							"sid": "158d00022ca896"
+						}
+					}
+				]
+			},
+			{
+				"symbol": "",
+				"protocol": "protocol-modbus-tcp",
+				"id": "wifi",
+				"name": "wifi",
+				"enable": true,
+				"setting": {},
+				"sampleUnits": []
+			},
+			{
+				"symbol": "",
+				"protocol": "protocol-hyiot-mu",
+				"id": "self",
+				"name": "self",
+				"enable": false,
+				"setting": {
+					"port": "/dev/self"
+				},
+				"sampleUnits": [
+					{
+						"id": "_",
+						"name": "self",
+						"period": 300,
+						"timeout": 100,
+						"maxCommunicationErrors": 5,
+						"element": "hmu2000.json",
+						"enable": true,
+						"setting": {
+							"host": "127.0.0.1",
+							"port": "9988",
+							"model": "hmu2000"
+						}
+					}
+				]
+			}
+		]
+	}
+]

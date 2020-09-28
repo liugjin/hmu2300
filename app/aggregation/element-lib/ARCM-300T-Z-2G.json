@@ -1,0 +1,2117 @@
+{
+  "name": "ARCM-300T-Z-2G电气火灾监控",
+  "type": "ModbusElement",
+  "version": "0.0.1",
+  "description": "ARCM-300T-Z-2G channels info",
+  "mappings": [
+    {
+      "protocol": "protocol-elec-fire",
+      "type": "ModbusTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "ch0"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "ch1"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "ch2"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "ch3"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "ch4"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "ch5"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "ch6"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "ch7"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "ch8"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "ch9"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "ch10"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "ch11"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "ch12"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "ch13"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "ch14"
+        },
+        {
+          "code": 3,
+          "address": 4096,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "ch15"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "ch16"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "ch17"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "ch18"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "ch19"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "ch20"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "ch21"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "ch22"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "ch23"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "ch24"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "ch25"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "ch26"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "ch27"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "ch28"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "ch29"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "ch30"
+        },
+        {
+          "code": 3,
+          "address": 4097,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "ch31"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "ch32"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "ch33"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "ch34"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "ch35"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "ch36"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "ch37"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "ch38"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "ch39"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "ch40"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "ch41"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "ch42"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "ch43"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "ch44"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "ch45"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "ch46"
+        },
+        {
+          "code": 3,
+          "address": 4098,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "ch47"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val&1",
+          "channel": "ch48"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>1&1",
+          "channel": "ch49"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>2&1",
+          "channel": "ch50"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>3&1",
+          "channel": "ch51"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>4&1",
+          "channel": "ch52"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>5&1",
+          "channel": "ch53"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>6&1",
+          "channel": "ch54"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>7&1",
+          "channel": "ch55"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>8&1",
+          "channel": "ch56"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>9&1",
+          "channel": "ch57"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>10&1",
+          "channel": "ch58"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>11&1",
+          "channel": "ch59"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>12&1",
+          "channel": "ch60"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>13&1",
+          "channel": "ch61"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>14&1",
+          "channel": "ch62"
+        },
+        {
+          "code": 3,
+          "address": 4099,
+          "quantity": 1,
+          "expression": "val>>15&1",
+          "channel": "ch63"
+        },
+        {
+          "code": 3,
+          "address": 4611,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "ch64"
+        },
+        {
+          "code": 3,
+          "address": 4612,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ch65"
+        },
+        {
+          "code": 3,
+          "address": 4613,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ch66"
+        },
+        {
+          "code": 3,
+          "address": 4614,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "ch67"
+        },
+        {
+          "code": 3,
+          "address": 4618,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch68"
+        },
+        {
+          "code": 3,
+          "address": 4619,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch69"
+        },
+        {
+          "code": 3,
+          "address": 4620,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch70"
+        },
+        {
+          "code": 3,
+          "address": 4621,
+          "quantity": 1,
+          "expression": "val>>8&225",
+          "channel": "ch71"
+        },
+        {
+          "code": 3,
+          "address": 4621,
+          "quantity": 1,
+          "expression": "val&225",
+          "channel": "ch72"
+        },
+        {
+          "code": 3,
+          "address": 4622,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch73"
+        },
+        {
+          "code": 3,
+          "address": 4623,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch74"
+        },
+        {
+          "code": 3,
+          "address": 4624,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch75"
+        },
+        {
+          "code": 3,
+          "address": 4625,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch76"
+        },
+        {
+          "code": 3,
+          "address": 4626,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch77"
+        },
+        {
+          "code": 3,
+          "address": 4627,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch78"
+        },
+        {
+          "code": 3,
+          "address": 4628,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch79"
+        },
+        {
+          "code": 3,
+          "address": 4629,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch80"
+        },
+        {
+          "code": 3,
+          "address": 4630,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch81"
+        },
+        {
+          "code": 3,
+          "address": 4631,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch82"
+        },
+        {
+          "code": 3,
+          "address": 4632,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch83"
+        },
+        {
+          "code": 3,
+          "address": 4633,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch84"
+        },
+        {
+          "code": 3,
+          "address": 4634,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch85"
+        },
+        {
+          "code": 3,
+          "address": 4635,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch86"
+        },
+        {
+          "code": 3,
+          "address": 4636,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch87"
+        },
+        {
+          "code": 3,
+          "address": 4637,
+          "quantity": 1,
+          "expression": null,
+          "channel": "ch88"
+        },
+        {
+          "code": 3,
+          "address": 4638,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch89"
+        },
+        {
+          "code": 3,
+          "address": 4639,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch90"
+        },
+        {
+          "code": 3,
+          "address": 4640,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch91"
+        },
+        {
+          "code": 3,
+          "address": 4641,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch92"
+        },
+        {
+          "code": 3,
+          "address": 4642,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch93"
+        },
+        {
+          "code": 3,
+          "address": 4643,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch94"
+        },
+        {
+          "code": 3,
+          "address": 4644,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch95"
+        },
+        {
+          "code": 3,
+          "address": 4645,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch96"
+        },
+        {
+          "code": 3,
+          "address": 4646,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch97"
+        },
+        {
+          "code": 3,
+          "address": 4647,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch98"
+        },
+        {
+          "code": 3,
+          "address": 4648,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch99"
+        },
+        {
+          "code": 3,
+          "address": 4649,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch100"
+        },
+        {
+          "code": 3,
+          "address": 4653,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch101"
+        },
+        {
+          "code": 3,
+          "address": 4654,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch102"
+        },
+        {
+          "code": 3,
+          "address": 4655,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch103"
+        },
+        {
+          "code": 3,
+          "address": 4656,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "ch104"
+        },
+        {
+          "code": 3,
+          "address": 4864,
+          "quantity": 2,
+          "expression": "val/1000",
+          "channel": "ch105"
+        },
+        {
+          "code": 3,
+          "address": 4866,
+          "quantity": 2,
+          "expression": "val/1000",
+          "channel": "ch106"
+        },
+        {
+          "code": 3,
+          "address": 4868,
+          "quantity": 2,
+          "expression": "val/1000",
+          "channel": "ch107"
+        },
+        {
+          "code": 3,
+          "address": 4870,
+          "quantity": 2,
+          "expression": "val/1000",
+          "channel": "ch108"
+        },
+        {
+          "code": 3,
+          "address": 4872,
+          "quantity": 2,
+          "expression": "val/1000",
+          "channel": "ch109"
+        }
+    ]
+	}
+	],
+  "path": "../element-lib/element-modbus",
+  "channels": [
+    {
+      "id": "ch0",
+      "name": "回路1通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val&1",
+      "channel": "ch0",
+      "$$hashKey": "object:205"
+    },
+    {
+      "id": "ch1",
+      "name": "回路2通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>1&1",
+      "channel": "ch1",
+      "$$hashKey": "object:206"
+    },
+    {
+      "id": "ch2",
+      "name": "回路3通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>2&1",
+      "channel": "ch2",
+      "$$hashKey": "object:207"
+    },
+    {
+      "id": "ch3",
+      "name": "回路4通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>3&1",
+      "channel": "ch3",
+      "$$hashKey": "object:208"
+    },
+    {
+      "id": "ch4",
+      "name": "回路5通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>4&1",
+      "channel": "ch4",
+      "$$hashKey": "object:209"
+    },
+    {
+      "id": "ch5",
+      "name": "回路6通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>5&1",
+      "channel": "ch5",
+      "$$hashKey": "object:210"
+    },
+    {
+      "id": "ch6",
+      "name": "回路7通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>6&1",
+      "channel": "ch6",
+      "$$hashKey": "object:211"
+    },
+    {
+      "id": "ch7",
+      "name": "回路8通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>7&1",
+      "channel": "ch7",
+      "$$hashKey": "object:212"
+    },
+    {
+      "id": "ch8",
+      "name": "回路9通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>8&1",
+      "channel": "ch8",
+      "$$hashKey": "object:213"
+    },
+    {
+      "id": "ch9",
+      "name": "回路10通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>9&1",
+      "channel": "ch9",
+      "$$hashKey": "object:214"
+    },
+    {
+      "id": "ch10",
+      "name": "回路11通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>10&1",
+      "channel": "ch10",
+      "$$hashKey": "object:215"
+    },
+    {
+      "id": "ch11",
+      "name": "回路12通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>11&1",
+      "channel": "ch11",
+      "$$hashKey": "object:216"
+    },
+    {
+      "id": "ch12",
+      "name": "回路13通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>12&1",
+      "channel": "ch12",
+      "$$hashKey": "object:217"
+    },
+    {
+      "id": "ch13",
+      "name": "回路14通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>13&1",
+      "channel": "ch13",
+      "$$hashKey": "object:218"
+    },
+    {
+      "id": "ch14",
+      "name": "回路15通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>14&1",
+      "channel": "ch14",
+      "$$hashKey": "object:219"
+    },
+    {
+      "id": "ch15",
+      "name": "回路16通道类别",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4096,
+      "quantity": 1,
+      "expression": "val>>15&1",
+      "channel": "ch15",
+      "$$hashKey": "object:220"
+    },
+    {
+      "id": "ch16",
+      "name": "回路1断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val&1",
+      "channel": "ch16",
+      "$$hashKey": "object:221"
+    },
+    {
+      "id": "ch17",
+      "name": "回路2断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>1&1",
+      "channel": "ch17",
+      "$$hashKey": "object:222"
+    },
+    {
+      "id": "ch18",
+      "name": "回路3断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>2&1",
+      "channel": "ch18",
+      "$$hashKey": "object:223"
+    },
+    {
+      "id": "ch19",
+      "name": "回路4断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>3&1",
+      "channel": "ch19",
+      "$$hashKey": "object:224"
+    },
+    {
+      "id": "ch20",
+      "name": "回路5断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>4&1",
+      "channel": "ch20",
+      "$$hashKey": "object:225"
+    },
+    {
+      "id": "ch21",
+      "name": "回路6断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>5&1",
+      "channel": "ch21",
+      "$$hashKey": "object:226"
+    },
+    {
+      "id": "ch22",
+      "name": "回路7断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>6&1",
+      "channel": "ch22",
+      "$$hashKey": "object:227"
+    },
+    {
+      "id": "ch23",
+      "name": "回路8断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>7&1",
+      "channel": "ch23",
+      "$$hashKey": "object:228"
+    },
+    {
+      "id": "ch24",
+      "name": "回路9断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>8&1",
+      "channel": "ch24",
+      "$$hashKey": "object:229"
+    },
+    {
+      "id": "ch25",
+      "name": "回路10断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>9&1",
+      "channel": "ch25",
+      "$$hashKey": "object:230"
+    },
+    {
+      "id": "ch26",
+      "name": "回路11断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>10&1",
+      "channel": "ch26",
+      "$$hashKey": "object:231"
+    },
+    {
+      "id": "ch27",
+      "name": "回路12断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>11&1",
+      "channel": "ch27",
+      "$$hashKey": "object:232"
+    },
+    {
+      "id": "ch28",
+      "name": "回路13断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>12&1",
+      "channel": "ch28",
+      "$$hashKey": "object:233"
+    },
+    {
+      "id": "ch29",
+      "name": "回路14断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>13&1",
+      "channel": "ch29",
+      "$$hashKey": "object:234"
+    },
+    {
+      "id": "ch30",
+      "name": "回路15断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>14&1",
+      "channel": "ch30",
+      "$$hashKey": "object:235"
+    },
+    {
+      "id": "ch31",
+      "name": "回路16断线",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4097,
+      "quantity": 1,
+      "expression": "val>>15&1",
+      "channel": "ch31",
+      "$$hashKey": "object:236"
+    },
+    {
+      "id": "ch32",
+      "name": "回路1短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val&1",
+      "channel": "ch32",
+      "$$hashKey": "object:237"
+    },
+    {
+      "id": "ch33",
+      "name": "回路2短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>1&1",
+      "channel": "ch33",
+      "$$hashKey": "object:238"
+    },
+    {
+      "id": "ch34",
+      "name": "回路3短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>2&1",
+      "channel": "ch34",
+      "$$hashKey": "object:239"
+    },
+    {
+      "id": "ch35",
+      "name": "回路4短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>3&1",
+      "channel": "ch35",
+      "$$hashKey": "object:240"
+    },
+    {
+      "id": "ch36",
+      "name": "回路5短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>4&1",
+      "channel": "ch36",
+      "$$hashKey": "object:241"
+    },
+    {
+      "id": "ch37",
+      "name": "回路6短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>5&1",
+      "channel": "ch37",
+      "$$hashKey": "object:242"
+    },
+    {
+      "id": "ch38",
+      "name": "回路7短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>6&1",
+      "channel": "ch38",
+      "$$hashKey": "object:243"
+    },
+    {
+      "id": "ch39",
+      "name": "回路8短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>7&1",
+      "channel": "ch39",
+      "$$hashKey": "object:244"
+    },
+    {
+      "id": "ch40",
+      "name": "回路9短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>8&1",
+      "channel": "ch40",
+      "$$hashKey": "object:245"
+    },
+    {
+      "id": "ch41",
+      "name": "回路10短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>9&1",
+      "channel": "ch41",
+      "$$hashKey": "object:246"
+    },
+    {
+      "id": "ch42",
+      "name": "回路11短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>10&1",
+      "channel": "ch42",
+      "$$hashKey": "object:247"
+    },
+    {
+      "id": "ch43",
+      "name": "回路12短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>11&1",
+      "channel": "ch43",
+      "$$hashKey": "object:248"
+    },
+    {
+      "id": "ch44",
+      "name": "回路13短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>12&1",
+      "channel": "ch44",
+      "$$hashKey": "object:249"
+    },
+    {
+      "id": "ch45",
+      "name": "回路14短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>13&1",
+      "channel": "ch45",
+      "$$hashKey": "object:250"
+    },
+    {
+      "id": "ch46",
+      "name": "回路15短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>14&1",
+      "channel": "ch46",
+      "$$hashKey": "object:251"
+    },
+    {
+      "id": "ch47",
+      "name": "回路16短路",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4098,
+      "quantity": 1,
+      "expression": "val>>15&1",
+      "channel": "ch47",
+      "$$hashKey": "object:252"
+    },
+    {
+      "id": "ch48",
+      "name": "回路1报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val&1",
+      "channel": "ch48",
+      "$$hashKey": "object:253"
+    },
+    {
+      "id": "ch49",
+      "name": "回路2报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>1&1",
+      "channel": "ch49",
+      "$$hashKey": "object:254"
+    },
+    {
+      "id": "ch50",
+      "name": "回路3报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>2&1",
+      "channel": "ch50",
+      "$$hashKey": "object:255"
+    },
+    {
+      "id": "ch51",
+      "name": "回路4报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>3&1",
+      "channel": "ch51",
+      "$$hashKey": "object:256"
+    },
+    {
+      "id": "ch52",
+      "name": "回路5报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>4&1",
+      "channel": "ch52",
+      "$$hashKey": "object:257"
+    },
+    {
+      "id": "ch53",
+      "name": "回路6报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>5&1",
+      "channel": "ch53",
+      "$$hashKey": "object:258"
+    },
+    {
+      "id": "ch54",
+      "name": "回路7报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>6&1",
+      "channel": "ch54",
+      "$$hashKey": "object:259"
+    },
+    {
+      "id": "ch55",
+      "name": "回路8报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>7&1",
+      "channel": "ch55",
+      "$$hashKey": "object:260"
+    },
+    {
+      "id": "ch56",
+      "name": "回路9报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>8&1",
+      "channel": "ch56",
+      "$$hashKey": "object:261"
+    },
+    {
+      "id": "ch57",
+      "name": "回路10报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>9&1",
+      "channel": "ch57",
+      "$$hashKey": "object:262"
+    },
+    {
+      "id": "ch58",
+      "name": "回路11报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>10&1",
+      "channel": "ch58",
+      "$$hashKey": "object:263"
+    },
+    {
+      "id": "ch59",
+      "name": "回路12报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>11&1",
+      "channel": "ch59",
+      "$$hashKey": "object:264"
+    },
+    {
+      "id": "ch60",
+      "name": "回路13报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>12&1",
+      "channel": "ch60",
+      "$$hashKey": "object:265"
+    },
+    {
+      "id": "ch61",
+      "name": "回路14报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>13&1",
+      "channel": "ch61",
+      "$$hashKey": "object:266"
+    },
+    {
+      "id": "ch62",
+      "name": "回路15报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>14&1",
+      "channel": "ch62",
+      "$$hashKey": "object:267"
+    },
+    {
+      "id": "ch63",
+      "name": "回路16报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4099,
+      "quantity": 1,
+      "expression": "val>>15&1",
+      "channel": "ch63",
+      "$$hashKey": "object:268"
+    },
+    {
+      "id": "ch64",
+      "name": "电压频率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4611,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "ch64",
+      "$$hashKey": "object:269"
+    },
+    {
+      "id": "ch65",
+      "name": "A相相电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4612,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ch65",
+      "$$hashKey": "object:270"
+    },
+    {
+      "id": "ch66",
+      "name": "B相相电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4613,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ch66",
+      "$$hashKey": "object:271"
+    },
+    {
+      "id": "ch67",
+      "name": "C相相电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4614,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "ch67",
+      "$$hashKey": "object:272"
+    },
+    {
+      "id": "ch68",
+      "name": "A相相电压角度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4618,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch68",
+      "$$hashKey": "object:273"
+    },
+    {
+      "id": "ch69",
+      "name": "B相相电压角度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4619,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch69",
+      "$$hashKey": "object:274"
+    },
+    {
+      "id": "ch70",
+      "name": "C相相电压角度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4620,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch70",
+      "$$hashKey": "object:275"
+    },
+    {
+      "id": "ch71",
+      "name": "电压状态欠压报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4621,
+      "quantity": 1,
+      "expression": "val>>8&225",
+      "channel": "ch71",
+      "$$hashKey": "object:276"
+    },
+    {
+      "id": "ch72",
+      "name": "电压状态过压报警",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4621,
+      "quantity": 1,
+      "expression": "val&225",
+      "channel": "ch72",
+      "$$hashKey": "object:277"
+    },
+    {
+      "id": "ch73",
+      "name": "A相过压值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4622,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch73",
+      "$$hashKey": "object:278"
+    },
+    {
+      "id": "ch74",
+      "name": "B相过压值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4623,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch74",
+      "$$hashKey": "object:279"
+    },
+    {
+      "id": "ch75",
+      "name": "C相过压值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4624,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch75",
+      "$$hashKey": "object:280"
+    },
+    {
+      "id": "ch76",
+      "name": "A相欠压值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4625,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch76",
+      "$$hashKey": "object:281"
+    },
+    {
+      "id": "ch77",
+      "name": "B相欠压值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4626,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch77",
+      "$$hashKey": "object:282"
+    },
+    {
+      "id": "ch78",
+      "name": "C相欠压值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4627,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch78",
+      "$$hashKey": "object:283"
+    },
+    {
+      "id": "ch79",
+      "name": "A相电流",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4628,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch79",
+      "$$hashKey": "object:284"
+    },
+    {
+      "id": "ch80",
+      "name": "B相电流",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4629,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch80",
+      "$$hashKey": "object:285"
+    },
+    {
+      "id": "ch81",
+      "name": "C相电流",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4630,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch81",
+      "$$hashKey": "object:286"
+    },
+    {
+      "id": "ch82",
+      "name": "A相电流角度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4631,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch82",
+      "$$hashKey": "object:287"
+    },
+    {
+      "id": "ch83",
+      "name": "B相电流角度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4632,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch83",
+      "$$hashKey": "object:288"
+    },
+    {
+      "id": "ch84",
+      "name": "C相电流角度",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4633,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch84",
+      "$$hashKey": "object:289"
+    },
+    {
+      "id": "ch85",
+      "name": "电流状态",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4634,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch85",
+      "$$hashKey": "object:290"
+    },
+    {
+      "id": "ch86",
+      "name": "A相过流值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4635,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch86",
+      "$$hashKey": "object:291"
+    },
+    {
+      "id": "ch87",
+      "name": "B相过流值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4636,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch87",
+      "$$hashKey": "object:292"
+    },
+    {
+      "id": "ch88",
+      "name": "C相过流值",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4637,
+      "quantity": 1,
+      "expression": null,
+      "channel": "ch88",
+      "$$hashKey": "object:293"
+    },
+    {
+      "id": "ch89",
+      "name": "A相有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4638,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch89",
+      "$$hashKey": "object:294"
+    },
+    {
+      "id": "ch90",
+      "name": "B相有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4639,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch90",
+      "$$hashKey": "object:295"
+    },
+    {
+      "id": "ch91",
+      "name": "C相有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4640,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch91",
+      "$$hashKey": "object:296"
+    },
+    {
+      "id": "ch92",
+      "name": "A相无功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4641,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch92",
+      "$$hashKey": "object:297"
+    },
+    {
+      "id": "ch93",
+      "name": "B相无功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4642,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch93",
+      "$$hashKey": "object:298"
+    },
+    {
+      "id": "ch94",
+      "name": "C相无功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4643,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch94",
+      "$$hashKey": "object:299"
+    },
+    {
+      "id": "ch95",
+      "name": "A相视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4644,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch95",
+      "$$hashKey": "object:300"
+    },
+    {
+      "id": "ch96",
+      "name": "B相视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4645,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch96",
+      "$$hashKey": "object:301"
+    },
+    {
+      "id": "ch97",
+      "name": "C相视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4646,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch97",
+      "$$hashKey": "object:302"
+    },
+    {
+      "id": "ch98",
+      "name": "A相功率因数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4647,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch98",
+      "$$hashKey": "object:303"
+    },
+    {
+      "id": "ch99",
+      "name": "B相功率因数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4648,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch99",
+      "$$hashKey": "object:304"
+    },
+    {
+      "id": "ch100",
+      "name": "C相功率因数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4649,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch100",
+      "$$hashKey": "object:305"
+    },
+    {
+      "id": "ch101",
+      "name": "总有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4653,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch101",
+      "$$hashKey": "object:306"
+    },
+    {
+      "id": "ch102",
+      "name": "总无功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4654,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch102",
+      "$$hashKey": "object:307"
+    },
+    {
+      "id": "ch103",
+      "name": "总视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4655,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch103",
+      "$$hashKey": "object:308"
+    },
+    {
+      "id": "ch104",
+      "name": "总功率因数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4656,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "ch104",
+      "$$hashKey": "object:309"
+    },
+    {
+      "id": "ch105",
+      "name": "吸收有功电能",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4864,
+      "quantity": 2,
+      "expression": "val/1000",
+      "channel": "ch105",
+      "$$hashKey": "object:310"
+    },
+    {
+      "id": "ch106",
+      "name": "释放有功电能",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4866,
+      "quantity": 2,
+      "expression": "val/1000",
+      "channel": "ch106",
+      "$$hashKey": "object:311"
+    },
+    {
+      "id": "ch107",
+      "name": "感性无功电能",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4868,
+      "quantity": 2,
+      "expression": "val/1000",
+      "channel": "ch107",
+      "$$hashKey": "object:312"
+    },
+    {
+      "id": "ch108",
+      "name": "容性无功电能",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4870,
+      "quantity": 2,
+      "expression": "val/1000",
+      "channel": "ch108",
+      "$$hashKey": "object:313"
+    },
+    {
+      "id": "ch109",
+      "name": "视在电能",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4872,
+      "quantity": 2,
+      "expression": "val/1000",
+      "channel": "ch109",
+      "$$hashKey": "object:314"
+    }
+  ],
+  "id": "ARCM-300T-Z-2G-T",
+  "cov": 0.2,
+  "$$hashKey": "object:150"
+}

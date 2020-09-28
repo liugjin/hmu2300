@@ -1,0 +1,699 @@
+{
+	"name": "光伏水泵变频器", 
+    "type": "ModbusElement", 
+    "version": "0.0.1", 
+    "description": "solarpump channels info", 
+    "mappings": [
+        {
+            "protocol": "protocol-modbus-tcp", 
+            "type": "ModbusTcpClientProtocol", 
+            "setting": {
+                "throttle": 1000, 
+                "optimized": true, 
+                "stepDiff": 3, 
+                "maxDiff": 122, 
+                "cov": 0.01
+            }, 
+            "mapping": [
+                {
+                    "code": 3, 
+                    "address": 7706, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "time"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53506, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "1"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7698, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "26"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7746, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "current"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7747, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "head"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7704, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "13"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 275, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "15"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53512, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "7"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 54272, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "29"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7703, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "27"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 2, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "23"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53508, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "3"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53513, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "8"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53505, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "0"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53509, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "power"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53510, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "5"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53507, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "output"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53514, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "17"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53515, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "18"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53511, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "6"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 2076, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "time1"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7736, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "voltage"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53760, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "command1"
+                }, 
+                {
+                    "code": 6, 
+                    "address": 53760, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "set-command1"
+                }
+            ]
+        }, 
+        {
+            "protocol": "protocol-modbus-serial", 
+            "type": "ModbusSerialProtocol", 
+            "setting": {
+                "throttle": 1000, 
+                "optimized": true, 
+                "stepDiff": 3, 
+                "maxDiff": 122, 
+                "cov": 0.01
+            }, 
+            "mapping": [
+                {
+                    "code": 3, 
+                    "address": 7706, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "time"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53506, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "1"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7698, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "26"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7746, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "current"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7747, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "head"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7704, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "13"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 275, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "15"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53512, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "7"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 54272, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "29"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7703, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "27"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 2, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "23"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53508, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "3"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53513, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "8"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53505, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "0"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53509, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "power"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53510, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "5"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53507, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "output"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53514, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "17"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53515, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "18"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53511, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "6"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 2076, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "time1"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7736, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "voltage"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53760, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "command1"
+                }, 
+                {
+                    "code": 6, 
+                    "address": 53760, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "set-command1"
+                }
+            ]
+        }, 
+        {
+            "protocol": "protocol-modbus-rtu-tcp", 
+            "type": "ModbusRtuTcpClientProtocol", 
+            "setting": {
+                "throttle": 1000, 
+                "optimized": true, 
+                "stepDiff": 3, 
+                "maxDiff": 122, 
+                "cov": 0.01
+            }, 
+            "mapping": [
+                {
+                    "code": 3, 
+                    "address": 7706, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "time"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53506, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "1"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7698, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "26"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7746, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "current"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7747, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "head"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7704, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "13"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 275, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "15"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53512, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "7"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 54272, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "29"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7703, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "27"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 2, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "23"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53508, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "3"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53513, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "8"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53505, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "0"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53509, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "power"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53510, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "5"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53507, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "output"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53514, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "17"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53515, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "18"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53511, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "6"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 2076, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "time1"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 7736, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "voltage"
+                }, 
+                {
+                    "code": 3, 
+                    "address": 53760, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "command1"
+                }, 
+                {
+                    "code": 6, 
+                    "address": 53760, 
+                    "quantity": 1, 
+                    "expression": null, 
+                    "channel": "set-command1"
+                }
+            ]
+        }
+    ], 
+    "path": "../element-lib/element-sfere", 
+    "channels": [
+        {
+            "id": "time", 
+            "name": "本机累积运行时间", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "1", 
+            "name": "母线电压", 
+            "datatype": "int", 
+            "value": null
+        }, 
+        {
+            "id": "26", 
+            "name": "计数值", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "current", 
+            "name": "当前流量", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "head", 
+            "name": "水泵当前扬程", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "13", 
+            "name": "PID 反馈", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "15", 
+            "name": "反馈速度", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "7", 
+            "name": "DI输入标志", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "29", 
+            "name": "变频器故障", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "27", 
+            "name": "长度值", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "23", 
+            "name": "主频率 X 显示", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "3", 
+            "name": "变频器输出电流", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "8", 
+            "name": "DO输出标志", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "0", 
+            "name": "变频器运行频率", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "power", 
+            "name": "输出功率", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "5", 
+            "name": "输出转矩", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "output", 
+            "name": "变频器输出电压", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "17", 
+            "name": "AI1电压", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "18", 
+            "name": "AI2电压", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "6", 
+            "name": "运行速度", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "time1", 
+            "name": "本次运行时间", 
+            "datatype": "float", 
+            "value": null
+        }, 
+        {
+            "id": "voltage", 
+            "name": "PV电压", 
+            "datatype": "int", 
+            "value": null
+        }, 
+        {
+            "id": "command1", 
+            "name": "开关机", 
+            "datatype": "int", 
+            "value": null
+        }, 
+        {
+            "id": "set-command1", 
+            "name": "开关机", 
+            "datatype": "int", 
+            "value": null
+        }
+    ], 
+    "id": "solarpump"
+}

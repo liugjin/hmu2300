@@ -1,0 +1,540 @@
+html {
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#container {
+    margin: 20px;
+}
+
+#chart-canvas {
+    width: 100%;
+    height: 400px;
+}
+
+.header-logo {
+    margin-left: 20px;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.about-container {
+    height: 400px;
+}
+
+.about-content {
+    width: 100%;
+}
+
+.top-margin-20 {
+    margin-top: 20px;
+}
+
+.left-margin-20 {
+    margin-left: 20px;
+}
+
+.loading {
+    height: 20px;
+}
+
+.fix-menu-item {
+    min-width: 150px;
+}
+
+.page-list {
+
+}
+
+.menu-selected {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.page-selected {
+    border-bottom: 2px solid white;
+    /*padding-bottom: 2px;*/
+}
+
+.img-uploader {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 1px dotted #808080;
+    margin-bottom: 50px;
+}
+
+.img-uploader img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.img-preview {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 40px;
+    line-height: 100px;
+}
+
+.file-uploader {
+    display: block;
+    width: 150px;
+    height: 100px;
+    border: 1px dotted #808080;
+    margin-bottom: 50px;
+}
+
+.file-uploader img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.file-preview {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 40px;
+    line-height: 100px;
+}
+
+.seperator {
+    margin: 5px;
+}
+
+.link-path {
+    margin-top: 0px;
+    width: 300px;
+}
+
+/* scrum */
+
+.scrum-page {
+    position: relative;
+    display: block;
+    margin: 50px 0 20px 0;
+    /*text-align: center;*/
+
+    height: 800px;
+}
+
+.scrum-page img {
+    width: auto;
+    max-height: 600px;
+}
+
+
+.scrum-details {
+    height: 800px;
+}
+
+.scrum-project-card {
+    height: 300px;
+    /*display: block;*/
+
+}
+
+.scrum-page-footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.scrum-img {
+}
+
+.scrum-img img {
+    height: 400px;
+}
+
+.scrum-img span {
+    width: 100%;
+    color: teal !important;
+    /*opacity: 0.8;*/
+}
+
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/*.card-image img {*/
+    /*max-height: 190px;*/
+/*}*/
+
+/*pre code {*/
+    /*display: block !important;*/
+    /*background-color: #f0f0f0 !important;*/
+    /*padding: 0.5em !important;*/
+/*}*/
+
+.header {
+    color: #ee6e73;
+    font-weight: 300;
+}
+
+.sub-title {
+    padding-left: 20px;
+}
+
+.dropdown-content {
+    z-index: 999;
+}
+
+.model-title {
+    width: 100%;
+    height: 100%;
+    font-size: large;
+}
+
+.selectable {
+    cursor: pointer;
+}
+
+.items-list {
+    min-height: 400px;
+    max-height: 800px;
+    height: 80vh;
+    display: block;
+    overflow-y: auto;
+}
+
+.dropdown-list {
+    width: 100%;
+    padding: 0 10px 0 10px;
+    border: 1px teal solid;
+}
+
+.project-img {
+    width: 400px;
+    height: 400px;
+    background-color: #f5f5f5;
+    /*display: flex;*/
+    /*position: relative;*/
+    /*text-align: center;*/
+}
+
+.project-img img {
+    cursor: pointer;
+    /*width: 100%;*/
+    /*max-width: 100%;*/
+    /*max-height: 100%;*/
+    /*margin: auto;*/
+    /*margin-top: auto;*/
+    /*margin-bottom: auto;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+}
+
+.model-img-upload {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+.select-dropdown {
+    max-height: 300px;
+}
+
+/*.card .card-image {*/
+    /*text-align: center;*/
+/*}*/
+
+/*.card .card-image img {*/
+    /*max-width: 100%;*/
+    /*max-height: 165px;*/
+    /*width: inherit !important;*/
+
+/*}*/
+
+/*.input-field label {*/
+    /*left: 0 !important;*/
+/*}*/
+
+.property-grid {
+    /*display: block;*/
+    /*width: 100%;*/
+    max-height: 800px;
+    overflow: auto;
+}
+
+.predicate-orderby {
+    margin-top: 20px;
+}
+
+
+/* used for model reference */
+.reference-img {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    border: 1px dotted #808080;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.reference-img img {
+    max-width: 100%;
+    max-height: 100%;
+    /*width: auto;*/
+    /*height: auto;*/
+    margin: auto;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.blank-img {
+    width: 100%;
+    height: 100%;
+    background-color: lightyellow;
+}
+
+.card-img-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    min-height: 200px;
+}
+
+.card-img-placeholder img {
+    width: 100%;
+    height: auto;
+}
+
+.model-content {
+    min-height: 400px;
+}
+
+.collection-item.active i {
+    color: white;
+}
+
+.stations {
+    min-height: 400px;
+    max-height: 600px;
+    overflow: auto;
+    display: block;
+}
+
+.equipments {
+    max-height: 400px;
+    overflow: auto;
+    display: block;
+}
+
+.signals {
+    min-height: 400px;
+    overflow: auto;
+    display: block;
+}
+
+.monitoring-content {
+    min-height: 800px;
+}
+
+.selection-image {
+    display: block;
+    height: 100px;
+    background-color: #eceff1;
+    text-align: center;
+    /*background-image: url("/res/img/clc-logo.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+}
+
+.selection-image img {
+    max-height: 100%;
+}
+
+.hand-cursor {
+    cursor: pointer;
+}
+
+.station-image {
+    display: block;
+    height: 300px;
+    background-color: #eceff1;
+    text-align: center;
+}
+
+.station-image img {
+    max-height: 100%;
+}
+
+.view-type {
+    margin: 20px 0 20px 0;
+}
+
+.col-header {
+    cursor: pointer;
+    font-weight: normal !important;
+}
+
+.tab-content {
+    margin-top: 10px;
+}
+
+.signal-chart {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+.event-statistic-chart {
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+.btn-group {
+    margin: 10px 0 10px 0;
+}
+
+.btn-group .btn {
+    margin: 10px 10px 0 0;
+}
+
+.btn-group .btn-large {
+    margin: 10px 10px 0 0;
+}
+
+.event-list {
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+    display: block;
+}
+
+.header-bar {
+    background-color: #ee6e73;
+    width: 100%;
+    height: 300px;
+}
+
+.no-margin {
+    margin: 0 -20px 0 -20px;
+}
+
+.no-shadow {
+    box-shadow: none!important;
+}
+
+ul.card-action-buttons {
+    margin: -26px 10px 0px 0px;
+    text-align: right;
+}
+
+ul.card-action-buttons li {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.search-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 40px; }
+
+.search-wrapper > i {
+    position: absolute;
+    font-size: 24px;
+    top: 6px;
+    left: 6px;
+    line-height: 32px;
+    color: #757575; }
+
+.search-wrapper .search-input {
+    display: block;
+    padding: 8px 8px 8px 36px !important;
+    width: 80% !important;
+    height: 24px !important;
+    border: 1px solid #adadad !important;
+    border-radius: 3px !important;
+    background: rgba(230, 230, 230, 0.3) !important; }
+
+.search-input:hover {
+    border: 1px solid #adadad !important;
+    border-bottom: 1px solid #adadad !important;
+    background: rgba(255, 255, 255, 0.5) !important; }
+
+.search-input:focus {
+    background: #ffffff !important;
+    border: 1px solid black !important;
+    box-shadow: none !important; }
+.running {
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+    z-index: 999; }
+
+.spinner {
+    margin: 100px auto 20px auto;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 10px; }
+.spinner > div {
+    background-color: #00a856;
+    height: 100%;
+    width: 7px;
+    margin: 0 3px 0 0;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out; }
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s; }
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s; }
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s; }
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s; }
+
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.4); }
+    20% {
+        -webkit-transform: scaleY(1); } }
+
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4); }
+    20% {
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1); } }
+

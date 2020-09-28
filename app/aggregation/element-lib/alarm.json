@@ -1,0 +1,98 @@
+{
+    "type": "ModbusElement", 
+    "name": "声光报警", 
+    "channels": [
+        {
+            "id": "open", 
+            "name": "打开", 
+            "datatype": "int", 
+            "value": null
+        }
+    ], 
+    "id": "alarm", 
+    "version": "0.0.1", 
+    "description": "alarm channels info", 
+    "mappings": [
+        {
+            "protocol": "protocol-modbus-tcp", 
+            "type": "ModbusTcpClientProtocol", 
+            "setting": {
+                "throttle": 1000, 
+                "optimized": true, 
+                "stepDiff": 3, 
+                "maxDiff": 122, 
+                "cov": 0.01
+            }, 
+            "mapping": [
+                {
+                    "code": 6, 
+                    "address": 4, 
+                    "quantity": 2, 
+                    "expression": null, 
+                    "channel": "open"
+                }
+            ]
+        }, 
+        {
+            "protocol": "protocol-modbus-serial", 
+            "type": "ModbusSerialProtocol", 
+            "setting": {
+                "throttle": 1000, 
+                "optimized": true, 
+                "stepDiff": 3, 
+                "maxDiff": 122, 
+                "cov": 0.01
+            }, 
+            "mapping": [
+                {
+                    "code": 6, 
+                    "address": 4, 
+                    "quantity": 2, 
+                    "expression": null, 
+                    "channel": "open"
+                }
+            ]
+        }, 
+        {
+            "protocol": "protocol-modbus-rtu-tcp", 
+            "type": "ModbusRtuTcpClientProtocol", 
+            "setting": {
+                "throttle": 1000, 
+                "optimized": true, 
+                "stepDiff": 3, 
+                "maxDiff": 122, 
+                "cov": 0.01
+            }, 
+            "mapping": [
+                {
+                    "code": 6, 
+                    "address": 4, 
+                    "quantity": 2, 
+                    "expression": null, 
+                    "channel": "open"
+                }
+            ]
+        }, 
+        {
+            "protocol": "protocol-modbus-dtu", 
+            "type": "ModbusDtuProtocol", 
+            "setting": {
+                "throttle": 1000, 
+                "optimized": true, 
+                "stepDiff": 3, 
+                "maxDiff": 122, 
+                "cov": 0.01
+            }, 
+            "mapping": [
+                {
+                    "code": 6, 
+                    "address": 4, 
+                    "quantity": 2, 
+                    "expression": null, 
+                    "channel": "open"
+                }
+            ]
+        }
+    ], 
+    "path": "../element-lib/element-sfere"
+}

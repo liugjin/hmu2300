@@ -1,0 +1,466 @@
+{
+  "name": "DDS3366D-1P电表",
+  "type": "ModbusElement",
+  "channels": [
+    {
+      "id": "current-combined-total-active-power",
+      "name": "当前组合有功总电能",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 0,
+      "quantity": 2,
+      "expression": "val/100",
+      "channel": "current-combined-total-active-power",
+      "$$hashKey": "object:506"
+    },
+    {
+      "id": "current-total-positive-active-power",
+      "name": "当前正向有功总电能",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 2,
+      "quantity": 2,
+      "expression": "val/100",
+      "channel": "current-total-positive-active-power",
+      "$$hashKey": "object:507"
+    },
+    {
+      "id": "current-total-reverse-active-power",
+      "name": "当前反向有功总电能",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 4,
+      "quantity": 2,
+      "expression": "val/100",
+      "channel": "current-total-reverse-active-power",
+      "$$hashKey": "object:508"
+    },
+    {
+      "id": "voltage",
+      "name": "电压",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 6,
+      "quantity": 1,
+      "expression": "val/10",
+      "channel": "voltage",
+      "$$hashKey": "object:509"
+    },
+    {
+      "id": "current",
+      "name": "电流",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 7,
+      "quantity": 2,
+      "expression": "val/1000",
+      "channel": "current",
+      "$$hashKey": "object:510"
+    },
+    {
+      "id": "active-power",
+      "name": "有功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 9,
+      "quantity": 2,
+      "expression": "val/10000",
+      "channel": "active-power",
+      "$$hashKey": "object:511"
+    },
+    {
+      "id": "power-factor",
+      "name": "功率因数",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 11,
+      "quantity": 1,
+      "expression": "val/1000",
+      "channel": "power-factor",
+      "$$hashKey": "object:512"
+    },
+    {
+      "id": "frequency",
+      "name": "频率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 12,
+      "quantity": 1,
+      "expression": "val/100",
+      "channel": "frequency",
+      "$$hashKey": "object:513"
+    },
+    {
+      "id": "reactive-power",
+      "name": "无功功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 13,
+      "quantity": 2,
+      "expression": "val/10000",
+      "channel": "reactive-power",
+      "$$hashKey": "object:514"
+    },
+    {
+      "id": "apparent-power",
+      "name": "视在功率",
+      "datatype": "int",
+      "value": null,
+      "code": 3,
+      "address": 15,
+      "quantity": 2,
+      "expression": "val/10000",
+      "channel": "apparent-power",
+      "$$hashKey": "object:515"
+    }
+  ],
+  "version": "0.0.1",
+  "description": "DDS3366D-1P channels info",
+  "mappings": [
+    {
+      "protocol": "protocol-modbus-tcp",
+      "type": "ModbusTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 0,
+          "quantity": 2,
+          "expression": "val/100",
+          "channel": "current-combined-total-active-power"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 2,
+          "expression": "val/100",
+          "channel": "current-total-positive-active-power"
+        },
+        {
+          "code": 3,
+          "address": 4,
+          "quantity": 2,
+          "expression": "val/100",
+          "channel": "current-total-reverse-active-power"
+        },
+        {
+          "code": 3,
+          "address": 6,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "voltage"
+        },
+        {
+          "code": 3,
+          "address": 7,
+          "quantity": 2,
+          "expression": "val/1000",
+          "channel": "current"
+        },
+        {
+          "code": 3,
+          "address": 9,
+          "quantity": 2,
+          "expression": "val/10000",
+          "channel": "active-power"
+        },
+        {
+          "code": 3,
+          "address": 11,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "power-factor"
+        },
+        {
+          "code": 3,
+          "address": 12,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "frequency"
+        },
+        {
+          "code": 3,
+          "address": 13,
+          "quantity": 2,
+          "expression": "val/10000",
+          "channel": "reactive-power"
+        },
+        {
+          "code": 3,
+          "address": 15,
+          "quantity": 2,
+          "expression": "val/10000",
+          "channel": "apparent-power"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-serial",
+      "type": "ModbusSerialProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 0,
+          "quantity": 2,
+          "expression": "val/100",
+          "channel": "current-combined-total-active-power"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 2,
+          "expression": "val/100",
+          "channel": "current-total-positive-active-power"
+        },
+        {
+          "code": 3,
+          "address": 4,
+          "quantity": 2,
+          "expression": "val/100",
+          "channel": "current-total-reverse-active-power"
+        },
+        {
+          "code": 3,
+          "address": 6,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "voltage"
+        },
+        {
+          "code": 3,
+          "address": 7,
+          "quantity": 2,
+          "expression": "val/1000",
+          "channel": "current"
+        },
+        {
+          "code": 3,
+          "address": 9,
+          "quantity": 2,
+          "expression": "val/10000",
+          "channel": "active-power"
+        },
+        {
+          "code": 3,
+          "address": 11,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "power-factor"
+        },
+        {
+          "code": 3,
+          "address": 12,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "frequency"
+        },
+        {
+          "code": 3,
+          "address": 13,
+          "quantity": 2,
+          "expression": "val/10000",
+          "channel": "reactive-power"
+        },
+        {
+          "code": 3,
+          "address": 15,
+          "quantity": 2,
+          "expression": "val/10000",
+          "channel": "apparent-power"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-rtu-tcp",
+      "type": "ModbusRtuTcpClientProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 0,
+          "quantity": 2,
+          "expression": "val/100",
+          "channel": "current-combined-total-active-power"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 2,
+          "expression": "val/100",
+          "channel": "current-total-positive-active-power"
+        },
+        {
+          "code": 3,
+          "address": 4,
+          "quantity": 2,
+          "expression": "val/100",
+          "channel": "current-total-reverse-active-power"
+        },
+        {
+          "code": 3,
+          "address": 6,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "voltage"
+        },
+        {
+          "code": 3,
+          "address": 7,
+          "quantity": 2,
+          "expression": "val/1000",
+          "channel": "current"
+        },
+        {
+          "code": 3,
+          "address": 9,
+          "quantity": 2,
+          "expression": "val/10000",
+          "channel": "active-power"
+        },
+        {
+          "code": 3,
+          "address": 11,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "power-factor"
+        },
+        {
+          "code": 3,
+          "address": 12,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "frequency"
+        },
+        {
+          "code": 3,
+          "address": 13,
+          "quantity": 2,
+          "expression": "val/10000",
+          "channel": "reactive-power"
+        },
+        {
+          "code": 3,
+          "address": 15,
+          "quantity": 2,
+          "expression": "val/10000",
+          "channel": "apparent-power"
+        }
+      ]
+    },
+    {
+      "protocol": "protocol-modbus-dtu",
+      "type": "ModbusDtuProtocol",
+      "setting": {
+        "throttle": 1000,
+        "optimized": true,
+        "stepDiff": 3,
+        "maxDiff": 122,
+        "cov": 0.2
+      },
+      "mapping": [
+        {
+          "code": 3,
+          "address": 0,
+          "quantity": 2,
+          "expression": "val/100",
+          "channel": "current-combined-total-active-power"
+        },
+        {
+          "code": 3,
+          "address": 2,
+          "quantity": 2,
+          "expression": "val/100",
+          "channel": "current-total-positive-active-power"
+        },
+        {
+          "code": 3,
+          "address": 4,
+          "quantity": 2,
+          "expression": "val/100",
+          "channel": "current-total-reverse-active-power"
+        },
+        {
+          "code": 3,
+          "address": 6,
+          "quantity": 1,
+          "expression": "val/10",
+          "channel": "voltage"
+        },
+        {
+          "code": 3,
+          "address": 7,
+          "quantity": 2,
+          "expression": "val/1000",
+          "channel": "current"
+        },
+        {
+          "code": 3,
+          "address": 9,
+          "quantity": 2,
+          "expression": "val/10000",
+          "channel": "active-power"
+        },
+        {
+          "code": 3,
+          "address": 11,
+          "quantity": 1,
+          "expression": "val/1000",
+          "channel": "power-factor"
+        },
+        {
+          "code": 3,
+          "address": 12,
+          "quantity": 1,
+          "expression": "val/100",
+          "channel": "frequency"
+        },
+        {
+          "code": 3,
+          "address": 13,
+          "quantity": 2,
+          "expression": "val/10000",
+          "channel": "reactive-power"
+        },
+        {
+          "code": 3,
+          "address": 15,
+          "quantity": 2,
+          "expression": "val/10000",
+          "channel": "apparent-power"
+        }
+      ]
+    }
+  ],
+  "path": "../element-lib/element-modbus",
+  "id": "DDS3366D-1P",
+  "cov": 0.2,
+  "$$hashKey": "object:466"
+}

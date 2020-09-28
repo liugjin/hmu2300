@@ -1,0 +1,2643 @@
+{
+	"id": "ACM03U1",
+	"name": "ACM03U1 控制器监控",
+	"type": "PMBusElement",
+	"version": "1.0.0",
+	"description": "test",
+	"path": "/usr/local/clc.hmu/app/aggregation/element-lib/ACM03U1.json",
+	"channels": [
+		{
+			"id": "indoor-temperature",
+			"name": "室内温度",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "indoor-humidity",
+			"name": "室内湿度",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "a-phase-voltage",
+			"name": "A相电压",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "b-phase-voltage",
+			"name": "B相电压",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "c-phase-voltage",
+			"name": "C相电压",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "humidifier-current",
+			"name": "加湿器电流",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "power-frequency",
+			"name": "电源频率",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "temperature1",
+			"name": "温度1",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "temperature2",
+			"name": "温度2",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "temperature3",
+			"name": "温度3",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "temperature4",
+			"name": "温度4",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "analog-quantity-1",
+			"name": "模拟量1",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "analog-quantity-2",
+			"name": "模拟量2",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "analog-quantity-3",
+			"name": "模拟量3",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "analog-quantity-4",
+			"name": "模拟量4",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "high-voltage-switch1",
+			"name": "高压开关1",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "high-voltage-switch2",
+			"name": "高压开关2",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "low-voltage-switch1",
+			"name": "低压开关1",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "low-voltage-switch2",
+			"name": "低压开关2",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "exhaust-temperature-switch1",
+			"name": "排汽温度开关1",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "exhaust-temperature-switch2",
+			"name": "排汽温度开关2",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "filter-net-switch",
+			"name": "过滤网开关",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "flooring-spilled-water-switch",
+			"name": "地板溢水开关",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "fan-fault-switch",
+			"name": "风机故障开关",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "airflow-insufficiency-switch",
+			"name": "气流不足开关",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "water-level-probe",
+			"name": "CM+水位探头",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "remote-shutdown",
+			"name": "远程关机",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "humidifier-alarm",
+			"name": "加湿器告警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "smoke-input",
+			"name": "烟感输入",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "electric-heating-alarm-input",
+			"name": "电加热告警输入",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "infrared-humidification-high-water-level",
+			"name": "红外加湿高水位",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state1",
+			"name": "空调开关机状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state2",
+			"name": "风机输出开关状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state3",
+			"name": "加湿器输出开关状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state4",
+			"name": "压缩机1输出开关状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state5",
+			"name": "压缩机2输出开关状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state6",
+			"name": "加热1输出开关状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state7",
+			"name": "加热2输出开关状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state8",
+			"name": "公共报警输出开关状 态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state9",
+			"name": "液路旁通1输出开关状 态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state10",
+			"name": "液路旁通2输出开关状 态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state11",
+			"name": "注水输出开关状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state12",
+			"name": "除湿输出开关状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state13",
+			"name": "备用输出开关状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state14",
+			"name": "压缩机1反相输出开关 状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state15",
+			"name": "压缩机2反相输出开关 状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state16",
+			"name": "制冷状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state17",
+			"name": "加热状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state18",
+			"name": "除湿状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "switch-state19",
+			"name": "加湿状态",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state1",
+			"name": "空调运行模式",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state2",
+			"name": "压缩机类型",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state3",
+			"name": "高压 1 报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state4",
+			"name": "高压 2 报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state5",
+			"name": "低压 1 报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state6",
+			"name": "低压 2 报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state7",
+			"name": "排气温度 1 报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state8",
+			"name": "排气温度 2 报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state9",
+			"name": "盘管冻结 1 报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state10",
+			"name": "盘管冻结 2 报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state11",
+			"name": "风机故障报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state14",
+			"name": "短周期 1 报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state15",
+			"name": "短周期 2 报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state16",
+			"name": "高温报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state17",
+			"name": "低温报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state18",
+			"name": "高湿报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state19",
+			"name": "低湿报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state20",
+			"name": "红外加湿器故障报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state21",
+			"name": "卡乐加湿器故障报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state22",
+			"name": "CM+加湿器低水位故障报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state23",
+			"name": "气流丢失报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state24",
+			"name": "过滤网堵报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state25",
+			"name": "远程关机报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state26",
+			"name": "温湿度检测板故障报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state27",
+			"name": "烟感传感器报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state28",
+			"name": "火感传感器报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state29",
+			"name": "自定义 1 报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state30",
+			"name": "自定义 2 报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state31",
+			"name": "风机运行超时报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state32",
+			"name": "压缩机 1 运行超时报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state33",
+			"name": "压缩机 2 运行超时报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state34",
+			"name": "加热器 1 运行超时报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state35",
+			"name": "加热器 2 运行超时报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state36",
+			"name": "加湿器需维护报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state37",
+			"name": "电源丢失报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state38",
+			"name": "电源过压报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state39",
+			"name": "电源欠压报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state41",
+			"name": "电源频偏报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state42",
+			"name": "电源缺相报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state43",
+			"name": "电源反相报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state44",
+			"name": "地板溢水报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state45",
+			"name": "NTC1 故障报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state46",
+			"name": "NTC2 故障报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state47",
+			"name": "NTC3 故障报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state48",
+			"name": "NTC4 故障报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state49",
+			"name": "#0 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state50",
+			"name": "#1 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state51",
+			"name": "#2 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state52",
+			"name": "#3 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state53",
+			"name": "#4 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state54",
+			"name": "#5 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state55",
+			"name": "#6 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state56",
+			"name": "#7 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state57",
+			"name": "#8 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state58",
+			"name": "#9 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state59",
+			"name": "#10 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state60",
+			"name": "#11 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state61",
+			"name": "#12 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state62",
+			"name": "#13 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state63",
+			"name": "#14 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state64",
+			"name": "#15 机组组网失败报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state65",
+			"name": "高压 1 锁定报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state66",
+			"name": "高压 2 锁定报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state67",
+			"name": "低压 1 锁定报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state68",
+			"name": "低压 2 锁定报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state69",
+			"name": "排气温度 1 锁定报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state70",
+			"name": "排气温度 2 锁定报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state71",
+			"name": "盘管冻结 1 锁定报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state72",
+			"name": "盘管冻结 2 锁定报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state73",
+			"name": "排气 1 低温报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state74",
+			"name": "排气 2 低温报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state75",
+			"name": "机组地址重复报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state76",
+			"name": "群控模式从机丢失",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state77",
+			"name": "群控模式主机丢失",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state78",
+			"name": "送风高温",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state79",
+			"name": "A 路水流丢失",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state80",
+			"name": "B 路水流丢失",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state81",
+			"name": "风压传感器故障",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state82",
+			"name": "红外加湿高水位报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state83",
+			"name": "排气 1 低温锁定",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state84",
+			"name": "排气 2 低温锁定",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state85",
+			"name": "低压传感器 1 失效",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state86",
+			"name": "低压传感器 2 失效",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state87",
+			"name": "过滤需网维护报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "alarm-state88",
+			"name": "电加热报警",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "system-parameter1",
+			"name": "回风温度设定点",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "system-parameter2",
+			"name": "湿度设定点",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "system-parameter3",
+			"name": "温度偏差",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "system-parameter4",
+			"name": "湿度偏差",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "system-parameter5",
+			"name": "温度死区",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "system-parameter6",
+			"name": "湿度死区",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "system-parameter7",
+			"name": "高温告警值",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "system-parameter8",
+			"name": "低温告警值",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "system-parameter9",
+			"name": "高湿告警值",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "system-parameter10",
+			"name": "低湿告警值",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "system-parameter11",
+			"name": "送风高温告警值",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "system-parameter12",
+			"name": "送风温度设定点",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "analog0-waterway-a",
+			"name": "模拟0_水路A",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "analog1-waterway-b",
+			"name": "模拟1_水路B",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "analog2-waterway-ec-fan",
+			"name": "模拟2_EC_Fan",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "scr1-output",
+			"name": "SCR1输出",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "scr2-output",
+			"name": "SCR2输出",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "compressor1--capacity-output",
+			"name": "压缩机1容量输出",
+			"datatype": "int",
+			"value": null
+		},
+		{
+			"id": "compressor2--capacity-output",
+			"name": "压缩机2容量输出",
+			"datatype": "int",
+			"value": null
+		}
+	],
+	"mappings": [
+		{
+			"protocol": "protocol-pmbus",
+			"type": "PMBusProtocol",
+			"setting": {
+				"throttle": 0,
+				"optimized": false,
+				"stepDiff": 0,
+				"maxDiff": 0,
+				"cov": 0.5
+			},
+			"mapping": [
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 0,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "indoor-temperature",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 2,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "indoor-humidity",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 4,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "a-phase-voltage",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 6,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "b-phase-voltage",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 8,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "c-phase-voltage",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 10,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "humidifier-current",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 12,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "power-frequency",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 14,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "temperature1",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 16,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "temperature2",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 18,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "temperature3",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 20,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "temperature4",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 22,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "analog-quantity-1",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 24,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "analog-quantity-2",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 26,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "analog-quantity-3",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 66,
+					"command": 0,
+					"offset": 28,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "analog-quantity-4",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 0,
+					"length": 1,
+					"expression": "",
+					"channel": "high-voltage-switch1",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 1,
+					"length": 1,
+					"expression": "",
+					"channel": "high-voltage-switch2",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 2,
+					"length": 1,
+					"expression": "",
+					"channel": "low-voltage-switch1",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 3,
+					"length": 1,
+					"expression": "",
+					"channel": "low-voltage-switch2",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 4,
+					"length": 1,
+					"expression": "",
+					"channel": "exhaust-temperature-switch1",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 5,
+					"length": 1,
+					"expression": "",
+					"channel": "exhaust-temperature-switch2",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 6,
+					"length": 1,
+					"expression": "",
+					"channel": "filter-net-switch",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 7,
+					"length": 1,
+					"expression": "",
+					"channel": "flooring-spilled-water-switch",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 8,
+					"length": 1,
+					"expression": "",
+					"channel": "fan-fault-switch",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 11,
+					"length": 1,
+					"expression": "",
+					"channel": "airflow-insufficiency-switch",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 16,
+					"length": 1,
+					"expression": "",
+					"channel": "water-level-probe",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 17,
+					"length": 1,
+					"expression": "",
+					"channel": "remote-shutdown",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 18,
+					"length": 1,
+					"expression": "",
+					"channel": "humidifier-alarm",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 19,
+					"length": 1,
+					"expression": "",
+					"channel": "smoke-input",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 20,
+					"length": 1,
+					"expression": "",
+					"channel": "electric-heating-alarm-input",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 67,
+					"command": 0,
+					"offset": 21,
+					"length": 1,
+					"expression": "",
+					"channel": "infrared-humidification-high-water-level",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 0,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state1",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 1,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state2",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 2,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state3",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 3,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state4",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 4,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state5",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 5,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state6",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 6,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state7",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 7,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state8",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 8,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state9",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 9,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state10",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 10,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state11",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 11,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state12",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 12,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state13",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 13,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state14",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 14,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state15",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 15,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state16",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 16,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state17",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 17,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state18",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 130,
+					"command": 0,
+					"offset": 18,
+					"length": 1,
+					"expression": "",
+					"channel": "switch-state19",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 0,
+					"length": 1,
+					"expression": "",
+					"channel": "alarm-state1",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 1,
+					"length": 1,
+					"expression": "val\u00261",
+					"channel": "alarm-state2",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 1,
+					"length": 1,
+					"expression": "val\u003e\u003e1\u00261",
+					"channel": "alarm-state3",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 1,
+					"length": 1,
+					"expression": "val\u003e\u003e2\u00261",
+					"channel": "alarm-state4",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 1,
+					"length": 1,
+					"expression": "val\u003e\u003e3\u00261",
+					"channel": "alarm-state5",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 1,
+					"length": 1,
+					"expression": "val\u003e\u003e4\u00261",
+					"channel": "alarm-state6",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 1,
+					"length": 1,
+					"expression": "val\u003e\u003e5\u00261",
+					"channel": "alarm-state7",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 1,
+					"length": 1,
+					"expression": "val\u003e\u003e6\u00261",
+					"channel": "alarm-state8",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 1,
+					"length": 1,
+					"expression": "val\u003e\u003e7\u00261",
+					"channel": "alarm-state9",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 2,
+					"length": 1,
+					"expression": "val\u00261",
+					"channel": "alarm-state10",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 2,
+					"length": 1,
+					"expression": "val\u003e\u003e1\u00261",
+					"channel": "alarm-state11",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 2,
+					"length": 1,
+					"expression": "val\u003e\u003e4\u00261",
+					"channel": "alarm-state14",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 2,
+					"length": 1,
+					"expression": "val\u003e\u003e5\u00261",
+					"channel": "alarm-state15",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 2,
+					"length": 1,
+					"expression": "val\u003e\u003e6\u00261",
+					"channel": "alarm-state16",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 2,
+					"length": 1,
+					"expression": "val\u003e\u003e7\u00261",
+					"channel": "alarm-state17",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 3,
+					"length": 1,
+					"expression": "val\u00261",
+					"channel": "alarm-state18",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 3,
+					"length": 1,
+					"expression": "val\u003e\u003e1\u00261",
+					"channel": "alarm-state19",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 3,
+					"length": 1,
+					"expression": "val\u003e\u003e2\u00261",
+					"channel": "alarm-state20",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 3,
+					"length": 1,
+					"expression": "val\u003e\u003e3\u00261",
+					"channel": "alarm-state21",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 3,
+					"length": 1,
+					"expression": "val\u003e\u003e4\u00261",
+					"channel": "alarm-state22",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 3,
+					"length": 1,
+					"expression": "val\u003e\u003e5\u00261",
+					"channel": "alarm-state23",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 3,
+					"length": 1,
+					"expression": "val\u003e\u003e6\u00261",
+					"channel": "alarm-state24",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 3,
+					"length": 1,
+					"expression": "val\u003e\u003e7\u00261",
+					"channel": "alarm-state25",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 4,
+					"length": 1,
+					"expression": "val\u00261",
+					"channel": "alarm-state26",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 4,
+					"length": 1,
+					"expression": "val\u003e\u003e1\u00261",
+					"channel": "alarm-state27",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 4,
+					"length": 1,
+					"expression": "val\u003e\u003e2\u00261",
+					"channel": "alarm-state28",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 4,
+					"length": 1,
+					"expression": "val\u003e\u003e3\u00261",
+					"channel": "alarm-state29",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 4,
+					"length": 1,
+					"expression": "val\u003e\u003e4\u00261",
+					"channel": "alarm-state30",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 4,
+					"length": 1,
+					"expression": "val\u003e\u003e5\u00261",
+					"channel": "alarm-state31",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 4,
+					"length": 1,
+					"expression": "val\u003e\u003e6\u00261",
+					"channel": "alarm-state32",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 4,
+					"length": 1,
+					"expression": "val\u003e\u003e7\u00261",
+					"channel": "alarm-state33",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 5,
+					"length": 1,
+					"expression": "val\u00261",
+					"channel": "alarm-state34",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 5,
+					"length": 1,
+					"expression": "val\u003e\u003e1\u00261",
+					"channel": "alarm-state35",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 5,
+					"length": 1,
+					"expression": "val\u003e\u003e2\u00261",
+					"channel": "alarm-state36",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 5,
+					"length": 1,
+					"expression": "val\u003e\u003e3\u00261",
+					"channel": "alarm-state37",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 5,
+					"length": 1,
+					"expression": "val\u003e\u003e4\u00261",
+					"channel": "alarm-state38",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 5,
+					"length": 1,
+					"expression": "val\u003e\u003e5\u00261",
+					"channel": "alarm-state39",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 5,
+					"length": 1,
+					"expression": "val\u003e\u003e6\u00261",
+					"channel": "alarm-state41",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 5,
+					"length": 1,
+					"expression": "val\u003e\u003e7\u00261",
+					"channel": "alarm-state42",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 6,
+					"length": 1,
+					"expression": "val\u00261",
+					"channel": "alarm-state43",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 6,
+					"length": 1,
+					"expression": "val\u003e\u003e1\u00261",
+					"channel": "alarm-state44",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 6,
+					"length": 1,
+					"expression": "val\u003e\u003e2\u00261",
+					"channel": "alarm-state45",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 6,
+					"length": 1,
+					"expression": "val\u003e\u003e3\u00261",
+					"channel": "alarm-state46",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 6,
+					"length": 1,
+					"expression": "val\u003e\u003e4\u00261",
+					"channel": "alarm-state47",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 6,
+					"length": 1,
+					"expression": "val\u003e\u003e5\u00261",
+					"channel": "alarm-state48",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 6,
+					"length": 1,
+					"expression": "val\u003e\u003e6\u00261",
+					"channel": "alarm-state49",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 6,
+					"length": 1,
+					"expression": "val\u003e\u003e7\u00261",
+					"channel": "alarm-state50",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 7,
+					"length": 1,
+					"expression": "val\u00261",
+					"channel": "alarm-state51",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 7,
+					"length": 1,
+					"expression": "val\u003e\u003e1\u00261",
+					"channel": "alarm-state52",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 7,
+					"length": 1,
+					"expression": "val\u003e\u003e2\u00261",
+					"channel": "alarm-state53",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 7,
+					"length": 1,
+					"expression": "val\u003e\u003e3\u00261",
+					"channel": "alarm-state54",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 7,
+					"length": 1,
+					"expression": "val\u003e\u003e4\u00261",
+					"channel": "alarm-state55",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 7,
+					"length": 1,
+					"expression": "val\u003e\u003e5\u00261",
+					"channel": "alarm-state56",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 7,
+					"length": 1,
+					"expression": "val\u003e\u003e6\u00261",
+					"channel": "alarm-state57",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 7,
+					"length": 1,
+					"expression": "val\u003e\u003e7\u00261",
+					"channel": "alarm-state58",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 8,
+					"length": 1,
+					"expression": "val\u00261",
+					"channel": "alarm-state59",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 8,
+					"length": 1,
+					"expression": "val\u003e\u003e1\u00261",
+					"channel": "alarm-state60",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 8,
+					"length": 1,
+					"expression": "val\u003e\u003e2\u00261",
+					"channel": "alarm-state61",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 8,
+					"length": 1,
+					"expression": "val\u003e\u003e3\u00261",
+					"channel": "alarm-state62",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 8,
+					"length": 1,
+					"expression": "val\u003e\u003e4\u00261",
+					"channel": "alarm-state63",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 8,
+					"length": 1,
+					"expression": "val\u003e\u003e5\u00261",
+					"channel": "alarm-state64",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 8,
+					"length": 1,
+					"expression": "val\u003e\u003e6\u00261",
+					"channel": "alarm-state65",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 8,
+					"length": 1,
+					"expression": "val\u003e\u003e7\u00261",
+					"channel": "alarm-state66",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 9,
+					"length": 1,
+					"expression": "val\u00261",
+					"channel": "alarm-state67",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 9,
+					"length": 1,
+					"expression": "val\u003e\u003e1\u00261",
+					"channel": "alarm-state68",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 9,
+					"length": 1,
+					"expression": "val\u003e\u003e2\u00261",
+					"channel": "alarm-state69",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 9,
+					"length": 1,
+					"expression": "val\u003e\u003e3\u00261",
+					"channel": "alarm-state70",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 9,
+					"length": 1,
+					"expression": "val\u003e\u003e4\u00261",
+					"channel": "alarm-state71",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 9,
+					"length": 1,
+					"expression": "val\u003e\u003e5\u00261",
+					"channel": "alarm-state72",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 9,
+					"length": 1,
+					"expression": "val\u003e\u003e6\u00261",
+					"channel": "alarm-state73",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 9,
+					"length": 1,
+					"expression": "val\u003e\u003e7\u00261",
+					"channel": "alarm-state74",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 10,
+					"length": 1,
+					"expression": "val\u00261",
+					"channel": "alarm-state75",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 10,
+					"length": 1,
+					"expression": "val\u003e\u003e1\u00261",
+					"channel": "alarm-state76",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 10,
+					"length": 1,
+					"expression": "val\u003e\u003e2\u00261",
+					"channel": "alarm-state77",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 10,
+					"length": 1,
+					"expression": "val\u003e\u003e3\u00261",
+					"channel": "alarm-state78",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 10,
+					"length": 1,
+					"expression": "val\u003e\u003e4\u00261",
+					"channel": "alarm-state79",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 10,
+					"length": 1,
+					"expression": "val\u003e\u003e5\u00261",
+					"channel": "alarm-state80",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 10,
+					"length": 1,
+					"expression": "val\u003e\u003e6\u00261",
+					"channel": "alarm-state81",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 10,
+					"length": 1,
+					"expression": "val\u003e\u003e7\u00261",
+					"channel": "alarm-state82",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 11,
+					"length": 1,
+					"expression": "val\u00261",
+					"channel": "alarm-state83",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 11,
+					"length": 1,
+					"expression": "val\u003e\u003e1\u00261",
+					"channel": "alarm-state84",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 11,
+					"length": 1,
+					"expression": "val\u003e\u003e2\u00261",
+					"channel": "alarm-state85",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 11,
+					"length": 1,
+					"expression": "val\u003e\u003e3\u00261",
+					"channel": "alarm-state86",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 11,
+					"length": 1,
+					"expression": "val\u003e\u003e4\u00261",
+					"channel": "alarm-state87",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 133,
+					"command": 0,
+					"offset": 11,
+					"length": 1,
+					"expression": "val\u003e\u003e5\u00261",
+					"channel": "alarm-state88",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 71,
+					"command": 0,
+					"offset": 0,
+					"length": 1,
+					"expression": "",
+					"channel": "system-parameter1",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 71,
+					"command": 0,
+					"offset": 2,
+					"length": 1,
+					"expression": "",
+					"channel": "system-parameter2",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 71,
+					"command": 0,
+					"offset": 4,
+					"length": 1,
+					"expression": "",
+					"channel": "system-parameter3",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 71,
+					"command": 0,
+					"offset": 6,
+					"length": 2,
+					"expression": "",
+					"channel": "system-parameter4",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 71,
+					"command": 0,
+					"offset": 8,
+					"length": 2,
+					"expression": "",
+					"channel": "system-parameter5",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 71,
+					"command": 0,
+					"offset": 10,
+					"length": 2,
+					"expression": "",
+					"channel": "system-parameter6",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 71,
+					"command": 0,
+					"offset": 12,
+					"length": 2,
+					"expression": "",
+					"channel": "system-parameter7",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 71,
+					"command": 0,
+					"offset": 14,
+					"length": 2,
+					"expression": "",
+					"channel": "system-parameter8",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 71,
+					"command": 0,
+					"offset": 16,
+					"length": 2,
+					"expression": "",
+					"channel": "system-parameter9",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 71,
+					"command": 0,
+					"offset": 18,
+					"length": 2,
+					"expression": "",
+					"channel": "system-parameter10",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 71,
+					"command": 0,
+					"offset": 20,
+					"length": 2,
+					"expression": "",
+					"channel": "system-parameter11",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 71,
+					"command": 0,
+					"offset": 22,
+					"length": 2,
+					"expression": "",
+					"channel": "system-parameter12",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 134,
+					"command": 0,
+					"offset": 0,
+					"length": 2,
+					"expression": "",
+					"channel": "analog0-waterway-a",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 134,
+					"command": 0,
+					"offset": 2,
+					"length": 2,
+					"expression": "",
+					"channel": "analog1-waterway-b",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 134,
+					"command": 0,
+					"offset": 4,
+					"length": 2,
+					"expression": "",
+					"channel": "analog2-waterway-ec-fan",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 134,
+					"command": 0,
+					"offset": 6,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "scr1-output",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 134,
+					"command": 0,
+					"offset": 8,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "scr2-output",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 134,
+					"command": 0,
+					"offset": 10,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "compressor1--capacity-output",
+					"cov": 0
+				},
+				{
+					"address": 0,
+					"cid1": 96,
+					"cid2": 134,
+					"command": 0,
+					"offset": 12,
+					"length": 2,
+					"expression": "val/10",
+					"channel": "compressor2--capacity-output",
+					"cov": 0
+				}
+			]
+		}
+	]
+}

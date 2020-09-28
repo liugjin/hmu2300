@@ -1,0 +1,158 @@
+{
+	"id": "iomodule",
+	"name": "io模块",
+	"type": "",
+	"version": "1.0.0",
+	"description": "test",
+	"path": "/mnt/sda1/hmu2000/element-lib/iomodule.json",
+	"channels": [
+		{
+			"id": "DO1",
+			"name": "DO1",
+			"datatype": "int",
+			"value": 0
+		},
+		{
+			"id": "DO2",
+			"name": "DO2",
+			"datatype": "int",
+			"value": 0
+		},
+		{
+			"id": "DI1",
+			"name": "DI1",
+			"datatype": "int",
+			"value": 0
+		},
+		{
+			"id": "DI2",
+			"name": "DI2",
+			"datatype": "int",
+			"value": 0
+		}
+	],
+	"mappings": [
+		{
+			"protocol": "protocol-modbus-serial",
+			"type": "ModbusSerialProtocol",
+			"setting": {
+				"throttle": 0,
+				"optimized": false,
+				"stepDiff": 0,
+				"maxDiff": 0,
+				"cov": 1
+			},
+			"mapping": [
+				{
+					"code": 1,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "val \u0026 1",
+					"channel": "DO1"
+				},
+				{
+					"code": 1,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "(val \u003e\u003e 1) \u0026 1",
+					"channel": "DO2"
+				},
+				{
+					"code": 2,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "val \u0026 1",
+					"channel": "DI1"
+				},
+				{
+					"code": 2,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "(val \u003e\u003e 1) \u0026 1",
+					"channel": "DI2"
+				}
+			]
+		},
+		{
+			"protocol": "protocol-modbus-tcp",
+			"type": "ModbusTcpClientProtocol",
+			"setting": {
+				"throttle": 0,
+				"optimized": false,
+				"stepDiff": 0,
+				"maxDiff": 0,
+				"cov": 1
+			},
+			"mapping": [
+				{
+					"code": 1,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "val \u0026 1",
+					"channel": "DO1"
+				},
+				{
+					"code": 1,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "(val \u003e\u003e 1) \u0026 1",
+					"channel": "DO2"
+				},
+				{
+					"code": 2,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "val \u0026 1",
+					"channel": "DI1"
+				},
+				{
+					"code": 2,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "(val \u003e\u003e 1) \u0026 1",
+					"channel": "DI2"
+				},
+				{
+					"code": 1,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "val \u0026 1",
+					"channel": "DO1"
+				},
+				{
+					"code": 1,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "(val \u003e\u003e 1) \u0026 1",
+					"channel": "DO2"
+				},
+				{
+					"code": 2,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "val \u0026 1",
+					"channel": "DI1"
+				},
+				{
+					"code": 2,
+					"address": 0,
+					"quantity": 8,
+					"format": "",
+					"expression": "(val \u003e\u003e 1) \u0026 1",
+					"channel": "DI2"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,35 @@
+[
+	{
+		"id": "0",
+		"name": "网关",
+		"setting": {},
+		"ports": [
+			{
+				"symbol": "",
+				"protocol": "protocol-hyiot-mu",
+				"id": "sp-hmu",
+				"name": "HMU",
+				"enable": true,
+				"setting": {
+					"port": "/dev/self"
+				},
+				"sampleUnits": [
+					{
+						"id": "_",
+						"name": "网关",
+						"period": 10000,
+						"timeout": 3000,
+						"maxCommunicationErrors": 5,
+						"element": "hmu2000",
+						"enable": true,
+						"setting": {
+							"host": "127.0.0.1",
+							"port": "9988",
+							"model": "hmu2000"
+						}
+					}
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,95 @@
+{
+	"id": "sensorflow",
+	"name": "sensorflow",
+	"type": "ModbusElement",
+	"version": "1.0.0",
+	"description": "sensorflow element library",
+	"path": "../../appmanager/src/element-lib/sensorflow.json",
+	"channels": [
+		{
+			"id": "u1press",
+			"name": "u1按键状态",
+			"datatype": "int",
+			"value": 0
+		},
+		{
+			"id": "u1rled",
+			"name": "u1红灯状态",
+			"datatype": "int",
+			"value": 0
+		},
+		{
+			"id": "u1gled",
+			"name": "u1绿灯状态",
+			"datatype": "int",
+			"value": 0
+		},
+		{
+			"id": "u1bled",
+			"name": "u1蓝灯状态",
+			"datatype": "int",
+			"value": 0
+		},
+		{
+			"id": "u1labelid",
+			"name": "u1标签id",
+			"datatype": "string",
+			"value": 0
+		}
+	],
+	"mappings": [
+		{
+			"protocol": "protocol-modbus-serial",
+			"type": "ModbusSerialProtocol",
+			"setting": {
+				"throttle": 0,
+				"optimized": false,
+				"stepDiff": 0,
+				"maxDiff": 0,
+				"cov": 0.01
+			},
+			"mapping": [
+				{
+					"code": 3,
+					"address": 8,
+					"quantity": 1,
+					"format": "",
+					"expression": "val \u0026 1",
+					"channel": "u1press"
+				},
+				{
+					"code": 16,
+					"address": 28,
+					"quantity": 1,
+					"format": "",
+					"expression": "",
+					"channel": "u1rled"
+				},
+				{
+					"code": 16,
+					"address": 29,
+					"quantity": 1,
+					"format": "",
+					"expression": "",
+					"channel": "u1gled"
+				},
+				{
+					"code": 16,
+					"address": 30,
+					"quantity": 1,
+					"format": "",
+					"expression": "",
+					"channel": "u1bled"
+				},
+				{
+					"code": 3,
+					"address": 16,
+					"quantity": 7,
+					"format": "",
+					"expression": "length=13",
+					"channel": "u1labelid"
+				}
+			]
+		}
+	]
+}

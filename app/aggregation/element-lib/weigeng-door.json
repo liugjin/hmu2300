@@ -1,0 +1,43 @@
+{
+  "id": "element-library",
+  "name": "element-library",
+  "type": "DeviceElement",
+  "setting":[
+    {"id":"address", "datatype":"int", "desc":"设备地址"}
+  ],
+  "path": "element-library",
+  "version": "0.0.1",
+  "description": "element-library channels",
+  "channels": [
+    {"id": "door-time", "name": "门禁时间", "datatype": "string"},
+    {"id": "card-record", "name": "刷卡记录", "datatype": "string"},
+    {"id": "open-door", "name": "远程开门", "datatype": "command", "value": -999},
+    {"id": "sync-time", "name": "时间同步", "datatype": "command", "value": -999},
+    {"id": "add-card", "name": "授权用户卡", "datatype": "command", "value": -999},
+    {"id": "remove-card", "name": "删除用户卡", "datatype": "command", "value": -999},
+    {"id": "door1-switch-status", "name": "门1状态", "datatype": "string"},
+    {"id": "door2-switch-status", "name": "门2状态", "datatype": "string"},
+    {"id": "door3-switch-status", "name": "门3状态", "datatype": "string"},
+    {"id": "door4-switch-status", "name": "门4状态", "datatype": "string"}
+  ],
+  "mappings": [
+    {
+      "protocol": "protocol-library",
+      "type": "DeviceProtocol",
+      "path": "protocol-library",
+      "setting": {"throttle": 1000, "cov": 0.001},
+      "mapping": [
+        {"channel": "door-time", "seqno": "0xB1", "code": "0x32","group": 1, "type": "0x17"},
+        {"channel": "card-record", "seqno": "0xB3", "code": "0x20", "group": 1, "type": "0x17"},
+        {"channel": "open-door", "seqno": "0xB4", "code": "0x40", "group": 1,"type": "0x17"},
+        {"channel": "sync-time", "seqno": "0xB5", "code": "0x30", "group": 1,"type": "0x17"},
+        {"channel": "add-card", "seqno": "0xB6", "code": "0x50", "group": 1,"type": "0x17"},
+        {"channel": "remove-card", "seqno": "0xB7", "code": "0x52", "group": 1,"type": "0x17"},
+        {"channel": "door1-switch-status", "seqno": "0xC1", "code": "0x20", "group": 1, "type": "0x17"},
+        {"channel": "door2-switch-status", "seqno": "0xC1", "code": "0x20", "group": 2, "type": "0x17"},
+        {"channel": "door3-switch-status", "seqno": "0xC1", "code": "0x20", "group": 3, "type": "0x17"},
+        {"channel": "door4-switch-status", "seqno": "0xC1", "code": "0x20", "group": 4, "type": "0x17"}
+      ]
+    }
+  ]
+}
